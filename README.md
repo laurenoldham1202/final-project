@@ -20,7 +20,7 @@ title, I would like to include every D1 school with various filtering options to
 ### Goal
 Have fun! I love college basketball and really like the idea of doing something personally enjoyable (and seasonably appropriate!) for my final project.
 There is always a lot of discussion (ahem, argument) about who has the greatest program, the greatest conference, etc. so it would be great to provide a definitive source for all things CBB.
-Maps are wildly popular over at [/r/CollegeBasketball](https://www.reddit.com/r/CollegeBasketball/search?q=map&restrict_sr=on), so I'm inspired to do something bigger and better than what currently exists.
+Maps are [wildly popular](https://www.reddit.com/r/CollegeBasketball/search?q=map&restrict_sr=on) over at [/r/CollegeBasketball](https://www.reddit.com/r/CollegeBasketball/), so I'm inspired to do something bigger and better than what currently exists.
 My target audience includes /r/CollegeBasketball users, friends, coworkers, family, casual sports fans and fanatics alike.
 
 ### Outline
