@@ -81,3 +81,13 @@ Seeding history is often found on team wikipedia pages.
 Relevant Literature:
 * https://www.thebiglead.com/2019/02/10/the-ncaa-tournament-has-a-geography-problem-and-should-move-a-western-venue/
 * https://www.ncaa.com/news/basketball-men/article/2018-10-19/how-field-68-teams-picked-march-madness
+
+## Other Potential Ideas
+I have a few other vague topics of interest that could be used to make a nice map, so I'm open to any ideas or suggestions from the list below!
+
+1. National and state parks
+2. Overtourism
+3. Homelessness (particularly anti-homeless legislation, such as banning sleeping in cars, panhandling, etc.)
+4. Brain drain
+5. TV show locations
+6. Joel Sartore's Photo Ark
