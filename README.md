@@ -23,7 +23,7 @@ There is always a lot of discussion (ahem, argument) about who has the greatest 
 Maps are [wildly popular](https://www.reddit.com/r/CollegeBasketball/search?q=map&restrict_sr=on) over at [/r/CollegeBasketball](https://www.reddit.com/r/CollegeBasketball/), so I'm inspired to do something bigger and better than what currently exists.
 My target audience includes /r/CollegeBasketball users, friends, coworkers, family, casual sports fans and fanatics alike.
 
-### Outline
+### Outline/Notes
 * Include data for all D1 schools
 * Make table collapsible
 * Make table filterable
@@ -47,4 +47,37 @@ My target audience includes /r/CollegeBasketball users, friends, coworkers, fami
 * [Team colors 2](https://teamcolorcodes.com/ncaa-color-codes/)
 * [Team colors 3](https://usteamcolors.com/ncaa-division-1/)
 
-## 2. March Madness 
+## 2. March Madness Top Seed Sites Analysis
+#### I want to design a map that analyzes and visualizes the tournament sites for top seeds in March Madness because I want to find out whether top teams are given geographical preference (as the seeding rules claim).
+
+Tackling college basketball from a different approach, I'd like to explore the NCAA committee claim that top seeds in 
+the tournament will play their first two games at sites "most geographically compatible to those teams." 
+In short, the best teams of the year play closer to their fan base, which can give them home court advantage in the most 
+upset-prone rounds of the tournament. While many factors go into assigning teams to different sites, it's always a 
+contentious issue for fans - every fan base claims that they get screwed by the selection committee, whereas <opposing 
+team I hate> gets preferential treatment! 
+
+### Goal
+Find out if any particular top teams are consistently given preferential locations over other top teams. It's a question
+that I would like answered as a fan of college basketball. Everyone loves to have proof during CBB turf war!
+
+### Outline/Notes
+* Should probably limit data to modern March Madness seeding rules, beginning in 1985
+* Maybe use some sort of animation to signify distances between home base and tourney sites
+
+TBD
+
+### Limitations/Issues
+* Data will need to be manually collected
+* Not sure if there are any correlations - could be a lot of work with no significant results or visualizations
+* The US is big! Most dominant teams are in the midwest/south/eastern, so the few dominant teams in the west often have 
+to travel farther than eastern teams
+* Not sure how I would visualize the data
+* May need to brush up on some basic statistics
+
+### Datasets
+Seeding history is often found on team wikipedia pages.
+
+Relevant Literature:
+* https://www.thebiglead.com/2019/02/10/the-ncaa-tournament-has-a-geography-problem-and-should-move-a-western-venue/
+* https://www.ncaa.com/news/basketball-men/article/2018-10-19/how-field-68-teams-picked-march-madness
