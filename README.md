@@ -98,6 +98,14 @@ complete, reliable, and updated data. I would love input on a more specific topi
 * [Anti-Homeless Ordinances in American Cities](https://www.researchgate.net/publication/325718729_Anti-Homeless_Ordinances_in_American_Cities) (check sources)
 * [Housing Not Handcuffs 2019 Report](http://nlchp.org/wp-content/uploads/2019/12/HOUSING-NOT-HANDCUFFS-2019-FINAL.pdf) (includes updated cities data)
 
+### Overtourism
+
+* [Overtourim: Impact and Possible Policy Responses](https://www.europarl.europa.eu/RegData/etudes/STUD/2018/629184/IPOL_STU(2018)629184_EN.pdf) (lots of data by city)
+* [Is Overtourism Overused?](https://www.researchgate.net/publication/329159594_Is_Overtourism_Overused_Understanding_the_Impact_of_Tourism_in_a_City_Context)
+* [‘Overtourism’? Understanding and Managing Urban Tourism Growth beyond Perceptions](https://www.e-unwto.org/doi/pdf/10.18111/9789284420070)
+* [Worst Ranked Overtouristed Cities in Europe](https://www.statista.com/statistics/778687/overtourism-worst-european-cities/)
+* Overtourism: A Literature Review to Assess Implications and Future Perspectives (in data directory)
+
 ---
 1. National and state parks
 2. Overtourism
