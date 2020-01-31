@@ -83,7 +83,8 @@ Relevant Literature:
 * https://www.ncaa.com/news/basketball-men/article/2018-10-19/how-field-68-teams-picked-march-madness
 
 ## Other Potential Ideas
-I have a few other vague topics of interest that could be used to make a nice map, so I'm open to any ideas or suggestions from the list below!
+I have a few other vague topics of interest that could be used to make a nice map, so I'm open to any ideas or 
+suggestions from the list below!
 
 ### Homelessness in America/Anti-Homeless Legislation
 I don't have as much base knowledge for this topic, but I hear about it in the news increasingly often. 
@@ -99,17 +100,17 @@ complete, reliable, and updated data. I would love input on a more specific topi
 * [Housing Not Handcuffs 2019 Report](http://nlchp.org/wp-content/uploads/2019/12/HOUSING-NOT-HANDCUFFS-2019-FINAL.pdf) (includes updated cities data)
 
 ### Overtourism
+As I've had the privilege of traveling more in my adult life, I've become more aware of overtourism and its effect on 
+local communities worldwide. Many tourist destinations have always been hotspots, but have exploded in popularity as the
+global middle class has grown, flight prices have fallen, and short-term rentals like AirBnb have been popularized. 
+Other cities, such as Dubrovnik, Croatia, skyrocketed in popularity due to pop culture, but aren't equipped to handle 
+the massive influx of tourists. I would love to explore the topic, but I haven't narrowed it down to a specific research 
+problem.
 
 * [Overtourim: Impact and Possible Policy Responses](https://www.europarl.europa.eu/RegData/etudes/STUD/2018/629184/IPOL_STU(2018)629184_EN.pdf) (lots of data by city)
 * [Is Overtourism Overused?](https://www.researchgate.net/publication/329159594_Is_Overtourism_Overused_Understanding_the_Impact_of_Tourism_in_a_City_Context)
 * [‘Overtourism’? Understanding and Managing Urban Tourism Growth beyond Perceptions](https://www.e-unwto.org/doi/pdf/10.18111/9789284420070)
 * [Worst Ranked Overtouristed Cities in Europe](https://www.statista.com/statistics/778687/overtourism-worst-european-cities/)
+* [UN World Tourism Organization Statistics](https://www.unwto.org/data) (requires student proposal for free data)
+* [UNWTO Dashboard](https://www.unwto.org/unwto-tourism-dashboard) - quick view of above data without 
 * Overtourism: A Literature Review to Assess Implications and Future Perspectives (in data directory)
-
----
-1. National and state parks
-2. Overtourism
-3. Homelessness (particularly anti-homeless legislation, such as banning sleeping in cars, panhandling, etc.)
-4. Brain drain
-5. TV show locations
-6. Joel Sartore's Photo Ark
