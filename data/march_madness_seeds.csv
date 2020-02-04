@@ -1,0 +1,97 @@
+school,school_fname,site,city,state,seed,overall_seed,year,id
+Villanova University,Villanova,"Buffalo, NY",Radnor Township,PA,1,,2017,201701
+,,,Buffalo,NY,,,,201701
+University of Florida,Florida,"Orlando, FL",Gainesville,FL,4,,2017,201702
+,,,Orlando,FL,,,,201702
+Baylor University,Baylor,"Tulsa, OK",Waco,TX,3,,2017,201703
+,,,Tulsa,OK,,,,201703
+Duke University,Duke,"Greenville, SC",Durham,NC,2,,2017,201704
+,,,Greenville,SC,,,,201704
+University of Kansas,Kansas,"Tulsa, OK",Lawrence,KS,1,,2017,201705
+,,,Tulsa,OK,,,,201705
+Purdue University,Purdue,"Milwaukee, WI",West Lafayette,IN,4,,2017,201706
+,,,Milwaukee,WI,,,,201706
+University of Oregon,Oregon,"Sacramento, CA",Eugene,OR,3,,2017,201707
+,,,Sacramento,CA,,,,201707
+University of Louisville,Louisville,"Indianapolis, IN",Louisville,KY,2,,2017,201708
+,,,Indianapolis,IN,,,,201708
+University of North Carolina,North Carolina,"Greenville, SC",Chapel HIll,NC,1,,2017,201709
+,,,Greenville,SC,,,,201709
+Butler University,Butler,"Milwaukee, WI",Indianapolis,IN,4,,2017,201710
+,,,Milwaukee,WI,,,,201710
+University of California Los Angeles,UCLA,"Sacramento, CA",Los Angeles,CA,3,,2017,201711
+,,,Sacramento,CA,,,,201711
+University of Kentucky,Kentucky,"Indianapolis, IN",Lexington,KY,2,,2017,201712
+,,,Indianapolis,IN,,,,201712
+Gonzaga University,Gonzaga,"Salt Lake City, UT",Spokane,WA,1,,2017,201713
+,,,Salt Lake City,UT,,,,201713
+West Virginia University,West Virginia,"Buffalo, NY",Morgantown,WV,4,,2017,201714
+,,,Buffalo,NY,,,,201714
+Florida State University,Florida State,"Orlando, FL",Tallahassee,FL,3,,2017,201715
+,,,Orlando,FL,,,,201715
+University of Arizona,Arizona,"Salt Lake City, UT",Tucson,AZ,2,,2017,201716
+,,,Salt Lake City,UT,,,,201716
+University of North Carolina,North Carolina,"Raleigh, NC",Chapel Hill,NC,1,,2016,201601
+,,,Raleigh,NC,,,,201601
+University of Kentucky,Kentucky,"Des Moines, IA",Lexington,KY,4,,2016,201602
+,,,Des Moines,IA,,,,201602
+West Virginia University,West Virginia,"Brooklyn, NY",Morgantown,WV,3,,2016,201603
+,,,Brooklyn,NY,,,,201503
+Xavier University,Xavier,"St. Louis, MO",Cincinnati,OH,2,,2016,201604
+,,,St. Louis,MO,,,,201604
+University of Kansas,Kansas,"Des Moines, IA",Lawrence,KS,1,,2016,201605
+,,,Des Moines,IA,,,,201605
+University of California,Cal,"Spokane, WA",Berkeley,CA,4,,2016,201606
+,,,Spokane,WA,,,,201606
+University of Miami,Miami (Florida),"Providence, RI",Miami,FL,3,,2016,201607
+,,,Providence,RI,,,,201607
+Villanova University,Villanova,"Brooklyn, NY",Radnor Township,PA,2,,2016,201608
+,,,Brooklyn,NY,,,,201608
+University of Oregon,Oregon,"Spokane, WA",Eugene,OR,1,,2016,201609
+,,,Spokane,WA,,,,201609
+Duke University,Duke,"Providence, RI",Durham,NC,4,,2016,201610
+,,,Providence,RI,,,,201610
+Texas A&M,Texas A&M,"Oklahoma City, OK",College Station,TX,3,,2016,201611
+,,,Oklahoma City,OK,,,,201611
+University of Oklahoma,Oklahoma,"Oklahoma City, OK",Norman,OK,2,,2016,201612
+,,,Oklahoma City,OK,,,,201612
+University of Virginia,Virginia,"Raleigh, NC",Charlottesville,VA,1,,2016,201613
+,,,Raleigh,NC,,,,201613
+Iowa State University,Iowa State,"Denver, CO",Ames,IA,4,,2016,201614
+,,,Denver,CO,,,,201614
+University of Utah,Utah,"Denver, CO",Salt Lake City,UT,3,,2016,201615
+,,,Denver,CO,,,,201615
+Michigan State University,Michigan State,"St. Louis, MO",East Lansing,MI,2,,2016,201616
+,,,St. Louis,MO,,,,201616
+Villanova University,Villanova,"Pittsburgh, PA",Radnor Township,PA,1,,2018,201801
+,,,Pittsburgh,PA,,,,201801
+Wichita State University,Wichita State,"San Diego, CA",Wichita,KS,4,,2018,201802
+,,,San Diego,CA,,,,201802
+Texas Tech University,Texas Tech,"San Diego, CA",Lubbock,TX,3,,2018,201803
+,,,San Diego,CA,,,,201803
+Purdue University,Purdue,"Detroit, MI",West Lafayette,IN,2,,2018,201804
+,,,Detroit,MI,,,,201804
+University of Kansas,Kansas,"Wichita, KS",Lawrence,KS,1,,2018,201805
+,,,Wichita,KS,,,,201805
+Auburn University,Auburn,"San Diego, CA",Auburn,AL,4,,2018,201806
+,,,San Diego,CA,,,,201806
+Michigan State University,Michigan State,"Detroit, MI",East Lansing,MI,3,,2018,201807
+,,,Detroit,MI,,,,201807
+Duke University,Duke,"Pittsburgh, PA",Durham,NC,2,,2018,201808
+,,,Pittsburgh,PA,,,,201808
+Xavier University,Xavier,"Nashville, TN",Cincinnati,OH,1,,2018,201809
+,,,Nashville,TN,,,,201809
+Gonzaga University,Gonzaga,"Boise, ID",Spokane,WA,4,,2018,201810
+,,,Boise,ID,,,,201810
+University of Michigan,Michigan,"Wichita, KS",Ann Arbor,MI,3,,2018,201811
+,,,Wichita,KS,,,,201811
+University of North Carolina,North Carolina,"Charlotte, NC",Chapel Hill,NC,2,,2018,201812
+,,,Charlotte,NC,,,,201812
+University of Virginia,Virginia,"Charlotte, NC",Charlottesville,VA,1,,2018,201813
+,,,Charlotte,NC,,,,201813
+University of Arizona,Arizona,"Boise, ID",Tucson,AZ,4,,2018,201814
+,,,Boise,ID,,,,201814
+University of Tennessee,Tennessee,"Dallas, TX",Knoxville,TN,3,,2018,201815
+,,,Dallas,TX,,,,201815
+University of Cincinnati,Cincinatti,"Nashville, TN",Cincinnati,OH,2,,2018,201816
+,,,Nashville,TN,,,,201816

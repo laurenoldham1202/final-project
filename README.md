@@ -35,10 +35,11 @@ My target audience includes /r/CollegeBasketball users, friends, coworkers, fami
 * Bonus: Add March Madness appearances, number of lottery picks, etc.
 
 ### Limitations/Issues
-* This dataset doesn't exist! Might need to explore web scraping to avoid painful manual collection of all these datasets
+* ~~This dataset doesn't exist! Might need to explore web scraping to avoid painful manual collection of all these datasets~~
+Just kidding, the first dataset has a complete history of D1 schools!
 * Break classes had to be manually created to create enough visual distinction between schools
 
-### Datasets
+### Sources
 * [Historical college basketball statistics](https://www.sports-reference.com/cbb/schools/)
 * [National Championship titles](https://en.wikipedia.org/wiki/NCAA_Division_I_Men%27s_Basketball_Tournament)
 * [Top 50 overall winningest teams](https://en.wikipedia.org/wiki/List_of_teams_with_the_most_victories_in_NCAA_Division_I_men%27s_college_basketball)
@@ -59,13 +60,15 @@ team I hate> gets preferential treatment!
 
 ### Goal
 Find out if any particular top teams are consistently given preferential locations over other top teams. It's a question
-that I would like answered as a fan of college basketball. Everyone loves to have proof during CBB turf war!
+that I would like answered as a fan of college basketball.
 
 ### Outline/Notes
 * Should probably limit data to modern March Madness seeding rules, beginning in 1985
-* Maybe use some sort of animation to signify distances between home base and tourney sites
-
-TBD
+* Use scrollymapping to show analysis highlights?
+* Initial view: every school with a history of 1-4 seeds
+* Popup/label with metadata, e.g. closest site, farthest site, average distance traveled as each seed, average distance traveled overall, etc.
+* Mouseover or click on a school shows lines to each site (perhaps an animation flying to each site in great circle arc?)
+* Dropdown or button toggle for each year, cards to show highlights and averages
 
 ### Limitations/Issues
 * Data will need to be manually collected
@@ -75,18 +78,48 @@ to travel farther than eastern teams
 * Not sure how I would visualize the data
 * May need to brush up on some basic statistics
 
-### Datasets
-Seeding history is often found on team wikipedia pages.
+### Sources
+* [Historical NCAA March Madness statistics](https://www.sports-reference.com/cbb/postseason/)
 
 Relevant Literature:
-* https://www.thebiglead.com/2019/02/10/the-ncaa-tournament-has-a-geography-problem-and-should-move-a-western-venue/
-* https://www.ncaa.com/news/basketball-men/article/2018-10-19/how-field-68-teams-picked-march-madness
+* [NCAA Has a Geography Problem](https://www.thebiglead.com/2019/02/10/the-ncaa-tournament-has-a-geography-problem-and-should-move-a-western-venue/)
+* [Selection Committee Rules](https://www.ncaa.com/news/basketball-men/article/2018-10-19/how-field-68-teams-picked-march-madness)
 
-## Other Potential Ideas
-I have a few other vague topics of interest that could be used to make a nice map, so I'm open to any ideas or 
-suggestions from the list below!
+### Case Study
+I wanted to take a quick look at the data to see if it would be suitable for a full analysis and visualization.
 
-### Homelessness in America/Anti-Homeless Legislation
+Data was manually compiled for years [2016](https://www.sports-reference.com/cbb/postseason/2016-ncaa.html), [2017](https://www.sports-reference.com/cbb/postseason/2017-ncaa.html), and [2018](https://www.sports-reference.com/cbb/postseason/2018-ncaa.html) and saved as `march_madness_161718.csv` in the `data/` directory.
+
+QGIS Workflow:
+1. CRS EPSG:32619
+2. MMQGIS Geocoder plugin, OSM/Nominatim web service
+3. Convert points to line, 'Order by...' and 'Separate by...' unique `id` field
+4. Create new field in temporary lines file, `$length`/1069 for distance in miles
+5. Spatial oin lines file back to points by `id` 
+
+Data saved as `geocoded.shp` in `data/` directory. Note: West Virginia University was unsuccessfull geocoded.
+
+## 3. Global Overtourism
+As I've had the privilege of traveling more in my adult life, I've become more aware of overtourism and its effect on 
+local communities worldwide. Many tourist destinations have always been hotspots, but have exploded in popularity as the
+global middle class has grown, flight prices have fallen, and short-term rentals like AirBnb have been popularized. 
+Other cities, such as Dubrovnik, Croatia, skyrocketed in popularity due to pop culture, but aren't equipped to handle 
+the massive influx of tourists. I would love to explore the topic, but I haven't narrowed it down to a specific research 
+problem.
+
+### Limitations/Issues
+* Most of the data is aggregated to the country level, but most of the overtouristed areas in the world are in Europe with smaller land area. A choropleth map won't be very visually interesting, but it might be the only option for data aggregation.
+
+### Sources
+* [Overtourim: Impact and Possible Policy Responses](https://www.europarl.europa.eu/RegData/etudes/STUD/2018/629184/IPOL_STU(2018)629184_EN.pdf) (lots of data by city)
+* [Is Overtourism Overused?](https://www.researchgate.net/publication/329159594_Is_Overtourism_Overused_Understanding_the_Impact_of_Tourism_in_a_City_Context)
+* [‘Overtourism’? Understanding and Managing Urban Tourism Growth beyond Perceptions](https://www.e-unwto.org/doi/pdf/10.18111/9789284420070)
+* [Worst Ranked Overtouristed Cities in Europe](https://www.statista.com/statistics/778687/overtourism-worst-european-cities/)
+* [UN World Tourism Organization Statistics](https://www.unwto.org/data) (requires student proposal for free data)
+* [UNWTO Dashboard](https://www.unwto.org/unwto-tourism-dashboard) - quick view of above data without 
+* Overtourism: A Literature Review to Assess Implications and Future Perspectives (in data directory)
+
+## 4. Homelessness in America/Anti-Homeless Legislation
 I don't have as much base knowledge for this topic, but I hear about it in the news increasingly often. 
 While homelessness is not explicitly outlawed, many pieces of (controversial) legislation have been enacted in the 
 United States to curb the visibility of homelessness in cities. I think that the biggest hurdle would be finding 
@@ -99,18 +132,3 @@ complete, reliable, and updated data. I would love input on a more specific topi
 * [Anti-Homeless Ordinances in American Cities](https://www.researchgate.net/publication/325718729_Anti-Homeless_Ordinances_in_American_Cities) (check sources)
 * [Housing Not Handcuffs 2019 Report](http://nlchp.org/wp-content/uploads/2019/12/HOUSING-NOT-HANDCUFFS-2019-FINAL.pdf) (includes updated cities data)
 
-### Overtourism
-As I've had the privilege of traveling more in my adult life, I've become more aware of overtourism and its effect on 
-local communities worldwide. Many tourist destinations have always been hotspots, but have exploded in popularity as the
-global middle class has grown, flight prices have fallen, and short-term rentals like AirBnb have been popularized. 
-Other cities, such as Dubrovnik, Croatia, skyrocketed in popularity due to pop culture, but aren't equipped to handle 
-the massive influx of tourists. I would love to explore the topic, but I haven't narrowed it down to a specific research 
-problem.
-
-* [Overtourim: Impact and Possible Policy Responses](https://www.europarl.europa.eu/RegData/etudes/STUD/2018/629184/IPOL_STU(2018)629184_EN.pdf) (lots of data by city)
-* [Is Overtourism Overused?](https://www.researchgate.net/publication/329159594_Is_Overtourism_Overused_Understanding_the_Impact_of_Tourism_in_a_City_Context)
-* [‘Overtourism’? Understanding and Managing Urban Tourism Growth beyond Perceptions](https://www.e-unwto.org/doi/pdf/10.18111/9789284420070)
-* [Worst Ranked Overtouristed Cities in Europe](https://www.statista.com/statistics/778687/overtourism-worst-european-cities/)
-* [UN World Tourism Organization Statistics](https://www.unwto.org/data) (requires student proposal for free data)
-* [UNWTO Dashboard](https://www.unwto.org/unwto-tourism-dashboard) - quick view of above data without 
-* Overtourism: A Literature Review to Assess Implications and Future Perspectives (in data directory)
