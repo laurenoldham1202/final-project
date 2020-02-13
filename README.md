@@ -57,7 +57,8 @@ Just kidding, the first dataset has a complete history of D1 schools!
 * [Midwest Flooding](https://www.nytimes.com/interactive/2019/09/11/us/midwest-flooding.html?te=1&nl=morning-briefing&emc=edit_NN_p_20190912&section=topNews?campaign_id=9&instance_id=12323&segment_id=16950&user_id=f0e74355e8fe8b3573e180f2b848b4bd&regi_id=80404684tion=topNews)
 * [Louisiana Toxic Air](https://projects.propublica.org/louisiana-toxic-air/)
 * [Shape of Slavery](https://pudding.cool/2017/01/shape-of-slavery/)
-* [North Kore Missile Range](https://www.abc.net.au/news/2017-10-16/north-korea-missile-range-map/8880894)
+* [North Korea Missile Range](https://www.abc.net.au/news/2017-10-16/north-korea-missile-range-map/8880894)
+* [Earthquake Triggers](https://www.williamrchase.com/vizrisk/vizrisk_main/)
 * [General Scrollytelling Examples](https://vallandingham.me/scroll_talk/examples/)
 
 ### Data Manipulation
@@ -71,7 +72,14 @@ Data for school histories of all historical D1 college basketball programs is sa
 * Add columns to differentiate between conferences
 * Add team colors
 * Add logos
-* Add coaches?
+* Add coaches? Players? Power 5 conference designation?
+* Blue Bloods designation?
+* Rivalries?
+* Average distance traveled in March Madness?
+
+Kansas > First NCAA national title win > UCLA > Blue Bloods > UK > All KY schools > UNC/Duke > Up and coming schools
+
+Kansas > Blue Bloods > UCLA > Duke/UNC > UK > UK/UofL > All KY > All NC
 
 ## 2. March Madness Top Seed Sites Analysis
 #### I want to design a map that analyzes and visualizes the tournament sites for top seeds in March Madness because I want to find out whether top teams are given geographical preference (as the seeding rules claim).
