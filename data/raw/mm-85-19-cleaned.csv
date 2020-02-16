@@ -1,0 +1,1121 @@
+,seed,school,site,year,id
+0,1,Duke,"Columbia, SC",2019,20190
+1,1,Gonzaga,"Salt Lake City, UT",2019,20191
+2,1,UNC,"Columbus, OH",2019,20192
+3,1,Virginia,"Columbia, SC",2019,20193
+4,2,Michigan State,"Des Moines, IA",2019,20194
+5,2,Michigan,"Des Moines, IA",2019,20195
+6,2,Kentucky,"Jacksonville, FL",2019,20196
+7,2,Tennessee,"Columbus, OH",2019,20197
+8,3,LSU,"Jacksonville, FL",2019,20198
+9,3,Texas Tech,"Tulsa, OK",2019,20199
+10,3,Houston,"Tulsa, OK",2019,201910
+11,3,Purdue,"Hartford, CT",2019,201911
+12,4,Virginia Tech,"San Jose, CA",2019,201912
+13,4,Florida State,"Hartford, CT",2019,201913
+14,4,Kansas,"Salt Lake City, UT",2019,201914
+15,4,Kansas State,"San Jose, CA",2019,201915
+16,1,Villanova,"Pittsburgh, PA",2018,201816
+17,1,Kansas,"Wichita, KS",2018,201817
+18,1,Xavier,"Nashville, TN",2018,201818
+19,1,Virginia,"Charlotte, NC",2018,201819
+20,2,Purdue,"Detroit, MI",2018,201820
+21,2,Duke,"Pittsburgh, PA",2018,201821
+22,2,UNC,"Charlotte, NC",2018,201822
+23,2,Cincinnati,"Nashville, TN",2018,201823
+24,3,Texas Tech,"Dallas, TX",2018,201824
+25,3,Michigan State,"Detroit, MI",2018,201825
+26,3,Michigan,"Wichita, KS",2018,201826
+27,3,Tennessee,"Dallas, TX",2018,201827
+28,4,Wichita State,"San Diego, CA",2018,201828
+29,4,Auburn,"San Diego, CA",2018,201829
+30,4,Gonzaga,"Boise, ID",2018,201830
+31,4,Arizona,"Boise, ID",2018,201831
+32,1,Villanova,"Buffalo, NY",2017,201732
+33,1,Kansas,"Tulsa, OK",2017,201733
+34,1,UNC,"Greenville, SC",2017,201734
+35,1,Gonzaga,"Salt Lake City, UT",2017,201735
+36,2,Duke,"Greenville, SC",2017,201736
+37,2,Louisville,"Indianapolis, IN",2017,201737
+38,2,Kentucky,"Indianapolis, IN",2017,201738
+39,2,Arizona,"Salt Lake City, UT",2017,201739
+40,3,Baylor,"Tulsa, OK",2017,201740
+41,3,Oregon,"Sacramento, CA",2017,201741
+42,3,UCLA,"Sacramento, CA",2017,201742
+43,3,Florida State,"Orlando, FL",2017,201743
+44,4,Florida,"Orlando, FL",2017,201744
+45,4,Purdue,"Milwaukee, WI",2017,201745
+46,4,Butler,"Milwaukee, WI",2017,201746
+47,4,West Virginia,"Buffalo, NY",2017,201747
+48,1,UNC,"Raleigh, NC",2016,201648
+49,1,Kansas,"Des Moines, IA",2016,201649
+50,1,Oregon,"Spokane, WA",2016,201650
+51,1,Virginia,"Raleigh, NC",2016,201651
+52,2,Xavier,"St. Louis, MO",2016,201652
+53,2,Villanova,"Brooklyn, NY",2016,201653
+54,2,Oklahoma,"Oklahoma City, OK",2016,201654
+55,2,Michigan State,"St. Louis, MO",2016,201655
+56,3,West Virginia,"Brooklyn, NY",2016,201656
+57,3,Miami (FL),"Providence, RI",2016,201657
+58,3,Texas A&M,"Oklahoma City, OK",2016,201658
+59,3,Utah,"Denver, CO",2016,201659
+60,4,Kentucky,"Des Moines, IA",2016,201660
+61,4,California,"Spokane, WA",2016,201661
+62,4,Duke,"Providence, RI",2016,201662
+63,4,Iowa State,"Denver, CO",2016,201663
+64,1,Villanova,"Pittsburgh, PA",2015,201564
+65,1,Kentucky,"Louisville, KY",2015,201565
+66,1,Duke,"Charlotte, NC",2015,201566
+67,1,Wisconsin,"Omaha, NE",2015,201567
+68,2,Virginia,"Charlotte, NC",2015,201568
+69,2,Kansas,"Omaha, NE",2015,201569
+70,2,Gonzaga,"Seattle, WA",2015,201570
+71,2,Arizona,"Portland, OR",2015,201571
+72,3,Oklahoma,"Columbus, OH",2015,201572
+73,3,Notre Dame,"Pittsburgh, PA",2015,201573
+74,3,Iowa State,"Louisville, KY",2015,201574
+75,3,Baylor,"Jacksonville, FL",2015,201575
+76,4,Louisville,"Seattle, WA",2015,201576
+77,4,Maryland,"Columbus, OH",2015,201577
+78,4,Georgetown,"Portland, OR",2015,201578
+79,4,UNC,"Jacksonville, FL",2015,201579
+80,1,Wichita State,"St. Louis, MO",2014,201480
+81,1,Florida,"Orlando, FL",2014,201481
+82,1,Virginia,"Raleigh, NC",2014,201482
+83,1,Arizona,"San Diego, CA",2014,201483
+84,2,Michigan,"Milwaukee, WI",2014,201484
+85,2,Kansas,"St. Louis, MO",2014,201485
+86,2,Villanova,"Buffalo, NY",2014,201486
+87,2,Wisconsin,"Milwaukee, WI",2014,201487
+88,3,Duke,"Raleigh, NC",2014,201488
+89,3,Syracuse,"Buffalo, NY",2014,201489
+90,3,Iowa State,"San Antonio, TX",2014,201490
+91,3,Creighton,"San Antonio, TX",2014,201491
+92,4,Louisville,"Orlando, FL",2014,201492
+93,4,UCLA,"San Diego, CA",2014,201493
+94,4,Michigan State,"Spokane, WA",2014,201494
+95,4,San Diego State,"Spokane, WA",2014,201495
+96,1,Indiana,"Dayton, OH",2013,201396
+97,1,Louisville,"Lexington, KY",2013,201397
+98,1,Gonzaga,"Salt Lake City, UT",2013,201398
+99,1,Kansas,"Kansas City, MO",2013,201399
+100,2,Miami (FL),"Austin, TX",2013,2013100
+101,2,Duke,"Philadelphia, PA",2013,2013101
+102,2,Ohio State,"Dayton, OH",2013,2013102
+103,2,Georgetown,"Philadelphia, PA",2013,2013103
+104,3,Marquette,"Lexington, KY",2013,2013104
+105,3,Michigan State,"Auburn Hills, MI",2013,2013105
+106,3,New Mexico,"Salt Lake City, UT",2013,2013106
+107,3,Florida,"Austin, TX",2013,2013107
+108,4,Syracuse,"San Jose, CA",2013,2013108
+109,4,Saint Louis,"San Jose, CA",2013,2013109
+110,4,Kansas State,"Kansas City, MO",2013,2013110
+111,4,Michigan,"Auburn Hills, MI",2013,2013111
+112,1,UNC,"Greensboro, NC",2012,2012112
+113,1,Kentucky,"Louisville, KY",2012,2012113
+114,1,Michigan State,"Columbus, OH",2012,2012114
+115,1,Syracuse,"Pittsburgh, PA",2012,2012115
+116,2,Kansas,"Omaha, NE",2012,2012116
+117,2,Duke,"Greensboro, NC",2012,2012117
+118,2,Missouri,"Omaha, NE",2012,2012118
+119,2,Ohio State,"Pittsburgh, PA",2012,2012119
+120,3,Georgetown,"Columbus, OH",2012,2012120
+121,3,Baylor,"Albuquerque, NM",2012,2012121
+122,3,Marquette,"Louisville, KY",2012,2012122
+123,3,Florida State,"Nashville, TN",2012,2012123
+124,4,Michigan,"Nashville, TN",2012,2012124
+125,4,Indiana,"Portland, OR",2012,2012125
+126,4,Louisville,"Portland, OR",2012,2012126
+127,4,Wisconsin,"Albuquerque, NM",2012,2012127
+128,1,Ohio State,"Cleveland, OH",2011,2011128
+129,1,Pitt,"Washington, DC",2011,2011129
+130,1,Kansas,"Tulsa, OK",2011,2011130
+131,1,Duke,"Charlotte, NC",2011,2011131
+132,2,UNC,"Charlotte, NC",2011,2011132
+133,2,Florida,"Tampa, FL",2011,2011133
+134,2,Notre Dame,"Chicago, IL",2011,2011134
+135,2,San Diego State,"Tucson, AZ",2011,2011135
+136,3,Syracuse,"Cleveland, OH",2011,2011136
+137,3,BYU,"Denver, CO",2011,2011137
+138,3,Purdue,"Chicago, IL",2011,2011138
+139,3,UConn,"Washington, DC",2011,2011139
+140,4,Kentucky,"Tampa, FL",2011,2011140
+141,4,Wisconsin,"Tucson, AZ",2011,2011141
+142,4,Louisville,"Denver, CO",2011,2011142
+143,4,Texas,"Tulsa, OK",2011,2011143
+144,1,Duke,"Jacksonville, FL",2010,2010144
+145,1,Kentucky,"New Orleans, LA",2010,2010145
+146,1,Kansas,"Oklahoma City, OK",2010,2010146
+147,1,Syracuse,"Buffalo, NY",2010,2010147
+148,2,Villanova,"Providence, RI",2010,2010148
+149,2,West Virginia,"Buffalo, NY",2010,2010149
+150,2,Ohio State,"Milwaukee, WI",2010,2010150
+151,2,Kansas State,"Oklahoma City, OK",2010,2010151
+152,3,Baylor,"New Orleans, LA",2010,2010152
+153,3,New Mexico,"San Jose, CA",2010,2010153
+154,3,Georgetown,"Providence, RI",2010,2010154
+155,3,Pitt,"Milwaukee, WI",2010,2010155
+156,4,Purdue,"Spokane, WA",2010,2010156
+157,4,Wisconsin,"Jacksonville, FL",2010,2010157
+158,4,Maryland,"Spokane, WA",2010,2010158
+159,4,Vanderbilt,"San Jose, CA",2010,2010159
+160,1,Syracuse,"Buffalo, NY",2009,2009160
+161,1,Pitt,"Dayton, OH",2009,2009161
+162,1,UNC,"Greensboro, NC",2009,2009162
+163,1,UConn,"Philadelphia, PA",2009,2009163
+164,2,Kansas State,"Oklahoma City, OK",2009,2009164
+165,2,Duke,"Greensboro, NC",2009,2009165
+166,2,Oklahoma,"Kansas City, MO",2009,2009166
+167,2,Memphis,"Kansas City, MO",2009,2009167
+168,3,Pitt,"Milwaukee, WI",2009,2009168
+169,3,Villanova,"Philadelphia, PA",2009,2009169
+170,3,Syracuse,"Miami, FL",2009,2009170
+171,3,Missouri,"Boise, ID",2009,2009171
+172,4,Vanderbilt,"San Jose, CA",2009,2009172
+173,4,Xavier,"Boise, ID",2009,2009173
+174,4,Gonzaga,"Portland, OR",2009,2009174
+175,4,Washington,"Portland, OR",2009,2009175
+176,1,UNC,"Raleigh, NC",2008,2008176
+177,1,Kansas,"Omaha, NE",2008,2008177
+178,1,Memphis,"North Little Rock, AR",2008,2008178
+179,1,UCLA,"Anaheim, CA",2008,2008179
+180,2,Tennessee,"Birmingham, AL",2008,2008180
+181,2,Georgetown,"Raleigh, NC",2008,2008181
+182,2,Texas,"North Little Rock, AR",2008,2008182
+183,2,Duke,"Washington, DC",2008,2008183
+184,3,Louisville,"Birmingham, AL",2008,2008184
+185,3,Wisconsin,"Omaha, NE",2008,2008185
+186,3,Stanford,"Anaheim, CA",2008,2008186
+187,3,Xavier,"Washington, DC",2008,2008187
+188,4,Washington State,"Denver, CO",2008,2008188
+189,4,Vanderbilt,"Tampa, FL",2008,2008189
+190,4,Pitt,"Denver, CO",2008,2008190
+191,4,UConn,"Tampa, FL",2008,2008191
+192,1,Kansas,"Chicago, IL",2007,2007192
+193,1,UNC,"Winston-Salem, NC",2007,2007193
+194,1,Florida,"New Orleans, LA",2007,2007194
+195,1,Florida,"New Orleans, LA",2007,2007195
+196,2,UCLA,"Sacramento, CA",2007,2007196
+197,2,Georgetown,"Winston-Salem, NC",2007,2007197
+198,2,Wisconsin,"Chicago, IL",2007,2007198
+199,2,Wisconsin,"Chicago, IL",2007,2007199
+200,3,Pitt,"Buffalo, NY",2007,2007200
+201,3,Washington State,"Sacramento, CA",2007,2007201
+202,3,Oregon,"Spokane, WA",2007,2007202
+203,3,Oregon,"Spokane, WA",2007,2007203
+204,4,Southern Illinois,"Columbus, OH",2007,2007204
+205,4,Texas,"Spokane, WA",2007,2007205
+206,4,Maryland,"Buffalo, NY",2007,2007206
+207,4,Maryland,"Buffalo, NY",2007,2007207
+208,1,Villanova,"Philadelphia, PA",2006,2006208
+209,1,Duke,"Greensboro, NC",2006,2006209
+210,1,Memphis,"Dallas, TX",2006,2006210
+211,1,UConn,"Philadelphia, PA",2006,2006211
+212,2,Ohio State,"Dayton, OH",2006,2006212
+213,2,Texas,"Dallas, TX",2006,2006213
+214,2,UCLA,"San Diego, CA",2006,2006214
+215,2,Tennessee,"Greensboro, NC",2006,2006215
+216,3,Florida,"Jacksonville, FL",2006,2006216
+217,3,Iowa,"Auburn Hills, MI",2006,2006217
+218,3,Gonzaga,"Salt Lake City, UT",2006,2006218
+219,3,UNC,"Dayton, OH",2006,2006219
+220,4,Boston College,"Salt Lake City, UT",2006,2006220
+221,4,LSU,"Jacksonville, FL",2006,2006221
+222,4,Kansas,"Auburn Hills, MI",2006,2006222
+223,4,Illinois,"San Diego, CA",2006,2006223
+224,1,UNC,"Charlotte, NC",2005,2005224
+225,1,Washington,"Boise, ID",2005,2005225
+226,1,Duke,"Charlotte, NC",2005,2005226
+227,1,Illinois,"Indianapolis, IN",2005,2005227
+228,2,UConn,"Worcester, MA",2005,2005228
+229,2,Wake Forest,"Cleveland, OH",2005,2005229
+230,2,Kentucky,"Indianapolis, IN",2005,2005230
+231,2,Oklahoma State,"Oklahoma City, OK",2005,2005231
+232,3,Kansas,"Oklahoma City, OK",2005,2005232
+233,3,Gonzaga,"Tucson, AZ",2005,2005233
+234,3,Oklahoma,"Tucson, AZ",2005,2005234
+235,3,Arizona,"Boise, ID",2005,2005235
+236,4,Florida,"Nashville, TN",2005,2005236
+237,4,Louisville,"Nashville, TN",2005,2005237
+238,4,Syracuse,"Worcester, MA",2005,2005238
+239,4,Boston College,"Cleveland, OH",2005,2005239
+240,1,Kentucky,"Columbus, OH",2004,2004240
+241,1,Duke,"Raleigh, NC",2004,2004241
+242,1,St. Joseph's,"Buffalo, NY",2004,2004242
+243,1,Stanford,"Seattle, WA",2004,2004243
+244,2,Gonzaga,"Seattle, WA",2004,2004244
+245,2,Mississippi State,"Orlando, FL",2004,2004245
+246,2,Oklahoma State,"Kansas City, MO",2004,2004246
+247,2,UConn,"Buffalo, NY",2004,2004247
+248,3,Georgia Tech,"Milwaukee, WI",2004,2004248
+249,3,Texas,"Denver, CO",2004,2004249
+250,3,Pitt,"Milwaukee, WI",2004,2004250
+251,3,NC State,"Orlando, FL",2004,2004251
+252,4,Kansas,"Kansas City, MO",2004,2004252
+253,4,Cincinnati,"Columbus, OH",2004,2004253
+254,4,Wake Forest,"Raleigh, NC",2004,2004254
+255,4,Maryland,"Denver, CO",2004,2004255
+256,1,Texas,"Birmingham, AL",2003,2003256
+257,1,Oklahoma,"Oklahoma City, OK",2003,2003257
+258,1,Kentucky,"Nashville, TN",2003,2003258
+259,1,Arizona,"Salt Lake City, UT",2003,2003259
+260,2,Florida,"Tampa, FL",2003,2003260
+261,2,Wake Forest,"Tampa, FL",2003,2003261
+262,2,Pitt,"Boston, MA",2003,2003262
+263,2,Kansas,"Oklahoma City, OK",2003,2003263
+264,3,Xavier,"Nashville, TN",2003,2003264
+265,3,Syracuse,"Boston, MA",2003,2003265
+266,3,Marquette,"Indianapolis, IN",2003,2003266
+267,3,Duke,"Salt Lake City, UT",2003,2003267
+268,4,Stanford,"Spokane, WA",2003,2003268
+269,4,Louisville,"Birmingham, AL",2003,2003269
+270,4,Dayton,"Spokane, WA",2003,2003270
+271,4,Illinois,"Indianapolis, IN",2003,2003271
+272,1,Maryland,"Washington, DC",2002,2002272
+273,1,Kansas,"St. Louis, MO",2002,2002273
+274,1,Duke,"Greenville, SC",2002,2002274
+275,1,Cincinnati,"Pittsburgh, PA",2002,2002275
+276,2,UConn,"Washington, DC",2002,2002276
+277,2,Oregon,"Sacramento, CA",2002,2002277
+278,2,Alabama,"Greenville, SC",2002,2002278
+279,2,Oklahoma,"Dallas, TX",2002,2002279
+280,3,Georgia,"Chicago, IL",2002,2002280
+281,3,Mississippi State,"Dallas, TX",2002,2002281
+282,3,Pitt,"Pittsburgh, PA",2002,2002282
+283,3,Arizona,"Albuquerque, NM",2002,2002283
+284,4,Kentucky,"St. Louis, MO",2002,2002284
+285,4,Illinois,"Chicago, IL",2002,2002285
+286,4,USC,"Sacramento, CA",2002,2002286
+287,4,Ohio State,"Albuquerque, NM",2002,2002287
+288,1,Illinois,"Dayton, OH",2001,2001288
+289,1,Duke,"Greensboro, NC",2001,2001289
+290,1,Michigan State,"Memphis, TN",2001,2001290
+291,1,Stanford,"San Diego, CA",2001,2001291
+292,2,Arizona,"Kansas City, MO",2001,2001292
+293,2,Kentucky,"Uniondale, NY",2001,2001293
+294,2,UNC,"New Orleans, LA",2001,2001294
+295,2,Iowa State,"Boise, ID",2001,2001295
+296,3,Ole Miss,"Kansas City, MO",2001,2001296
+297,3,Boston College,"Uniondale, NY",2001,2001297
+298,3,Florida,"New Orleans, LA",2001,2001298
+299,3,Maryland,"Boise, ID",2001,2001299
+300,4,Kansas,"Dayton, OH",2001,2001300
+301,4,UCLA,"Greensboro, NC",2001,2001301
+302,4,Oklahoma,"Memphis, TN",2001,2001302
+303,4,Indiana,"San Diego, CA",2001,2001303
+304,1,Duke,"Winston-Salem, NC",2000,2000304
+305,1,Michigan State,"Cleveland, OH",2000,2000305
+306,1,Stanford,"Birmingham, AL",2000,2000306
+307,1,Arizona,"Tucson, AZ",2000,2000307
+308,2,Temple,"Buffalo, NY",2000,2000308
+309,2,Iowa State,"Minneapolis, MN",2000,2000309
+310,2,Cincinnati,"Nashville, TN",2000,2000310
+311,2,St. John's (NY),"Tucson, AZ",2000,2000311
+312,3,Oklahoma State,"Buffalo, NY",2000,2000312
+313,3,Maryland,"Minneapolis, MN",2000,2000313
+314,3,Ohio State,"Nashville, TN",2000,2000314
+315,3,Oklahoma,"Tucson, AZ",2000,2000315
+316,4,Illinois,"Winston-Salem, NC",2000,2000316
+317,4,Syracuse,"Cleveland, OH",2000,2000317
+318,4,Tennessee,"Birmingham, AL",2000,2000318
+319,4,LSU,"Salt Lake City, UT",2000,2000319
+320,1,Duke,"Charlotte, NC",1999,1999320
+321,1,Michigan State,"Milwaukee, WI",1999,1999321
+322,1,Auburn,"Indianapolis, IN",1999,1999322
+323,1,UConn,"Denver, CO",1999,1999323
+324,2,Miami (FL),"Boston, MA",1999,1999324
+325,2,Utah,"New Orleans, LA",1999,1999325
+326,2,Maryland,"Orlando, FL",1999,1999326
+327,2,Stanford,"Seattle, WA",1999,1999327
+328,3,Cincinnati,"Boston, MA",1999,1999328
+329,3,Kentucky,"New Orleans, LA",1999,1999329
+330,3,St. John's (NY),"Orlando, FL",1999,1999330
+331,3,UNC,"Seattle, WA",1999,1999331
+332,4,Tennessee,"Charlotte, NC",1999,1999332
+333,4,Arizona,"Milwaukee, WI",1999,1999333
+334,4,Ohio State,"Indianapolis, IN",1999,1999334
+335,4,Arkansas,"Denver, CO",1999,1999335
+336,1,UNC,"Hartford, CT",1998,1998336
+337,1,Kansas,"Oklahoma City, OK",1998,1998337
+338,1,Duke,"Lexington, KY",1998,1998338
+339,1,Arizona,"Sacramento, CA",1998,1998339
+340,2,UConn,"Washington, DC",1998,1998340
+341,2,Purdue,"Chicago, IL",1998,1998341
+342,2,Kentucky,"Atlanta, GA",1998,1998342
+343,2,Cincinnati,"Boise, ID",1998,1998343
+344,3,South Carolina,"Washington, DC",1998,1998344
+345,3,Stanford,"Chicago, IL",1998,1998345
+346,3,Michigan,"Atlanta, GA",1998,1998346
+347,3,Utah,"Boise, ID",1998,1998347
+348,4,Michigan State,"Hartford, CT",1998,1998348
+349,4,Ole Miss,"Oklahoma City, OK",1998,1998349
+350,4,New Mexico,"Lexington, KY",1998,1998350
+351,4,Maryland,"Sacramento, CA",1998,1998351
+352,1,UNC,"Winston-Salem, NC",1997,1997352
+353,1,Minnesota,"Kansas City, MO",1997,1997353
+354,1,Kansas,"Memphis, TN",1997,1997354
+355,1,Kentucky,"Salt Lake City, UT",1997,1997355
+356,2,South Carolina,"Pittsburgh, PA",1997,1997356
+357,2,UCLA,"Auburn Hills, MI",1997,1997357
+358,2,Duke,"Charlotte, NC",1997,1997358
+359,2,Utah,"Tucson, AZ",1997,1997359
+360,3,New Mexico,"Pittsburgh, PA",1997,1997360
+361,3,Cincinnati,"Auburn Hills, MI",1997,1997361
+362,3,Georgia,"Charlotte, NC",1997,1997362
+363,3,Wake Forest,"Tucson, AZ",1997,1997363
+364,4,Villanova,"Winston-Salem, NC",1997,1997364
+365,4,Clemson,"Kansas City, MO",1997,1997365
+366,4,Arizona,"Memphis, TN",1997,1997366
+367,4,St. Joseph's,"Salt Lake City, UT",1997,1997367
+368,1,UMass,"Providence, RI",1996,1996368
+369,1,Kentucky,"Dallas, TX",1996,1996369
+370,1,UConn,"Indianapolis, IN",1996,1996370
+371,1,Purdue,"Albuquerque, NM",1996,1996371
+372,2,Georgetown,"Richmond, VA",1996,1996372
+373,2,Wake Forest,"Milwaukee, WI",1996,1996373
+374,2,Cincinnati,"Orlando, FL",1996,1996374
+375,2,Kansas,"Tempe, AZ",1996,1996375
+376,3,Texas Tech,"Richmond, VA",1996,1996376
+377,3,Villanova,"Milwaukee, WI",1996,1996377
+378,3,Georgia Tech,"Orlando, FL",1996,1996378
+379,3,Arizona,"Tempe, AZ",1996,1996379
+380,4,Marquette,"Providence, RI",1996,1996380
+381,4,Utah,"Dallas, TX",1996,1996381
+382,4,UCLA,"Indianapolis, IN",1996,1996382
+383,4,Syracuse,"Albuquerque, NM",1996,1996383
+384,1,Wake Forest,"Baltimore, MD",1995,1995384
+385,1,Kansas,"Dayton, OH",1995,1995385
+386,1,Kentucky,"Memphis, TN",1995,1995386
+387,1,UCLA,"Boise, ID",1995,1995387
+388,2,UMass,"Albany, NY",1995,1995388
+389,2,Arkansas,"Austin, TX",1995,1995389
+390,2,UNC,"Tallahassee, FL",1995,1995390
+391,2,UConn,"Salt Lake City, UT",1995,1995391
+392,3,Villanova,"Albany, NY",1995,1995392
+393,3,Purdue,"Austin, TX",1995,1995393
+394,3,Michigan State,"Tallahassee, FL",1995,1995394
+395,3,Maryland,"Salt Lake City, UT",1995,1995395
+396,4,Oklahoma State,"Baltimore, MD",1995,1995396
+397,4,Virginia,"Dayton, OH",1995,1995397
+398,4,Oklahoma,"Memphis, TN",1995,1995398
+399,4,Utah,"Boise, ID",1995,1995399
+400,1,UNC,"Landover, MD",1994,1994400
+401,1,Arkansas,"Oklahoma City, OK",1994,1994401
+402,1,Purdue,"Lexington, KY",1994,1994402
+403,1,Missouri,"Ogden, UT",1994,1994403
+404,2,UConn,"Uniondale, NY",1994,1994404
+405,2,UMass,"Park City, KS",1994,1994405
+406,2,Duke,"St. Petersburg, FL",1994,1994406
+407,2,Arizona,"Sacramento, CA",1994,1994407
+408,3,Florida,"Uniondale, NY",1994,1994408
+409,3,Michigan,"Park City, KS",1994,1994409
+410,3,Kentucky,"St. Petersburg, FL",1994,1994410
+411,3,Louisville,"Sacramento, CA",1994,1994411
+412,4,Temple,"Landover, MD",1994,1994412
+413,4,Oklahoma State,"Oklahoma City, OK",1994,1994413
+414,4,Kansas,"Lexington, KY",1994,1994414
+415,4,Syracuse,"Ogden, UT",1994,1994415
+416,1,UNC,"Winston-Salem, NC",1993,1993416
+417,1,Indiana,"Indianapolis, IN",1993,1993417
+418,1,Kentucky,"Nashville, TN",1993,1993418
+419,1,Michigan,"Tucson, AZ",1993,1993419
+420,2,Cincinnati,"Syracuse, NY",1993,1993420
+421,2,Kansas,"Rosemont, IL",1993,1993421
+422,2,Seton Hall,"Orlando, FL",1993,1993422
+423,2,Arizona,"Salt Lake City, UT",1993,1993423
+424,3,UMass,"Syracuse, NY",1993,1993424
+425,3,Duke,"Rosemont, IL",1993,1993425
+426,3,Florida State,"Orlando, FL",1993,1993426
+427,3,Vanderbilt,"Salt Lake City, UT",1993,1993427
+428,4,Arkansas,"Winston-Salem, NC",1993,1993428
+429,4,Louisville,"Indianapolis, IN",1993,1993429
+430,4,Iowa,"Nashville, TN",1993,1993430
+431,4,Georgia Tech,"Tucson, AZ",1993,1993431
+432,1,Duke,"Greensboro, NC",1992,1992432
+433,1,Kansas,"Dayton, OH",1992,1992433
+434,1,Ohio State,"Cincinnati, OH",1992,1992434
+435,1,UCLA,"Tempe, AZ",1992,1992435
+436,2,Kentucky,"Worcester, MA",1992,1992436
+437,2,USC,"Milwaukee, WI",1992,1992437
+438,2,Oklahoma State,"Atlanta, GA",1992,1992438
+439,2,Indiana,"Boise, ID",1992,1992439
+440,3,UMass,"Worcester, MA",1992,1992440
+441,3,Arkansas,"Milwaukee, WI",1992,1992441
+442,3,Arizona,"Atlanta, GA",1992,1992442
+443,3,Florida State,"Boise, ID",1992,1992443
+444,4,Seton Hall,"Greensboro, NC",1992,1992444
+445,4,Cincinnati,"Dayton, OH",1992,1992445
+446,4,UNC,"Cincinnati, OH",1992,1992446
+447,4,Oklahoma,"Tempe, AZ",1992,1992447
+448,1,UNC,"Syracuse, NY",1991,1991448
+449,1,Ohio State,"Dayton, OH",1991,1991449
+450,1,Arkansas,"Atlanta, GA",1991,1991450
+451,1,UNLV,"Tucson, AZ",1991,1991451
+452,2,Syracuse,"College Park, MD",1991,1991452
+453,2,Duke,"Minneapolis, MN",1991,1991453
+454,2,Indiana,"Louisville, KY",1991,1991454
+455,2,Arizona,"Salt Lake City, UT",1991,1991455
+456,3,Oklahoma State,"College Park, MD",1991,1991456
+457,3,Nebraska,"Minneapolis, MN",1991,1991457
+458,3,Kansas,"Louisville, KY",1991,1991458
+459,3,Seton Hall,"Salt Lake City, UT",1991,1991459
+460,4,UCLA,"Syracuse, NY",1991,1991460
+461,4,St. John's (NY),"Dayton, OH",1991,1991461
+462,4,Alabama,"Atlanta, GA",1991,1991462
+463,4,Utah,"Tucson, AZ",1991,1991463
+464,1,UConn,"Hartford, CT",1990,1990464
+465,1,Oklahoma,"Austin, TX",1990,1990465
+466,1,Michigan State,"Knoxville, TN",1990,1990466
+467,1,UNLV,"Salt Lake City, UT",1990,1990467
+468,2,Kansas,"Atlanta, GA",1990,1990468
+469,2,Purdue,"Indianapolis, IN",1990,1990469
+470,2,Syracuse,"Richmond, VA",1990,1990470
+471,2,Arizona,"Long Beach, CA",1990,1990471
+472,3,Duke,"Atlanta, GA",1990,1990472
+473,3,Georgetown,"Indianapolis, IN",1990,1990473
+474,3,Missouri,"Richmond, VA",1990,1990474
+475,3,Michigan,"Long Beach, CA",1990,1990475
+476,4,La Salle,"Hartford, CT",1990,1990476
+477,4,Arkansas,"Austin, TX",1990,1990477
+478,4,Georgia Tech,"Knoxville, TN",1990,1990478
+479,4,Louisville,"Salt Lake City, UT",1990,1990479
+480,1,Georgetown,"Providence, RI",1989,1989480
+481,1,Illinois,"Indianapolis, IN",1989,1989481
+482,1,Oklahoma,"Nashville, TN",1989,1989482
+483,1,Arizona,"Boise, ID",1989,1989483
+484,2,Duke,"Greensboro, NC",1989,1989484
+485,2,Syracuse,"Dallas, TX",1989,1989485
+486,2,UNC,"Atlanta, GA",1989,1989486
+487,2,Indiana,"Tucson, AZ",1989,1989487
+488,3,Stanford,"Greensboro, NC",1989,1989488
+489,3,Missouri,"Dallas, TX",1989,1989489
+490,3,Michigan,"Atlanta, GA",1989,1989490
+491,3,Seton Hall,"Tucson, AZ",1989,1989491
+492,4,Iowa,"Providence, RI",1989,1989492
+493,4,Louisville,"Indianapolis, IN",1989,1989493
+494,4,Florida State,"Nashville, TN",1989,1989494
+495,4,UNLV,"Boise, ID",1989,1989495
+496,1,Temple,"Hartford, CT",1988,1988496
+497,1,Purdue,"South Bend, IN",1988,1988497
+498,1,Oklahoma,"Atlanta, GA",1988,1988498
+499,1,Arizona,"Los Angeles, CA",1988,1988499
+500,2,Duke,"Chapel Hill, NC",1988,1988500
+501,2,Pitt,"Lincoln, NE",1988,1988501
+502,2,Kentucky,"Cincinnati, OH",1988,1988502
+503,2,UNC,"Salt Lake City, UT",1988,1988503
+504,3,Syracuse,"Chapel Hill, NC",1988,1988504
+505,3,NC State,"Lincoln, NE",1988,1988505
+506,3,Illinois,"Cincinnati, OH",1988,1988506
+507,3,Michigan,"Salt Lake City, UT",1988,1988507
+508,4,Indiana,"Hartford, CT",1988,1988508
+509,4,Kansas State,"South Bend, IN",1988,1988509
+510,4,BYU,"Atlanta, GA",1988,1988510
+511,4,UNLV,"Los Angeles, CA",1988,1988511
+512,1,UNC,"Charlotte, NC",1987,1987512
+513,1,Indiana,"Indianapolis, IN",1987,1987513
+514,1,Georgetown,"Atlanta, GA",1987,1987514
+515,1,UNLV,"Salt Lake City, UT",1987,1987515
+516,2,Syracuse,"Syracuse, NY",1987,1987516
+517,2,Temple,"Rosemont, IL",1987,1987517
+518,2,Alabama,"Birmingham, AL",1987,1987518
+519,2,Iowa,"Tucson, AZ",1987,1987519
+520,3,Purdue,"Syracuse, NY",1987,1987520
+521,3,DePaul,"Rosemont, IL",1987,1987521
+522,3,Illinois,"Birmingham, AL",1987,1987522
+523,3,Pitt,"Tucson, AZ",1987,1987523
+524,4,TCU,"Charlotte, NC",1987,1987524
+525,4,Missouri,"Indianapolis, IN",1987,1987525
+526,4,Clemson,"Atlanta, GA",1987,1987526
+527,4,UCLA,"Salt Lake City, UT",1987,1987527
+528,1,Duke,"Greensboro, NC",1986,1986528
+529,1,Kansas,"Dayton, OH",1986,1986529
+530,1,Kentucky,"Charlotte, NC",1986,1986530
+531,1,St. John's (NY),"Long Beach, CA",1986,1986531
+532,2,Syracuse,"Syracuse, NY",1986,1986532
+533,2,Michigan,"Minneapolis, MN",1986,1986533
+534,2,Georgia Tech,"Baton Rouge, LA",1986,1986534
+535,2,Louisville,"Ogden, UT",1986,1986535
+536,3,Indiana,"Syracuse, NY",1986,1986536
+537,3,Notre Dame,"Minneapolis, MN",1986,1986537
+538,3,Memphis,"Baton Rouge, LA",1986,1986538
+539,3,UNC,"Ogden, UT",1986,1986539
+540,4,Oklahoma,"Greensboro, NC",1986,1986540
+541,4,Georgetown,"Dayton, OH",1986,1986541
+542,4,Illinois,"Charlotte, NC",1986,1986542
+543,4,UNLV,"Long Beach, CA",1986,1986543
+544,1,Georgetown,"Hartford, CT",1985,1985544
+545,1,Oklahoma,"Tulsa, OK",1985,1985545
+546,1,Michigan,"Dayton, OH",1985,1985546
+547,1,St. John's (NY),"Salt Lake City, UT",1985,1985547
+548,2,Georgia Tech,"Atlanta, GA",1985,1985548
+549,2,Memphis,"Houston, TX",1985,1985549
+550,2,UNC,"South Bend, IN",1985,1985550
+551,2,VCU,"Albuquerque, NM",1985,1985551
+552,3,Illinois,"Atlanta, GA",1985,1985552
+553,3,Duke,"Houston, TX",1985,1985553
+554,3,Kansas,"South Bend, IN",1985,1985554
+555,3,NC State,"Albuquerque, NM",1985,1985555
+556,4,Loyola (IL),"Hartford, CT",1985,1985556
+557,4,Ohio State,"Tulsa, OK",1985,1985557
+558,4,LSU,"Dayton, OH",1985,1985558
+559,4,UNLV,"Salt Lake City, UT",1985,1985559
+560,,,"Columbia, SC",,20190
+561,,,"Salt Lake City, UT",,20191
+562,,,"Columbus, OH",,20192
+563,,,"Columbia, SC",,20193
+564,,,"Des Moines, IA",,20194
+565,,,"Des Moines, IA",,20195
+566,,,"Jacksonville, FL",,20196
+567,,,"Columbus, OH",,20197
+568,,,"Jacksonville, FL",,20198
+569,,,"Tulsa, OK",,20199
+570,,,"Tulsa, OK",,201910
+571,,,"Hartford, CT",,201911
+572,,,"San Jose, CA",,201912
+573,,,"Hartford, CT",,201913
+574,,,"Salt Lake City, UT",,201914
+575,,,"San Jose, CA",,201915
+576,,,"Pittsburgh, PA",,201816
+577,,,"Wichita, KS",,201817
+578,,,"Nashville, TN",,201818
+579,,,"Charlotte, NC",,201819
+580,,,"Detroit, MI",,201820
+581,,,"Pittsburgh, PA",,201821
+582,,,"Charlotte, NC",,201822
+583,,,"Nashville, TN",,201823
+584,,,"Dallas, TX",,201824
+585,,,"Detroit, MI",,201825
+586,,,"Wichita, KS",,201826
+587,,,"Dallas, TX",,201827
+588,,,"San Diego, CA",,201828
+589,,,"San Diego, CA",,201829
+590,,,"Boise, ID",,201830
+591,,,"Boise, ID",,201831
+592,,,"Buffalo, NY",,201732
+593,,,"Tulsa, OK",,201733
+594,,,"Greenville, SC",,201734
+595,,,"Salt Lake City, UT",,201735
+596,,,"Greenville, SC",,201736
+597,,,"Indianapolis, IN",,201737
+598,,,"Indianapolis, IN",,201738
+599,,,"Salt Lake City, UT",,201739
+600,,,"Tulsa, OK",,201740
+601,,,"Sacramento, CA",,201741
+602,,,"Sacramento, CA",,201742
+603,,,"Orlando, FL",,201743
+604,,,"Orlando, FL",,201744
+605,,,"Milwaukee, WI",,201745
+606,,,"Milwaukee, WI",,201746
+607,,,"Buffalo, NY",,201747
+608,,,"Raleigh, NC",,201648
+609,,,"Des Moines, IA",,201649
+610,,,"Spokane, WA",,201650
+611,,,"Raleigh, NC",,201651
+612,,,"St. Louis, MO",,201652
+613,,,"Brooklyn, NY",,201653
+614,,,"Oklahoma City, OK",,201654
+615,,,"St. Louis, MO",,201655
+616,,,"Brooklyn, NY",,201656
+617,,,"Providence, RI",,201657
+618,,,"Oklahoma City, OK",,201658
+619,,,"Denver, CO",,201659
+620,,,"Des Moines, IA",,201660
+621,,,"Spokane, WA",,201661
+622,,,"Providence, RI",,201662
+623,,,"Denver, CO",,201663
+624,,,"Pittsburgh, PA",,201564
+625,,,"Louisville, KY",,201565
+626,,,"Charlotte, NC",,201566
+627,,,"Omaha, NE",,201567
+628,,,"Charlotte, NC",,201568
+629,,,"Omaha, NE",,201569
+630,,,"Seattle, WA",,201570
+631,,,"Portland, OR",,201571
+632,,,"Columbus, OH",,201572
+633,,,"Pittsburgh, PA",,201573
+634,,,"Louisville, KY",,201574
+635,,,"Jacksonville, FL",,201575
+636,,,"Seattle, WA",,201576
+637,,,"Columbus, OH",,201577
+638,,,"Portland, OR",,201578
+639,,,"Jacksonville, FL",,201579
+640,,,"St. Louis, MO",,201480
+641,,,"Orlando, FL",,201481
+642,,,"Raleigh, NC",,201482
+643,,,"San Diego, CA",,201483
+644,,,"Milwaukee, WI",,201484
+645,,,"St. Louis, MO",,201485
+646,,,"Buffalo, NY",,201486
+647,,,"Milwaukee, WI",,201487
+648,,,"Raleigh, NC",,201488
+649,,,"Buffalo, NY",,201489
+650,,,"San Antonio, TX",,201490
+651,,,"San Antonio, TX",,201491
+652,,,"Orlando, FL",,201492
+653,,,"San Diego, CA",,201493
+654,,,"Spokane, WA",,201494
+655,,,"Spokane, WA",,201495
+656,,,"Dayton, OH",,201396
+657,,,"Lexington, KY",,201397
+658,,,"Salt Lake City, UT",,201398
+659,,,"Kansas City, MO",,201399
+660,,,"Austin, TX",,2013100
+661,,,"Philadelphia, PA",,2013101
+662,,,"Dayton, OH",,2013102
+663,,,"Philadelphia, PA",,2013103
+664,,,"Lexington, KY",,2013104
+665,,,"Auburn Hills, MI",,2013105
+666,,,"Salt Lake City, UT",,2013106
+667,,,"Austin, TX",,2013107
+668,,,"San Jose, CA",,2013108
+669,,,"San Jose, CA",,2013109
+670,,,"Kansas City, MO",,2013110
+671,,,"Auburn Hills, MI",,2013111
+672,,,"Greensboro, NC",,2012112
+673,,,"Louisville, KY",,2012113
+674,,,"Columbus, OH",,2012114
+675,,,"Pittsburgh, PA",,2012115
+676,,,"Omaha, NE",,2012116
+677,,,"Greensboro, NC",,2012117
+678,,,"Omaha, NE",,2012118
+679,,,"Pittsburgh, PA",,2012119
+680,,,"Columbus, OH",,2012120
+681,,,"Albuquerque, NM",,2012121
+682,,,"Louisville, KY",,2012122
+683,,,"Nashville, TN",,2012123
+684,,,"Nashville, TN",,2012124
+685,,,"Portland, OR",,2012125
+686,,,"Portland, OR",,2012126
+687,,,"Albuquerque, NM",,2012127
+688,,,"Cleveland, OH",,2011128
+689,,,"Washington, DC",,2011129
+690,,,"Tulsa, OK",,2011130
+691,,,"Charlotte, NC",,2011131
+692,,,"Charlotte, NC",,2011132
+693,,,"Tampa, FL",,2011133
+694,,,"Chicago, IL",,2011134
+695,,,"Tucson, AZ",,2011135
+696,,,"Cleveland, OH",,2011136
+697,,,"Denver, CO",,2011137
+698,,,"Chicago, IL",,2011138
+699,,,"Washington, DC",,2011139
+700,,,"Tampa, FL",,2011140
+701,,,"Tucson, AZ",,2011141
+702,,,"Denver, CO",,2011142
+703,,,"Tulsa, OK",,2011143
+704,,,"Jacksonville, FL",,2010144
+705,,,"New Orleans, LA",,2010145
+706,,,"Oklahoma City, OK",,2010146
+707,,,"Buffalo, NY",,2010147
+708,,,"Providence, RI",,2010148
+709,,,"Buffalo, NY",,2010149
+710,,,"Milwaukee, WI",,2010150
+711,,,"Oklahoma City, OK",,2010151
+712,,,"New Orleans, LA",,2010152
+713,,,"San Jose, CA",,2010153
+714,,,"Providence, RI",,2010154
+715,,,"Milwaukee, WI",,2010155
+716,,,"Spokane, WA",,2010156
+717,,,"Jacksonville, FL",,2010157
+718,,,"Spokane, WA",,2010158
+719,,,"San Jose, CA",,2010159
+720,,,"Buffalo, NY",,2009160
+721,,,"Dayton, OH",,2009161
+722,,,"Greensboro, NC",,2009162
+723,,,"Philadelphia, PA",,2009163
+724,,,"Oklahoma City, OK",,2009164
+725,,,"Greensboro, NC",,2009165
+726,,,"Kansas City, MO",,2009166
+727,,,"Kansas City, MO",,2009167
+728,,,"Milwaukee, WI",,2009168
+729,,,"Philadelphia, PA",,2009169
+730,,,"Miami, FL",,2009170
+731,,,"Boise, ID",,2009171
+732,,,"San Jose, CA",,2009172
+733,,,"Boise, ID",,2009173
+734,,,"Portland, OR",,2009174
+735,,,"Portland, OR",,2009175
+736,,,"Raleigh, NC",,2008176
+737,,,"Omaha, NE",,2008177
+738,,,"North Little Rock, AR",,2008178
+739,,,"Anaheim, CA",,2008179
+740,,,"Birmingham, AL",,2008180
+741,,,"Raleigh, NC",,2008181
+742,,,"North Little Rock, AR",,2008182
+743,,,"Washington, DC",,2008183
+744,,,"Birmingham, AL",,2008184
+745,,,"Omaha, NE",,2008185
+746,,,"Anaheim, CA",,2008186
+747,,,"Washington, DC",,2008187
+748,,,"Denver, CO",,2008188
+749,,,"Tampa, FL",,2008189
+750,,,"Denver, CO",,2008190
+751,,,"Tampa, FL",,2008191
+752,,,"Chicago, IL",,2007192
+753,,,"Winston-Salem, NC",,2007193
+754,,,"New Orleans, LA",,2007194
+755,,,"New Orleans, LA",,2007195
+756,,,"Sacramento, CA",,2007196
+757,,,"Winston-Salem, NC",,2007197
+758,,,"Chicago, IL",,2007198
+759,,,"Chicago, IL",,2007199
+760,,,"Buffalo, NY",,2007200
+761,,,"Sacramento, CA",,2007201
+762,,,"Spokane, WA",,2007202
+763,,,"Spokane, WA",,2007203
+764,,,"Columbus, OH",,2007204
+765,,,"Spokane, WA",,2007205
+766,,,"Buffalo, NY",,2007206
+767,,,"Buffalo, NY",,2007207
+768,,,"Philadelphia, PA",,2006208
+769,,,"Greensboro, NC",,2006209
+770,,,"Dallas, TX",,2006210
+771,,,"Philadelphia, PA",,2006211
+772,,,"Dayton, OH",,2006212
+773,,,"Dallas, TX",,2006213
+774,,,"San Diego, CA",,2006214
+775,,,"Greensboro, NC",,2006215
+776,,,"Jacksonville, FL",,2006216
+777,,,"Auburn Hills, MI",,2006217
+778,,,"Salt Lake City, UT",,2006218
+779,,,"Dayton, OH",,2006219
+780,,,"Salt Lake City, UT",,2006220
+781,,,"Jacksonville, FL",,2006221
+782,,,"Auburn Hills, MI",,2006222
+783,,,"San Diego, CA",,2006223
+784,,,"Charlotte, NC",,2005224
+785,,,"Boise, ID",,2005225
+786,,,"Charlotte, NC",,2005226
+787,,,"Indianapolis, IN",,2005227
+788,,,"Worcester, MA",,2005228
+789,,,"Cleveland, OH",,2005229
+790,,,"Indianapolis, IN",,2005230
+791,,,"Oklahoma City, OK",,2005231
+792,,,"Oklahoma City, OK",,2005232
+793,,,"Tucson, AZ",,2005233
+794,,,"Tucson, AZ",,2005234
+795,,,"Boise, ID",,2005235
+796,,,"Nashville, TN",,2005236
+797,,,"Nashville, TN",,2005237
+798,,,"Worcester, MA",,2005238
+799,,,"Cleveland, OH",,2005239
+800,,,"Columbus, OH",,2004240
+801,,,"Raleigh, NC",,2004241
+802,,,"Buffalo, NY",,2004242
+803,,,"Seattle, WA",,2004243
+804,,,"Seattle, WA",,2004244
+805,,,"Orlando, FL",,2004245
+806,,,"Kansas City, MO",,2004246
+807,,,"Buffalo, NY",,2004247
+808,,,"Milwaukee, WI",,2004248
+809,,,"Denver, CO",,2004249
+810,,,"Milwaukee, WI",,2004250
+811,,,"Orlando, FL",,2004251
+812,,,"Kansas City, MO",,2004252
+813,,,"Columbus, OH",,2004253
+814,,,"Raleigh, NC",,2004254
+815,,,"Denver, CO",,2004255
+816,,,"Birmingham, AL",,2003256
+817,,,"Oklahoma City, OK",,2003257
+818,,,"Nashville, TN",,2003258
+819,,,"Salt Lake City, UT",,2003259
+820,,,"Tampa, FL",,2003260
+821,,,"Tampa, FL",,2003261
+822,,,"Boston, MA",,2003262
+823,,,"Oklahoma City, OK",,2003263
+824,,,"Nashville, TN",,2003264
+825,,,"Boston, MA",,2003265
+826,,,"Indianapolis, IN",,2003266
+827,,,"Salt Lake City, UT",,2003267
+828,,,"Spokane, WA",,2003268
+829,,,"Birmingham, AL",,2003269
+830,,,"Spokane, WA",,2003270
+831,,,"Indianapolis, IN",,2003271
+832,,,"Washington, DC",,2002272
+833,,,"St. Louis, MO",,2002273
+834,,,"Greenville, SC",,2002274
+835,,,"Pittsburgh, PA",,2002275
+836,,,"Washington, DC",,2002276
+837,,,"Sacramento, CA",,2002277
+838,,,"Greenville, SC",,2002278
+839,,,"Dallas, TX",,2002279
+840,,,"Chicago, IL",,2002280
+841,,,"Dallas, TX",,2002281
+842,,,"Pittsburgh, PA",,2002282
+843,,,"Albuquerque, NM",,2002283
+844,,,"St. Louis, MO",,2002284
+845,,,"Chicago, IL",,2002285
+846,,,"Sacramento, CA",,2002286
+847,,,"Albuquerque, NM",,2002287
+848,,,"Dayton, OH",,2001288
+849,,,"Greensboro, NC",,2001289
+850,,,"Memphis, TN",,2001290
+851,,,"San Diego, CA",,2001291
+852,,,"Kansas City, MO",,2001292
+853,,,"Uniondale, NY",,2001293
+854,,,"New Orleans, LA",,2001294
+855,,,"Boise, ID",,2001295
+856,,,"Kansas City, MO",,2001296
+857,,,"Uniondale, NY",,2001297
+858,,,"New Orleans, LA",,2001298
+859,,,"Boise, ID",,2001299
+860,,,"Dayton, OH",,2001300
+861,,,"Greensboro, NC",,2001301
+862,,,"Memphis, TN",,2001302
+863,,,"San Diego, CA",,2001303
+864,,,"Winston-Salem, NC",,2000304
+865,,,"Cleveland, OH",,2000305
+866,,,"Birmingham, AL",,2000306
+867,,,"Tucson, AZ",,2000307
+868,,,"Buffalo, NY",,2000308
+869,,,"Minneapolis, MN",,2000309
+870,,,"Nashville, TN",,2000310
+871,,,"Tucson, AZ",,2000311
+872,,,"Buffalo, NY",,2000312
+873,,,"Minneapolis, MN",,2000313
+874,,,"Nashville, TN",,2000314
+875,,,"Tucson, AZ",,2000315
+876,,,"Winston-Salem, NC",,2000316
+877,,,"Cleveland, OH",,2000317
+878,,,"Birmingham, AL",,2000318
+879,,,"Salt Lake City, UT",,2000319
+880,,,"Charlotte, NC",,1999320
+881,,,"Milwaukee, WI",,1999321
+882,,,"Indianapolis, IN",,1999322
+883,,,"Denver, CO",,1999323
+884,,,"Boston, MA",,1999324
+885,,,"New Orleans, LA",,1999325
+886,,,"Orlando, FL",,1999326
+887,,,"Seattle, WA",,1999327
+888,,,"Boston, MA",,1999328
+889,,,"New Orleans, LA",,1999329
+890,,,"Orlando, FL",,1999330
+891,,,"Seattle, WA",,1999331
+892,,,"Charlotte, NC",,1999332
+893,,,"Milwaukee, WI",,1999333
+894,,,"Indianapolis, IN",,1999334
+895,,,"Denver, CO",,1999335
+896,,,"Hartford, CT",,1998336
+897,,,"Oklahoma City, OK",,1998337
+898,,,"Lexington, KY",,1998338
+899,,,"Sacramento, CA",,1998339
+900,,,"Washington, DC",,1998340
+901,,,"Chicago, IL",,1998341
+902,,,"Atlanta, GA",,1998342
+903,,,"Boise, ID",,1998343
+904,,,"Washington, DC",,1998344
+905,,,"Chicago, IL",,1998345
+906,,,"Atlanta, GA",,1998346
+907,,,"Boise, ID",,1998347
+908,,,"Hartford, CT",,1998348
+909,,,"Oklahoma City, OK",,1998349
+910,,,"Lexington, KY",,1998350
+911,,,"Sacramento, CA",,1998351
+912,,,"Winston-Salem, NC",,1997352
+913,,,"Kansas City, MO",,1997353
+914,,,"Memphis, TN",,1997354
+915,,,"Salt Lake City, UT",,1997355
+916,,,"Pittsburgh, PA",,1997356
+917,,,"Auburn Hills, MI",,1997357
+918,,,"Charlotte, NC",,1997358
+919,,,"Tucson, AZ",,1997359
+920,,,"Pittsburgh, PA",,1997360
+921,,,"Auburn Hills, MI",,1997361
+922,,,"Charlotte, NC",,1997362
+923,,,"Tucson, AZ",,1997363
+924,,,"Winston-Salem, NC",,1997364
+925,,,"Kansas City, MO",,1997365
+926,,,"Memphis, TN",,1997366
+927,,,"Salt Lake City, UT",,1997367
+928,,,"Providence, RI",,1996368
+929,,,"Dallas, TX",,1996369
+930,,,"Indianapolis, IN",,1996370
+931,,,"Albuquerque, NM",,1996371
+932,,,"Richmond, VA",,1996372
+933,,,"Milwaukee, WI",,1996373
+934,,,"Orlando, FL",,1996374
+935,,,"Tempe, AZ",,1996375
+936,,,"Richmond, VA",,1996376
+937,,,"Milwaukee, WI",,1996377
+938,,,"Orlando, FL",,1996378
+939,,,"Tempe, AZ",,1996379
+940,,,"Providence, RI",,1996380
+941,,,"Dallas, TX",,1996381
+942,,,"Indianapolis, IN",,1996382
+943,,,"Albuquerque, NM",,1996383
+944,,,"Baltimore, MD",,1995384
+945,,,"Dayton, OH",,1995385
+946,,,"Memphis, TN",,1995386
+947,,,"Boise, ID",,1995387
+948,,,"Albany, NY",,1995388
+949,,,"Austin, TX",,1995389
+950,,,"Tallahassee, FL",,1995390
+951,,,"Salt Lake City, UT",,1995391
+952,,,"Albany, NY",,1995392
+953,,,"Austin, TX",,1995393
+954,,,"Tallahassee, FL",,1995394
+955,,,"Salt Lake City, UT",,1995395
+956,,,"Baltimore, MD",,1995396
+957,,,"Dayton, OH",,1995397
+958,,,"Memphis, TN",,1995398
+959,,,"Boise, ID",,1995399
+960,,,"Landover, MD",,1994400
+961,,,"Oklahoma City, OK",,1994401
+962,,,"Lexington, KY",,1994402
+963,,,"Ogden, UT",,1994403
+964,,,"Uniondale, NY",,1994404
+965,,,"Park City, KS",,1994405
+966,,,"St. Petersburg, FL",,1994406
+967,,,"Sacramento, CA",,1994407
+968,,,"Uniondale, NY",,1994408
+969,,,"Park City, KS",,1994409
+970,,,"St. Petersburg, FL",,1994410
+971,,,"Sacramento, CA",,1994411
+972,,,"Landover, MD",,1994412
+973,,,"Oklahoma City, OK",,1994413
+974,,,"Lexington, KY",,1994414
+975,,,"Ogden, UT",,1994415
+976,,,"Winston-Salem, NC",,1993416
+977,,,"Indianapolis, IN",,1993417
+978,,,"Nashville, TN",,1993418
+979,,,"Tucson, AZ",,1993419
+980,,,"Syracuse, NY",,1993420
+981,,,"Rosemont, IL",,1993421
+982,,,"Orlando, FL",,1993422
+983,,,"Salt Lake City, UT",,1993423
+984,,,"Syracuse, NY",,1993424
+985,,,"Rosemont, IL",,1993425
+986,,,"Orlando, FL",,1993426
+987,,,"Salt Lake City, UT",,1993427
+988,,,"Winston-Salem, NC",,1993428
+989,,,"Indianapolis, IN",,1993429
+990,,,"Nashville, TN",,1993430
+991,,,"Tucson, AZ",,1993431
+992,,,"Greensboro, NC",,1992432
+993,,,"Dayton, OH",,1992433
+994,,,"Cincinnati, OH",,1992434
+995,,,"Tempe, AZ",,1992435
+996,,,"Worcester, MA",,1992436
+997,,,"Milwaukee, WI",,1992437
+998,,,"Atlanta, GA",,1992438
+999,,,"Boise, ID",,1992439
+1000,,,"Worcester, MA",,1992440
+1001,,,"Milwaukee, WI",,1992441
+1002,,,"Atlanta, GA",,1992442
+1003,,,"Boise, ID",,1992443
+1004,,,"Greensboro, NC",,1992444
+1005,,,"Dayton, OH",,1992445
+1006,,,"Cincinnati, OH",,1992446
+1007,,,"Tempe, AZ",,1992447
+1008,,,"Syracuse, NY",,1991448
+1009,,,"Dayton, OH",,1991449
+1010,,,"Atlanta, GA",,1991450
+1011,,,"Tucson, AZ",,1991451
+1012,,,"College Park, MD",,1991452
+1013,,,"Minneapolis, MN",,1991453
+1014,,,"Louisville, KY",,1991454
+1015,,,"Salt Lake City, UT",,1991455
+1016,,,"College Park, MD",,1991456
+1017,,,"Minneapolis, MN",,1991457
+1018,,,"Louisville, KY",,1991458
+1019,,,"Salt Lake City, UT",,1991459
+1020,,,"Syracuse, NY",,1991460
+1021,,,"Dayton, OH",,1991461
+1022,,,"Atlanta, GA",,1991462
+1023,,,"Tucson, AZ",,1991463
+1024,,,"Hartford, CT",,1990464
+1025,,,"Austin, TX",,1990465
+1026,,,"Knoxville, TN",,1990466
+1027,,,"Salt Lake City, UT",,1990467
+1028,,,"Atlanta, GA",,1990468
+1029,,,"Indianapolis, IN",,1990469
+1030,,,"Richmond, VA",,1990470
+1031,,,"Long Beach, CA",,1990471
+1032,,,"Atlanta, GA",,1990472
+1033,,,"Indianapolis, IN",,1990473
+1034,,,"Richmond, VA",,1990474
+1035,,,"Long Beach, CA",,1990475
+1036,,,"Hartford, CT",,1990476
+1037,,,"Austin, TX",,1990477
+1038,,,"Knoxville, TN",,1990478
+1039,,,"Salt Lake City, UT",,1990479
+1040,,,"Providence, RI",,1989480
+1041,,,"Indianapolis, IN",,1989481
+1042,,,"Nashville, TN",,1989482
+1043,,,"Boise, ID",,1989483
+1044,,,"Greensboro, NC",,1989484
+1045,,,"Dallas, TX",,1989485
+1046,,,"Atlanta, GA",,1989486
+1047,,,"Tucson, AZ",,1989487
+1048,,,"Greensboro, NC",,1989488
+1049,,,"Dallas, TX",,1989489
+1050,,,"Atlanta, GA",,1989490
+1051,,,"Tucson, AZ",,1989491
+1052,,,"Providence, RI",,1989492
+1053,,,"Indianapolis, IN",,1989493
+1054,,,"Nashville, TN",,1989494
+1055,,,"Boise, ID",,1989495
+1056,,,"Hartford, CT",,1988496
+1057,,,"South Bend, IN",,1988497
+1058,,,"Atlanta, GA",,1988498
+1059,,,"Los Angeles, CA",,1988499
+1060,,,"Chapel Hill, NC",,1988500
+1061,,,"Lincoln, NE",,1988501
+1062,,,"Cincinnati, OH",,1988502
+1063,,,"Salt Lake City, UT",,1988503
+1064,,,"Chapel Hill, NC",,1988504
+1065,,,"Lincoln, NE",,1988505
+1066,,,"Cincinnati, OH",,1988506
+1067,,,"Salt Lake City, UT",,1988507
+1068,,,"Hartford, CT",,1988508
+1069,,,"South Bend, IN",,1988509
+1070,,,"Atlanta, GA",,1988510
+1071,,,"Los Angeles, CA",,1988511
+1072,,,"Charlotte, NC",,1987512
+1073,,,"Indianapolis, IN",,1987513
+1074,,,"Atlanta, GA",,1987514
+1075,,,"Salt Lake City, UT",,1987515
+1076,,,"Syracuse, NY",,1987516
+1077,,,"Rosemont, IL",,1987517
+1078,,,"Birmingham, AL",,1987518
+1079,,,"Tucson, AZ",,1987519
+1080,,,"Syracuse, NY",,1987520
+1081,,,"Rosemont, IL",,1987521
+1082,,,"Birmingham, AL",,1987522
+1083,,,"Tucson, AZ",,1987523
+1084,,,"Charlotte, NC",,1987524
+1085,,,"Indianapolis, IN",,1987525
+1086,,,"Atlanta, GA",,1987526
+1087,,,"Salt Lake City, UT",,1987527
+1088,,,"Greensboro, NC",,1986528
+1089,,,"Dayton, OH",,1986529
+1090,,,"Charlotte, NC",,1986530
+1091,,,"Long Beach, CA",,1986531
+1092,,,"Syracuse, NY",,1986532
+1093,,,"Minneapolis, MN",,1986533
+1094,,,"Baton Rouge, LA",,1986534
+1095,,,"Ogden, UT",,1986535
+1096,,,"Syracuse, NY",,1986536
+1097,,,"Minneapolis, MN",,1986537
+1098,,,"Baton Rouge, LA",,1986538
+1099,,,"Ogden, UT",,1986539
+1100,,,"Greensboro, NC",,1986540
+1101,,,"Dayton, OH",,1986541
+1102,,,"Charlotte, NC",,1986542
+1103,,,"Long Beach, CA",,1986543
+1104,,,"Hartford, CT",,1985544
+1105,,,"Tulsa, OK",,1985545
+1106,,,"Dayton, OH",,1985546
+1107,,,"Salt Lake City, UT",,1985547
+1108,,,"Atlanta, GA",,1985548
+1109,,,"Houston, TX",,1985549
+1110,,,"South Bend, IN",,1985550
+1111,,,"Albuquerque, NM",,1985551
+1112,,,"Atlanta, GA",,1985552
+1113,,,"Houston, TX",,1985553
+1114,,,"South Bend, IN",,1985554
+1115,,,"Albuquerque, NM",,1985555
+1116,,,"Hartford, CT",,1985556
+1117,,,"Tulsa, OK",,1985557
+1118,,,"Dayton, OH",,1985558
+1119,,,"Salt Lake City, UT",,1985559
