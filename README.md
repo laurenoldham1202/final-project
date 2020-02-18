@@ -1,4 +1,4 @@
-# March Madness Top 4 Seeds and First Round Site Preference (1985-2010)
+# March Madness Top 4 Seeds and First Round Site Preference (1985-2020)
 
 
 Every year in March, the top 68 Division 1 men's college basketball programs are selected to compete for the NCAA's 
@@ -11,6 +11,22 @@ NCAA's selection process, top seeded teams are to have geographic preference ove
 rounds of the tournament (if possible - other factors are considered). **I want to analyze the first/second round sites 
 for each of the top 4 seeded teams (four teams in each seed for 16 total top teams each year) from 1985 to 2020 to 
 establish patterns, potential biases, and test the NCAA's claim of geographic preference.**
+
+
+## Roadmap
+
+* Should probably limit data to modern March Madness seeding rules, beginning in 1985
+* Use scrollymapping to show analysis highlights?
+* Initial view: every school with a history of 1-4 seeds
+* Popup/label with metadata, e.g. closest site, farthest site, average distance traveled as each seed, average distance 
+traveled overall, etc.
+* Mouseover or click on a school shows lines to each site (perhaps an animation flying to each site in great circle arc?)
+* Dropdown or button toggle for each year, cards to show highlights and averages
+* Add logos?
+* Connect to overall seeding data
+* Weighted average for distance and seed, weighted average for western schools?
+* Need to consider establishing some sort of weighted average/metric to average seed and distance
+* Also need to consider East vs. West bias
 
 
 ## Data
@@ -30,13 +46,15 @@ In addition to each of the 16 teams for years 1985-2019, new rows for each site 
 matching ID) to eventually analyze the distance between each school and their first-round sites. This data was saved as 
 `data/raw/mm-85-19-cleaned.csv`.
 
-TO DO:
-1. Find all unique school values
-2. Create new master data set with full school name, city, and state
-3. Merge datasets
-4. For sites, split strings into city and state columns
-5. Potentially add final scores, W/L, region, championship site?
+This data will be used to calculate the distance between each school and its site location. 
 
+TO DO:
+1. Geocode
+2. Find all unique school values
+3. Create new master data set with full school name, city, and state
+4. Merge datasets
+5. For sites, split strings into city and state columns
+6. Potentially add final scores, W/L, region, championship site?
 
 *2020 tournament will take place in March-April 2020.
 
