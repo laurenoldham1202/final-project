@@ -1,0 +1,88 @@
+school_x,school_y,common_name,team,city,state,type,conference
+Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+Gonzaga,Gonzaga University,Gonzaga,Bulldogs,Spokane,Washington,Private/Catholic,West Coast Conference
+North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+Virginia,University of Virginia,Virginia,Cavaliers,Charlottesville,Virginia,State,Atlantic Coast Conference
+Michigan State,Michigan State University,Michigan State,Spartans,East Lansing,Michigan,State,Big Ten Conference
+Michigan,University of Michigan,Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference
+Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+Tennessee,University of Tennessee,Tennessee,Volunteers,Knoxville,Tennessee,State,Southeastern Conference
+LSU,Louisiana State University,LSU,Tigers,Baton Rouge,Louisiana,State,Southeastern Conference
+Texas Tech,Texas Tech University,Texas Tech,Red Raiders,Lubbock,Texas,State,Big 12 Conference
+Houston,University of Houston,Houston,Cougars,Houston,Texas,State,American Athletic Conference
+Purdue,Purdue University,Purdue,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference
+Virginia Tech,Virginia Tech,Virginia Tech,Hokies,Blacksburg,Virginia,State,Atlantic Coast Conference
+Florida State,Florida State University,Florida State,Seminoles,Tallahassee,Florida,State,Atlantic Coast Conference
+Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+Kansas State,Kansas State University,Kansas State,Wildcats,Manhattan,Kansas,State,Big 12 Conference
+Villanova,Villanova University,Villanova,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference
+Xavier,Xavier University,Xavier,Musketeers,Cincinnati,Ohio,Private/Catholic,Big East Conference
+Cincinnati,University of Cincinnati,Cincinnati,Bearcats,Cincinnati,Ohio,State,American Athletic Conference
+Wichita State,Wichita State University,Wichita State,Shockers,Wichita,Kansas,State,American Athletic Conference
+Auburn,Auburn University,Auburn,Tigers,Auburn,Alabama,State,Southeastern Conference
+Arizona,University of Arizona,Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference
+Louisville,University of Louisville,Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference
+Baylor,Baylor University,Baylor,Bears,Waco,Texas,Private/Baptist,Big 12 Conference
+Oregon,University of Oregon,Oregon,Ducks,Eugene,Oregon,State,Pac-12 Conference
+UCLA,"University of California, Los Angeles",UCLA,Bruins,Los Angeles,California,State,Pac-12 Conference
+Florida,University of Florida,Florida,Gators,Gainesville,Florida,State,Southeastern Conference
+Butler,Butler University,Butler,Bulldogs,Indianapolis,Indiana,Private/Non-Sectarian,Big East Conference
+West Virginia,West Virginia University,West Virginia,Mountaineers,Morgantown,West Virginia,State,Big 12 Conference
+Oklahoma,University of Oklahoma,Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference
+Miami (FL),University of Miami,Miami (FL),Hurricanes,Coral Gables,Florida,Private/Non-Sectarian,Atlantic Coast Conference
+Texas A&M,Texas A&M University,Texas A&M,Aggies,College Station,Texas,State,Southeastern Conference
+Utah,University of Utah,Utah,Utes,Salt Lake City,Utah,State,Pac-12 Conference
+California,"University of California, Berkeley",California,Golden Bears,Berkeley,California,State,Pac-12 Conference
+Iowa State,Iowa State University,Iowa State,Cyclones,Ames,Iowa,State,Big 12 Conference
+Wisconsin,University of Wisconsin–Madison,Wisconsin,Badgers,Madison,Wisconsin,State,Big Ten Conference
+Notre Dame,University of Notre Dame,Notre Dame,Fighting Irish,South Bend,Indiana,Private/Catholic,Atlantic Coast Conference
+Maryland,"University of Maryland, College Park",Maryland,Terrapins,College Park,Maryland,State,Big Ten Conference
+Georgetown,Georgetown University,Georgetown,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference
+Syracuse,Syracuse University,Syracuse,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference
+Creighton,Creighton University,Creighton,Bluejays,Omaha,Nebraska,Private/Catholic,Big East Conference
+San Diego State,San Diego State University,San Diego State,Aztecs,San Diego,California,State,Mountain West Conference
+Indiana,Indiana University,Indiana,Hoosiers,Bloomington,Indiana,State,Big Ten Conference
+Ohio State,The Ohio State University,Ohio State,Buckeyes,Columbus,Ohio,State,Big Ten Conference
+Marquette,Marquette University,Marquette,Golden Eagles,Milwaukee,Wisconsin,Private/Catholic,Big East Conference
+New Mexico,University of New Mexico,New Mexico,Lobos,Albuquerque,New Mexico,State,Mountain West Conference
+Saint Louis,Saint Louis University,Saint Louis,Billikens,St. Louis,Missouri,Private/Catholic,Atlantic 10 Conference
+Missouri,University of Missouri,Missouri,Tigers,Columbia,Missouri,State,Southeastern Conference
+Pittsburgh,University of Pittsburgh,Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference
+BYU,Brigham Young University,BYU,Cougars,Provo,Utah,Private/Latter-Day Saints,West Coast Conference
+UConn,University of Connecticut,UConn,Huskies,Storrs,Connecticut,State,American Athletic Conference
+Texas,University of Texas at Austin,Texas,Longhorns,Austin,Texas,State,Big 12 Conference
+Vanderbilt,Vanderbilt University,Vanderbilt,Commodores,Nashville,Tennessee,Private/Non-Sectarian,Southeastern Conference
+Memphis,University of Memphis,Memphis,Tigers,Memphis,Tennessee,State,American Athletic Conference
+Washington,University of Washington,Washington,Huskies,Seattle,Washington,State,Pac-12 Conference
+Stanford,Stanford University,Stanford,Cardinal,Palo Alto,California,Private/Non-Sectarian,Pac-12 Conference
+Washington State,Washington State University,Washington State,Cougars,Pullman,Washington,State,Pac-12 Conference
+Southern Illinois,Southern Illinois University Carbondale,Southern Illinois,Salukis,Carbondale,Illinois,State,Missouri Valley Conference
+Iowa,University of Iowa,Iowa,Hawkeyes,Iowa City,Iowa,State,Big Ten Conference
+Boston College,Boston College,Boston College,Eagles,Chestnut Hill,Massachusetts,Private/Catholic,Atlantic Coast Conference
+Illinois,University of Illinois at Urbana–Champaign,Illinois,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference
+Wake Forest,Wake Forest University,Wake Forest,Demon Deacons,Winston-Salem,North Carolina,Private/Non-Sectarian,Atlantic Coast Conference
+Oklahoma State,Oklahoma State University–Stillwater,Oklahoma State,Cowboys,Stillwater,Oklahoma,State,Big 12 Conference
+Saint Joseph's,Saint Joseph's University,Saint Joseph's,Hawks,Philadelphia,Pennsylvania,Private/Catholic,Atlantic 10 Conference
+Mississippi State,Mississippi State University,Mississippi State,Bulldogs,Starkville,Mississippi,State,Southeastern Conference
+Georgia Tech,Georgia Institute of Technology,Georgia Tech,Yellow Jackets,Atlanta,Georgia,State,Atlantic Coast Conference
+NC State,North Carolina State University,NC State,Wolfpack,Raleigh,North Carolina,State,Atlantic Coast Conference
+Dayton,University of Dayton,Dayton,Flyers,Dayton,Ohio,Private/Catholic,Atlantic 10 Conference
+Alabama,University of Alabama,Alabama,Crimson Tide,Tuscaloosa,Alabama,State,Southeastern Conference
+Georgia,University of Georgia,Georgia,Bulldogs,Athens,Georgia,State,Southeastern Conference
+USC,University of Southern California,USC,Trojans,Los Angeles,California,Private/Non-Sectarian,Pac-12 Conference
+Ole Miss,University of Mississippi,Ole Miss,Rebels,Oxford,Mississippi,State,Southeastern Conference
+Temple,Temple University,Temple,Owls,Philadelphia,Pennsylvania,State-related,American Athletic Conference
+St. John's,St. John's University,St. John's,Red Storm,Jamaica,New York,Private/Catholic,Big East Conference
+Arkansas,University of Arkansas,Arkansas,Razorbacks,Fayetteville,Arkansas,State,Southeastern Conference
+South Carolina,University of South Carolina,South Carolina,Gamecocks,Columbia,South Carolina,State,Southeastern Conference
+Minnesota,University of Minnesota,Minnesota,Golden Gophers,Minneapolis–Saint Paul,Minnesota,State,Big Ten Conference
+Clemson,Clemson University,Clemson,Tigers,Clemson,South Carolina,State,Atlantic Coast Conference
+UMass,University of Massachusetts Amherst,UMass,Minutemen,Amherst,Massachusetts,State,Atlantic 10 Conference
+Seton Hall,Seton Hall University,Seton Hall,Pirates,South Orange,New Jersey,Private/Catholic,Big East Conference
+UNLV,"University of Nevada, Las Vegas",UNLV,Rebels,Paradise,Nevada,State,Mountain West Conference
+Nebraska,University of Nebraska–Lincoln,Nebraska,Cornhuskers,Lincoln,Nebraska,State,Big Ten Conference
+La Salle,La Salle University,La Salle,Explorers,Philadelphia,Pennsylvania,Private/Catholic,Atlantic 10 Conference
+DePaul,DePaul University,DePaul,Blue Demons,Chicago,Illinois,Private/Catholic,Big East Conference
+TCU,Texas Christian University,TCU,Horned Frogs,Fort Worth,Texas,Private/Disciples of Christ,Big 12 Conference
+VCU,Virginia Commonwealth University,VCU,Rams,Richmond,Virginia,State,Atlantic 10 Conference
+Loyola–Chicago,Loyola University Chicago,Loyola–Chicago,Ramblers,Chicago,Illinois,Private/Catholic,Missouri Valley Conference

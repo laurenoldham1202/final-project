@@ -1,0 +1,1121 @@
+seed,school,site,year,id
+1,Duke,"Columbia, SC",2019,20190
+1,Gonzaga,"Salt Lake City, UT",2019,20191
+1,UNC,"Columbus, OH",2019,20192
+1,Virginia,"Columbia, SC",2019,20193
+2,Michigan State,"Des Moines, IA",2019,20194
+2,Michigan,"Des Moines, IA",2019,20195
+2,Kentucky,"Jacksonville, FL",2019,20196
+2,Tennessee,"Columbus, OH",2019,20197
+3,LSU,"Jacksonville, FL",2019,20198
+3,Texas Tech,"Tulsa, OK",2019,20199
+3,Houston,"Tulsa, OK",2019,201910
+3,Purdue,"Hartford, CT",2019,201911
+4,Virginia Tech,"San Jose, CA",2019,201912
+4,Florida State,"Hartford, CT",2019,201913
+4,Kansas,"Salt Lake City, UT",2019,201914
+4,Kansas State,"San Jose, CA",2019,201915
+1,Villanova,"Pittsburgh, PA",2018,201816
+1,Kansas,"Wichita, KS",2018,201817
+1,Xavier,"Nashville, TN",2018,201818
+1,Virginia,"Charlotte, NC",2018,201819
+2,Purdue,"Detroit, MI",2018,201820
+2,Duke,"Pittsburgh, PA",2018,201821
+2,UNC,"Charlotte, NC",2018,201822
+2,Cincinnati,"Nashville, TN",2018,201823
+3,Texas Tech,"Dallas, TX",2018,201824
+3,Michigan State,"Detroit, MI",2018,201825
+3,Michigan,"Wichita, KS",2018,201826
+3,Tennessee,"Dallas, TX",2018,201827
+4,Wichita State,"San Diego, CA",2018,201828
+4,Auburn,"San Diego, CA",2018,201829
+4,Gonzaga,"Boise, ID",2018,201830
+4,Arizona,"Boise, ID",2018,201831
+1,Villanova,"Buffalo, NY",2017,201732
+1,Kansas,"Tulsa, OK",2017,201733
+1,UNC,"Greenville, SC",2017,201734
+1,Gonzaga,"Salt Lake City, UT",2017,201735
+2,Duke,"Greenville, SC",2017,201736
+2,Louisville,"Indianapolis, IN",2017,201737
+2,Kentucky,"Indianapolis, IN",2017,201738
+2,Arizona,"Salt Lake City, UT",2017,201739
+3,Baylor,"Tulsa, OK",2017,201740
+3,Oregon,"Sacramento, CA",2017,201741
+3,UCLA,"Sacramento, CA",2017,201742
+3,Florida State,"Orlando, FL",2017,201743
+4,Florida,"Orlando, FL",2017,201744
+4,Purdue,"Milwaukee, WI",2017,201745
+4,Butler,"Milwaukee, WI",2017,201746
+4,West Virginia,"Buffalo, NY",2017,201747
+1,UNC,"Raleigh, NC",2016,201648
+1,Kansas,"Des Moines, IA",2016,201649
+1,Oregon,"Spokane, WA",2016,201650
+1,Virginia,"Raleigh, NC",2016,201651
+2,Xavier,"St. Louis, MO",2016,201652
+2,Villanova,"Brooklyn, NY",2016,201653
+2,Oklahoma,"Oklahoma City, OK",2016,201654
+2,Michigan State,"St. Louis, MO",2016,201655
+3,West Virginia,"Brooklyn, NY",2016,201656
+3,Miami (FL),"Providence, RI",2016,201657
+3,Texas A&M,"Oklahoma City, OK",2016,201658
+3,Utah,"Denver, CO",2016,201659
+4,Kentucky,"Des Moines, IA",2016,201660
+4,California,"Spokane, WA",2016,201661
+4,Duke,"Providence, RI",2016,201662
+4,Iowa State,"Denver, CO",2016,201663
+1,Villanova,"Pittsburgh, PA",2015,201564
+1,Kentucky,"Louisville, KY",2015,201565
+1,Duke,"Charlotte, NC",2015,201566
+1,Wisconsin,"Omaha, NE",2015,201567
+2,Virginia,"Charlotte, NC",2015,201568
+2,Kansas,"Omaha, NE",2015,201569
+2,Gonzaga,"Seattle, WA",2015,201570
+2,Arizona,"Portland, OR",2015,201571
+3,Oklahoma,"Columbus, OH",2015,201572
+3,Notre Dame,"Pittsburgh, PA",2015,201573
+3,Iowa State,"Louisville, KY",2015,201574
+3,Baylor,"Jacksonville, FL",2015,201575
+4,Louisville,"Seattle, WA",2015,201576
+4,Maryland,"Columbus, OH",2015,201577
+4,Georgetown,"Portland, OR",2015,201578
+4,UNC,"Jacksonville, FL",2015,201579
+1,Wichita State,"St. Louis, MO",2014,201480
+1,Florida,"Orlando, FL",2014,201481
+1,Virginia,"Raleigh, NC",2014,201482
+1,Arizona,"San Diego, CA",2014,201483
+2,Michigan,"Milwaukee, WI",2014,201484
+2,Kansas,"St. Louis, MO",2014,201485
+2,Villanova,"Buffalo, NY",2014,201486
+2,Wisconsin,"Milwaukee, WI",2014,201487
+3,Duke,"Raleigh, NC",2014,201488
+3,Syracuse,"Buffalo, NY",2014,201489
+3,Iowa State,"San Antonio, TX",2014,201490
+3,Creighton,"San Antonio, TX",2014,201491
+4,Louisville,"Orlando, FL",2014,201492
+4,UCLA,"San Diego, CA",2014,201493
+4,Michigan State,"Spokane, WA",2014,201494
+4,San Diego State,"Spokane, WA",2014,201495
+1,Indiana,"Dayton, OH",2013,201396
+1,Louisville,"Lexington, KY",2013,201397
+1,Gonzaga,"Salt Lake City, UT",2013,201398
+1,Kansas,"Kansas City, MO",2013,201399
+2,Miami (FL),"Austin, TX",2013,2013100
+2,Duke,"Philadelphia, PA",2013,2013101
+2,Ohio State,"Dayton, OH",2013,2013102
+2,Georgetown,"Philadelphia, PA",2013,2013103
+3,Marquette,"Lexington, KY",2013,2013104
+3,Michigan State,"Auburn Hills, MI",2013,2013105
+3,New Mexico,"Salt Lake City, UT",2013,2013106
+3,Florida,"Austin, TX",2013,2013107
+4,Syracuse,"San Jose, CA",2013,2013108
+4,Saint Louis,"San Jose, CA",2013,2013109
+4,Kansas State,"Kansas City, MO",2013,2013110
+4,Michigan,"Auburn Hills, MI",2013,2013111
+1,UNC,"Greensboro, NC",2012,2012112
+1,Kentucky,"Louisville, KY",2012,2012113
+1,Michigan State,"Columbus, OH",2012,2012114
+1,Syracuse,"Pittsburgh, PA",2012,2012115
+2,Kansas,"Omaha, NE",2012,2012116
+2,Duke,"Greensboro, NC",2012,2012117
+2,Missouri,"Omaha, NE",2012,2012118
+2,Ohio State,"Pittsburgh, PA",2012,2012119
+3,Georgetown,"Columbus, OH",2012,2012120
+3,Baylor,"Albuquerque, NM",2012,2012121
+3,Marquette,"Louisville, KY",2012,2012122
+3,Florida State,"Nashville, TN",2012,2012123
+4,Michigan,"Nashville, TN",2012,2012124
+4,Indiana,"Portland, OR",2012,2012125
+4,Louisville,"Portland, OR",2012,2012126
+4,Wisconsin,"Albuquerque, NM",2012,2012127
+1,Ohio State,"Cleveland, OH",2011,2011128
+1,Pitt,"Washington, DC",2011,2011129
+1,Kansas,"Tulsa, OK",2011,2011130
+1,Duke,"Charlotte, NC",2011,2011131
+2,UNC,"Charlotte, NC",2011,2011132
+2,Florida,"Tampa, FL",2011,2011133
+2,Notre Dame,"Chicago, IL",2011,2011134
+2,San Diego State,"Tucson, AZ",2011,2011135
+3,Syracuse,"Cleveland, OH",2011,2011136
+3,BYU,"Denver, CO",2011,2011137
+3,Purdue,"Chicago, IL",2011,2011138
+3,UConn,"Washington, DC",2011,2011139
+4,Kentucky,"Tampa, FL",2011,2011140
+4,Wisconsin,"Tucson, AZ",2011,2011141
+4,Louisville,"Denver, CO",2011,2011142
+4,Texas,"Tulsa, OK",2011,2011143
+1,Duke,"Jacksonville, FL",2010,2010144
+1,Kentucky,"New Orleans, LA",2010,2010145
+1,Kansas,"Oklahoma City, OK",2010,2010146
+1,Syracuse,"Buffalo, NY",2010,2010147
+2,Villanova,"Providence, RI",2010,2010148
+2,West Virginia,"Buffalo, NY",2010,2010149
+2,Ohio State,"Milwaukee, WI",2010,2010150
+2,Kansas State,"Oklahoma City, OK",2010,2010151
+3,Baylor,"New Orleans, LA",2010,2010152
+3,New Mexico,"San Jose, CA",2010,2010153
+3,Georgetown,"Providence, RI",2010,2010154
+3,Pitt,"Milwaukee, WI",2010,2010155
+4,Purdue,"Spokane, WA",2010,2010156
+4,Wisconsin,"Jacksonville, FL",2010,2010157
+4,Maryland,"Spokane, WA",2010,2010158
+4,Vanderbilt,"San Jose, CA",2010,2010159
+1,Syracuse,"Buffalo, NY",2009,2009160
+1,Pitt,"Dayton, OH",2009,2009161
+1,UNC,"Greensboro, NC",2009,2009162
+1,UConn,"Philadelphia, PA",2009,2009163
+2,Kansas State,"Oklahoma City, OK",2009,2009164
+2,Duke,"Greensboro, NC",2009,2009165
+2,Oklahoma,"Kansas City, MO",2009,2009166
+2,Memphis,"Kansas City, MO",2009,2009167
+3,Pitt,"Milwaukee, WI",2009,2009168
+3,Villanova,"Philadelphia, PA",2009,2009169
+3,Syracuse,"Miami, FL",2009,2009170
+3,Missouri,"Boise, ID",2009,2009171
+4,Vanderbilt,"San Jose, CA",2009,2009172
+4,Xavier,"Boise, ID",2009,2009173
+4,Gonzaga,"Portland, OR",2009,2009174
+4,Washington,"Portland, OR",2009,2009175
+1,UNC,"Raleigh, NC",2008,2008176
+1,Kansas,"Omaha, NE",2008,2008177
+1,Memphis,"North Little Rock, AR",2008,2008178
+1,UCLA,"Anaheim, CA",2008,2008179
+2,Tennessee,"Birmingham, AL",2008,2008180
+2,Georgetown,"Raleigh, NC",2008,2008181
+2,Texas,"North Little Rock, AR",2008,2008182
+2,Duke,"Washington, DC",2008,2008183
+3,Louisville,"Birmingham, AL",2008,2008184
+3,Wisconsin,"Omaha, NE",2008,2008185
+3,Stanford,"Anaheim, CA",2008,2008186
+3,Xavier,"Washington, DC",2008,2008187
+4,Washington State,"Denver, CO",2008,2008188
+4,Vanderbilt,"Tampa, FL",2008,2008189
+4,Pitt,"Denver, CO",2008,2008190
+4,UConn,"Tampa, FL",2008,2008191
+1,Kansas,"Chicago, IL",2007,2007192
+1,UNC,"Winston-Salem, NC",2007,2007193
+1,Florida,"New Orleans, LA",2007,2007194
+1,Florida,"New Orleans, LA",2007,2007195
+2,UCLA,"Sacramento, CA",2007,2007196
+2,Georgetown,"Winston-Salem, NC",2007,2007197
+2,Wisconsin,"Chicago, IL",2007,2007198
+2,Wisconsin,"Chicago, IL",2007,2007199
+3,Pitt,"Buffalo, NY",2007,2007200
+3,Washington State,"Sacramento, CA",2007,2007201
+3,Oregon,"Spokane, WA",2007,2007202
+3,Oregon,"Spokane, WA",2007,2007203
+4,Southern Illinois,"Columbus, OH",2007,2007204
+4,Texas,"Spokane, WA",2007,2007205
+4,Maryland,"Buffalo, NY",2007,2007206
+4,Maryland,"Buffalo, NY",2007,2007207
+1,Villanova,"Philadelphia, PA",2006,2006208
+1,Duke,"Greensboro, NC",2006,2006209
+1,Memphis,"Dallas, TX",2006,2006210
+1,UConn,"Philadelphia, PA",2006,2006211
+2,Ohio State,"Dayton, OH",2006,2006212
+2,Texas,"Dallas, TX",2006,2006213
+2,UCLA,"San Diego, CA",2006,2006214
+2,Tennessee,"Greensboro, NC",2006,2006215
+3,Florida,"Jacksonville, FL",2006,2006216
+3,Iowa,"Auburn Hills, MI",2006,2006217
+3,Gonzaga,"Salt Lake City, UT",2006,2006218
+3,UNC,"Dayton, OH",2006,2006219
+4,Boston College,"Salt Lake City, UT",2006,2006220
+4,LSU,"Jacksonville, FL",2006,2006221
+4,Kansas,"Auburn Hills, MI",2006,2006222
+4,Illinois,"San Diego, CA",2006,2006223
+1,UNC,"Charlotte, NC",2005,2005224
+1,Washington,"Boise, ID",2005,2005225
+1,Duke,"Charlotte, NC",2005,2005226
+1,Illinois,"Indianapolis, IN",2005,2005227
+2,UConn,"Worcester, MA",2005,2005228
+2,Wake Forest,"Cleveland, OH",2005,2005229
+2,Kentucky,"Indianapolis, IN",2005,2005230
+2,Oklahoma State,"Oklahoma City, OK",2005,2005231
+3,Kansas,"Oklahoma City, OK",2005,2005232
+3,Gonzaga,"Tucson, AZ",2005,2005233
+3,Oklahoma,"Tucson, AZ",2005,2005234
+3,Arizona,"Boise, ID",2005,2005235
+4,Florida,"Nashville, TN",2005,2005236
+4,Louisville,"Nashville, TN",2005,2005237
+4,Syracuse,"Worcester, MA",2005,2005238
+4,Boston College,"Cleveland, OH",2005,2005239
+1,Kentucky,"Columbus, OH",2004,2004240
+1,Duke,"Raleigh, NC",2004,2004241
+1,St. Joseph's,"Buffalo, NY",2004,2004242
+1,Stanford,"Seattle, WA",2004,2004243
+2,Gonzaga,"Seattle, WA",2004,2004244
+2,Mississippi State,"Orlando, FL",2004,2004245
+2,Oklahoma State,"Kansas City, MO",2004,2004246
+2,UConn,"Buffalo, NY",2004,2004247
+3,Georgia Tech,"Milwaukee, WI",2004,2004248
+3,Texas,"Denver, CO",2004,2004249
+3,Pitt,"Milwaukee, WI",2004,2004250
+3,NC State,"Orlando, FL",2004,2004251
+4,Kansas,"Kansas City, MO",2004,2004252
+4,Cincinnati,"Columbus, OH",2004,2004253
+4,Wake Forest,"Raleigh, NC",2004,2004254
+4,Maryland,"Denver, CO",2004,2004255
+1,Texas,"Birmingham, AL",2003,2003256
+1,Oklahoma,"Oklahoma City, OK",2003,2003257
+1,Kentucky,"Nashville, TN",2003,2003258
+1,Arizona,"Salt Lake City, UT",2003,2003259
+2,Florida,"Tampa, FL",2003,2003260
+2,Wake Forest,"Tampa, FL",2003,2003261
+2,Pitt,"Boston, MA",2003,2003262
+2,Kansas,"Oklahoma City, OK",2003,2003263
+3,Xavier,"Nashville, TN",2003,2003264
+3,Syracuse,"Boston, MA",2003,2003265
+3,Marquette,"Indianapolis, IN",2003,2003266
+3,Duke,"Salt Lake City, UT",2003,2003267
+4,Stanford,"Spokane, WA",2003,2003268
+4,Louisville,"Birmingham, AL",2003,2003269
+4,Dayton,"Spokane, WA",2003,2003270
+4,Illinois,"Indianapolis, IN",2003,2003271
+1,Maryland,"Washington, DC",2002,2002272
+1,Kansas,"St. Louis, MO",2002,2002273
+1,Duke,"Greenville, SC",2002,2002274
+1,Cincinnati,"Pittsburgh, PA",2002,2002275
+2,UConn,"Washington, DC",2002,2002276
+2,Oregon,"Sacramento, CA",2002,2002277
+2,Alabama,"Greenville, SC",2002,2002278
+2,Oklahoma,"Dallas, TX",2002,2002279
+3,Georgia,"Chicago, IL",2002,2002280
+3,Mississippi State,"Dallas, TX",2002,2002281
+3,Pitt,"Pittsburgh, PA",2002,2002282
+3,Arizona,"Albuquerque, NM",2002,2002283
+4,Kentucky,"St. Louis, MO",2002,2002284
+4,Illinois,"Chicago, IL",2002,2002285
+4,USC,"Sacramento, CA",2002,2002286
+4,Ohio State,"Albuquerque, NM",2002,2002287
+1,Illinois,"Dayton, OH",2001,2001288
+1,Duke,"Greensboro, NC",2001,2001289
+1,Michigan State,"Memphis, TN",2001,2001290
+1,Stanford,"San Diego, CA",2001,2001291
+2,Arizona,"Kansas City, MO",2001,2001292
+2,Kentucky,"Uniondale, NY",2001,2001293
+2,UNC,"New Orleans, LA",2001,2001294
+2,Iowa State,"Boise, ID",2001,2001295
+3,Ole Miss,"Kansas City, MO",2001,2001296
+3,Boston College,"Uniondale, NY",2001,2001297
+3,Florida,"New Orleans, LA",2001,2001298
+3,Maryland,"Boise, ID",2001,2001299
+4,Kansas,"Dayton, OH",2001,2001300
+4,UCLA,"Greensboro, NC",2001,2001301
+4,Oklahoma,"Memphis, TN",2001,2001302
+4,Indiana,"San Diego, CA",2001,2001303
+1,Duke,"Winston-Salem, NC",2000,2000304
+1,Michigan State,"Cleveland, OH",2000,2000305
+1,Stanford,"Birmingham, AL",2000,2000306
+1,Arizona,"Tucson, AZ",2000,2000307
+2,Temple,"Buffalo, NY",2000,2000308
+2,Iowa State,"Minneapolis, MN",2000,2000309
+2,Cincinnati,"Nashville, TN",2000,2000310
+2,St. John's (NY),"Tucson, AZ",2000,2000311
+3,Oklahoma State,"Buffalo, NY",2000,2000312
+3,Maryland,"Minneapolis, MN",2000,2000313
+3,Ohio State,"Nashville, TN",2000,2000314
+3,Oklahoma,"Tucson, AZ",2000,2000315
+4,Illinois,"Winston-Salem, NC",2000,2000316
+4,Syracuse,"Cleveland, OH",2000,2000317
+4,Tennessee,"Birmingham, AL",2000,2000318
+4,LSU,"Salt Lake City, UT",2000,2000319
+1,Duke,"Charlotte, NC",1999,1999320
+1,Michigan State,"Milwaukee, WI",1999,1999321
+1,Auburn,"Indianapolis, IN",1999,1999322
+1,UConn,"Denver, CO",1999,1999323
+2,Miami (FL),"Boston, MA",1999,1999324
+2,Utah,"New Orleans, LA",1999,1999325
+2,Maryland,"Orlando, FL",1999,1999326
+2,Stanford,"Seattle, WA",1999,1999327
+3,Cincinnati,"Boston, MA",1999,1999328
+3,Kentucky,"New Orleans, LA",1999,1999329
+3,St. John's (NY),"Orlando, FL",1999,1999330
+3,UNC,"Seattle, WA",1999,1999331
+4,Tennessee,"Charlotte, NC",1999,1999332
+4,Arizona,"Milwaukee, WI",1999,1999333
+4,Ohio State,"Indianapolis, IN",1999,1999334
+4,Arkansas,"Denver, CO",1999,1999335
+1,UNC,"Hartford, CT",1998,1998336
+1,Kansas,"Oklahoma City, OK",1998,1998337
+1,Duke,"Lexington, KY",1998,1998338
+1,Arizona,"Sacramento, CA",1998,1998339
+2,UConn,"Washington, DC",1998,1998340
+2,Purdue,"Chicago, IL",1998,1998341
+2,Kentucky,"Atlanta, GA",1998,1998342
+2,Cincinnati,"Boise, ID",1998,1998343
+3,South Carolina,"Washington, DC",1998,1998344
+3,Stanford,"Chicago, IL",1998,1998345
+3,Michigan,"Atlanta, GA",1998,1998346
+3,Utah,"Boise, ID",1998,1998347
+4,Michigan State,"Hartford, CT",1998,1998348
+4,Ole Miss,"Oklahoma City, OK",1998,1998349
+4,New Mexico,"Lexington, KY",1998,1998350
+4,Maryland,"Sacramento, CA",1998,1998351
+1,UNC,"Winston-Salem, NC",1997,1997352
+1,Minnesota,"Kansas City, MO",1997,1997353
+1,Kansas,"Memphis, TN",1997,1997354
+1,Kentucky,"Salt Lake City, UT",1997,1997355
+2,South Carolina,"Pittsburgh, PA",1997,1997356
+2,UCLA,"Auburn Hills, MI",1997,1997357
+2,Duke,"Charlotte, NC",1997,1997358
+2,Utah,"Tucson, AZ",1997,1997359
+3,New Mexico,"Pittsburgh, PA",1997,1997360
+3,Cincinnati,"Auburn Hills, MI",1997,1997361
+3,Georgia,"Charlotte, NC",1997,1997362
+3,Wake Forest,"Tucson, AZ",1997,1997363
+4,Villanova,"Winston-Salem, NC",1997,1997364
+4,Clemson,"Kansas City, MO",1997,1997365
+4,Arizona,"Memphis, TN",1997,1997366
+4,St. Joseph's,"Salt Lake City, UT",1997,1997367
+1,UMass,"Providence, RI",1996,1996368
+1,Kentucky,"Dallas, TX",1996,1996369
+1,UConn,"Indianapolis, IN",1996,1996370
+1,Purdue,"Albuquerque, NM",1996,1996371
+2,Georgetown,"Richmond, VA",1996,1996372
+2,Wake Forest,"Milwaukee, WI",1996,1996373
+2,Cincinnati,"Orlando, FL",1996,1996374
+2,Kansas,"Tempe, AZ",1996,1996375
+3,Texas Tech,"Richmond, VA",1996,1996376
+3,Villanova,"Milwaukee, WI",1996,1996377
+3,Georgia Tech,"Orlando, FL",1996,1996378
+3,Arizona,"Tempe, AZ",1996,1996379
+4,Marquette,"Providence, RI",1996,1996380
+4,Utah,"Dallas, TX",1996,1996381
+4,UCLA,"Indianapolis, IN",1996,1996382
+4,Syracuse,"Albuquerque, NM",1996,1996383
+1,Wake Forest,"Baltimore, MD",1995,1995384
+1,Kansas,"Dayton, OH",1995,1995385
+1,Kentucky,"Memphis, TN",1995,1995386
+1,UCLA,"Boise, ID",1995,1995387
+2,UMass,"Albany, NY",1995,1995388
+2,Arkansas,"Austin, TX",1995,1995389
+2,UNC,"Tallahassee, FL",1995,1995390
+2,UConn,"Salt Lake City, UT",1995,1995391
+3,Villanova,"Albany, NY",1995,1995392
+3,Purdue,"Austin, TX",1995,1995393
+3,Michigan State,"Tallahassee, FL",1995,1995394
+3,Maryland,"Salt Lake City, UT",1995,1995395
+4,Oklahoma State,"Baltimore, MD",1995,1995396
+4,Virginia,"Dayton, OH",1995,1995397
+4,Oklahoma,"Memphis, TN",1995,1995398
+4,Utah,"Boise, ID",1995,1995399
+1,UNC,"Landover, MD",1994,1994400
+1,Arkansas,"Oklahoma City, OK",1994,1994401
+1,Purdue,"Lexington, KY",1994,1994402
+1,Missouri,"Ogden, UT",1994,1994403
+2,UConn,"Uniondale, NY",1994,1994404
+2,UMass,"Park City, KS",1994,1994405
+2,Duke,"St. Petersburg, FL",1994,1994406
+2,Arizona,"Sacramento, CA",1994,1994407
+3,Florida,"Uniondale, NY",1994,1994408
+3,Michigan,"Park City, KS",1994,1994409
+3,Kentucky,"St. Petersburg, FL",1994,1994410
+3,Louisville,"Sacramento, CA",1994,1994411
+4,Temple,"Landover, MD",1994,1994412
+4,Oklahoma State,"Oklahoma City, OK",1994,1994413
+4,Kansas,"Lexington, KY",1994,1994414
+4,Syracuse,"Ogden, UT",1994,1994415
+1,UNC,"Winston-Salem, NC",1993,1993416
+1,Indiana,"Indianapolis, IN",1993,1993417
+1,Kentucky,"Nashville, TN",1993,1993418
+1,Michigan,"Tucson, AZ",1993,1993419
+2,Cincinnati,"Syracuse, NY",1993,1993420
+2,Kansas,"Rosemont, IL",1993,1993421
+2,Seton Hall,"Orlando, FL",1993,1993422
+2,Arizona,"Salt Lake City, UT",1993,1993423
+3,UMass,"Syracuse, NY",1993,1993424
+3,Duke,"Rosemont, IL",1993,1993425
+3,Florida State,"Orlando, FL",1993,1993426
+3,Vanderbilt,"Salt Lake City, UT",1993,1993427
+4,Arkansas,"Winston-Salem, NC",1993,1993428
+4,Louisville,"Indianapolis, IN",1993,1993429
+4,Iowa,"Nashville, TN",1993,1993430
+4,Georgia Tech,"Tucson, AZ",1993,1993431
+1,Duke,"Greensboro, NC",1992,1992432
+1,Kansas,"Dayton, OH",1992,1992433
+1,Ohio State,"Cincinnati, OH",1992,1992434
+1,UCLA,"Tempe, AZ",1992,1992435
+2,Kentucky,"Worcester, MA",1992,1992436
+2,USC,"Milwaukee, WI",1992,1992437
+2,Oklahoma State,"Atlanta, GA",1992,1992438
+2,Indiana,"Boise, ID",1992,1992439
+3,UMass,"Worcester, MA",1992,1992440
+3,Arkansas,"Milwaukee, WI",1992,1992441
+3,Arizona,"Atlanta, GA",1992,1992442
+3,Florida State,"Boise, ID",1992,1992443
+4,Seton Hall,"Greensboro, NC",1992,1992444
+4,Cincinnati,"Dayton, OH",1992,1992445
+4,UNC,"Cincinnati, OH",1992,1992446
+4,Oklahoma,"Tempe, AZ",1992,1992447
+1,UNC,"Syracuse, NY",1991,1991448
+1,Ohio State,"Dayton, OH",1991,1991449
+1,Arkansas,"Atlanta, GA",1991,1991450
+1,UNLV,"Tucson, AZ",1991,1991451
+2,Syracuse,"College Park, MD",1991,1991452
+2,Duke,"Minneapolis, MN",1991,1991453
+2,Indiana,"Louisville, KY",1991,1991454
+2,Arizona,"Salt Lake City, UT",1991,1991455
+3,Oklahoma State,"College Park, MD",1991,1991456
+3,Nebraska,"Minneapolis, MN",1991,1991457
+3,Kansas,"Louisville, KY",1991,1991458
+3,Seton Hall,"Salt Lake City, UT",1991,1991459
+4,UCLA,"Syracuse, NY",1991,1991460
+4,St. John's (NY),"Dayton, OH",1991,1991461
+4,Alabama,"Atlanta, GA",1991,1991462
+4,Utah,"Tucson, AZ",1991,1991463
+1,UConn,"Hartford, CT",1990,1990464
+1,Oklahoma,"Austin, TX",1990,1990465
+1,Michigan State,"Knoxville, TN",1990,1990466
+1,UNLV,"Salt Lake City, UT",1990,1990467
+2,Kansas,"Atlanta, GA",1990,1990468
+2,Purdue,"Indianapolis, IN",1990,1990469
+2,Syracuse,"Richmond, VA",1990,1990470
+2,Arizona,"Long Beach, CA",1990,1990471
+3,Duke,"Atlanta, GA",1990,1990472
+3,Georgetown,"Indianapolis, IN",1990,1990473
+3,Missouri,"Richmond, VA",1990,1990474
+3,Michigan,"Long Beach, CA",1990,1990475
+4,La Salle,"Hartford, CT",1990,1990476
+4,Arkansas,"Austin, TX",1990,1990477
+4,Georgia Tech,"Knoxville, TN",1990,1990478
+4,Louisville,"Salt Lake City, UT",1990,1990479
+1,Georgetown,"Providence, RI",1989,1989480
+1,Illinois,"Indianapolis, IN",1989,1989481
+1,Oklahoma,"Nashville, TN",1989,1989482
+1,Arizona,"Boise, ID",1989,1989483
+2,Duke,"Greensboro, NC",1989,1989484
+2,Syracuse,"Dallas, TX",1989,1989485
+2,UNC,"Atlanta, GA",1989,1989486
+2,Indiana,"Tucson, AZ",1989,1989487
+3,Stanford,"Greensboro, NC",1989,1989488
+3,Missouri,"Dallas, TX",1989,1989489
+3,Michigan,"Atlanta, GA",1989,1989490
+3,Seton Hall,"Tucson, AZ",1989,1989491
+4,Iowa,"Providence, RI",1989,1989492
+4,Louisville,"Indianapolis, IN",1989,1989493
+4,Florida State,"Nashville, TN",1989,1989494
+4,UNLV,"Boise, ID",1989,1989495
+1,Temple,"Hartford, CT",1988,1988496
+1,Purdue,"South Bend, IN",1988,1988497
+1,Oklahoma,"Atlanta, GA",1988,1988498
+1,Arizona,"Los Angeles, CA",1988,1988499
+2,Duke,"Chapel Hill, NC",1988,1988500
+2,Pitt,"Lincoln, NE",1988,1988501
+2,Kentucky,"Cincinnati, OH",1988,1988502
+2,UNC,"Salt Lake City, UT",1988,1988503
+3,Syracuse,"Chapel Hill, NC",1988,1988504
+3,NC State,"Lincoln, NE",1988,1988505
+3,Illinois,"Cincinnati, OH",1988,1988506
+3,Michigan,"Salt Lake City, UT",1988,1988507
+4,Indiana,"Hartford, CT",1988,1988508
+4,Kansas State,"South Bend, IN",1988,1988509
+4,BYU,"Atlanta, GA",1988,1988510
+4,UNLV,"Los Angeles, CA",1988,1988511
+1,UNC,"Charlotte, NC",1987,1987512
+1,Indiana,"Indianapolis, IN",1987,1987513
+1,Georgetown,"Atlanta, GA",1987,1987514
+1,UNLV,"Salt Lake City, UT",1987,1987515
+2,Syracuse,"Syracuse, NY",1987,1987516
+2,Temple,"Rosemont, IL",1987,1987517
+2,Alabama,"Birmingham, AL",1987,1987518
+2,Iowa,"Tucson, AZ",1987,1987519
+3,Purdue,"Syracuse, NY",1987,1987520
+3,DePaul,"Rosemont, IL",1987,1987521
+3,Illinois,"Birmingham, AL",1987,1987522
+3,Pitt,"Tucson, AZ",1987,1987523
+4,TCU,"Charlotte, NC",1987,1987524
+4,Missouri,"Indianapolis, IN",1987,1987525
+4,Clemson,"Atlanta, GA",1987,1987526
+4,UCLA,"Salt Lake City, UT",1987,1987527
+1,Duke,"Greensboro, NC",1986,1986528
+1,Kansas,"Dayton, OH",1986,1986529
+1,Kentucky,"Charlotte, NC",1986,1986530
+1,St. John's (NY),"Long Beach, CA",1986,1986531
+2,Syracuse,"Syracuse, NY",1986,1986532
+2,Michigan,"Minneapolis, MN",1986,1986533
+2,Georgia Tech,"Baton Rouge, LA",1986,1986534
+2,Louisville,"Ogden, UT",1986,1986535
+3,Indiana,"Syracuse, NY",1986,1986536
+3,Notre Dame,"Minneapolis, MN",1986,1986537
+3,Memphis,"Baton Rouge, LA",1986,1986538
+3,UNC,"Ogden, UT",1986,1986539
+4,Oklahoma,"Greensboro, NC",1986,1986540
+4,Georgetown,"Dayton, OH",1986,1986541
+4,Illinois,"Charlotte, NC",1986,1986542
+4,UNLV,"Long Beach, CA",1986,1986543
+1,Georgetown,"Hartford, CT",1985,1985544
+1,Oklahoma,"Tulsa, OK",1985,1985545
+1,Michigan,"Dayton, OH",1985,1985546
+1,St. John's (NY),"Salt Lake City, UT",1985,1985547
+2,Georgia Tech,"Atlanta, GA",1985,1985548
+2,Memphis,"Houston, TX",1985,1985549
+2,UNC,"South Bend, IN",1985,1985550
+2,VCU,"Albuquerque, NM",1985,1985551
+3,Illinois,"Atlanta, GA",1985,1985552
+3,Duke,"Houston, TX",1985,1985553
+3,Kansas,"South Bend, IN",1985,1985554
+3,NC State,"Albuquerque, NM",1985,1985555
+4,Loyola (IL),"Hartford, CT",1985,1985556
+4,Ohio State,"Tulsa, OK",1985,1985557
+4,LSU,"Dayton, OH",1985,1985558
+4,UNLV,"Salt Lake City, UT",1985,1985559
+,,"Columbia, SC",,20190
+,,"Salt Lake City, UT",,20191
+,,"Columbus, OH",,20192
+,,"Columbia, SC",,20193
+,,"Des Moines, IA",,20194
+,,"Des Moines, IA",,20195
+,,"Jacksonville, FL",,20196
+,,"Columbus, OH",,20197
+,,"Jacksonville, FL",,20198
+,,"Tulsa, OK",,20199
+,,"Tulsa, OK",,201910
+,,"Hartford, CT",,201911
+,,"San Jose, CA",,201912
+,,"Hartford, CT",,201913
+,,"Salt Lake City, UT",,201914
+,,"San Jose, CA",,201915
+,,"Pittsburgh, PA",,201816
+,,"Wichita, KS",,201817
+,,"Nashville, TN",,201818
+,,"Charlotte, NC",,201819
+,,"Detroit, MI",,201820
+,,"Pittsburgh, PA",,201821
+,,"Charlotte, NC",,201822
+,,"Nashville, TN",,201823
+,,"Dallas, TX",,201824
+,,"Detroit, MI",,201825
+,,"Wichita, KS",,201826
+,,"Dallas, TX",,201827
+,,"San Diego, CA",,201828
+,,"San Diego, CA",,201829
+,,"Boise, ID",,201830
+,,"Boise, ID",,201831
+,,"Buffalo, NY",,201732
+,,"Tulsa, OK",,201733
+,,"Greenville, SC",,201734
+,,"Salt Lake City, UT",,201735
+,,"Greenville, SC",,201736
+,,"Indianapolis, IN",,201737
+,,"Indianapolis, IN",,201738
+,,"Salt Lake City, UT",,201739
+,,"Tulsa, OK",,201740
+,,"Sacramento, CA",,201741
+,,"Sacramento, CA",,201742
+,,"Orlando, FL",,201743
+,,"Orlando, FL",,201744
+,,"Milwaukee, WI",,201745
+,,"Milwaukee, WI",,201746
+,,"Buffalo, NY",,201747
+,,"Raleigh, NC",,201648
+,,"Des Moines, IA",,201649
+,,"Spokane, WA",,201650
+,,"Raleigh, NC",,201651
+,,"St. Louis, MO",,201652
+,,"Brooklyn, NY",,201653
+,,"Oklahoma City, OK",,201654
+,,"St. Louis, MO",,201655
+,,"Brooklyn, NY",,201656
+,,"Providence, RI",,201657
+,,"Oklahoma City, OK",,201658
+,,"Denver, CO",,201659
+,,"Des Moines, IA",,201660
+,,"Spokane, WA",,201661
+,,"Providence, RI",,201662
+,,"Denver, CO",,201663
+,,"Pittsburgh, PA",,201564
+,,"Louisville, KY",,201565
+,,"Charlotte, NC",,201566
+,,"Omaha, NE",,201567
+,,"Charlotte, NC",,201568
+,,"Omaha, NE",,201569
+,,"Seattle, WA",,201570
+,,"Portland, OR",,201571
+,,"Columbus, OH",,201572
+,,"Pittsburgh, PA",,201573
+,,"Louisville, KY",,201574
+,,"Jacksonville, FL",,201575
+,,"Seattle, WA",,201576
+,,"Columbus, OH",,201577
+,,"Portland, OR",,201578
+,,"Jacksonville, FL",,201579
+,,"St. Louis, MO",,201480
+,,"Orlando, FL",,201481
+,,"Raleigh, NC",,201482
+,,"San Diego, CA",,201483
+,,"Milwaukee, WI",,201484
+,,"St. Louis, MO",,201485
+,,"Buffalo, NY",,201486
+,,"Milwaukee, WI",,201487
+,,"Raleigh, NC",,201488
+,,"Buffalo, NY",,201489
+,,"San Antonio, TX",,201490
+,,"San Antonio, TX",,201491
+,,"Orlando, FL",,201492
+,,"San Diego, CA",,201493
+,,"Spokane, WA",,201494
+,,"Spokane, WA",,201495
+,,"Dayton, OH",,201396
+,,"Lexington, KY",,201397
+,,"Salt Lake City, UT",,201398
+,,"Kansas City, MO",,201399
+,,"Austin, TX",,2013100
+,,"Philadelphia, PA",,2013101
+,,"Dayton, OH",,2013102
+,,"Philadelphia, PA",,2013103
+,,"Lexington, KY",,2013104
+,,"Auburn Hills, MI",,2013105
+,,"Salt Lake City, UT",,2013106
+,,"Austin, TX",,2013107
+,,"San Jose, CA",,2013108
+,,"San Jose, CA",,2013109
+,,"Kansas City, MO",,2013110
+,,"Auburn Hills, MI",,2013111
+,,"Greensboro, NC",,2012112
+,,"Louisville, KY",,2012113
+,,"Columbus, OH",,2012114
+,,"Pittsburgh, PA",,2012115
+,,"Omaha, NE",,2012116
+,,"Greensboro, NC",,2012117
+,,"Omaha, NE",,2012118
+,,"Pittsburgh, PA",,2012119
+,,"Columbus, OH",,2012120
+,,"Albuquerque, NM",,2012121
+,,"Louisville, KY",,2012122
+,,"Nashville, TN",,2012123
+,,"Nashville, TN",,2012124
+,,"Portland, OR",,2012125
+,,"Portland, OR",,2012126
+,,"Albuquerque, NM",,2012127
+,,"Cleveland, OH",,2011128
+,,"Washington, DC",,2011129
+,,"Tulsa, OK",,2011130
+,,"Charlotte, NC",,2011131
+,,"Charlotte, NC",,2011132
+,,"Tampa, FL",,2011133
+,,"Chicago, IL",,2011134
+,,"Tucson, AZ",,2011135
+,,"Cleveland, OH",,2011136
+,,"Denver, CO",,2011137
+,,"Chicago, IL",,2011138
+,,"Washington, DC",,2011139
+,,"Tampa, FL",,2011140
+,,"Tucson, AZ",,2011141
+,,"Denver, CO",,2011142
+,,"Tulsa, OK",,2011143
+,,"Jacksonville, FL",,2010144
+,,"New Orleans, LA",,2010145
+,,"Oklahoma City, OK",,2010146
+,,"Buffalo, NY",,2010147
+,,"Providence, RI",,2010148
+,,"Buffalo, NY",,2010149
+,,"Milwaukee, WI",,2010150
+,,"Oklahoma City, OK",,2010151
+,,"New Orleans, LA",,2010152
+,,"San Jose, CA",,2010153
+,,"Providence, RI",,2010154
+,,"Milwaukee, WI",,2010155
+,,"Spokane, WA",,2010156
+,,"Jacksonville, FL",,2010157
+,,"Spokane, WA",,2010158
+,,"San Jose, CA",,2010159
+,,"Buffalo, NY",,2009160
+,,"Dayton, OH",,2009161
+,,"Greensboro, NC",,2009162
+,,"Philadelphia, PA",,2009163
+,,"Oklahoma City, OK",,2009164
+,,"Greensboro, NC",,2009165
+,,"Kansas City, MO",,2009166
+,,"Kansas City, MO",,2009167
+,,"Milwaukee, WI",,2009168
+,,"Philadelphia, PA",,2009169
+,,"Miami, FL",,2009170
+,,"Boise, ID",,2009171
+,,"San Jose, CA",,2009172
+,,"Boise, ID",,2009173
+,,"Portland, OR",,2009174
+,,"Portland, OR",,2009175
+,,"Raleigh, NC",,2008176
+,,"Omaha, NE",,2008177
+,,"North Little Rock, AR",,2008178
+,,"Anaheim, CA",,2008179
+,,"Birmingham, AL",,2008180
+,,"Raleigh, NC",,2008181
+,,"North Little Rock, AR",,2008182
+,,"Washington, DC",,2008183
+,,"Birmingham, AL",,2008184
+,,"Omaha, NE",,2008185
+,,"Anaheim, CA",,2008186
+,,"Washington, DC",,2008187
+,,"Denver, CO",,2008188
+,,"Tampa, FL",,2008189
+,,"Denver, CO",,2008190
+,,"Tampa, FL",,2008191
+,,"Chicago, IL",,2007192
+,,"Winston-Salem, NC",,2007193
+,,"New Orleans, LA",,2007194
+,,"New Orleans, LA",,2007195
+,,"Sacramento, CA",,2007196
+,,"Winston-Salem, NC",,2007197
+,,"Chicago, IL",,2007198
+,,"Chicago, IL",,2007199
+,,"Buffalo, NY",,2007200
+,,"Sacramento, CA",,2007201
+,,"Spokane, WA",,2007202
+,,"Spokane, WA",,2007203
+,,"Columbus, OH",,2007204
+,,"Spokane, WA",,2007205
+,,"Buffalo, NY",,2007206
+,,"Buffalo, NY",,2007207
+,,"Philadelphia, PA",,2006208
+,,"Greensboro, NC",,2006209
+,,"Dallas, TX",,2006210
+,,"Philadelphia, PA",,2006211
+,,"Dayton, OH",,2006212
+,,"Dallas, TX",,2006213
+,,"San Diego, CA",,2006214
+,,"Greensboro, NC",,2006215
+,,"Jacksonville, FL",,2006216
+,,"Auburn Hills, MI",,2006217
+,,"Salt Lake City, UT",,2006218
+,,"Dayton, OH",,2006219
+,,"Salt Lake City, UT",,2006220
+,,"Jacksonville, FL",,2006221
+,,"Auburn Hills, MI",,2006222
+,,"San Diego, CA",,2006223
+,,"Charlotte, NC",,2005224
+,,"Boise, ID",,2005225
+,,"Charlotte, NC",,2005226
+,,"Indianapolis, IN",,2005227
+,,"Worcester, MA",,2005228
+,,"Cleveland, OH",,2005229
+,,"Indianapolis, IN",,2005230
+,,"Oklahoma City, OK",,2005231
+,,"Oklahoma City, OK",,2005232
+,,"Tucson, AZ",,2005233
+,,"Tucson, AZ",,2005234
+,,"Boise, ID",,2005235
+,,"Nashville, TN",,2005236
+,,"Nashville, TN",,2005237
+,,"Worcester, MA",,2005238
+,,"Cleveland, OH",,2005239
+,,"Columbus, OH",,2004240
+,,"Raleigh, NC",,2004241
+,,"Buffalo, NY",,2004242
+,,"Seattle, WA",,2004243
+,,"Seattle, WA",,2004244
+,,"Orlando, FL",,2004245
+,,"Kansas City, MO",,2004246
+,,"Buffalo, NY",,2004247
+,,"Milwaukee, WI",,2004248
+,,"Denver, CO",,2004249
+,,"Milwaukee, WI",,2004250
+,,"Orlando, FL",,2004251
+,,"Kansas City, MO",,2004252
+,,"Columbus, OH",,2004253
+,,"Raleigh, NC",,2004254
+,,"Denver, CO",,2004255
+,,"Birmingham, AL",,2003256
+,,"Oklahoma City, OK",,2003257
+,,"Nashville, TN",,2003258
+,,"Salt Lake City, UT",,2003259
+,,"Tampa, FL",,2003260
+,,"Tampa, FL",,2003261
+,,"Boston, MA",,2003262
+,,"Oklahoma City, OK",,2003263
+,,"Nashville, TN",,2003264
+,,"Boston, MA",,2003265
+,,"Indianapolis, IN",,2003266
+,,"Salt Lake City, UT",,2003267
+,,"Spokane, WA",,2003268
+,,"Birmingham, AL",,2003269
+,,"Spokane, WA",,2003270
+,,"Indianapolis, IN",,2003271
+,,"Washington, DC",,2002272
+,,"St. Louis, MO",,2002273
+,,"Greenville, SC",,2002274
+,,"Pittsburgh, PA",,2002275
+,,"Washington, DC",,2002276
+,,"Sacramento, CA",,2002277
+,,"Greenville, SC",,2002278
+,,"Dallas, TX",,2002279
+,,"Chicago, IL",,2002280
+,,"Dallas, TX",,2002281
+,,"Pittsburgh, PA",,2002282
+,,"Albuquerque, NM",,2002283
+,,"St. Louis, MO",,2002284
+,,"Chicago, IL",,2002285
+,,"Sacramento, CA",,2002286
+,,"Albuquerque, NM",,2002287
+,,"Dayton, OH",,2001288
+,,"Greensboro, NC",,2001289
+,,"Memphis, TN",,2001290
+,,"San Diego, CA",,2001291
+,,"Kansas City, MO",,2001292
+,,"Uniondale, NY",,2001293
+,,"New Orleans, LA",,2001294
+,,"Boise, ID",,2001295
+,,"Kansas City, MO",,2001296
+,,"Uniondale, NY",,2001297
+,,"New Orleans, LA",,2001298
+,,"Boise, ID",,2001299
+,,"Dayton, OH",,2001300
+,,"Greensboro, NC",,2001301
+,,"Memphis, TN",,2001302
+,,"San Diego, CA",,2001303
+,,"Winston-Salem, NC",,2000304
+,,"Cleveland, OH",,2000305
+,,"Birmingham, AL",,2000306
+,,"Tucson, AZ",,2000307
+,,"Buffalo, NY",,2000308
+,,"Minneapolis, MN",,2000309
+,,"Nashville, TN",,2000310
+,,"Tucson, AZ",,2000311
+,,"Buffalo, NY",,2000312
+,,"Minneapolis, MN",,2000313
+,,"Nashville, TN",,2000314
+,,"Tucson, AZ",,2000315
+,,"Winston-Salem, NC",,2000316
+,,"Cleveland, OH",,2000317
+,,"Birmingham, AL",,2000318
+,,"Salt Lake City, UT",,2000319
+,,"Charlotte, NC",,1999320
+,,"Milwaukee, WI",,1999321
+,,"Indianapolis, IN",,1999322
+,,"Denver, CO",,1999323
+,,"Boston, MA",,1999324
+,,"New Orleans, LA",,1999325
+,,"Orlando, FL",,1999326
+,,"Seattle, WA",,1999327
+,,"Boston, MA",,1999328
+,,"New Orleans, LA",,1999329
+,,"Orlando, FL",,1999330
+,,"Seattle, WA",,1999331
+,,"Charlotte, NC",,1999332
+,,"Milwaukee, WI",,1999333
+,,"Indianapolis, IN",,1999334
+,,"Denver, CO",,1999335
+,,"Hartford, CT",,1998336
+,,"Oklahoma City, OK",,1998337
+,,"Lexington, KY",,1998338
+,,"Sacramento, CA",,1998339
+,,"Washington, DC",,1998340
+,,"Chicago, IL",,1998341
+,,"Atlanta, GA",,1998342
+,,"Boise, ID",,1998343
+,,"Washington, DC",,1998344
+,,"Chicago, IL",,1998345
+,,"Atlanta, GA",,1998346
+,,"Boise, ID",,1998347
+,,"Hartford, CT",,1998348
+,,"Oklahoma City, OK",,1998349
+,,"Lexington, KY",,1998350
+,,"Sacramento, CA",,1998351
+,,"Winston-Salem, NC",,1997352
+,,"Kansas City, MO",,1997353
+,,"Memphis, TN",,1997354
+,,"Salt Lake City, UT",,1997355
+,,"Pittsburgh, PA",,1997356
+,,"Auburn Hills, MI",,1997357
+,,"Charlotte, NC",,1997358
+,,"Tucson, AZ",,1997359
+,,"Pittsburgh, PA",,1997360
+,,"Auburn Hills, MI",,1997361
+,,"Charlotte, NC",,1997362
+,,"Tucson, AZ",,1997363
+,,"Winston-Salem, NC",,1997364
+,,"Kansas City, MO",,1997365
+,,"Memphis, TN",,1997366
+,,"Salt Lake City, UT",,1997367
+,,"Providence, RI",,1996368
+,,"Dallas, TX",,1996369
+,,"Indianapolis, IN",,1996370
+,,"Albuquerque, NM",,1996371
+,,"Richmond, VA",,1996372
+,,"Milwaukee, WI",,1996373
+,,"Orlando, FL",,1996374
+,,"Tempe, AZ",,1996375
+,,"Richmond, VA",,1996376
+,,"Milwaukee, WI",,1996377
+,,"Orlando, FL",,1996378
+,,"Tempe, AZ",,1996379
+,,"Providence, RI",,1996380
+,,"Dallas, TX",,1996381
+,,"Indianapolis, IN",,1996382
+,,"Albuquerque, NM",,1996383
+,,"Baltimore, MD",,1995384
+,,"Dayton, OH",,1995385
+,,"Memphis, TN",,1995386
+,,"Boise, ID",,1995387
+,,"Albany, NY",,1995388
+,,"Austin, TX",,1995389
+,,"Tallahassee, FL",,1995390
+,,"Salt Lake City, UT",,1995391
+,,"Albany, NY",,1995392
+,,"Austin, TX",,1995393
+,,"Tallahassee, FL",,1995394
+,,"Salt Lake City, UT",,1995395
+,,"Baltimore, MD",,1995396
+,,"Dayton, OH",,1995397
+,,"Memphis, TN",,1995398
+,,"Boise, ID",,1995399
+,,"Landover, MD",,1994400
+,,"Oklahoma City, OK",,1994401
+,,"Lexington, KY",,1994402
+,,"Ogden, UT",,1994403
+,,"Uniondale, NY",,1994404
+,,"Park City, KS",,1994405
+,,"St. Petersburg, FL",,1994406
+,,"Sacramento, CA",,1994407
+,,"Uniondale, NY",,1994408
+,,"Park City, KS",,1994409
+,,"St. Petersburg, FL",,1994410
+,,"Sacramento, CA",,1994411
+,,"Landover, MD",,1994412
+,,"Oklahoma City, OK",,1994413
+,,"Lexington, KY",,1994414
+,,"Ogden, UT",,1994415
+,,"Winston-Salem, NC",,1993416
+,,"Indianapolis, IN",,1993417
+,,"Nashville, TN",,1993418
+,,"Tucson, AZ",,1993419
+,,"Syracuse, NY",,1993420
+,,"Rosemont, IL",,1993421
+,,"Orlando, FL",,1993422
+,,"Salt Lake City, UT",,1993423
+,,"Syracuse, NY",,1993424
+,,"Rosemont, IL",,1993425
+,,"Orlando, FL",,1993426
+,,"Salt Lake City, UT",,1993427
+,,"Winston-Salem, NC",,1993428
+,,"Indianapolis, IN",,1993429
+,,"Nashville, TN",,1993430
+,,"Tucson, AZ",,1993431
+,,"Greensboro, NC",,1992432
+,,"Dayton, OH",,1992433
+,,"Cincinnati, OH",,1992434
+,,"Tempe, AZ",,1992435
+,,"Worcester, MA",,1992436
+,,"Milwaukee, WI",,1992437
+,,"Atlanta, GA",,1992438
+,,"Boise, ID",,1992439
+,,"Worcester, MA",,1992440
+,,"Milwaukee, WI",,1992441
+,,"Atlanta, GA",,1992442
+,,"Boise, ID",,1992443
+,,"Greensboro, NC",,1992444
+,,"Dayton, OH",,1992445
+,,"Cincinnati, OH",,1992446
+,,"Tempe, AZ",,1992447
+,,"Syracuse, NY",,1991448
+,,"Dayton, OH",,1991449
+,,"Atlanta, GA",,1991450
+,,"Tucson, AZ",,1991451
+,,"College Park, MD",,1991452
+,,"Minneapolis, MN",,1991453
+,,"Louisville, KY",,1991454
+,,"Salt Lake City, UT",,1991455
+,,"College Park, MD",,1991456
+,,"Minneapolis, MN",,1991457
+,,"Louisville, KY",,1991458
+,,"Salt Lake City, UT",,1991459
+,,"Syracuse, NY",,1991460
+,,"Dayton, OH",,1991461
+,,"Atlanta, GA",,1991462
+,,"Tucson, AZ",,1991463
+,,"Hartford, CT",,1990464
+,,"Austin, TX",,1990465
+,,"Knoxville, TN",,1990466
+,,"Salt Lake City, UT",,1990467
+,,"Atlanta, GA",,1990468
+,,"Indianapolis, IN",,1990469
+,,"Richmond, VA",,1990470
+,,"Long Beach, CA",,1990471
+,,"Atlanta, GA",,1990472
+,,"Indianapolis, IN",,1990473
+,,"Richmond, VA",,1990474
+,,"Long Beach, CA",,1990475
+,,"Hartford, CT",,1990476
+,,"Austin, TX",,1990477
+,,"Knoxville, TN",,1990478
+,,"Salt Lake City, UT",,1990479
+,,"Providence, RI",,1989480
+,,"Indianapolis, IN",,1989481
+,,"Nashville, TN",,1989482
+,,"Boise, ID",,1989483
+,,"Greensboro, NC",,1989484
+,,"Dallas, TX",,1989485
+,,"Atlanta, GA",,1989486
+,,"Tucson, AZ",,1989487
+,,"Greensboro, NC",,1989488
+,,"Dallas, TX",,1989489
+,,"Atlanta, GA",,1989490
+,,"Tucson, AZ",,1989491
+,,"Providence, RI",,1989492
+,,"Indianapolis, IN",,1989493
+,,"Nashville, TN",,1989494
+,,"Boise, ID",,1989495
+,,"Hartford, CT",,1988496
+,,"South Bend, IN",,1988497
+,,"Atlanta, GA",,1988498
+,,"Los Angeles, CA",,1988499
+,,"Chapel Hill, NC",,1988500
+,,"Lincoln, NE",,1988501
+,,"Cincinnati, OH",,1988502
+,,"Salt Lake City, UT",,1988503
+,,"Chapel Hill, NC",,1988504
+,,"Lincoln, NE",,1988505
+,,"Cincinnati, OH",,1988506
+,,"Salt Lake City, UT",,1988507
+,,"Hartford, CT",,1988508
+,,"South Bend, IN",,1988509
+,,"Atlanta, GA",,1988510
+,,"Los Angeles, CA",,1988511
+,,"Charlotte, NC",,1987512
+,,"Indianapolis, IN",,1987513
+,,"Atlanta, GA",,1987514
+,,"Salt Lake City, UT",,1987515
+,,"Syracuse, NY",,1987516
+,,"Rosemont, IL",,1987517
+,,"Birmingham, AL",,1987518
+,,"Tucson, AZ",,1987519
+,,"Syracuse, NY",,1987520
+,,"Rosemont, IL",,1987521
+,,"Birmingham, AL",,1987522
+,,"Tucson, AZ",,1987523
+,,"Charlotte, NC",,1987524
+,,"Indianapolis, IN",,1987525
+,,"Atlanta, GA",,1987526
+,,"Salt Lake City, UT",,1987527
+,,"Greensboro, NC",,1986528
+,,"Dayton, OH",,1986529
+,,"Charlotte, NC",,1986530
+,,"Long Beach, CA",,1986531
+,,"Syracuse, NY",,1986532
+,,"Minneapolis, MN",,1986533
+,,"Baton Rouge, LA",,1986534
+,,"Ogden, UT",,1986535
+,,"Syracuse, NY",,1986536
+,,"Minneapolis, MN",,1986537
+,,"Baton Rouge, LA",,1986538
+,,"Ogden, UT",,1986539
+,,"Greensboro, NC",,1986540
+,,"Dayton, OH",,1986541
+,,"Charlotte, NC",,1986542
+,,"Long Beach, CA",,1986543
+,,"Hartford, CT",,1985544
+,,"Tulsa, OK",,1985545
+,,"Dayton, OH",,1985546
+,,"Salt Lake City, UT",,1985547
+,,"Atlanta, GA",,1985548
+,,"Houston, TX",,1985549
+,,"South Bend, IN",,1985550
+,,"Albuquerque, NM",,1985551
+,,"Atlanta, GA",,1985552
+,,"Houston, TX",,1985553
+,,"South Bend, IN",,1985554
+,,"Albuquerque, NM",,1985555
+,,"Hartford, CT",,1985556
+,,"Tulsa, OK",,1985557
+,,"Dayton, OH",,1985558
+,,"Salt Lake City, UT",,1985559

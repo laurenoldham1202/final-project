@@ -6,14 +6,14 @@ national championship title in a single-elimination competition colloquially cal
 process and tournament format for March Madness have changed considerably since its inception in 1939, countless fans 
 have become devoted to understanding and predicting the tournament field in the study of 'Bracketology.' The modern era 
 of the tournament began in 1985 with a final field of 64 teams and preferential seeding to determine the year's bracket.
-In theory, higher ranked teams are rewarded by playing the worst teams in the tournament. Furthermore, according to the 
-NCAA's selection process, top seeded teams are to have geographic preference over lower seeded teams in the first two 
-rounds of the tournament (if possible - other factors are considered). **I want to analyze the first/second round sites 
-for each of the top 4 seeded teams (four teams in each seed for 16 total top teams each year) from 1985 to 2020 to 
+In theory, higher ranked teams are rewarded by playing the lowest ranked teams in the tournament. Furthermore, according
+to the NCAA's selection process, top seeded teams are to have geographic preference over lower seeded teams in the first
+two rounds of the tournament (if possible - other factors are considered). **I want to analyze the first/second round 
+sites for each of the top 4 seeded teams (four teams in each seed for 16 total top teams each year) from 1985 to 2020 to 
 establish patterns, potential biases, and test the NCAA's claim of geographic preference.**
 
 
-## Roadmap
+## Roadmap/Ideas
 
 * Should probably limit data to modern March Madness seeding rules, beginning in 1985
 * Use scrollymapping to show analysis highlights?
@@ -31,6 +31,8 @@ traveled overall, etc.
 
 ## Data
 
+#### Raw Tournament Data
+
 Raw data for the first round of each tournament from 1985 to 2019* was copied into a CSV with the year as the column name 
 and the first round teams, seeds, sites, and scores as the rows. The raw data was then imported in a Jupyter Notebook 
 (`notebooks/data-prep.ipynb`) and cleaned with a Python 3 script resulting in a CSV formatted as:
@@ -46,7 +48,21 @@ In addition to each of the 16 teams for years 1985-2019, new rows for each site 
 matching ID) to eventually analyze the distance between each school and their first-round sites. This data was saved as 
 `data/raw/mm-85-19-cleaned.csv`.
 
-This data will be used to calculate the distance between each school and its site location. 
+This data will be used to calculate the distance between each school and its site location.
+
+*2020 tournament will take place in March-April 2020.
+
+
+#### School Locations/Details
+
+The cleaned tournament file includes the shorthand school names, but no other geographic information for participating 
+programs. To get locations for each school, the list of [NCAA Division 1 Institutions](https://en.wikipedia.org/wiki/List_of_NCAA_Division_I_institutions)
+was pulled from Wikipedia and saved as CSV (`data/raw/d1-master-list.csv`). The data was cleaned using Pandas in Python 3
+(`notebooks/school-metadata-mergeatus.ipynb`) and merged with the original tournaments file.  
+
+
+#### Geocode
+
 
 TO DO:
 1. Geocode
@@ -56,7 +72,6 @@ TO DO:
 5. For sites, split strings into city and state columns
 6. Potentially add final scores, W/L, region, championship site?
 
-*2020 tournament will take place in March-April 2020.
 
 
 ### Sources
