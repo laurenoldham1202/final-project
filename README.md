@@ -58,7 +58,7 @@ This data will be used to calculate the distance between each school and its sit
 The cleaned tournament file includes the shorthand school names, but no other geographic information for participating 
 programs. To get locations for each school, the list of [NCAA Division 1 Institutions](https://en.wikipedia.org/wiki/List_of_NCAA_Division_I_institutions)
 was pulled from Wikipedia and saved as CSV (`data/raw/d1-master-list.csv`). The data was cleaned using Pandas in Python 3
-(`notebooks/school-metadata-mergeatus.ipynb`) and merged with the original tournaments file.  
+(`notebooks/school-metadata-merge.ipynb`) and merged with the original tournaments file.  
 
 
 #### Geocode

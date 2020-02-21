@@ -1,0 +1,1121 @@
+seed,school,site,year,id,school_x,school_y,common_name,team,city,state,type,conference
+1.0,Duke,"Columbia, SC",2019.0,20190,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+1.0,Gonzaga,"Salt Lake City, UT",2019.0,20191,Gonzaga,Gonzaga University,Gonzaga,Bulldogs,Spokane,Washington,Private/Catholic,West Coast Conference
+1.0,North Carolina,"Columbus, OH",2019.0,20192,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+1.0,Virginia,"Columbia, SC",2019.0,20193,Virginia,University of Virginia,Virginia,Cavaliers,Charlottesville,Virginia,State,Atlantic Coast Conference
+2.0,Michigan State,"Des Moines, IA",2019.0,20194,Michigan State,Michigan State University,Michigan State,Spartans,East Lansing,Michigan,State,Big Ten Conference
+2.0,Michigan,"Des Moines, IA",2019.0,20195,Michigan,University of Michigan,Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference
+2.0,Kentucky,"Jacksonville, FL",2019.0,20196,Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+2.0,Tennessee,"Columbus, OH",2019.0,20197,Tennessee,University of Tennessee,Tennessee,Volunteers,Knoxville,Tennessee,State,Southeastern Conference
+3.0,LSU,"Jacksonville, FL",2019.0,20198,LSU,Louisiana State University,LSU,Tigers,Baton Rouge,Louisiana,State,Southeastern Conference
+3.0,Texas Tech,"Tulsa, OK",2019.0,20199,Texas Tech,Texas Tech University,Texas Tech,Red Raiders,Lubbock,Texas,State,Big 12 Conference
+3.0,Houston,"Tulsa, OK",2019.0,201910,Houston,University of Houston,Houston,Cougars,Houston,Texas,State,American Athletic Conference
+3.0,Purdue,"Hartford, CT",2019.0,201911,Purdue,Purdue University,Purdue,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference
+4.0,Virginia Tech,"San Jose, CA",2019.0,201912,Virginia Tech,Virginia Tech,Virginia Tech,Hokies,Blacksburg,Virginia,State,Atlantic Coast Conference
+4.0,Florida State,"Hartford, CT",2019.0,201913,Florida State,Florida State University,Florida State,Seminoles,Tallahassee,Florida,State,Atlantic Coast Conference
+4.0,Kansas,"Salt Lake City, UT",2019.0,201914,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+4.0,Kansas State,"San Jose, CA",2019.0,201915,Kansas State,Kansas State University,Kansas State,Wildcats,Manhattan,Kansas,State,Big 12 Conference
+1.0,Villanova,"Pittsburgh, PA",2018.0,201816,Villanova,Villanova University,Villanova,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference
+1.0,Kansas,"Wichita, KS",2018.0,201817,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+1.0,Xavier,"Nashville, TN",2018.0,201818,Xavier,Xavier University,Xavier,Musketeers,Cincinnati,Ohio,Private/Catholic,Big East Conference
+1.0,Virginia,"Charlotte, NC",2018.0,201819,Virginia,University of Virginia,Virginia,Cavaliers,Charlottesville,Virginia,State,Atlantic Coast Conference
+2.0,Purdue,"Detroit, MI",2018.0,201820,Purdue,Purdue University,Purdue,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference
+2.0,Duke,"Pittsburgh, PA",2018.0,201821,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+2.0,North Carolina,"Charlotte, NC",2018.0,201822,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+2.0,Cincinnati,"Nashville, TN",2018.0,201823,Cincinnati,University of Cincinnati,Cincinnati,Bearcats,Cincinnati,Ohio,State,American Athletic Conference
+3.0,Texas Tech,"Dallas, TX",2018.0,201824,Texas Tech,Texas Tech University,Texas Tech,Red Raiders,Lubbock,Texas,State,Big 12 Conference
+3.0,Michigan State,"Detroit, MI",2018.0,201825,Michigan State,Michigan State University,Michigan State,Spartans,East Lansing,Michigan,State,Big Ten Conference
+3.0,Michigan,"Wichita, KS",2018.0,201826,Michigan,University of Michigan,Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference
+3.0,Tennessee,"Dallas, TX",2018.0,201827,Tennessee,University of Tennessee,Tennessee,Volunteers,Knoxville,Tennessee,State,Southeastern Conference
+4.0,Wichita State,"San Diego, CA",2018.0,201828,Wichita State,Wichita State University,Wichita State,Shockers,Wichita,Kansas,State,American Athletic Conference
+4.0,Auburn,"San Diego, CA",2018.0,201829,Auburn,Auburn University,Auburn,Tigers,Auburn,Alabama,State,Southeastern Conference
+4.0,Gonzaga,"Boise, ID",2018.0,201830,Gonzaga,Gonzaga University,Gonzaga,Bulldogs,Spokane,Washington,Private/Catholic,West Coast Conference
+4.0,Arizona,"Boise, ID",2018.0,201831,Arizona,University of Arizona,Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference
+1.0,Villanova,"Buffalo, NY",2017.0,201732,Villanova,Villanova University,Villanova,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference
+1.0,Kansas,"Tulsa, OK",2017.0,201733,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+1.0,North Carolina,"Greenville, SC",2017.0,201734,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+1.0,Gonzaga,"Salt Lake City, UT",2017.0,201735,Gonzaga,Gonzaga University,Gonzaga,Bulldogs,Spokane,Washington,Private/Catholic,West Coast Conference
+2.0,Duke,"Greenville, SC",2017.0,201736,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+2.0,Louisville,"Indianapolis, IN",2017.0,201737,Louisville,University of Louisville,Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference
+2.0,Kentucky,"Indianapolis, IN",2017.0,201738,Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+2.0,Arizona,"Salt Lake City, UT",2017.0,201739,Arizona,University of Arizona,Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference
+3.0,Baylor,"Tulsa, OK",2017.0,201740,Baylor,Baylor University,Baylor,Bears,Waco,Texas,Private/Baptist,Big 12 Conference
+3.0,Oregon,"Sacramento, CA",2017.0,201741,Oregon,University of Oregon,Oregon,Ducks,Eugene,Oregon,State,Pac-12 Conference
+3.0,UCLA,"Sacramento, CA",2017.0,201742,UCLA,"University of California, Los Angeles",UCLA,Bruins,Los Angeles,California,State,Pac-12 Conference
+3.0,Florida State,"Orlando, FL",2017.0,201743,Florida State,Florida State University,Florida State,Seminoles,Tallahassee,Florida,State,Atlantic Coast Conference
+4.0,Florida,"Orlando, FL",2017.0,201744,Florida,University of Florida,Florida,Gators,Gainesville,Florida,State,Southeastern Conference
+4.0,Purdue,"Milwaukee, WI",2017.0,201745,Purdue,Purdue University,Purdue,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference
+4.0,Butler,"Milwaukee, WI",2017.0,201746,Butler,Butler University,Butler,Bulldogs,Indianapolis,Indiana,Private/Non-Sectarian,Big East Conference
+4.0,West Virginia,"Buffalo, NY",2017.0,201747,West Virginia,West Virginia University,West Virginia,Mountaineers,Morgantown,West Virginia,State,Big 12 Conference
+1.0,North Carolina,"Raleigh, NC",2016.0,201648,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+1.0,Kansas,"Des Moines, IA",2016.0,201649,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+1.0,Oregon,"Spokane, WA",2016.0,201650,Oregon,University of Oregon,Oregon,Ducks,Eugene,Oregon,State,Pac-12 Conference
+1.0,Virginia,"Raleigh, NC",2016.0,201651,Virginia,University of Virginia,Virginia,Cavaliers,Charlottesville,Virginia,State,Atlantic Coast Conference
+2.0,Xavier,"St. Louis, MO",2016.0,201652,Xavier,Xavier University,Xavier,Musketeers,Cincinnati,Ohio,Private/Catholic,Big East Conference
+2.0,Villanova,"Brooklyn, NY",2016.0,201653,Villanova,Villanova University,Villanova,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference
+2.0,Oklahoma,"Oklahoma City, OK",2016.0,201654,Oklahoma,University of Oklahoma,Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference
+2.0,Michigan State,"St. Louis, MO",2016.0,201655,Michigan State,Michigan State University,Michigan State,Spartans,East Lansing,Michigan,State,Big Ten Conference
+3.0,West Virginia,"Brooklyn, NY",2016.0,201656,West Virginia,West Virginia University,West Virginia,Mountaineers,Morgantown,West Virginia,State,Big 12 Conference
+3.0,Miami (FL),"Providence, RI",2016.0,201657,Miami (FL),University of Miami,Miami (FL),Hurricanes,Coral Gables,Florida,Private/Non-Sectarian,Atlantic Coast Conference
+3.0,Texas A&M,"Oklahoma City, OK",2016.0,201658,Texas A&M,Texas A&M University,Texas A&M,Aggies,College Station,Texas,State,Southeastern Conference
+3.0,Utah,"Denver, CO",2016.0,201659,Utah,University of Utah,Utah,Utes,Salt Lake City,Utah,State,Pac-12 Conference
+4.0,Kentucky,"Des Moines, IA",2016.0,201660,Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+4.0,California,"Spokane, WA",2016.0,201661,California,"University of California, Berkeley",California,Golden Bears,Berkeley,California,State,Pac-12 Conference
+4.0,Duke,"Providence, RI",2016.0,201662,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+4.0,Iowa State,"Denver, CO",2016.0,201663,Iowa State,Iowa State University,Iowa State,Cyclones,Ames,Iowa,State,Big 12 Conference
+1.0,Villanova,"Pittsburgh, PA",2015.0,201564,Villanova,Villanova University,Villanova,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference
+1.0,Kentucky,"Louisville, KY",2015.0,201565,Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+1.0,Duke,"Charlotte, NC",2015.0,201566,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+1.0,Wisconsin,"Omaha, NE",2015.0,201567,Wisconsin,University of Wisconsin–Madison,Wisconsin,Badgers,Madison,Wisconsin,State,Big Ten Conference
+2.0,Virginia,"Charlotte, NC",2015.0,201568,Virginia,University of Virginia,Virginia,Cavaliers,Charlottesville,Virginia,State,Atlantic Coast Conference
+2.0,Kansas,"Omaha, NE",2015.0,201569,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+2.0,Gonzaga,"Seattle, WA",2015.0,201570,Gonzaga,Gonzaga University,Gonzaga,Bulldogs,Spokane,Washington,Private/Catholic,West Coast Conference
+2.0,Arizona,"Portland, OR",2015.0,201571,Arizona,University of Arizona,Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference
+3.0,Oklahoma,"Columbus, OH",2015.0,201572,Oklahoma,University of Oklahoma,Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference
+3.0,Notre Dame,"Pittsburgh, PA",2015.0,201573,Notre Dame,University of Notre Dame,Notre Dame,Fighting Irish,South Bend,Indiana,Private/Catholic,Atlantic Coast Conference
+3.0,Iowa State,"Louisville, KY",2015.0,201574,Iowa State,Iowa State University,Iowa State,Cyclones,Ames,Iowa,State,Big 12 Conference
+3.0,Baylor,"Jacksonville, FL",2015.0,201575,Baylor,Baylor University,Baylor,Bears,Waco,Texas,Private/Baptist,Big 12 Conference
+4.0,Louisville,"Seattle, WA",2015.0,201576,Louisville,University of Louisville,Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference
+4.0,Maryland,"Columbus, OH",2015.0,201577,Maryland,"University of Maryland, College Park",Maryland,Terrapins,College Park,Maryland,State,Big Ten Conference
+4.0,Georgetown,"Portland, OR",2015.0,201578,Georgetown,Georgetown University,Georgetown,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference
+4.0,North Carolina,"Jacksonville, FL",2015.0,201579,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+1.0,Wichita State,"St. Louis, MO",2014.0,201480,Wichita State,Wichita State University,Wichita State,Shockers,Wichita,Kansas,State,American Athletic Conference
+1.0,Florida,"Orlando, FL",2014.0,201481,Florida,University of Florida,Florida,Gators,Gainesville,Florida,State,Southeastern Conference
+1.0,Virginia,"Raleigh, NC",2014.0,201482,Virginia,University of Virginia,Virginia,Cavaliers,Charlottesville,Virginia,State,Atlantic Coast Conference
+1.0,Arizona,"San Diego, CA",2014.0,201483,Arizona,University of Arizona,Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference
+2.0,Michigan,"Milwaukee, WI",2014.0,201484,Michigan,University of Michigan,Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference
+2.0,Kansas,"St. Louis, MO",2014.0,201485,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+2.0,Villanova,"Buffalo, NY",2014.0,201486,Villanova,Villanova University,Villanova,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference
+2.0,Wisconsin,"Milwaukee, WI",2014.0,201487,Wisconsin,University of Wisconsin–Madison,Wisconsin,Badgers,Madison,Wisconsin,State,Big Ten Conference
+3.0,Duke,"Raleigh, NC",2014.0,201488,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+3.0,Syracuse,"Buffalo, NY",2014.0,201489,Syracuse,Syracuse University,Syracuse,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference
+3.0,Iowa State,"San Antonio, TX",2014.0,201490,Iowa State,Iowa State University,Iowa State,Cyclones,Ames,Iowa,State,Big 12 Conference
+3.0,Creighton,"San Antonio, TX",2014.0,201491,Creighton,Creighton University,Creighton,Bluejays,Omaha,Nebraska,Private/Catholic,Big East Conference
+4.0,Louisville,"Orlando, FL",2014.0,201492,Louisville,University of Louisville,Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference
+4.0,UCLA,"San Diego, CA",2014.0,201493,UCLA,"University of California, Los Angeles",UCLA,Bruins,Los Angeles,California,State,Pac-12 Conference
+4.0,Michigan State,"Spokane, WA",2014.0,201494,Michigan State,Michigan State University,Michigan State,Spartans,East Lansing,Michigan,State,Big Ten Conference
+4.0,San Diego State,"Spokane, WA",2014.0,201495,San Diego State,San Diego State University,San Diego State,Aztecs,San Diego,California,State,Mountain West Conference
+1.0,Indiana,"Dayton, OH",2013.0,201396,Indiana,Indiana University,Indiana,Hoosiers,Bloomington,Indiana,State,Big Ten Conference
+1.0,Louisville,"Lexington, KY",2013.0,201397,Louisville,University of Louisville,Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference
+1.0,Gonzaga,"Salt Lake City, UT",2013.0,201398,Gonzaga,Gonzaga University,Gonzaga,Bulldogs,Spokane,Washington,Private/Catholic,West Coast Conference
+1.0,Kansas,"Kansas City, MO",2013.0,201399,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+2.0,Miami (FL),"Austin, TX",2013.0,2013100,Miami (FL),University of Miami,Miami (FL),Hurricanes,Coral Gables,Florida,Private/Non-Sectarian,Atlantic Coast Conference
+2.0,Duke,"Philadelphia, PA",2013.0,2013101,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+2.0,Ohio State,"Dayton, OH",2013.0,2013102,Ohio State,The Ohio State University,Ohio State,Buckeyes,Columbus,Ohio,State,Big Ten Conference
+2.0,Georgetown,"Philadelphia, PA",2013.0,2013103,Georgetown,Georgetown University,Georgetown,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference
+3.0,Marquette,"Lexington, KY",2013.0,2013104,Marquette,Marquette University,Marquette,Golden Eagles,Milwaukee,Wisconsin,Private/Catholic,Big East Conference
+3.0,Michigan State,"Auburn Hills, MI",2013.0,2013105,Michigan State,Michigan State University,Michigan State,Spartans,East Lansing,Michigan,State,Big Ten Conference
+3.0,New Mexico,"Salt Lake City, UT",2013.0,2013106,New Mexico,University of New Mexico,New Mexico,Lobos,Albuquerque,New Mexico,State,Mountain West Conference
+3.0,Florida,"Austin, TX",2013.0,2013107,Florida,University of Florida,Florida,Gators,Gainesville,Florida,State,Southeastern Conference
+4.0,Syracuse,"San Jose, CA",2013.0,2013108,Syracuse,Syracuse University,Syracuse,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference
+4.0,Saint Louis,"San Jose, CA",2013.0,2013109,Saint Louis,Saint Louis University,Saint Louis,Billikens,St. Louis,Missouri,Private/Catholic,Atlantic 10 Conference
+4.0,Kansas State,"Kansas City, MO",2013.0,2013110,Kansas State,Kansas State University,Kansas State,Wildcats,Manhattan,Kansas,State,Big 12 Conference
+4.0,Michigan,"Auburn Hills, MI",2013.0,2013111,Michigan,University of Michigan,Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference
+1.0,North Carolina,"Greensboro, NC",2012.0,2012112,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+1.0,Kentucky,"Louisville, KY",2012.0,2012113,Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+1.0,Michigan State,"Columbus, OH",2012.0,2012114,Michigan State,Michigan State University,Michigan State,Spartans,East Lansing,Michigan,State,Big Ten Conference
+1.0,Syracuse,"Pittsburgh, PA",2012.0,2012115,Syracuse,Syracuse University,Syracuse,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference
+2.0,Kansas,"Omaha, NE",2012.0,2012116,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+2.0,Duke,"Greensboro, NC",2012.0,2012117,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+2.0,Missouri,"Omaha, NE",2012.0,2012118,Missouri,University of Missouri,Missouri,Tigers,Columbia,Missouri,State,Southeastern Conference
+2.0,Ohio State,"Pittsburgh, PA",2012.0,2012119,Ohio State,The Ohio State University,Ohio State,Buckeyes,Columbus,Ohio,State,Big Ten Conference
+3.0,Georgetown,"Columbus, OH",2012.0,2012120,Georgetown,Georgetown University,Georgetown,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference
+3.0,Baylor,"Albuquerque, NM",2012.0,2012121,Baylor,Baylor University,Baylor,Bears,Waco,Texas,Private/Baptist,Big 12 Conference
+3.0,Marquette,"Louisville, KY",2012.0,2012122,Marquette,Marquette University,Marquette,Golden Eagles,Milwaukee,Wisconsin,Private/Catholic,Big East Conference
+3.0,Florida State,"Nashville, TN",2012.0,2012123,Florida State,Florida State University,Florida State,Seminoles,Tallahassee,Florida,State,Atlantic Coast Conference
+4.0,Michigan,"Nashville, TN",2012.0,2012124,Michigan,University of Michigan,Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference
+4.0,Indiana,"Portland, OR",2012.0,2012125,Indiana,Indiana University,Indiana,Hoosiers,Bloomington,Indiana,State,Big Ten Conference
+4.0,Louisville,"Portland, OR",2012.0,2012126,Louisville,University of Louisville,Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference
+4.0,Wisconsin,"Albuquerque, NM",2012.0,2012127,Wisconsin,University of Wisconsin–Madison,Wisconsin,Badgers,Madison,Wisconsin,State,Big Ten Conference
+1.0,Ohio State,"Cleveland, OH",2011.0,2011128,Ohio State,The Ohio State University,Ohio State,Buckeyes,Columbus,Ohio,State,Big Ten Conference
+1.0,Pittsburgh,"Washington, DC",2011.0,2011129,Pittsburgh,University of Pittsburgh,Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference
+1.0,Kansas,"Tulsa, OK",2011.0,2011130,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+1.0,Duke,"Charlotte, NC",2011.0,2011131,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+2.0,North Carolina,"Charlotte, NC",2011.0,2011132,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+2.0,Florida,"Tampa, FL",2011.0,2011133,Florida,University of Florida,Florida,Gators,Gainesville,Florida,State,Southeastern Conference
+2.0,Notre Dame,"Chicago, IL",2011.0,2011134,Notre Dame,University of Notre Dame,Notre Dame,Fighting Irish,South Bend,Indiana,Private/Catholic,Atlantic Coast Conference
+2.0,San Diego State,"Tucson, AZ",2011.0,2011135,San Diego State,San Diego State University,San Diego State,Aztecs,San Diego,California,State,Mountain West Conference
+3.0,Syracuse,"Cleveland, OH",2011.0,2011136,Syracuse,Syracuse University,Syracuse,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference
+3.0,BYU,"Denver, CO",2011.0,2011137,BYU,Brigham Young University,BYU,Cougars,Provo,Utah,Private/Latter-Day Saints,West Coast Conference
+3.0,Purdue,"Chicago, IL",2011.0,2011138,Purdue,Purdue University,Purdue,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference
+3.0,UConn,"Washington, DC",2011.0,2011139,UConn,University of Connecticut,UConn,Huskies,Storrs,Connecticut,State,American Athletic Conference
+4.0,Kentucky,"Tampa, FL",2011.0,2011140,Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+4.0,Wisconsin,"Tucson, AZ",2011.0,2011141,Wisconsin,University of Wisconsin–Madison,Wisconsin,Badgers,Madison,Wisconsin,State,Big Ten Conference
+4.0,Louisville,"Denver, CO",2011.0,2011142,Louisville,University of Louisville,Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference
+4.0,Texas,"Tulsa, OK",2011.0,2011143,Texas,University of Texas at Austin,Texas,Longhorns,Austin,Texas,State,Big 12 Conference
+1.0,Duke,"Jacksonville, FL",2010.0,2010144,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+1.0,Kentucky,"New Orleans, LA",2010.0,2010145,Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+1.0,Kansas,"Oklahoma City, OK",2010.0,2010146,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+1.0,Syracuse,"Buffalo, NY",2010.0,2010147,Syracuse,Syracuse University,Syracuse,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference
+2.0,Villanova,"Providence, RI",2010.0,2010148,Villanova,Villanova University,Villanova,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference
+2.0,West Virginia,"Buffalo, NY",2010.0,2010149,West Virginia,West Virginia University,West Virginia,Mountaineers,Morgantown,West Virginia,State,Big 12 Conference
+2.0,Ohio State,"Milwaukee, WI",2010.0,2010150,Ohio State,The Ohio State University,Ohio State,Buckeyes,Columbus,Ohio,State,Big Ten Conference
+2.0,Kansas State,"Oklahoma City, OK",2010.0,2010151,Kansas State,Kansas State University,Kansas State,Wildcats,Manhattan,Kansas,State,Big 12 Conference
+3.0,Baylor,"New Orleans, LA",2010.0,2010152,Baylor,Baylor University,Baylor,Bears,Waco,Texas,Private/Baptist,Big 12 Conference
+3.0,New Mexico,"San Jose, CA",2010.0,2010153,New Mexico,University of New Mexico,New Mexico,Lobos,Albuquerque,New Mexico,State,Mountain West Conference
+3.0,Georgetown,"Providence, RI",2010.0,2010154,Georgetown,Georgetown University,Georgetown,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference
+3.0,Pittsburgh,"Milwaukee, WI",2010.0,2010155,Pittsburgh,University of Pittsburgh,Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference
+4.0,Purdue,"Spokane, WA",2010.0,2010156,Purdue,Purdue University,Purdue,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference
+4.0,Wisconsin,"Jacksonville, FL",2010.0,2010157,Wisconsin,University of Wisconsin–Madison,Wisconsin,Badgers,Madison,Wisconsin,State,Big Ten Conference
+4.0,Maryland,"Spokane, WA",2010.0,2010158,Maryland,"University of Maryland, College Park",Maryland,Terrapins,College Park,Maryland,State,Big Ten Conference
+4.0,Vanderbilt,"San Jose, CA",2010.0,2010159,Vanderbilt,Vanderbilt University,Vanderbilt,Commodores,Nashville,Tennessee,Private/Non-Sectarian,Southeastern Conference
+1.0,Syracuse,"Buffalo, NY",2009.0,2009160,Syracuse,Syracuse University,Syracuse,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference
+1.0,Pittsburgh,"Dayton, OH",2009.0,2009161,Pittsburgh,University of Pittsburgh,Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference
+1.0,North Carolina,"Greensboro, NC",2009.0,2009162,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+1.0,UConn,"Philadelphia, PA",2009.0,2009163,UConn,University of Connecticut,UConn,Huskies,Storrs,Connecticut,State,American Athletic Conference
+2.0,Kansas State,"Oklahoma City, OK",2009.0,2009164,Kansas State,Kansas State University,Kansas State,Wildcats,Manhattan,Kansas,State,Big 12 Conference
+2.0,Duke,"Greensboro, NC",2009.0,2009165,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+2.0,Oklahoma,"Kansas City, MO",2009.0,2009166,Oklahoma,University of Oklahoma,Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference
+2.0,Memphis,"Kansas City, MO",2009.0,2009167,Memphis,University of Memphis,Memphis,Tigers,Memphis,Tennessee,State,American Athletic Conference
+3.0,Pittsburgh,"Milwaukee, WI",2009.0,2009168,Pittsburgh,University of Pittsburgh,Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference
+3.0,Villanova,"Philadelphia, PA",2009.0,2009169,Villanova,Villanova University,Villanova,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference
+3.0,Syracuse,"Miami, FL",2009.0,2009170,Syracuse,Syracuse University,Syracuse,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference
+3.0,Missouri,"Boise, ID",2009.0,2009171,Missouri,University of Missouri,Missouri,Tigers,Columbia,Missouri,State,Southeastern Conference
+4.0,Vanderbilt,"San Jose, CA",2009.0,2009172,Vanderbilt,Vanderbilt University,Vanderbilt,Commodores,Nashville,Tennessee,Private/Non-Sectarian,Southeastern Conference
+4.0,Xavier,"Boise, ID",2009.0,2009173,Xavier,Xavier University,Xavier,Musketeers,Cincinnati,Ohio,Private/Catholic,Big East Conference
+4.0,Gonzaga,"Portland, OR",2009.0,2009174,Gonzaga,Gonzaga University,Gonzaga,Bulldogs,Spokane,Washington,Private/Catholic,West Coast Conference
+4.0,Washington,"Portland, OR",2009.0,2009175,Washington,University of Washington,Washington,Huskies,Seattle,Washington,State,Pac-12 Conference
+1.0,North Carolina,"Raleigh, NC",2008.0,2008176,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+1.0,Kansas,"Omaha, NE",2008.0,2008177,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+1.0,Memphis,"North Little Rock, AR",2008.0,2008178,Memphis,University of Memphis,Memphis,Tigers,Memphis,Tennessee,State,American Athletic Conference
+1.0,UCLA,"Anaheim, CA",2008.0,2008179,UCLA,"University of California, Los Angeles",UCLA,Bruins,Los Angeles,California,State,Pac-12 Conference
+2.0,Tennessee,"Birmingham, AL",2008.0,2008180,Tennessee,University of Tennessee,Tennessee,Volunteers,Knoxville,Tennessee,State,Southeastern Conference
+2.0,Georgetown,"Raleigh, NC",2008.0,2008181,Georgetown,Georgetown University,Georgetown,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference
+2.0,Texas,"North Little Rock, AR",2008.0,2008182,Texas,University of Texas at Austin,Texas,Longhorns,Austin,Texas,State,Big 12 Conference
+2.0,Duke,"Washington, DC",2008.0,2008183,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+3.0,Louisville,"Birmingham, AL",2008.0,2008184,Louisville,University of Louisville,Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference
+3.0,Wisconsin,"Omaha, NE",2008.0,2008185,Wisconsin,University of Wisconsin–Madison,Wisconsin,Badgers,Madison,Wisconsin,State,Big Ten Conference
+3.0,Stanford,"Anaheim, CA",2008.0,2008186,Stanford,Stanford University,Stanford,Cardinal,Palo Alto,California,Private/Non-Sectarian,Pac-12 Conference
+3.0,Xavier,"Washington, DC",2008.0,2008187,Xavier,Xavier University,Xavier,Musketeers,Cincinnati,Ohio,Private/Catholic,Big East Conference
+4.0,Washington State,"Denver, CO",2008.0,2008188,Washington State,Washington State University,Washington State,Cougars,Pullman,Washington,State,Pac-12 Conference
+4.0,Vanderbilt,"Tampa, FL",2008.0,2008189,Vanderbilt,Vanderbilt University,Vanderbilt,Commodores,Nashville,Tennessee,Private/Non-Sectarian,Southeastern Conference
+4.0,Pittsburgh,"Denver, CO",2008.0,2008190,Pittsburgh,University of Pittsburgh,Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference
+4.0,UConn,"Tampa, FL",2008.0,2008191,UConn,University of Connecticut,UConn,Huskies,Storrs,Connecticut,State,American Athletic Conference
+1.0,Kansas,"Chicago, IL",2007.0,2007192,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+1.0,North Carolina,"Winston-Salem, NC",2007.0,2007193,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+1.0,Florida,"New Orleans, LA",2007.0,2007194,Florida,University of Florida,Florida,Gators,Gainesville,Florida,State,Southeastern Conference
+1.0,Florida,"New Orleans, LA",2007.0,2007195,Florida,University of Florida,Florida,Gators,Gainesville,Florida,State,Southeastern Conference
+2.0,UCLA,"Sacramento, CA",2007.0,2007196,UCLA,"University of California, Los Angeles",UCLA,Bruins,Los Angeles,California,State,Pac-12 Conference
+2.0,Georgetown,"Winston-Salem, NC",2007.0,2007197,Georgetown,Georgetown University,Georgetown,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference
+2.0,Wisconsin,"Chicago, IL",2007.0,2007198,Wisconsin,University of Wisconsin–Madison,Wisconsin,Badgers,Madison,Wisconsin,State,Big Ten Conference
+2.0,Wisconsin,"Chicago, IL",2007.0,2007199,Wisconsin,University of Wisconsin–Madison,Wisconsin,Badgers,Madison,Wisconsin,State,Big Ten Conference
+3.0,Pittsburgh,"Buffalo, NY",2007.0,2007200,Pittsburgh,University of Pittsburgh,Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference
+3.0,Washington State,"Sacramento, CA",2007.0,2007201,Washington State,Washington State University,Washington State,Cougars,Pullman,Washington,State,Pac-12 Conference
+3.0,Oregon,"Spokane, WA",2007.0,2007202,Oregon,University of Oregon,Oregon,Ducks,Eugene,Oregon,State,Pac-12 Conference
+3.0,Oregon,"Spokane, WA",2007.0,2007203,Oregon,University of Oregon,Oregon,Ducks,Eugene,Oregon,State,Pac-12 Conference
+4.0,Southern Illinois,"Columbus, OH",2007.0,2007204,Southern Illinois,Southern Illinois University Carbondale,Southern Illinois,Salukis,Carbondale,Illinois,State,Missouri Valley Conference
+4.0,Texas,"Spokane, WA",2007.0,2007205,Texas,University of Texas at Austin,Texas,Longhorns,Austin,Texas,State,Big 12 Conference
+4.0,Maryland,"Buffalo, NY",2007.0,2007206,Maryland,"University of Maryland, College Park",Maryland,Terrapins,College Park,Maryland,State,Big Ten Conference
+4.0,Maryland,"Buffalo, NY",2007.0,2007207,Maryland,"University of Maryland, College Park",Maryland,Terrapins,College Park,Maryland,State,Big Ten Conference
+1.0,Villanova,"Philadelphia, PA",2006.0,2006208,Villanova,Villanova University,Villanova,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference
+1.0,Duke,"Greensboro, NC",2006.0,2006209,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+1.0,Memphis,"Dallas, TX",2006.0,2006210,Memphis,University of Memphis,Memphis,Tigers,Memphis,Tennessee,State,American Athletic Conference
+1.0,UConn,"Philadelphia, PA",2006.0,2006211,UConn,University of Connecticut,UConn,Huskies,Storrs,Connecticut,State,American Athletic Conference
+2.0,Ohio State,"Dayton, OH",2006.0,2006212,Ohio State,The Ohio State University,Ohio State,Buckeyes,Columbus,Ohio,State,Big Ten Conference
+2.0,Texas,"Dallas, TX",2006.0,2006213,Texas,University of Texas at Austin,Texas,Longhorns,Austin,Texas,State,Big 12 Conference
+2.0,UCLA,"San Diego, CA",2006.0,2006214,UCLA,"University of California, Los Angeles",UCLA,Bruins,Los Angeles,California,State,Pac-12 Conference
+2.0,Tennessee,"Greensboro, NC",2006.0,2006215,Tennessee,University of Tennessee,Tennessee,Volunteers,Knoxville,Tennessee,State,Southeastern Conference
+3.0,Florida,"Jacksonville, FL",2006.0,2006216,Florida,University of Florida,Florida,Gators,Gainesville,Florida,State,Southeastern Conference
+3.0,Iowa,"Auburn Hills, MI",2006.0,2006217,Iowa,University of Iowa,Iowa,Hawkeyes,Iowa City,Iowa,State,Big Ten Conference
+3.0,Gonzaga,"Salt Lake City, UT",2006.0,2006218,Gonzaga,Gonzaga University,Gonzaga,Bulldogs,Spokane,Washington,Private/Catholic,West Coast Conference
+3.0,North Carolina,"Dayton, OH",2006.0,2006219,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+4.0,Boston College,"Salt Lake City, UT",2006.0,2006220,Boston College,Boston College,Boston College,Eagles,Chestnut Hill,Massachusetts,Private/Catholic,Atlantic Coast Conference
+4.0,LSU,"Jacksonville, FL",2006.0,2006221,LSU,Louisiana State University,LSU,Tigers,Baton Rouge,Louisiana,State,Southeastern Conference
+4.0,Kansas,"Auburn Hills, MI",2006.0,2006222,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+4.0,Illinois,"San Diego, CA",2006.0,2006223,Illinois,University of Illinois at Urbana–Champaign,Illinois,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference
+1.0,North Carolina,"Charlotte, NC",2005.0,2005224,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+1.0,Washington,"Boise, ID",2005.0,2005225,Washington,University of Washington,Washington,Huskies,Seattle,Washington,State,Pac-12 Conference
+1.0,Duke,"Charlotte, NC",2005.0,2005226,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+1.0,Illinois,"Indianapolis, IN",2005.0,2005227,Illinois,University of Illinois at Urbana–Champaign,Illinois,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference
+2.0,UConn,"Worcester, MA",2005.0,2005228,UConn,University of Connecticut,UConn,Huskies,Storrs,Connecticut,State,American Athletic Conference
+2.0,Wake Forest,"Cleveland, OH",2005.0,2005229,Wake Forest,Wake Forest University,Wake Forest,Demon Deacons,Winston-Salem,North Carolina,Private/Non-Sectarian,Atlantic Coast Conference
+2.0,Kentucky,"Indianapolis, IN",2005.0,2005230,Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+2.0,Oklahoma State,"Oklahoma City, OK",2005.0,2005231,Oklahoma State,Oklahoma State University–Stillwater,Oklahoma State,Cowboys,Stillwater,Oklahoma,State,Big 12 Conference
+3.0,Kansas,"Oklahoma City, OK",2005.0,2005232,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+3.0,Gonzaga,"Tucson, AZ",2005.0,2005233,Gonzaga,Gonzaga University,Gonzaga,Bulldogs,Spokane,Washington,Private/Catholic,West Coast Conference
+3.0,Oklahoma,"Tucson, AZ",2005.0,2005234,Oklahoma,University of Oklahoma,Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference
+3.0,Arizona,"Boise, ID",2005.0,2005235,Arizona,University of Arizona,Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference
+4.0,Florida,"Nashville, TN",2005.0,2005236,Florida,University of Florida,Florida,Gators,Gainesville,Florida,State,Southeastern Conference
+4.0,Louisville,"Nashville, TN",2005.0,2005237,Louisville,University of Louisville,Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference
+4.0,Syracuse,"Worcester, MA",2005.0,2005238,Syracuse,Syracuse University,Syracuse,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference
+4.0,Boston College,"Cleveland, OH",2005.0,2005239,Boston College,Boston College,Boston College,Eagles,Chestnut Hill,Massachusetts,Private/Catholic,Atlantic Coast Conference
+1.0,Kentucky,"Columbus, OH",2004.0,2004240,Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+1.0,Duke,"Raleigh, NC",2004.0,2004241,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+1.0,Saint Joseph's,"Buffalo, NY",2004.0,2004242,Saint Joseph's,Saint Joseph's University,Saint Joseph's,Hawks,Philadelphia,Pennsylvania,Private/Catholic,Atlantic 10 Conference
+1.0,Stanford,"Seattle, WA",2004.0,2004243,Stanford,Stanford University,Stanford,Cardinal,Palo Alto,California,Private/Non-Sectarian,Pac-12 Conference
+2.0,Gonzaga,"Seattle, WA",2004.0,2004244,Gonzaga,Gonzaga University,Gonzaga,Bulldogs,Spokane,Washington,Private/Catholic,West Coast Conference
+2.0,Mississippi State,"Orlando, FL",2004.0,2004245,Mississippi State,Mississippi State University,Mississippi State,Bulldogs,Starkville,Mississippi,State,Southeastern Conference
+2.0,Oklahoma State,"Kansas City, MO",2004.0,2004246,Oklahoma State,Oklahoma State University–Stillwater,Oklahoma State,Cowboys,Stillwater,Oklahoma,State,Big 12 Conference
+2.0,UConn,"Buffalo, NY",2004.0,2004247,UConn,University of Connecticut,UConn,Huskies,Storrs,Connecticut,State,American Athletic Conference
+3.0,Georgia Tech,"Milwaukee, WI",2004.0,2004248,Georgia Tech,Georgia Institute of Technology,Georgia Tech,Yellow Jackets,Atlanta,Georgia,State,Atlantic Coast Conference
+3.0,Texas,"Denver, CO",2004.0,2004249,Texas,University of Texas at Austin,Texas,Longhorns,Austin,Texas,State,Big 12 Conference
+3.0,Pittsburgh,"Milwaukee, WI",2004.0,2004250,Pittsburgh,University of Pittsburgh,Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference
+3.0,NC State,"Orlando, FL",2004.0,2004251,NC State,North Carolina State University,NC State,Wolfpack,Raleigh,North Carolina,State,Atlantic Coast Conference
+4.0,Kansas,"Kansas City, MO",2004.0,2004252,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+4.0,Cincinnati,"Columbus, OH",2004.0,2004253,Cincinnati,University of Cincinnati,Cincinnati,Bearcats,Cincinnati,Ohio,State,American Athletic Conference
+4.0,Wake Forest,"Raleigh, NC",2004.0,2004254,Wake Forest,Wake Forest University,Wake Forest,Demon Deacons,Winston-Salem,North Carolina,Private/Non-Sectarian,Atlantic Coast Conference
+4.0,Maryland,"Denver, CO",2004.0,2004255,Maryland,"University of Maryland, College Park",Maryland,Terrapins,College Park,Maryland,State,Big Ten Conference
+1.0,Texas,"Birmingham, AL",2003.0,2003256,Texas,University of Texas at Austin,Texas,Longhorns,Austin,Texas,State,Big 12 Conference
+1.0,Oklahoma,"Oklahoma City, OK",2003.0,2003257,Oklahoma,University of Oklahoma,Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference
+1.0,Kentucky,"Nashville, TN",2003.0,2003258,Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+1.0,Arizona,"Salt Lake City, UT",2003.0,2003259,Arizona,University of Arizona,Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference
+2.0,Florida,"Tampa, FL",2003.0,2003260,Florida,University of Florida,Florida,Gators,Gainesville,Florida,State,Southeastern Conference
+2.0,Wake Forest,"Tampa, FL",2003.0,2003261,Wake Forest,Wake Forest University,Wake Forest,Demon Deacons,Winston-Salem,North Carolina,Private/Non-Sectarian,Atlantic Coast Conference
+2.0,Pittsburgh,"Boston, MA",2003.0,2003262,Pittsburgh,University of Pittsburgh,Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference
+2.0,Kansas,"Oklahoma City, OK",2003.0,2003263,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+3.0,Xavier,"Nashville, TN",2003.0,2003264,Xavier,Xavier University,Xavier,Musketeers,Cincinnati,Ohio,Private/Catholic,Big East Conference
+3.0,Syracuse,"Boston, MA",2003.0,2003265,Syracuse,Syracuse University,Syracuse,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference
+3.0,Marquette,"Indianapolis, IN",2003.0,2003266,Marquette,Marquette University,Marquette,Golden Eagles,Milwaukee,Wisconsin,Private/Catholic,Big East Conference
+3.0,Duke,"Salt Lake City, UT",2003.0,2003267,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+4.0,Stanford,"Spokane, WA",2003.0,2003268,Stanford,Stanford University,Stanford,Cardinal,Palo Alto,California,Private/Non-Sectarian,Pac-12 Conference
+4.0,Louisville,"Birmingham, AL",2003.0,2003269,Louisville,University of Louisville,Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference
+4.0,Dayton,"Spokane, WA",2003.0,2003270,Dayton,University of Dayton,Dayton,Flyers,Dayton,Ohio,Private/Catholic,Atlantic 10 Conference
+4.0,Illinois,"Indianapolis, IN",2003.0,2003271,Illinois,University of Illinois at Urbana–Champaign,Illinois,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference
+1.0,Maryland,"Washington, DC",2002.0,2002272,Maryland,"University of Maryland, College Park",Maryland,Terrapins,College Park,Maryland,State,Big Ten Conference
+1.0,Kansas,"St. Louis, MO",2002.0,2002273,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+1.0,Duke,"Greenville, SC",2002.0,2002274,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+1.0,Cincinnati,"Pittsburgh, PA",2002.0,2002275,Cincinnati,University of Cincinnati,Cincinnati,Bearcats,Cincinnati,Ohio,State,American Athletic Conference
+2.0,UConn,"Washington, DC",2002.0,2002276,UConn,University of Connecticut,UConn,Huskies,Storrs,Connecticut,State,American Athletic Conference
+2.0,Oregon,"Sacramento, CA",2002.0,2002277,Oregon,University of Oregon,Oregon,Ducks,Eugene,Oregon,State,Pac-12 Conference
+2.0,Alabama,"Greenville, SC",2002.0,2002278,Alabama,University of Alabama,Alabama,Crimson Tide,Tuscaloosa,Alabama,State,Southeastern Conference
+2.0,Oklahoma,"Dallas, TX",2002.0,2002279,Oklahoma,University of Oklahoma,Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference
+3.0,Georgia,"Chicago, IL",2002.0,2002280,Georgia,University of Georgia,Georgia,Bulldogs,Athens,Georgia,State,Southeastern Conference
+3.0,Mississippi State,"Dallas, TX",2002.0,2002281,Mississippi State,Mississippi State University,Mississippi State,Bulldogs,Starkville,Mississippi,State,Southeastern Conference
+3.0,Pittsburgh,"Pittsburgh, PA",2002.0,2002282,Pittsburgh,University of Pittsburgh,Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference
+3.0,Arizona,"Albuquerque, NM",2002.0,2002283,Arizona,University of Arizona,Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference
+4.0,Kentucky,"St. Louis, MO",2002.0,2002284,Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+4.0,Illinois,"Chicago, IL",2002.0,2002285,Illinois,University of Illinois at Urbana–Champaign,Illinois,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference
+4.0,USC,"Sacramento, CA",2002.0,2002286,USC,University of Southern California,USC,Trojans,Los Angeles,California,Private/Non-Sectarian,Pac-12 Conference
+4.0,Ohio State,"Albuquerque, NM",2002.0,2002287,Ohio State,The Ohio State University,Ohio State,Buckeyes,Columbus,Ohio,State,Big Ten Conference
+1.0,Illinois,"Dayton, OH",2001.0,2001288,Illinois,University of Illinois at Urbana–Champaign,Illinois,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference
+1.0,Duke,"Greensboro, NC",2001.0,2001289,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+1.0,Michigan State,"Memphis, TN",2001.0,2001290,Michigan State,Michigan State University,Michigan State,Spartans,East Lansing,Michigan,State,Big Ten Conference
+1.0,Stanford,"San Diego, CA",2001.0,2001291,Stanford,Stanford University,Stanford,Cardinal,Palo Alto,California,Private/Non-Sectarian,Pac-12 Conference
+2.0,Arizona,"Kansas City, MO",2001.0,2001292,Arizona,University of Arizona,Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference
+2.0,Kentucky,"Uniondale, NY",2001.0,2001293,Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+2.0,North Carolina,"New Orleans, LA",2001.0,2001294,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+2.0,Iowa State,"Boise, ID",2001.0,2001295,Iowa State,Iowa State University,Iowa State,Cyclones,Ames,Iowa,State,Big 12 Conference
+3.0,Ole Miss,"Kansas City, MO",2001.0,2001296,Ole Miss,University of Mississippi,Ole Miss,Rebels,Oxford,Mississippi,State,Southeastern Conference
+3.0,Boston College,"Uniondale, NY",2001.0,2001297,Boston College,Boston College,Boston College,Eagles,Chestnut Hill,Massachusetts,Private/Catholic,Atlantic Coast Conference
+3.0,Florida,"New Orleans, LA",2001.0,2001298,Florida,University of Florida,Florida,Gators,Gainesville,Florida,State,Southeastern Conference
+3.0,Maryland,"Boise, ID",2001.0,2001299,Maryland,"University of Maryland, College Park",Maryland,Terrapins,College Park,Maryland,State,Big Ten Conference
+4.0,Kansas,"Dayton, OH",2001.0,2001300,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+4.0,UCLA,"Greensboro, NC",2001.0,2001301,UCLA,"University of California, Los Angeles",UCLA,Bruins,Los Angeles,California,State,Pac-12 Conference
+4.0,Oklahoma,"Memphis, TN",2001.0,2001302,Oklahoma,University of Oklahoma,Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference
+4.0,Indiana,"San Diego, CA",2001.0,2001303,Indiana,Indiana University,Indiana,Hoosiers,Bloomington,Indiana,State,Big Ten Conference
+1.0,Duke,"Winston-Salem, NC",2000.0,2000304,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+1.0,Michigan State,"Cleveland, OH",2000.0,2000305,Michigan State,Michigan State University,Michigan State,Spartans,East Lansing,Michigan,State,Big Ten Conference
+1.0,Stanford,"Birmingham, AL",2000.0,2000306,Stanford,Stanford University,Stanford,Cardinal,Palo Alto,California,Private/Non-Sectarian,Pac-12 Conference
+1.0,Arizona,"Tucson, AZ",2000.0,2000307,Arizona,University of Arizona,Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference
+2.0,Temple,"Buffalo, NY",2000.0,2000308,Temple,Temple University,Temple,Owls,Philadelphia,Pennsylvania,State-related,American Athletic Conference
+2.0,Iowa State,"Minneapolis, MN",2000.0,2000309,Iowa State,Iowa State University,Iowa State,Cyclones,Ames,Iowa,State,Big 12 Conference
+2.0,Cincinnati,"Nashville, TN",2000.0,2000310,Cincinnati,University of Cincinnati,Cincinnati,Bearcats,Cincinnati,Ohio,State,American Athletic Conference
+2.0,St. John's,"Tucson, AZ",2000.0,2000311,St. John's,St. John's University,St. John's,Red Storm,Jamaica,New York,Private/Catholic,Big East Conference
+3.0,Oklahoma State,"Buffalo, NY",2000.0,2000312,Oklahoma State,Oklahoma State University–Stillwater,Oklahoma State,Cowboys,Stillwater,Oklahoma,State,Big 12 Conference
+3.0,Maryland,"Minneapolis, MN",2000.0,2000313,Maryland,"University of Maryland, College Park",Maryland,Terrapins,College Park,Maryland,State,Big Ten Conference
+3.0,Ohio State,"Nashville, TN",2000.0,2000314,Ohio State,The Ohio State University,Ohio State,Buckeyes,Columbus,Ohio,State,Big Ten Conference
+3.0,Oklahoma,"Tucson, AZ",2000.0,2000315,Oklahoma,University of Oklahoma,Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference
+4.0,Illinois,"Winston-Salem, NC",2000.0,2000316,Illinois,University of Illinois at Urbana–Champaign,Illinois,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference
+4.0,Syracuse,"Cleveland, OH",2000.0,2000317,Syracuse,Syracuse University,Syracuse,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference
+4.0,Tennessee,"Birmingham, AL",2000.0,2000318,Tennessee,University of Tennessee,Tennessee,Volunteers,Knoxville,Tennessee,State,Southeastern Conference
+4.0,LSU,"Salt Lake City, UT",2000.0,2000319,LSU,Louisiana State University,LSU,Tigers,Baton Rouge,Louisiana,State,Southeastern Conference
+1.0,Duke,"Charlotte, NC",1999.0,1999320,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+1.0,Michigan State,"Milwaukee, WI",1999.0,1999321,Michigan State,Michigan State University,Michigan State,Spartans,East Lansing,Michigan,State,Big Ten Conference
+1.0,Auburn,"Indianapolis, IN",1999.0,1999322,Auburn,Auburn University,Auburn,Tigers,Auburn,Alabama,State,Southeastern Conference
+1.0,UConn,"Denver, CO",1999.0,1999323,UConn,University of Connecticut,UConn,Huskies,Storrs,Connecticut,State,American Athletic Conference
+2.0,Miami (FL),"Boston, MA",1999.0,1999324,Miami (FL),University of Miami,Miami (FL),Hurricanes,Coral Gables,Florida,Private/Non-Sectarian,Atlantic Coast Conference
+2.0,Utah,"New Orleans, LA",1999.0,1999325,Utah,University of Utah,Utah,Utes,Salt Lake City,Utah,State,Pac-12 Conference
+2.0,Maryland,"Orlando, FL",1999.0,1999326,Maryland,"University of Maryland, College Park",Maryland,Terrapins,College Park,Maryland,State,Big Ten Conference
+2.0,Stanford,"Seattle, WA",1999.0,1999327,Stanford,Stanford University,Stanford,Cardinal,Palo Alto,California,Private/Non-Sectarian,Pac-12 Conference
+3.0,Cincinnati,"Boston, MA",1999.0,1999328,Cincinnati,University of Cincinnati,Cincinnati,Bearcats,Cincinnati,Ohio,State,American Athletic Conference
+3.0,Kentucky,"New Orleans, LA",1999.0,1999329,Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+3.0,St. John's,"Orlando, FL",1999.0,1999330,St. John's,St. John's University,St. John's,Red Storm,Jamaica,New York,Private/Catholic,Big East Conference
+3.0,North Carolina,"Seattle, WA",1999.0,1999331,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+4.0,Tennessee,"Charlotte, NC",1999.0,1999332,Tennessee,University of Tennessee,Tennessee,Volunteers,Knoxville,Tennessee,State,Southeastern Conference
+4.0,Arizona,"Milwaukee, WI",1999.0,1999333,Arizona,University of Arizona,Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference
+4.0,Ohio State,"Indianapolis, IN",1999.0,1999334,Ohio State,The Ohio State University,Ohio State,Buckeyes,Columbus,Ohio,State,Big Ten Conference
+4.0,Arkansas,"Denver, CO",1999.0,1999335,Arkansas,University of Arkansas,Arkansas,Razorbacks,Fayetteville,Arkansas,State,Southeastern Conference
+1.0,North Carolina,"Hartford, CT",1998.0,1998336,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+1.0,Kansas,"Oklahoma City, OK",1998.0,1998337,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+1.0,Duke,"Lexington, KY",1998.0,1998338,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+1.0,Arizona,"Sacramento, CA",1998.0,1998339,Arizona,University of Arizona,Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference
+2.0,UConn,"Washington, DC",1998.0,1998340,UConn,University of Connecticut,UConn,Huskies,Storrs,Connecticut,State,American Athletic Conference
+2.0,Purdue,"Chicago, IL",1998.0,1998341,Purdue,Purdue University,Purdue,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference
+2.0,Kentucky,"Atlanta, GA",1998.0,1998342,Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+2.0,Cincinnati,"Boise, ID",1998.0,1998343,Cincinnati,University of Cincinnati,Cincinnati,Bearcats,Cincinnati,Ohio,State,American Athletic Conference
+3.0,South Carolina,"Washington, DC",1998.0,1998344,South Carolina,University of South Carolina,South Carolina,Gamecocks,Columbia,South Carolina,State,Southeastern Conference
+3.0,Stanford,"Chicago, IL",1998.0,1998345,Stanford,Stanford University,Stanford,Cardinal,Palo Alto,California,Private/Non-Sectarian,Pac-12 Conference
+3.0,Michigan,"Atlanta, GA",1998.0,1998346,Michigan,University of Michigan,Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference
+3.0,Utah,"Boise, ID",1998.0,1998347,Utah,University of Utah,Utah,Utes,Salt Lake City,Utah,State,Pac-12 Conference
+4.0,Michigan State,"Hartford, CT",1998.0,1998348,Michigan State,Michigan State University,Michigan State,Spartans,East Lansing,Michigan,State,Big Ten Conference
+4.0,Ole Miss,"Oklahoma City, OK",1998.0,1998349,Ole Miss,University of Mississippi,Ole Miss,Rebels,Oxford,Mississippi,State,Southeastern Conference
+4.0,New Mexico,"Lexington, KY",1998.0,1998350,New Mexico,University of New Mexico,New Mexico,Lobos,Albuquerque,New Mexico,State,Mountain West Conference
+4.0,Maryland,"Sacramento, CA",1998.0,1998351,Maryland,"University of Maryland, College Park",Maryland,Terrapins,College Park,Maryland,State,Big Ten Conference
+1.0,North Carolina,"Winston-Salem, NC",1997.0,1997352,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+1.0,Minnesota,"Kansas City, MO",1997.0,1997353,Minnesota,University of Minnesota,Minnesota,Golden Gophers,Minneapolis–Saint Paul,Minnesota,State,Big Ten Conference
+1.0,Kansas,"Memphis, TN",1997.0,1997354,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+1.0,Kentucky,"Salt Lake City, UT",1997.0,1997355,Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+2.0,South Carolina,"Pittsburgh, PA",1997.0,1997356,South Carolina,University of South Carolina,South Carolina,Gamecocks,Columbia,South Carolina,State,Southeastern Conference
+2.0,UCLA,"Auburn Hills, MI",1997.0,1997357,UCLA,"University of California, Los Angeles",UCLA,Bruins,Los Angeles,California,State,Pac-12 Conference
+2.0,Duke,"Charlotte, NC",1997.0,1997358,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+2.0,Utah,"Tucson, AZ",1997.0,1997359,Utah,University of Utah,Utah,Utes,Salt Lake City,Utah,State,Pac-12 Conference
+3.0,New Mexico,"Pittsburgh, PA",1997.0,1997360,New Mexico,University of New Mexico,New Mexico,Lobos,Albuquerque,New Mexico,State,Mountain West Conference
+3.0,Cincinnati,"Auburn Hills, MI",1997.0,1997361,Cincinnati,University of Cincinnati,Cincinnati,Bearcats,Cincinnati,Ohio,State,American Athletic Conference
+3.0,Georgia,"Charlotte, NC",1997.0,1997362,Georgia,University of Georgia,Georgia,Bulldogs,Athens,Georgia,State,Southeastern Conference
+3.0,Wake Forest,"Tucson, AZ",1997.0,1997363,Wake Forest,Wake Forest University,Wake Forest,Demon Deacons,Winston-Salem,North Carolina,Private/Non-Sectarian,Atlantic Coast Conference
+4.0,Villanova,"Winston-Salem, NC",1997.0,1997364,Villanova,Villanova University,Villanova,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference
+4.0,Clemson,"Kansas City, MO",1997.0,1997365,Clemson,Clemson University,Clemson,Tigers,Clemson,South Carolina,State,Atlantic Coast Conference
+4.0,Arizona,"Memphis, TN",1997.0,1997366,Arizona,University of Arizona,Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference
+4.0,Saint Joseph's,"Salt Lake City, UT",1997.0,1997367,Saint Joseph's,Saint Joseph's University,Saint Joseph's,Hawks,Philadelphia,Pennsylvania,Private/Catholic,Atlantic 10 Conference
+1.0,UMass,"Providence, RI",1996.0,1996368,UMass,University of Massachusetts Amherst,UMass,Minutemen,Amherst,Massachusetts,State,Atlantic 10 Conference
+1.0,Kentucky,"Dallas, TX",1996.0,1996369,Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+1.0,UConn,"Indianapolis, IN",1996.0,1996370,UConn,University of Connecticut,UConn,Huskies,Storrs,Connecticut,State,American Athletic Conference
+1.0,Purdue,"Albuquerque, NM",1996.0,1996371,Purdue,Purdue University,Purdue,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference
+2.0,Georgetown,"Richmond, VA",1996.0,1996372,Georgetown,Georgetown University,Georgetown,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference
+2.0,Wake Forest,"Milwaukee, WI",1996.0,1996373,Wake Forest,Wake Forest University,Wake Forest,Demon Deacons,Winston-Salem,North Carolina,Private/Non-Sectarian,Atlantic Coast Conference
+2.0,Cincinnati,"Orlando, FL",1996.0,1996374,Cincinnati,University of Cincinnati,Cincinnati,Bearcats,Cincinnati,Ohio,State,American Athletic Conference
+2.0,Kansas,"Tempe, AZ",1996.0,1996375,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+3.0,Texas Tech,"Richmond, VA",1996.0,1996376,Texas Tech,Texas Tech University,Texas Tech,Red Raiders,Lubbock,Texas,State,Big 12 Conference
+3.0,Villanova,"Milwaukee, WI",1996.0,1996377,Villanova,Villanova University,Villanova,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference
+3.0,Georgia Tech,"Orlando, FL",1996.0,1996378,Georgia Tech,Georgia Institute of Technology,Georgia Tech,Yellow Jackets,Atlanta,Georgia,State,Atlantic Coast Conference
+3.0,Arizona,"Tempe, AZ",1996.0,1996379,Arizona,University of Arizona,Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference
+4.0,Marquette,"Providence, RI",1996.0,1996380,Marquette,Marquette University,Marquette,Golden Eagles,Milwaukee,Wisconsin,Private/Catholic,Big East Conference
+4.0,Utah,"Dallas, TX",1996.0,1996381,Utah,University of Utah,Utah,Utes,Salt Lake City,Utah,State,Pac-12 Conference
+4.0,UCLA,"Indianapolis, IN",1996.0,1996382,UCLA,"University of California, Los Angeles",UCLA,Bruins,Los Angeles,California,State,Pac-12 Conference
+4.0,Syracuse,"Albuquerque, NM",1996.0,1996383,Syracuse,Syracuse University,Syracuse,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference
+1.0,Wake Forest,"Baltimore, MD",1995.0,1995384,Wake Forest,Wake Forest University,Wake Forest,Demon Deacons,Winston-Salem,North Carolina,Private/Non-Sectarian,Atlantic Coast Conference
+1.0,Kansas,"Dayton, OH",1995.0,1995385,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+1.0,Kentucky,"Memphis, TN",1995.0,1995386,Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+1.0,UCLA,"Boise, ID",1995.0,1995387,UCLA,"University of California, Los Angeles",UCLA,Bruins,Los Angeles,California,State,Pac-12 Conference
+2.0,UMass,"Albany, NY",1995.0,1995388,UMass,University of Massachusetts Amherst,UMass,Minutemen,Amherst,Massachusetts,State,Atlantic 10 Conference
+2.0,Arkansas,"Austin, TX",1995.0,1995389,Arkansas,University of Arkansas,Arkansas,Razorbacks,Fayetteville,Arkansas,State,Southeastern Conference
+2.0,North Carolina,"Tallahassee, FL",1995.0,1995390,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+2.0,UConn,"Salt Lake City, UT",1995.0,1995391,UConn,University of Connecticut,UConn,Huskies,Storrs,Connecticut,State,American Athletic Conference
+3.0,Villanova,"Albany, NY",1995.0,1995392,Villanova,Villanova University,Villanova,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference
+3.0,Purdue,"Austin, TX",1995.0,1995393,Purdue,Purdue University,Purdue,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference
+3.0,Michigan State,"Tallahassee, FL",1995.0,1995394,Michigan State,Michigan State University,Michigan State,Spartans,East Lansing,Michigan,State,Big Ten Conference
+3.0,Maryland,"Salt Lake City, UT",1995.0,1995395,Maryland,"University of Maryland, College Park",Maryland,Terrapins,College Park,Maryland,State,Big Ten Conference
+4.0,Oklahoma State,"Baltimore, MD",1995.0,1995396,Oklahoma State,Oklahoma State University–Stillwater,Oklahoma State,Cowboys,Stillwater,Oklahoma,State,Big 12 Conference
+4.0,Virginia,"Dayton, OH",1995.0,1995397,Virginia,University of Virginia,Virginia,Cavaliers,Charlottesville,Virginia,State,Atlantic Coast Conference
+4.0,Oklahoma,"Memphis, TN",1995.0,1995398,Oklahoma,University of Oklahoma,Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference
+4.0,Utah,"Boise, ID",1995.0,1995399,Utah,University of Utah,Utah,Utes,Salt Lake City,Utah,State,Pac-12 Conference
+1.0,North Carolina,"Landover, MD",1994.0,1994400,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+1.0,Arkansas,"Oklahoma City, OK",1994.0,1994401,Arkansas,University of Arkansas,Arkansas,Razorbacks,Fayetteville,Arkansas,State,Southeastern Conference
+1.0,Purdue,"Lexington, KY",1994.0,1994402,Purdue,Purdue University,Purdue,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference
+1.0,Missouri,"Ogden, UT",1994.0,1994403,Missouri,University of Missouri,Missouri,Tigers,Columbia,Missouri,State,Southeastern Conference
+2.0,UConn,"Uniondale, NY",1994.0,1994404,UConn,University of Connecticut,UConn,Huskies,Storrs,Connecticut,State,American Athletic Conference
+2.0,UMass,"Park City, KS",1994.0,1994405,UMass,University of Massachusetts Amherst,UMass,Minutemen,Amherst,Massachusetts,State,Atlantic 10 Conference
+2.0,Duke,"St. Petersburg, FL",1994.0,1994406,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+2.0,Arizona,"Sacramento, CA",1994.0,1994407,Arizona,University of Arizona,Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference
+3.0,Florida,"Uniondale, NY",1994.0,1994408,Florida,University of Florida,Florida,Gators,Gainesville,Florida,State,Southeastern Conference
+3.0,Michigan,"Park City, KS",1994.0,1994409,Michigan,University of Michigan,Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference
+3.0,Kentucky,"St. Petersburg, FL",1994.0,1994410,Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+3.0,Louisville,"Sacramento, CA",1994.0,1994411,Louisville,University of Louisville,Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference
+4.0,Temple,"Landover, MD",1994.0,1994412,Temple,Temple University,Temple,Owls,Philadelphia,Pennsylvania,State-related,American Athletic Conference
+4.0,Oklahoma State,"Oklahoma City, OK",1994.0,1994413,Oklahoma State,Oklahoma State University–Stillwater,Oklahoma State,Cowboys,Stillwater,Oklahoma,State,Big 12 Conference
+4.0,Kansas,"Lexington, KY",1994.0,1994414,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+4.0,Syracuse,"Ogden, UT",1994.0,1994415,Syracuse,Syracuse University,Syracuse,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference
+1.0,North Carolina,"Winston-Salem, NC",1993.0,1993416,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+1.0,Indiana,"Indianapolis, IN",1993.0,1993417,Indiana,Indiana University,Indiana,Hoosiers,Bloomington,Indiana,State,Big Ten Conference
+1.0,Kentucky,"Nashville, TN",1993.0,1993418,Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+1.0,Michigan,"Tucson, AZ",1993.0,1993419,Michigan,University of Michigan,Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference
+2.0,Cincinnati,"Syracuse, NY",1993.0,1993420,Cincinnati,University of Cincinnati,Cincinnati,Bearcats,Cincinnati,Ohio,State,American Athletic Conference
+2.0,Kansas,"Rosemont, IL",1993.0,1993421,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+2.0,Seton Hall,"Orlando, FL",1993.0,1993422,Seton Hall,Seton Hall University,Seton Hall,Pirates,South Orange,New Jersey,Private/Catholic,Big East Conference
+2.0,Arizona,"Salt Lake City, UT",1993.0,1993423,Arizona,University of Arizona,Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference
+3.0,UMass,"Syracuse, NY",1993.0,1993424,UMass,University of Massachusetts Amherst,UMass,Minutemen,Amherst,Massachusetts,State,Atlantic 10 Conference
+3.0,Duke,"Rosemont, IL",1993.0,1993425,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+3.0,Florida State,"Orlando, FL",1993.0,1993426,Florida State,Florida State University,Florida State,Seminoles,Tallahassee,Florida,State,Atlantic Coast Conference
+3.0,Vanderbilt,"Salt Lake City, UT",1993.0,1993427,Vanderbilt,Vanderbilt University,Vanderbilt,Commodores,Nashville,Tennessee,Private/Non-Sectarian,Southeastern Conference
+4.0,Arkansas,"Winston-Salem, NC",1993.0,1993428,Arkansas,University of Arkansas,Arkansas,Razorbacks,Fayetteville,Arkansas,State,Southeastern Conference
+4.0,Louisville,"Indianapolis, IN",1993.0,1993429,Louisville,University of Louisville,Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference
+4.0,Iowa,"Nashville, TN",1993.0,1993430,Iowa,University of Iowa,Iowa,Hawkeyes,Iowa City,Iowa,State,Big Ten Conference
+4.0,Georgia Tech,"Tucson, AZ",1993.0,1993431,Georgia Tech,Georgia Institute of Technology,Georgia Tech,Yellow Jackets,Atlanta,Georgia,State,Atlantic Coast Conference
+1.0,Duke,"Greensboro, NC",1992.0,1992432,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+1.0,Kansas,"Dayton, OH",1992.0,1992433,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+1.0,Ohio State,"Cincinnati, OH",1992.0,1992434,Ohio State,The Ohio State University,Ohio State,Buckeyes,Columbus,Ohio,State,Big Ten Conference
+1.0,UCLA,"Tempe, AZ",1992.0,1992435,UCLA,"University of California, Los Angeles",UCLA,Bruins,Los Angeles,California,State,Pac-12 Conference
+2.0,Kentucky,"Worcester, MA",1992.0,1992436,Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+2.0,USC,"Milwaukee, WI",1992.0,1992437,USC,University of Southern California,USC,Trojans,Los Angeles,California,Private/Non-Sectarian,Pac-12 Conference
+2.0,Oklahoma State,"Atlanta, GA",1992.0,1992438,Oklahoma State,Oklahoma State University–Stillwater,Oklahoma State,Cowboys,Stillwater,Oklahoma,State,Big 12 Conference
+2.0,Indiana,"Boise, ID",1992.0,1992439,Indiana,Indiana University,Indiana,Hoosiers,Bloomington,Indiana,State,Big Ten Conference
+3.0,UMass,"Worcester, MA",1992.0,1992440,UMass,University of Massachusetts Amherst,UMass,Minutemen,Amherst,Massachusetts,State,Atlantic 10 Conference
+3.0,Arkansas,"Milwaukee, WI",1992.0,1992441,Arkansas,University of Arkansas,Arkansas,Razorbacks,Fayetteville,Arkansas,State,Southeastern Conference
+3.0,Arizona,"Atlanta, GA",1992.0,1992442,Arizona,University of Arizona,Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference
+3.0,Florida State,"Boise, ID",1992.0,1992443,Florida State,Florida State University,Florida State,Seminoles,Tallahassee,Florida,State,Atlantic Coast Conference
+4.0,Seton Hall,"Greensboro, NC",1992.0,1992444,Seton Hall,Seton Hall University,Seton Hall,Pirates,South Orange,New Jersey,Private/Catholic,Big East Conference
+4.0,Cincinnati,"Dayton, OH",1992.0,1992445,Cincinnati,University of Cincinnati,Cincinnati,Bearcats,Cincinnati,Ohio,State,American Athletic Conference
+4.0,North Carolina,"Cincinnati, OH",1992.0,1992446,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+4.0,Oklahoma,"Tempe, AZ",1992.0,1992447,Oklahoma,University of Oklahoma,Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference
+1.0,North Carolina,"Syracuse, NY",1991.0,1991448,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+1.0,Ohio State,"Dayton, OH",1991.0,1991449,Ohio State,The Ohio State University,Ohio State,Buckeyes,Columbus,Ohio,State,Big Ten Conference
+1.0,Arkansas,"Atlanta, GA",1991.0,1991450,Arkansas,University of Arkansas,Arkansas,Razorbacks,Fayetteville,Arkansas,State,Southeastern Conference
+1.0,UNLV,"Tucson, AZ",1991.0,1991451,UNLV,"University of Nevada, Las Vegas",UNLV,Rebels,Paradise,Nevada,State,Mountain West Conference
+2.0,Syracuse,"College Park, MD",1991.0,1991452,Syracuse,Syracuse University,Syracuse,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference
+2.0,Duke,"Minneapolis, MN",1991.0,1991453,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+2.0,Indiana,"Louisville, KY",1991.0,1991454,Indiana,Indiana University,Indiana,Hoosiers,Bloomington,Indiana,State,Big Ten Conference
+2.0,Arizona,"Salt Lake City, UT",1991.0,1991455,Arizona,University of Arizona,Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference
+3.0,Oklahoma State,"College Park, MD",1991.0,1991456,Oklahoma State,Oklahoma State University–Stillwater,Oklahoma State,Cowboys,Stillwater,Oklahoma,State,Big 12 Conference
+3.0,Nebraska,"Minneapolis, MN",1991.0,1991457,Nebraska,University of Nebraska–Lincoln,Nebraska,Cornhuskers,Lincoln,Nebraska,State,Big Ten Conference
+3.0,Kansas,"Louisville, KY",1991.0,1991458,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+3.0,Seton Hall,"Salt Lake City, UT",1991.0,1991459,Seton Hall,Seton Hall University,Seton Hall,Pirates,South Orange,New Jersey,Private/Catholic,Big East Conference
+4.0,UCLA,"Syracuse, NY",1991.0,1991460,UCLA,"University of California, Los Angeles",UCLA,Bruins,Los Angeles,California,State,Pac-12 Conference
+4.0,St. John's,"Dayton, OH",1991.0,1991461,St. John's,St. John's University,St. John's,Red Storm,Jamaica,New York,Private/Catholic,Big East Conference
+4.0,Alabama,"Atlanta, GA",1991.0,1991462,Alabama,University of Alabama,Alabama,Crimson Tide,Tuscaloosa,Alabama,State,Southeastern Conference
+4.0,Utah,"Tucson, AZ",1991.0,1991463,Utah,University of Utah,Utah,Utes,Salt Lake City,Utah,State,Pac-12 Conference
+1.0,UConn,"Hartford, CT",1990.0,1990464,UConn,University of Connecticut,UConn,Huskies,Storrs,Connecticut,State,American Athletic Conference
+1.0,Oklahoma,"Austin, TX",1990.0,1990465,Oklahoma,University of Oklahoma,Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference
+1.0,Michigan State,"Knoxville, TN",1990.0,1990466,Michigan State,Michigan State University,Michigan State,Spartans,East Lansing,Michigan,State,Big Ten Conference
+1.0,UNLV,"Salt Lake City, UT",1990.0,1990467,UNLV,"University of Nevada, Las Vegas",UNLV,Rebels,Paradise,Nevada,State,Mountain West Conference
+2.0,Kansas,"Atlanta, GA",1990.0,1990468,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+2.0,Purdue,"Indianapolis, IN",1990.0,1990469,Purdue,Purdue University,Purdue,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference
+2.0,Syracuse,"Richmond, VA",1990.0,1990470,Syracuse,Syracuse University,Syracuse,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference
+2.0,Arizona,"Long Beach, CA",1990.0,1990471,Arizona,University of Arizona,Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference
+3.0,Duke,"Atlanta, GA",1990.0,1990472,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+3.0,Georgetown,"Indianapolis, IN",1990.0,1990473,Georgetown,Georgetown University,Georgetown,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference
+3.0,Missouri,"Richmond, VA",1990.0,1990474,Missouri,University of Missouri,Missouri,Tigers,Columbia,Missouri,State,Southeastern Conference
+3.0,Michigan,"Long Beach, CA",1990.0,1990475,Michigan,University of Michigan,Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference
+4.0,La Salle,"Hartford, CT",1990.0,1990476,La Salle,La Salle University,La Salle,Explorers,Philadelphia,Pennsylvania,Private/Catholic,Atlantic 10 Conference
+4.0,Arkansas,"Austin, TX",1990.0,1990477,Arkansas,University of Arkansas,Arkansas,Razorbacks,Fayetteville,Arkansas,State,Southeastern Conference
+4.0,Georgia Tech,"Knoxville, TN",1990.0,1990478,Georgia Tech,Georgia Institute of Technology,Georgia Tech,Yellow Jackets,Atlanta,Georgia,State,Atlantic Coast Conference
+4.0,Louisville,"Salt Lake City, UT",1990.0,1990479,Louisville,University of Louisville,Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference
+1.0,Georgetown,"Providence, RI",1989.0,1989480,Georgetown,Georgetown University,Georgetown,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference
+1.0,Illinois,"Indianapolis, IN",1989.0,1989481,Illinois,University of Illinois at Urbana–Champaign,Illinois,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference
+1.0,Oklahoma,"Nashville, TN",1989.0,1989482,Oklahoma,University of Oklahoma,Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference
+1.0,Arizona,"Boise, ID",1989.0,1989483,Arizona,University of Arizona,Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference
+2.0,Duke,"Greensboro, NC",1989.0,1989484,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+2.0,Syracuse,"Dallas, TX",1989.0,1989485,Syracuse,Syracuse University,Syracuse,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference
+2.0,North Carolina,"Atlanta, GA",1989.0,1989486,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+2.0,Indiana,"Tucson, AZ",1989.0,1989487,Indiana,Indiana University,Indiana,Hoosiers,Bloomington,Indiana,State,Big Ten Conference
+3.0,Stanford,"Greensboro, NC",1989.0,1989488,Stanford,Stanford University,Stanford,Cardinal,Palo Alto,California,Private/Non-Sectarian,Pac-12 Conference
+3.0,Missouri,"Dallas, TX",1989.0,1989489,Missouri,University of Missouri,Missouri,Tigers,Columbia,Missouri,State,Southeastern Conference
+3.0,Michigan,"Atlanta, GA",1989.0,1989490,Michigan,University of Michigan,Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference
+3.0,Seton Hall,"Tucson, AZ",1989.0,1989491,Seton Hall,Seton Hall University,Seton Hall,Pirates,South Orange,New Jersey,Private/Catholic,Big East Conference
+4.0,Iowa,"Providence, RI",1989.0,1989492,Iowa,University of Iowa,Iowa,Hawkeyes,Iowa City,Iowa,State,Big Ten Conference
+4.0,Louisville,"Indianapolis, IN",1989.0,1989493,Louisville,University of Louisville,Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference
+4.0,Florida State,"Nashville, TN",1989.0,1989494,Florida State,Florida State University,Florida State,Seminoles,Tallahassee,Florida,State,Atlantic Coast Conference
+4.0,UNLV,"Boise, ID",1989.0,1989495,UNLV,"University of Nevada, Las Vegas",UNLV,Rebels,Paradise,Nevada,State,Mountain West Conference
+1.0,Temple,"Hartford, CT",1988.0,1988496,Temple,Temple University,Temple,Owls,Philadelphia,Pennsylvania,State-related,American Athletic Conference
+1.0,Purdue,"South Bend, IN",1988.0,1988497,Purdue,Purdue University,Purdue,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference
+1.0,Oklahoma,"Atlanta, GA",1988.0,1988498,Oklahoma,University of Oklahoma,Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference
+1.0,Arizona,"Los Angeles, CA",1988.0,1988499,Arizona,University of Arizona,Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference
+2.0,Duke,"Chapel Hill, NC",1988.0,1988500,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+2.0,Pittsburgh,"Lincoln, NE",1988.0,1988501,Pittsburgh,University of Pittsburgh,Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference
+2.0,Kentucky,"Cincinnati, OH",1988.0,1988502,Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+2.0,North Carolina,"Salt Lake City, UT",1988.0,1988503,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+3.0,Syracuse,"Chapel Hill, NC",1988.0,1988504,Syracuse,Syracuse University,Syracuse,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference
+3.0,NC State,"Lincoln, NE",1988.0,1988505,NC State,North Carolina State University,NC State,Wolfpack,Raleigh,North Carolina,State,Atlantic Coast Conference
+3.0,Illinois,"Cincinnati, OH",1988.0,1988506,Illinois,University of Illinois at Urbana–Champaign,Illinois,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference
+3.0,Michigan,"Salt Lake City, UT",1988.0,1988507,Michigan,University of Michigan,Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference
+4.0,Indiana,"Hartford, CT",1988.0,1988508,Indiana,Indiana University,Indiana,Hoosiers,Bloomington,Indiana,State,Big Ten Conference
+4.0,Kansas State,"South Bend, IN",1988.0,1988509,Kansas State,Kansas State University,Kansas State,Wildcats,Manhattan,Kansas,State,Big 12 Conference
+4.0,BYU,"Atlanta, GA",1988.0,1988510,BYU,Brigham Young University,BYU,Cougars,Provo,Utah,Private/Latter-Day Saints,West Coast Conference
+4.0,UNLV,"Los Angeles, CA",1988.0,1988511,UNLV,"University of Nevada, Las Vegas",UNLV,Rebels,Paradise,Nevada,State,Mountain West Conference
+1.0,North Carolina,"Charlotte, NC",1987.0,1987512,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+1.0,Indiana,"Indianapolis, IN",1987.0,1987513,Indiana,Indiana University,Indiana,Hoosiers,Bloomington,Indiana,State,Big Ten Conference
+1.0,Georgetown,"Atlanta, GA",1987.0,1987514,Georgetown,Georgetown University,Georgetown,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference
+1.0,UNLV,"Salt Lake City, UT",1987.0,1987515,UNLV,"University of Nevada, Las Vegas",UNLV,Rebels,Paradise,Nevada,State,Mountain West Conference
+2.0,Syracuse,"Syracuse, NY",1987.0,1987516,Syracuse,Syracuse University,Syracuse,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference
+2.0,Temple,"Rosemont, IL",1987.0,1987517,Temple,Temple University,Temple,Owls,Philadelphia,Pennsylvania,State-related,American Athletic Conference
+2.0,Alabama,"Birmingham, AL",1987.0,1987518,Alabama,University of Alabama,Alabama,Crimson Tide,Tuscaloosa,Alabama,State,Southeastern Conference
+2.0,Iowa,"Tucson, AZ",1987.0,1987519,Iowa,University of Iowa,Iowa,Hawkeyes,Iowa City,Iowa,State,Big Ten Conference
+3.0,Purdue,"Syracuse, NY",1987.0,1987520,Purdue,Purdue University,Purdue,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference
+3.0,DePaul,"Rosemont, IL",1987.0,1987521,DePaul,DePaul University,DePaul,Blue Demons,Chicago,Illinois,Private/Catholic,Big East Conference
+3.0,Illinois,"Birmingham, AL",1987.0,1987522,Illinois,University of Illinois at Urbana–Champaign,Illinois,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference
+3.0,Pittsburgh,"Tucson, AZ",1987.0,1987523,Pittsburgh,University of Pittsburgh,Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference
+4.0,TCU,"Charlotte, NC",1987.0,1987524,TCU,Texas Christian University,TCU,Horned Frogs,Fort Worth,Texas,Private/Disciples of Christ,Big 12 Conference
+4.0,Missouri,"Indianapolis, IN",1987.0,1987525,Missouri,University of Missouri,Missouri,Tigers,Columbia,Missouri,State,Southeastern Conference
+4.0,Clemson,"Atlanta, GA",1987.0,1987526,Clemson,Clemson University,Clemson,Tigers,Clemson,South Carolina,State,Atlantic Coast Conference
+4.0,UCLA,"Salt Lake City, UT",1987.0,1987527,UCLA,"University of California, Los Angeles",UCLA,Bruins,Los Angeles,California,State,Pac-12 Conference
+1.0,Duke,"Greensboro, NC",1986.0,1986528,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+1.0,Kansas,"Dayton, OH",1986.0,1986529,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+1.0,Kentucky,"Charlotte, NC",1986.0,1986530,Kentucky,University of Kentucky,Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference
+1.0,St. John's,"Long Beach, CA",1986.0,1986531,St. John's,St. John's University,St. John's,Red Storm,Jamaica,New York,Private/Catholic,Big East Conference
+2.0,Syracuse,"Syracuse, NY",1986.0,1986532,Syracuse,Syracuse University,Syracuse,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference
+2.0,Michigan,"Minneapolis, MN",1986.0,1986533,Michigan,University of Michigan,Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference
+2.0,Georgia Tech,"Baton Rouge, LA",1986.0,1986534,Georgia Tech,Georgia Institute of Technology,Georgia Tech,Yellow Jackets,Atlanta,Georgia,State,Atlantic Coast Conference
+2.0,Louisville,"Ogden, UT",1986.0,1986535,Louisville,University of Louisville,Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference
+3.0,Indiana,"Syracuse, NY",1986.0,1986536,Indiana,Indiana University,Indiana,Hoosiers,Bloomington,Indiana,State,Big Ten Conference
+3.0,Notre Dame,"Minneapolis, MN",1986.0,1986537,Notre Dame,University of Notre Dame,Notre Dame,Fighting Irish,South Bend,Indiana,Private/Catholic,Atlantic Coast Conference
+3.0,Memphis,"Baton Rouge, LA",1986.0,1986538,Memphis,University of Memphis,Memphis,Tigers,Memphis,Tennessee,State,American Athletic Conference
+3.0,North Carolina,"Ogden, UT",1986.0,1986539,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+4.0,Oklahoma,"Greensboro, NC",1986.0,1986540,Oklahoma,University of Oklahoma,Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference
+4.0,Georgetown,"Dayton, OH",1986.0,1986541,Georgetown,Georgetown University,Georgetown,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference
+4.0,Illinois,"Charlotte, NC",1986.0,1986542,Illinois,University of Illinois at Urbana–Champaign,Illinois,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference
+4.0,UNLV,"Long Beach, CA",1986.0,1986543,UNLV,"University of Nevada, Las Vegas",UNLV,Rebels,Paradise,Nevada,State,Mountain West Conference
+1.0,Georgetown,"Hartford, CT",1985.0,1985544,Georgetown,Georgetown University,Georgetown,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference
+1.0,Oklahoma,"Tulsa, OK",1985.0,1985545,Oklahoma,University of Oklahoma,Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference
+1.0,Michigan,"Dayton, OH",1985.0,1985546,Michigan,University of Michigan,Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference
+1.0,St. John's,"Salt Lake City, UT",1985.0,1985547,St. John's,St. John's University,St. John's,Red Storm,Jamaica,New York,Private/Catholic,Big East Conference
+2.0,Georgia Tech,"Atlanta, GA",1985.0,1985548,Georgia Tech,Georgia Institute of Technology,Georgia Tech,Yellow Jackets,Atlanta,Georgia,State,Atlantic Coast Conference
+2.0,Memphis,"Houston, TX",1985.0,1985549,Memphis,University of Memphis,Memphis,Tigers,Memphis,Tennessee,State,American Athletic Conference
+2.0,North Carolina,"South Bend, IN",1985.0,1985550,North Carolina,University of North Carolina at Chapel Hill,North Carolina,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference
+2.0,VCU,"Albuquerque, NM",1985.0,1985551,VCU,Virginia Commonwealth University,VCU,Rams,Richmond,Virginia,State,Atlantic 10 Conference
+3.0,Illinois,"Atlanta, GA",1985.0,1985552,Illinois,University of Illinois at Urbana–Champaign,Illinois,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference
+3.0,Duke,"Houston, TX",1985.0,1985553,Duke,Duke University,Duke,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference
+3.0,Kansas,"South Bend, IN",1985.0,1985554,Kansas,University of Kansas,Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference
+3.0,NC State,"Albuquerque, NM",1985.0,1985555,NC State,North Carolina State University,NC State,Wolfpack,Raleigh,North Carolina,State,Atlantic Coast Conference
+4.0,Loyola–Chicago,"Hartford, CT",1985.0,1985556,Loyola–Chicago,Loyola University Chicago,Loyola–Chicago,Ramblers,Chicago,Illinois,Private/Catholic,Missouri Valley Conference
+4.0,Ohio State,"Tulsa, OK",1985.0,1985557,Ohio State,The Ohio State University,Ohio State,Buckeyes,Columbus,Ohio,State,Big Ten Conference
+4.0,LSU,"Dayton, OH",1985.0,1985558,LSU,Louisiana State University,LSU,Tigers,Baton Rouge,Louisiana,State,Southeastern Conference
+4.0,UNLV,"Salt Lake City, UT",1985.0,1985559,UNLV,"University of Nevada, Las Vegas",UNLV,Rebels,Paradise,Nevada,State,Mountain West Conference
+,,"Columbia, SC",,20190,,,,,,,,
+,,"Salt Lake City, UT",,20191,,,,,,,,
+,,"Columbus, OH",,20192,,,,,,,,
+,,"Columbia, SC",,20193,,,,,,,,
+,,"Des Moines, IA",,20194,,,,,,,,
+,,"Des Moines, IA",,20195,,,,,,,,
+,,"Jacksonville, FL",,20196,,,,,,,,
+,,"Columbus, OH",,20197,,,,,,,,
+,,"Jacksonville, FL",,20198,,,,,,,,
+,,"Tulsa, OK",,20199,,,,,,,,
+,,"Tulsa, OK",,201910,,,,,,,,
+,,"Hartford, CT",,201911,,,,,,,,
+,,"San Jose, CA",,201912,,,,,,,,
+,,"Hartford, CT",,201913,,,,,,,,
+,,"Salt Lake City, UT",,201914,,,,,,,,
+,,"San Jose, CA",,201915,,,,,,,,
+,,"Pittsburgh, PA",,201816,,,,,,,,
+,,"Wichita, KS",,201817,,,,,,,,
+,,"Nashville, TN",,201818,,,,,,,,
+,,"Charlotte, NC",,201819,,,,,,,,
+,,"Detroit, MI",,201820,,,,,,,,
+,,"Pittsburgh, PA",,201821,,,,,,,,
+,,"Charlotte, NC",,201822,,,,,,,,
+,,"Nashville, TN",,201823,,,,,,,,
+,,"Dallas, TX",,201824,,,,,,,,
+,,"Detroit, MI",,201825,,,,,,,,
+,,"Wichita, KS",,201826,,,,,,,,
+,,"Dallas, TX",,201827,,,,,,,,
+,,"San Diego, CA",,201828,,,,,,,,
+,,"San Diego, CA",,201829,,,,,,,,
+,,"Boise, ID",,201830,,,,,,,,
+,,"Boise, ID",,201831,,,,,,,,
+,,"Buffalo, NY",,201732,,,,,,,,
+,,"Tulsa, OK",,201733,,,,,,,,
+,,"Greenville, SC",,201734,,,,,,,,
+,,"Salt Lake City, UT",,201735,,,,,,,,
+,,"Greenville, SC",,201736,,,,,,,,
+,,"Indianapolis, IN",,201737,,,,,,,,
+,,"Indianapolis, IN",,201738,,,,,,,,
+,,"Salt Lake City, UT",,201739,,,,,,,,
+,,"Tulsa, OK",,201740,,,,,,,,
+,,"Sacramento, CA",,201741,,,,,,,,
+,,"Sacramento, CA",,201742,,,,,,,,
+,,"Orlando, FL",,201743,,,,,,,,
+,,"Orlando, FL",,201744,,,,,,,,
+,,"Milwaukee, WI",,201745,,,,,,,,
+,,"Milwaukee, WI",,201746,,,,,,,,
+,,"Buffalo, NY",,201747,,,,,,,,
+,,"Raleigh, NC",,201648,,,,,,,,
+,,"Des Moines, IA",,201649,,,,,,,,
+,,"Spokane, WA",,201650,,,,,,,,
+,,"Raleigh, NC",,201651,,,,,,,,
+,,"St. Louis, MO",,201652,,,,,,,,
+,,"Brooklyn, NY",,201653,,,,,,,,
+,,"Oklahoma City, OK",,201654,,,,,,,,
+,,"St. Louis, MO",,201655,,,,,,,,
+,,"Brooklyn, NY",,201656,,,,,,,,
+,,"Providence, RI",,201657,,,,,,,,
+,,"Oklahoma City, OK",,201658,,,,,,,,
+,,"Denver, CO",,201659,,,,,,,,
+,,"Des Moines, IA",,201660,,,,,,,,
+,,"Spokane, WA",,201661,,,,,,,,
+,,"Providence, RI",,201662,,,,,,,,
+,,"Denver, CO",,201663,,,,,,,,
+,,"Pittsburgh, PA",,201564,,,,,,,,
+,,"Louisville, KY",,201565,,,,,,,,
+,,"Charlotte, NC",,201566,,,,,,,,
+,,"Omaha, NE",,201567,,,,,,,,
+,,"Charlotte, NC",,201568,,,,,,,,
+,,"Omaha, NE",,201569,,,,,,,,
+,,"Seattle, WA",,201570,,,,,,,,
+,,"Portland, OR",,201571,,,,,,,,
+,,"Columbus, OH",,201572,,,,,,,,
+,,"Pittsburgh, PA",,201573,,,,,,,,
+,,"Louisville, KY",,201574,,,,,,,,
+,,"Jacksonville, FL",,201575,,,,,,,,
+,,"Seattle, WA",,201576,,,,,,,,
+,,"Columbus, OH",,201577,,,,,,,,
+,,"Portland, OR",,201578,,,,,,,,
+,,"Jacksonville, FL",,201579,,,,,,,,
+,,"St. Louis, MO",,201480,,,,,,,,
+,,"Orlando, FL",,201481,,,,,,,,
+,,"Raleigh, NC",,201482,,,,,,,,
+,,"San Diego, CA",,201483,,,,,,,,
+,,"Milwaukee, WI",,201484,,,,,,,,
+,,"St. Louis, MO",,201485,,,,,,,,
+,,"Buffalo, NY",,201486,,,,,,,,
+,,"Milwaukee, WI",,201487,,,,,,,,
+,,"Raleigh, NC",,201488,,,,,,,,
+,,"Buffalo, NY",,201489,,,,,,,,
+,,"San Antonio, TX",,201490,,,,,,,,
+,,"San Antonio, TX",,201491,,,,,,,,
+,,"Orlando, FL",,201492,,,,,,,,
+,,"San Diego, CA",,201493,,,,,,,,
+,,"Spokane, WA",,201494,,,,,,,,
+,,"Spokane, WA",,201495,,,,,,,,
+,,"Dayton, OH",,201396,,,,,,,,
+,,"Lexington, KY",,201397,,,,,,,,
+,,"Salt Lake City, UT",,201398,,,,,,,,
+,,"Kansas City, MO",,201399,,,,,,,,
+,,"Austin, TX",,2013100,,,,,,,,
+,,"Philadelphia, PA",,2013101,,,,,,,,
+,,"Dayton, OH",,2013102,,,,,,,,
+,,"Philadelphia, PA",,2013103,,,,,,,,
+,,"Lexington, KY",,2013104,,,,,,,,
+,,"Auburn Hills, MI",,2013105,,,,,,,,
+,,"Salt Lake City, UT",,2013106,,,,,,,,
+,,"Austin, TX",,2013107,,,,,,,,
+,,"San Jose, CA",,2013108,,,,,,,,
+,,"San Jose, CA",,2013109,,,,,,,,
+,,"Kansas City, MO",,2013110,,,,,,,,
+,,"Auburn Hills, MI",,2013111,,,,,,,,
+,,"Greensboro, NC",,2012112,,,,,,,,
+,,"Louisville, KY",,2012113,,,,,,,,
+,,"Columbus, OH",,2012114,,,,,,,,
+,,"Pittsburgh, PA",,2012115,,,,,,,,
+,,"Omaha, NE",,2012116,,,,,,,,
+,,"Greensboro, NC",,2012117,,,,,,,,
+,,"Omaha, NE",,2012118,,,,,,,,
+,,"Pittsburgh, PA",,2012119,,,,,,,,
+,,"Columbus, OH",,2012120,,,,,,,,
+,,"Albuquerque, NM",,2012121,,,,,,,,
+,,"Louisville, KY",,2012122,,,,,,,,
+,,"Nashville, TN",,2012123,,,,,,,,
+,,"Nashville, TN",,2012124,,,,,,,,
+,,"Portland, OR",,2012125,,,,,,,,
+,,"Portland, OR",,2012126,,,,,,,,
+,,"Albuquerque, NM",,2012127,,,,,,,,
+,,"Cleveland, OH",,2011128,,,,,,,,
+,,"Washington, DC",,2011129,,,,,,,,
+,,"Tulsa, OK",,2011130,,,,,,,,
+,,"Charlotte, NC",,2011131,,,,,,,,
+,,"Charlotte, NC",,2011132,,,,,,,,
+,,"Tampa, FL",,2011133,,,,,,,,
+,,"Chicago, IL",,2011134,,,,,,,,
+,,"Tucson, AZ",,2011135,,,,,,,,
+,,"Cleveland, OH",,2011136,,,,,,,,
+,,"Denver, CO",,2011137,,,,,,,,
+,,"Chicago, IL",,2011138,,,,,,,,
+,,"Washington, DC",,2011139,,,,,,,,
+,,"Tampa, FL",,2011140,,,,,,,,
+,,"Tucson, AZ",,2011141,,,,,,,,
+,,"Denver, CO",,2011142,,,,,,,,
+,,"Tulsa, OK",,2011143,,,,,,,,
+,,"Jacksonville, FL",,2010144,,,,,,,,
+,,"New Orleans, LA",,2010145,,,,,,,,
+,,"Oklahoma City, OK",,2010146,,,,,,,,
+,,"Buffalo, NY",,2010147,,,,,,,,
+,,"Providence, RI",,2010148,,,,,,,,
+,,"Buffalo, NY",,2010149,,,,,,,,
+,,"Milwaukee, WI",,2010150,,,,,,,,
+,,"Oklahoma City, OK",,2010151,,,,,,,,
+,,"New Orleans, LA",,2010152,,,,,,,,
+,,"San Jose, CA",,2010153,,,,,,,,
+,,"Providence, RI",,2010154,,,,,,,,
+,,"Milwaukee, WI",,2010155,,,,,,,,
+,,"Spokane, WA",,2010156,,,,,,,,
+,,"Jacksonville, FL",,2010157,,,,,,,,
+,,"Spokane, WA",,2010158,,,,,,,,
+,,"San Jose, CA",,2010159,,,,,,,,
+,,"Buffalo, NY",,2009160,,,,,,,,
+,,"Dayton, OH",,2009161,,,,,,,,
+,,"Greensboro, NC",,2009162,,,,,,,,
+,,"Philadelphia, PA",,2009163,,,,,,,,
+,,"Oklahoma City, OK",,2009164,,,,,,,,
+,,"Greensboro, NC",,2009165,,,,,,,,
+,,"Kansas City, MO",,2009166,,,,,,,,
+,,"Kansas City, MO",,2009167,,,,,,,,
+,,"Milwaukee, WI",,2009168,,,,,,,,
+,,"Philadelphia, PA",,2009169,,,,,,,,
+,,"Miami, FL",,2009170,,,,,,,,
+,,"Boise, ID",,2009171,,,,,,,,
+,,"San Jose, CA",,2009172,,,,,,,,
+,,"Boise, ID",,2009173,,,,,,,,
+,,"Portland, OR",,2009174,,,,,,,,
+,,"Portland, OR",,2009175,,,,,,,,
+,,"Raleigh, NC",,2008176,,,,,,,,
+,,"Omaha, NE",,2008177,,,,,,,,
+,,"North Little Rock, AR",,2008178,,,,,,,,
+,,"Anaheim, CA",,2008179,,,,,,,,
+,,"Birmingham, AL",,2008180,,,,,,,,
+,,"Raleigh, NC",,2008181,,,,,,,,
+,,"North Little Rock, AR",,2008182,,,,,,,,
+,,"Washington, DC",,2008183,,,,,,,,
+,,"Birmingham, AL",,2008184,,,,,,,,
+,,"Omaha, NE",,2008185,,,,,,,,
+,,"Anaheim, CA",,2008186,,,,,,,,
+,,"Washington, DC",,2008187,,,,,,,,
+,,"Denver, CO",,2008188,,,,,,,,
+,,"Tampa, FL",,2008189,,,,,,,,
+,,"Denver, CO",,2008190,,,,,,,,
+,,"Tampa, FL",,2008191,,,,,,,,
+,,"Chicago, IL",,2007192,,,,,,,,
+,,"Winston-Salem, NC",,2007193,,,,,,,,
+,,"New Orleans, LA",,2007194,,,,,,,,
+,,"New Orleans, LA",,2007195,,,,,,,,
+,,"Sacramento, CA",,2007196,,,,,,,,
+,,"Winston-Salem, NC",,2007197,,,,,,,,
+,,"Chicago, IL",,2007198,,,,,,,,
+,,"Chicago, IL",,2007199,,,,,,,,
+,,"Buffalo, NY",,2007200,,,,,,,,
+,,"Sacramento, CA",,2007201,,,,,,,,
+,,"Spokane, WA",,2007202,,,,,,,,
+,,"Spokane, WA",,2007203,,,,,,,,
+,,"Columbus, OH",,2007204,,,,,,,,
+,,"Spokane, WA",,2007205,,,,,,,,
+,,"Buffalo, NY",,2007206,,,,,,,,
+,,"Buffalo, NY",,2007207,,,,,,,,
+,,"Philadelphia, PA",,2006208,,,,,,,,
+,,"Greensboro, NC",,2006209,,,,,,,,
+,,"Dallas, TX",,2006210,,,,,,,,
+,,"Philadelphia, PA",,2006211,,,,,,,,
+,,"Dayton, OH",,2006212,,,,,,,,
+,,"Dallas, TX",,2006213,,,,,,,,
+,,"San Diego, CA",,2006214,,,,,,,,
+,,"Greensboro, NC",,2006215,,,,,,,,
+,,"Jacksonville, FL",,2006216,,,,,,,,
+,,"Auburn Hills, MI",,2006217,,,,,,,,
+,,"Salt Lake City, UT",,2006218,,,,,,,,
+,,"Dayton, OH",,2006219,,,,,,,,
+,,"Salt Lake City, UT",,2006220,,,,,,,,
+,,"Jacksonville, FL",,2006221,,,,,,,,
+,,"Auburn Hills, MI",,2006222,,,,,,,,
+,,"San Diego, CA",,2006223,,,,,,,,
+,,"Charlotte, NC",,2005224,,,,,,,,
+,,"Boise, ID",,2005225,,,,,,,,
+,,"Charlotte, NC",,2005226,,,,,,,,
+,,"Indianapolis, IN",,2005227,,,,,,,,
+,,"Worcester, MA",,2005228,,,,,,,,
+,,"Cleveland, OH",,2005229,,,,,,,,
+,,"Indianapolis, IN",,2005230,,,,,,,,
+,,"Oklahoma City, OK",,2005231,,,,,,,,
+,,"Oklahoma City, OK",,2005232,,,,,,,,
+,,"Tucson, AZ",,2005233,,,,,,,,
+,,"Tucson, AZ",,2005234,,,,,,,,
+,,"Boise, ID",,2005235,,,,,,,,
+,,"Nashville, TN",,2005236,,,,,,,,
+,,"Nashville, TN",,2005237,,,,,,,,
+,,"Worcester, MA",,2005238,,,,,,,,
+,,"Cleveland, OH",,2005239,,,,,,,,
+,,"Columbus, OH",,2004240,,,,,,,,
+,,"Raleigh, NC",,2004241,,,,,,,,
+,,"Buffalo, NY",,2004242,,,,,,,,
+,,"Seattle, WA",,2004243,,,,,,,,
+,,"Seattle, WA",,2004244,,,,,,,,
+,,"Orlando, FL",,2004245,,,,,,,,
+,,"Kansas City, MO",,2004246,,,,,,,,
+,,"Buffalo, NY",,2004247,,,,,,,,
+,,"Milwaukee, WI",,2004248,,,,,,,,
+,,"Denver, CO",,2004249,,,,,,,,
+,,"Milwaukee, WI",,2004250,,,,,,,,
+,,"Orlando, FL",,2004251,,,,,,,,
+,,"Kansas City, MO",,2004252,,,,,,,,
+,,"Columbus, OH",,2004253,,,,,,,,
+,,"Raleigh, NC",,2004254,,,,,,,,
+,,"Denver, CO",,2004255,,,,,,,,
+,,"Birmingham, AL",,2003256,,,,,,,,
+,,"Oklahoma City, OK",,2003257,,,,,,,,
+,,"Nashville, TN",,2003258,,,,,,,,
+,,"Salt Lake City, UT",,2003259,,,,,,,,
+,,"Tampa, FL",,2003260,,,,,,,,
+,,"Tampa, FL",,2003261,,,,,,,,
+,,"Boston, MA",,2003262,,,,,,,,
+,,"Oklahoma City, OK",,2003263,,,,,,,,
+,,"Nashville, TN",,2003264,,,,,,,,
+,,"Boston, MA",,2003265,,,,,,,,
+,,"Indianapolis, IN",,2003266,,,,,,,,
+,,"Salt Lake City, UT",,2003267,,,,,,,,
+,,"Spokane, WA",,2003268,,,,,,,,
+,,"Birmingham, AL",,2003269,,,,,,,,
+,,"Spokane, WA",,2003270,,,,,,,,
+,,"Indianapolis, IN",,2003271,,,,,,,,
+,,"Washington, DC",,2002272,,,,,,,,
+,,"St. Louis, MO",,2002273,,,,,,,,
+,,"Greenville, SC",,2002274,,,,,,,,
+,,"Pittsburgh, PA",,2002275,,,,,,,,
+,,"Washington, DC",,2002276,,,,,,,,
+,,"Sacramento, CA",,2002277,,,,,,,,
+,,"Greenville, SC",,2002278,,,,,,,,
+,,"Dallas, TX",,2002279,,,,,,,,
+,,"Chicago, IL",,2002280,,,,,,,,
+,,"Dallas, TX",,2002281,,,,,,,,
+,,"Pittsburgh, PA",,2002282,,,,,,,,
+,,"Albuquerque, NM",,2002283,,,,,,,,
+,,"St. Louis, MO",,2002284,,,,,,,,
+,,"Chicago, IL",,2002285,,,,,,,,
+,,"Sacramento, CA",,2002286,,,,,,,,
+,,"Albuquerque, NM",,2002287,,,,,,,,
+,,"Dayton, OH",,2001288,,,,,,,,
+,,"Greensboro, NC",,2001289,,,,,,,,
+,,"Memphis, TN",,2001290,,,,,,,,
+,,"San Diego, CA",,2001291,,,,,,,,
+,,"Kansas City, MO",,2001292,,,,,,,,
+,,"Uniondale, NY",,2001293,,,,,,,,
+,,"New Orleans, LA",,2001294,,,,,,,,
+,,"Boise, ID",,2001295,,,,,,,,
+,,"Kansas City, MO",,2001296,,,,,,,,
+,,"Uniondale, NY",,2001297,,,,,,,,
+,,"New Orleans, LA",,2001298,,,,,,,,
+,,"Boise, ID",,2001299,,,,,,,,
+,,"Dayton, OH",,2001300,,,,,,,,
+,,"Greensboro, NC",,2001301,,,,,,,,
+,,"Memphis, TN",,2001302,,,,,,,,
+,,"San Diego, CA",,2001303,,,,,,,,
+,,"Winston-Salem, NC",,2000304,,,,,,,,
+,,"Cleveland, OH",,2000305,,,,,,,,
+,,"Birmingham, AL",,2000306,,,,,,,,
+,,"Tucson, AZ",,2000307,,,,,,,,
+,,"Buffalo, NY",,2000308,,,,,,,,
+,,"Minneapolis, MN",,2000309,,,,,,,,
+,,"Nashville, TN",,2000310,,,,,,,,
+,,"Tucson, AZ",,2000311,,,,,,,,
+,,"Buffalo, NY",,2000312,,,,,,,,
+,,"Minneapolis, MN",,2000313,,,,,,,,
+,,"Nashville, TN",,2000314,,,,,,,,
+,,"Tucson, AZ",,2000315,,,,,,,,
+,,"Winston-Salem, NC",,2000316,,,,,,,,
+,,"Cleveland, OH",,2000317,,,,,,,,
+,,"Birmingham, AL",,2000318,,,,,,,,
+,,"Salt Lake City, UT",,2000319,,,,,,,,
+,,"Charlotte, NC",,1999320,,,,,,,,
+,,"Milwaukee, WI",,1999321,,,,,,,,
+,,"Indianapolis, IN",,1999322,,,,,,,,
+,,"Denver, CO",,1999323,,,,,,,,
+,,"Boston, MA",,1999324,,,,,,,,
+,,"New Orleans, LA",,1999325,,,,,,,,
+,,"Orlando, FL",,1999326,,,,,,,,
+,,"Seattle, WA",,1999327,,,,,,,,
+,,"Boston, MA",,1999328,,,,,,,,
+,,"New Orleans, LA",,1999329,,,,,,,,
+,,"Orlando, FL",,1999330,,,,,,,,
+,,"Seattle, WA",,1999331,,,,,,,,
+,,"Charlotte, NC",,1999332,,,,,,,,
+,,"Milwaukee, WI",,1999333,,,,,,,,
+,,"Indianapolis, IN",,1999334,,,,,,,,
+,,"Denver, CO",,1999335,,,,,,,,
+,,"Hartford, CT",,1998336,,,,,,,,
+,,"Oklahoma City, OK",,1998337,,,,,,,,
+,,"Lexington, KY",,1998338,,,,,,,,
+,,"Sacramento, CA",,1998339,,,,,,,,
+,,"Washington, DC",,1998340,,,,,,,,
+,,"Chicago, IL",,1998341,,,,,,,,
+,,"Atlanta, GA",,1998342,,,,,,,,
+,,"Boise, ID",,1998343,,,,,,,,
+,,"Washington, DC",,1998344,,,,,,,,
+,,"Chicago, IL",,1998345,,,,,,,,
+,,"Atlanta, GA",,1998346,,,,,,,,
+,,"Boise, ID",,1998347,,,,,,,,
+,,"Hartford, CT",,1998348,,,,,,,,
+,,"Oklahoma City, OK",,1998349,,,,,,,,
+,,"Lexington, KY",,1998350,,,,,,,,
+,,"Sacramento, CA",,1998351,,,,,,,,
+,,"Winston-Salem, NC",,1997352,,,,,,,,
+,,"Kansas City, MO",,1997353,,,,,,,,
+,,"Memphis, TN",,1997354,,,,,,,,
+,,"Salt Lake City, UT",,1997355,,,,,,,,
+,,"Pittsburgh, PA",,1997356,,,,,,,,
+,,"Auburn Hills, MI",,1997357,,,,,,,,
+,,"Charlotte, NC",,1997358,,,,,,,,
+,,"Tucson, AZ",,1997359,,,,,,,,
+,,"Pittsburgh, PA",,1997360,,,,,,,,
+,,"Auburn Hills, MI",,1997361,,,,,,,,
+,,"Charlotte, NC",,1997362,,,,,,,,
+,,"Tucson, AZ",,1997363,,,,,,,,
+,,"Winston-Salem, NC",,1997364,,,,,,,,
+,,"Kansas City, MO",,1997365,,,,,,,,
+,,"Memphis, TN",,1997366,,,,,,,,
+,,"Salt Lake City, UT",,1997367,,,,,,,,
+,,"Providence, RI",,1996368,,,,,,,,
+,,"Dallas, TX",,1996369,,,,,,,,
+,,"Indianapolis, IN",,1996370,,,,,,,,
+,,"Albuquerque, NM",,1996371,,,,,,,,
+,,"Richmond, VA",,1996372,,,,,,,,
+,,"Milwaukee, WI",,1996373,,,,,,,,
+,,"Orlando, FL",,1996374,,,,,,,,
+,,"Tempe, AZ",,1996375,,,,,,,,
+,,"Richmond, VA",,1996376,,,,,,,,
+,,"Milwaukee, WI",,1996377,,,,,,,,
+,,"Orlando, FL",,1996378,,,,,,,,
+,,"Tempe, AZ",,1996379,,,,,,,,
+,,"Providence, RI",,1996380,,,,,,,,
+,,"Dallas, TX",,1996381,,,,,,,,
+,,"Indianapolis, IN",,1996382,,,,,,,,
+,,"Albuquerque, NM",,1996383,,,,,,,,
+,,"Baltimore, MD",,1995384,,,,,,,,
+,,"Dayton, OH",,1995385,,,,,,,,
+,,"Memphis, TN",,1995386,,,,,,,,
+,,"Boise, ID",,1995387,,,,,,,,
+,,"Albany, NY",,1995388,,,,,,,,
+,,"Austin, TX",,1995389,,,,,,,,
+,,"Tallahassee, FL",,1995390,,,,,,,,
+,,"Salt Lake City, UT",,1995391,,,,,,,,
+,,"Albany, NY",,1995392,,,,,,,,
+,,"Austin, TX",,1995393,,,,,,,,
+,,"Tallahassee, FL",,1995394,,,,,,,,
+,,"Salt Lake City, UT",,1995395,,,,,,,,
+,,"Baltimore, MD",,1995396,,,,,,,,
+,,"Dayton, OH",,1995397,,,,,,,,
+,,"Memphis, TN",,1995398,,,,,,,,
+,,"Boise, ID",,1995399,,,,,,,,
+,,"Landover, MD",,1994400,,,,,,,,
+,,"Oklahoma City, OK",,1994401,,,,,,,,
+,,"Lexington, KY",,1994402,,,,,,,,
+,,"Ogden, UT",,1994403,,,,,,,,
+,,"Uniondale, NY",,1994404,,,,,,,,
+,,"Park City, KS",,1994405,,,,,,,,
+,,"St. Petersburg, FL",,1994406,,,,,,,,
+,,"Sacramento, CA",,1994407,,,,,,,,
+,,"Uniondale, NY",,1994408,,,,,,,,
+,,"Park City, KS",,1994409,,,,,,,,
+,,"St. Petersburg, FL",,1994410,,,,,,,,
+,,"Sacramento, CA",,1994411,,,,,,,,
+,,"Landover, MD",,1994412,,,,,,,,
+,,"Oklahoma City, OK",,1994413,,,,,,,,
+,,"Lexington, KY",,1994414,,,,,,,,
+,,"Ogden, UT",,1994415,,,,,,,,
+,,"Winston-Salem, NC",,1993416,,,,,,,,
+,,"Indianapolis, IN",,1993417,,,,,,,,
+,,"Nashville, TN",,1993418,,,,,,,,
+,,"Tucson, AZ",,1993419,,,,,,,,
+,,"Syracuse, NY",,1993420,,,,,,,,
+,,"Rosemont, IL",,1993421,,,,,,,,
+,,"Orlando, FL",,1993422,,,,,,,,
+,,"Salt Lake City, UT",,1993423,,,,,,,,
+,,"Syracuse, NY",,1993424,,,,,,,,
+,,"Rosemont, IL",,1993425,,,,,,,,
+,,"Orlando, FL",,1993426,,,,,,,,
+,,"Salt Lake City, UT",,1993427,,,,,,,,
+,,"Winston-Salem, NC",,1993428,,,,,,,,
+,,"Indianapolis, IN",,1993429,,,,,,,,
+,,"Nashville, TN",,1993430,,,,,,,,
+,,"Tucson, AZ",,1993431,,,,,,,,
+,,"Greensboro, NC",,1992432,,,,,,,,
+,,"Dayton, OH",,1992433,,,,,,,,
+,,"Cincinnati, OH",,1992434,,,,,,,,
+,,"Tempe, AZ",,1992435,,,,,,,,
+,,"Worcester, MA",,1992436,,,,,,,,
+,,"Milwaukee, WI",,1992437,,,,,,,,
+,,"Atlanta, GA",,1992438,,,,,,,,
+,,"Boise, ID",,1992439,,,,,,,,
+,,"Worcester, MA",,1992440,,,,,,,,
+,,"Milwaukee, WI",,1992441,,,,,,,,
+,,"Atlanta, GA",,1992442,,,,,,,,
+,,"Boise, ID",,1992443,,,,,,,,
+,,"Greensboro, NC",,1992444,,,,,,,,
+,,"Dayton, OH",,1992445,,,,,,,,
+,,"Cincinnati, OH",,1992446,,,,,,,,
+,,"Tempe, AZ",,1992447,,,,,,,,
+,,"Syracuse, NY",,1991448,,,,,,,,
+,,"Dayton, OH",,1991449,,,,,,,,
+,,"Atlanta, GA",,1991450,,,,,,,,
+,,"Tucson, AZ",,1991451,,,,,,,,
+,,"College Park, MD",,1991452,,,,,,,,
+,,"Minneapolis, MN",,1991453,,,,,,,,
+,,"Louisville, KY",,1991454,,,,,,,,
+,,"Salt Lake City, UT",,1991455,,,,,,,,
+,,"College Park, MD",,1991456,,,,,,,,
+,,"Minneapolis, MN",,1991457,,,,,,,,
+,,"Louisville, KY",,1991458,,,,,,,,
+,,"Salt Lake City, UT",,1991459,,,,,,,,
+,,"Syracuse, NY",,1991460,,,,,,,,
+,,"Dayton, OH",,1991461,,,,,,,,
+,,"Atlanta, GA",,1991462,,,,,,,,
+,,"Tucson, AZ",,1991463,,,,,,,,
+,,"Hartford, CT",,1990464,,,,,,,,
+,,"Austin, TX",,1990465,,,,,,,,
+,,"Knoxville, TN",,1990466,,,,,,,,
+,,"Salt Lake City, UT",,1990467,,,,,,,,
+,,"Atlanta, GA",,1990468,,,,,,,,
+,,"Indianapolis, IN",,1990469,,,,,,,,
+,,"Richmond, VA",,1990470,,,,,,,,
+,,"Long Beach, CA",,1990471,,,,,,,,
+,,"Atlanta, GA",,1990472,,,,,,,,
+,,"Indianapolis, IN",,1990473,,,,,,,,
+,,"Richmond, VA",,1990474,,,,,,,,
+,,"Long Beach, CA",,1990475,,,,,,,,
+,,"Hartford, CT",,1990476,,,,,,,,
+,,"Austin, TX",,1990477,,,,,,,,
+,,"Knoxville, TN",,1990478,,,,,,,,
+,,"Salt Lake City, UT",,1990479,,,,,,,,
+,,"Providence, RI",,1989480,,,,,,,,
+,,"Indianapolis, IN",,1989481,,,,,,,,
+,,"Nashville, TN",,1989482,,,,,,,,
+,,"Boise, ID",,1989483,,,,,,,,
+,,"Greensboro, NC",,1989484,,,,,,,,
+,,"Dallas, TX",,1989485,,,,,,,,
+,,"Atlanta, GA",,1989486,,,,,,,,
+,,"Tucson, AZ",,1989487,,,,,,,,
+,,"Greensboro, NC",,1989488,,,,,,,,
+,,"Dallas, TX",,1989489,,,,,,,,
+,,"Atlanta, GA",,1989490,,,,,,,,
+,,"Tucson, AZ",,1989491,,,,,,,,
+,,"Providence, RI",,1989492,,,,,,,,
+,,"Indianapolis, IN",,1989493,,,,,,,,
+,,"Nashville, TN",,1989494,,,,,,,,
+,,"Boise, ID",,1989495,,,,,,,,
+,,"Hartford, CT",,1988496,,,,,,,,
+,,"South Bend, IN",,1988497,,,,,,,,
+,,"Atlanta, GA",,1988498,,,,,,,,
+,,"Los Angeles, CA",,1988499,,,,,,,,
+,,"Chapel Hill, NC",,1988500,,,,,,,,
+,,"Lincoln, NE",,1988501,,,,,,,,
+,,"Cincinnati, OH",,1988502,,,,,,,,
+,,"Salt Lake City, UT",,1988503,,,,,,,,
+,,"Chapel Hill, NC",,1988504,,,,,,,,
+,,"Lincoln, NE",,1988505,,,,,,,,
+,,"Cincinnati, OH",,1988506,,,,,,,,
+,,"Salt Lake City, UT",,1988507,,,,,,,,
+,,"Hartford, CT",,1988508,,,,,,,,
+,,"South Bend, IN",,1988509,,,,,,,,
+,,"Atlanta, GA",,1988510,,,,,,,,
+,,"Los Angeles, CA",,1988511,,,,,,,,
+,,"Charlotte, NC",,1987512,,,,,,,,
+,,"Indianapolis, IN",,1987513,,,,,,,,
+,,"Atlanta, GA",,1987514,,,,,,,,
+,,"Salt Lake City, UT",,1987515,,,,,,,,
+,,"Syracuse, NY",,1987516,,,,,,,,
+,,"Rosemont, IL",,1987517,,,,,,,,
+,,"Birmingham, AL",,1987518,,,,,,,,
+,,"Tucson, AZ",,1987519,,,,,,,,
+,,"Syracuse, NY",,1987520,,,,,,,,
+,,"Rosemont, IL",,1987521,,,,,,,,
+,,"Birmingham, AL",,1987522,,,,,,,,
+,,"Tucson, AZ",,1987523,,,,,,,,
+,,"Charlotte, NC",,1987524,,,,,,,,
+,,"Indianapolis, IN",,1987525,,,,,,,,
+,,"Atlanta, GA",,1987526,,,,,,,,
+,,"Salt Lake City, UT",,1987527,,,,,,,,
+,,"Greensboro, NC",,1986528,,,,,,,,
+,,"Dayton, OH",,1986529,,,,,,,,
+,,"Charlotte, NC",,1986530,,,,,,,,
+,,"Long Beach, CA",,1986531,,,,,,,,
+,,"Syracuse, NY",,1986532,,,,,,,,
+,,"Minneapolis, MN",,1986533,,,,,,,,
+,,"Baton Rouge, LA",,1986534,,,,,,,,
+,,"Ogden, UT",,1986535,,,,,,,,
+,,"Syracuse, NY",,1986536,,,,,,,,
+,,"Minneapolis, MN",,1986537,,,,,,,,
+,,"Baton Rouge, LA",,1986538,,,,,,,,
+,,"Ogden, UT",,1986539,,,,,,,,
+,,"Greensboro, NC",,1986540,,,,,,,,
+,,"Dayton, OH",,1986541,,,,,,,,
+,,"Charlotte, NC",,1986542,,,,,,,,
+,,"Long Beach, CA",,1986543,,,,,,,,
+,,"Hartford, CT",,1985544,,,,,,,,
+,,"Tulsa, OK",,1985545,,,,,,,,
+,,"Dayton, OH",,1985546,,,,,,,,
+,,"Salt Lake City, UT",,1985547,,,,,,,,
+,,"Atlanta, GA",,1985548,,,,,,,,
+,,"Houston, TX",,1985549,,,,,,,,
+,,"South Bend, IN",,1985550,,,,,,,,
+,,"Albuquerque, NM",,1985551,,,,,,,,
+,,"Atlanta, GA",,1985552,,,,,,,,
+,,"Houston, TX",,1985553,,,,,,,,
+,,"South Bend, IN",,1985554,,,,,,,,
+,,"Albuquerque, NM",,1985555,,,,,,,,
+,,"Hartford, CT",,1985556,,,,,,,,
+,,"Tulsa, OK",,1985557,,,,,,,,
+,,"Dayton, OH",,1985558,,,,,,,,
+,,"Salt Lake City, UT",,1985559,,,,,,,,
