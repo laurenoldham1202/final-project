@@ -29,13 +29,13 @@ Raw data for the first round of each tournament from 1985 to 2019\* was copied i
 and the first round teams, seeds, sites, and scores as the rows. The raw data was then imported in a Jupyter Notebook
 (`notebooks/data-prep.ipynb`) and cleaned with a Python 3 script resulting in a CSV formatted as:
 
-- 5 columns (seed, school, site, year, id)
-- `seed` column is the numeric seed value for each team (1, 2, 3, or 4)
-- `school` is the shorthand name for each participating school (e.g. UNC instead of University of North Carolina)
-- `site` is the city and state of each school's first round site location (formatted as full city name and state
-  abbreviation, e.g. Columbus, OH)
-- `year` is the tournament year
-- `id` is a unique ID for each school and its associated site for each year's tournament
+- 5 columns (seed, school, site, year, id):
+  - `seed` column is the numeric seed value for each team (1, 2, 3, or 4)
+  - `school` is the shorthand name for each participating school (e.g. UNC instead of University of North Carolina)
+  - `site` is the city and state of each school's first round site location (formatted as full city name and state
+    abbreviation, e.g. Columbus, OH)
+  - `year` is the tournament year
+  - `id` is a unique ID for each school and its associated site for each year's tournament
 
 In addition to each of the 16 teams for years 1985-2019, new rows for each site were appended to the CSV (with a
 matching ID) to eventually analyze the distance between each school and their first-round sites. This data was saved as
@@ -43,7 +43,7 @@ matching ID) to eventually analyze the distance between each school and their fi
 
 This data will be used to calculate the distance between each school and its site location.
 
-\*2020 tournament will take place in March-April 2020.
+\* 2020 tournament will take place in March-April 2020.
 
 #### School Locations/Details
 
