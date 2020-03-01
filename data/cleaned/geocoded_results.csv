@@ -1,0 +1,1121 @@
+seed,school_common_name,site,year,id,school_full_name,team,city,state,type,conference,address,lat,lng
+1.0,Duke,"Columbia, SC",2019.0,20190,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+1.0,Gonzaga,"Salt Lake City, UT",2019.0,20191,Gonzaga University,Bulldogs,Spokane,Washington,Private/Catholic,West Coast Conference,Gonzaga University Spokane Washington,-117.40304385396806,47.666738550000005
+1.0,North Carolina,"Columbus, OH",2019.0,20192,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+1.0,Virginia,"Columbia, SC",2019.0,20193,University of Virginia,Cavaliers,Charlottesville,Virginia,State,Atlantic Coast Conference,University of Virginia Charlottesville Virginia,-78.50549960183568,38.0410576
+2.0,Michigan State,"Des Moines, IA",2019.0,20194,Michigan State University,Spartans,East Lansing,Michigan,State,Big Ten Conference,Michigan State University East Lansing Michigan,-84.47791570930522,42.718568000000005
+2.0,Michigan,"Des Moines, IA",2019.0,20195,University of Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference,University of Michigan Ann Arbor Michigan,-83.71003893509601,42.2942142
+2.0,Kentucky,"Jacksonville, FL",2019.0,20196,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
+2.0,Tennessee,"Columbus, OH",2019.0,20197,University of Tennessee,Volunteers,Knoxville,Tennessee,State,Southeastern Conference,University of Tennessee Knoxville Tennessee,-83.93042902947624,35.9518119
+3.0,LSU,"Jacksonville, FL",2019.0,20198,Louisiana State University,Tigers,Baton Rouge,Louisiana,State,Southeastern Conference,Louisiana State University Baton Rouge Louisiana,-91.18596767189877,30.40570885
+3.0,Texas Tech,"Tulsa, OK",2019.0,20199,Texas Tech University,Red Raiders,Lubbock,Texas,State,Big 12 Conference,Texas Tech University Lubbock Texas,-101.89959552302756,33.59375255
+3.0,Houston,"Tulsa, OK",2019.0,201910,University of Houston,Cougars,Houston,Texas,State,American Athletic Conference,University of Houston Houston Texas,-95.3440627149137,29.7207902
+3.0,Purdue,"Hartford, CT",2019.0,201911,Purdue University,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference,Purdue University West Lafayette Indiana,-86.92391089364378,40.43195815
+4.0,Virginia Tech,"San Jose, CA",2019.0,201912,Virginia Tech,Hokies,Blacksburg,Virginia,State,Atlantic Coast Conference,Virginia Tech Blacksburg Virginia,-80.42542518694935,37.21872455
+4.0,Florida State,"Hartford, CT",2019.0,201913,Florida State University,Seminoles,Tallahassee,Florida,State,Atlantic Coast Conference,Florida State University Tallahassee Florida,-84.29747867166262,30.44235995
+4.0,Kansas,"Salt Lake City, UT",2019.0,201914,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+4.0,Kansas State,"San Jose, CA",2019.0,201915,Kansas State University,Wildcats,Manhattan,Kansas,State,Big 12 Conference,Kansas State University Manhattan Kansas,-96.58844409645442,39.2087029
+1.0,Villanova,"Pittsburgh, PA",2018.0,201816,Villanova University,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference,Villanova University Radnor Township Pennsylvania,-75.3401787,40.03575
+1.0,Kansas,"Wichita, KS",2018.0,201817,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+1.0,Xavier,"Nashville, TN",2018.0,201818,Xavier University,Musketeers,Cincinnati,Ohio,Private/Catholic,Big East Conference,Xavier University Cincinnati Ohio,-84.47083471474068,39.1513078
+1.0,Virginia,"Charlotte, NC",2018.0,201819,University of Virginia,Cavaliers,Charlottesville,Virginia,State,Atlantic Coast Conference,University of Virginia Charlottesville Virginia,-78.50549960183568,38.0410576
+2.0,Purdue,"Detroit, MI",2018.0,201820,Purdue University,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference,Purdue University West Lafayette Indiana,-86.92391089364378,40.43195815
+2.0,Duke,"Pittsburgh, PA",2018.0,201821,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+2.0,North Carolina,"Charlotte, NC",2018.0,201822,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+2.0,Cincinnati,"Nashville, TN",2018.0,201823,University of Cincinnati,Bearcats,Cincinnati,Ohio,State,American Athletic Conference,University of Cincinnati Cincinnati Ohio,-84.5157620959388,39.1318525
+3.0,Texas Tech,"Dallas, TX",2018.0,201824,Texas Tech University,Red Raiders,Lubbock,Texas,State,Big 12 Conference,Texas Tech University Lubbock Texas,-101.89959552302756,33.59375255
+3.0,Michigan State,"Detroit, MI",2018.0,201825,Michigan State University,Spartans,East Lansing,Michigan,State,Big Ten Conference,Michigan State University East Lansing Michigan,-84.47791570930522,42.718568000000005
+3.0,Michigan,"Wichita, KS",2018.0,201826,University of Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference,University of Michigan Ann Arbor Michigan,-83.71003893509601,42.2942142
+3.0,Tennessee,"Dallas, TX",2018.0,201827,University of Tennessee,Volunteers,Knoxville,Tennessee,State,Southeastern Conference,University of Tennessee Knoxville Tennessee,-83.93042902947624,35.9518119
+4.0,Wichita State,"San Diego, CA",2018.0,201828,Wichita State University,Shockers,Wichita,Kansas,State,American Athletic Conference,Wichita State University Wichita Kansas,-97.2933776,37.71918
+4.0,Auburn,"San Diego, CA",2018.0,201829,Auburn University,Tigers,Auburn,Alabama,State,Southeastern Conference,Auburn University Auburn Alabama,-85.49598606691626,32.59196300000001
+4.0,Gonzaga,"Boise, ID",2018.0,201830,Gonzaga University,Bulldogs,Spokane,Washington,Private/Catholic,West Coast Conference,Gonzaga University Spokane Washington,-117.40304385396806,47.666738550000005
+4.0,Arizona,"Boise, ID",2018.0,201831,University of Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference,University of Arizona Tucson Arizona,-110.9768841153795,32.22877495
+1.0,Villanova,"Buffalo, NY",2017.0,201732,Villanova University,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference,Villanova University Radnor Township Pennsylvania,-75.3401787,40.03575
+1.0,Kansas,"Tulsa, OK",2017.0,201733,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+1.0,North Carolina,"Greenville, SC",2017.0,201734,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+1.0,Gonzaga,"Salt Lake City, UT",2017.0,201735,Gonzaga University,Bulldogs,Spokane,Washington,Private/Catholic,West Coast Conference,Gonzaga University Spokane Washington,-117.40304385396806,47.666738550000005
+2.0,Duke,"Greenville, SC",2017.0,201736,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+2.0,Louisville,"Indianapolis, IN",2017.0,201737,University of Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference,University of Louisville Louisville Kentucky,-85.75725134140214,38.2167565
+2.0,Kentucky,"Indianapolis, IN",2017.0,201738,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
+2.0,Arizona,"Salt Lake City, UT",2017.0,201739,University of Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference,University of Arizona Tucson Arizona,-110.9768841153795,32.22877495
+3.0,Baylor,"Tulsa, OK",2017.0,201740,Baylor University,Bears,Waco,Texas,Private/Baptist,Big 12 Conference,Baylor University Waco Texas,-97.1102905567766,31.55043405
+3.0,Oregon,"Sacramento, CA",2017.0,201741,University of Oregon,Ducks,Eugene,Oregon,State,Pac-12 Conference,University of Oregon Eugene Oregon,-123.07682891244703,44.04426385
+3.0,UCLA,"Sacramento, CA",2017.0,201742,"University of California, Los Angeles",Bruins,Los Angeles,California,State,Pac-12 Conference,University of California Los Angeles California,-118.44667592924029,34.0709515
+3.0,Florida State,"Orlando, FL",2017.0,201743,Florida State University,Seminoles,Tallahassee,Florida,State,Atlantic Coast Conference,Florida State University Tallahassee Florida,-84.29747867166262,30.44235995
+4.0,Florida,"Orlando, FL",2017.0,201744,University of Florida,Gators,Gainesville,Florida,State,Southeastern Conference,University of Florida Gainesville Florida,-82.34901330482433,29.6328784
+4.0,Purdue,"Milwaukee, WI",2017.0,201745,Purdue University,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference,Purdue University West Lafayette Indiana,-86.92391089364378,40.43195815
+4.0,Butler,"Milwaukee, WI",2017.0,201746,Butler University,Bulldogs,Indianapolis,Indiana,Private/Non-Sectarian,Big East Conference,Butler University Indianapolis Indiana,-86.17374943464813,39.8407191
+4.0,West Virginia,"Buffalo, NY",2017.0,201747,West Virginia University,Mountaineers,Morgantown,West Virginia,State,Big 12 Conference,WVU Morgantown West Virginia,-79.98142972909102,39.64931395
+1.0,North Carolina,"Raleigh, NC",2016.0,201648,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+1.0,Kansas,"Des Moines, IA",2016.0,201649,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+1.0,Oregon,"Spokane, WA",2016.0,201650,University of Oregon,Ducks,Eugene,Oregon,State,Pac-12 Conference,University of Oregon Eugene Oregon,-123.07682891244703,44.04426385
+1.0,Virginia,"Raleigh, NC",2016.0,201651,University of Virginia,Cavaliers,Charlottesville,Virginia,State,Atlantic Coast Conference,University of Virginia Charlottesville Virginia,-78.50549960183568,38.0410576
+2.0,Xavier,"St. Louis, MO",2016.0,201652,Xavier University,Musketeers,Cincinnati,Ohio,Private/Catholic,Big East Conference,Xavier University Cincinnati Ohio,-84.47083471474068,39.1513078
+2.0,Villanova,"Brooklyn, NY",2016.0,201653,Villanova University,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference,Villanova University Radnor Township Pennsylvania,-75.3401787,40.03575
+2.0,Oklahoma,"Oklahoma City, OK",2016.0,201654,University of Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference,University of Oklahoma Norman Oklahoma,-97.44570827599858,35.1959878
+2.0,Michigan State,"St. Louis, MO",2016.0,201655,Michigan State University,Spartans,East Lansing,Michigan,State,Big Ten Conference,Michigan State University East Lansing Michigan,-84.47791570930522,42.718568000000005
+3.0,West Virginia,"Brooklyn, NY",2016.0,201656,West Virginia University,Mountaineers,Morgantown,West Virginia,State,Big 12 Conference,WVU Morgantown West Virginia,-79.98142972909102,39.64931395
+3.0,Miami (FL),"Providence, RI",2016.0,201657,University of Miami,Hurricanes,Coral Gables,Florida,Private/Non-Sectarian,Atlantic Coast Conference,University of Miami Coral Gables Florida,-80.27869157646253,25.7172788
+3.0,Texas A&M,"Oklahoma City, OK",2016.0,201658,Texas A&M University,Aggies,College Station,Texas,State,Southeastern Conference,"Texas A & M, College Station Texas",-96.24359931287475,30.5518161
+3.0,Utah,"Denver, CO",2016.0,201659,University of Utah,Utes,Salt Lake City,Utah,State,Pac-12 Conference,University of Utah Salt Lake City Utah,-111.83687191368261,40.762813699999995
+4.0,Kentucky,"Des Moines, IA",2016.0,201660,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
+4.0,California,"Spokane, WA",2016.0,201661,"University of California, Berkeley",Golden Bears,Berkeley,California,State,Pac-12 Conference,"University of California, Berkeley Berkeley California",-122.23963364918777,37.8753497
+4.0,Duke,"Providence, RI",2016.0,201662,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+4.0,Iowa State,"Denver, CO",2016.0,201663,Iowa State University,Cyclones,Ames,Iowa,State,Big 12 Conference,Iowa State University Ames Iowa,-93.64464414737449,42.02791015
+1.0,Villanova,"Pittsburgh, PA",2015.0,201564,Villanova University,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference,Villanova University Radnor Township Pennsylvania,-75.3401787,40.03575
+1.0,Kentucky,"Louisville, KY",2015.0,201565,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
+1.0,Duke,"Charlotte, NC",2015.0,201566,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+1.0,Wisconsin,"Omaha, NE",2015.0,201567,University of Wisconsin–Madison,Badgers,Madison,Wisconsin,State,Big Ten Conference,University of Wisconsin–Madison Madison Wisconsin,-89.4059387,43.0705257
+2.0,Virginia,"Charlotte, NC",2015.0,201568,University of Virginia,Cavaliers,Charlottesville,Virginia,State,Atlantic Coast Conference,University of Virginia Charlottesville Virginia,-78.50549960183568,38.0410576
+2.0,Kansas,"Omaha, NE",2015.0,201569,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+2.0,Gonzaga,"Seattle, WA",2015.0,201570,Gonzaga University,Bulldogs,Spokane,Washington,Private/Catholic,West Coast Conference,Gonzaga University Spokane Washington,-117.40304385396806,47.666738550000005
+2.0,Arizona,"Portland, OR",2015.0,201571,University of Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference,University of Arizona Tucson Arizona,-110.9768841153795,32.22877495
+3.0,Oklahoma,"Columbus, OH",2015.0,201572,University of Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference,University of Oklahoma Norman Oklahoma,-97.44570827599858,35.1959878
+3.0,Notre Dame,"Pittsburgh, PA",2015.0,201573,University of Notre Dame,Fighting Irish,South Bend,Indiana,Private/Catholic,Atlantic Coast Conference,University of Notre Dame South Bend Indiana,-86.23822026017265,41.704567749999995
+3.0,Iowa State,"Louisville, KY",2015.0,201574,Iowa State University,Cyclones,Ames,Iowa,State,Big 12 Conference,Iowa State University Ames Iowa,-93.64464414737449,42.02791015
+3.0,Baylor,"Jacksonville, FL",2015.0,201575,Baylor University,Bears,Waco,Texas,Private/Baptist,Big 12 Conference,Baylor University Waco Texas,-97.1102905567766,31.55043405
+4.0,Louisville,"Seattle, WA",2015.0,201576,University of Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference,University of Louisville Louisville Kentucky,-85.75725134140214,38.2167565
+4.0,Maryland,"Columbus, OH",2015.0,201577,"University of Maryland, College Park",Terrapins,College Park,Maryland,State,Big Ten Conference,"University of Maryland, College Park College Park Maryland",-76.94610290199051,38.99203005
+4.0,Georgetown,"Portland, OR",2015.0,201578,Georgetown University,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference,Georgetown University Washington District of Columbia,-77.07457962060826,38.90893925
+4.0,North Carolina,"Jacksonville, FL",2015.0,201579,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+1.0,Wichita State,"St. Louis, MO",2014.0,201480,Wichita State University,Shockers,Wichita,Kansas,State,American Athletic Conference,Wichita State University Wichita Kansas,-97.2933776,37.71918
+1.0,Florida,"Orlando, FL",2014.0,201481,University of Florida,Gators,Gainesville,Florida,State,Southeastern Conference,University of Florida Gainesville Florida,-82.34901330482433,29.6328784
+1.0,Virginia,"Raleigh, NC",2014.0,201482,University of Virginia,Cavaliers,Charlottesville,Virginia,State,Atlantic Coast Conference,University of Virginia Charlottesville Virginia,-78.50549960183568,38.0410576
+1.0,Arizona,"San Diego, CA",2014.0,201483,University of Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference,University of Arizona Tucson Arizona,-110.9768841153795,32.22877495
+2.0,Michigan,"Milwaukee, WI",2014.0,201484,University of Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference,University of Michigan Ann Arbor Michigan,-83.71003893509601,42.2942142
+2.0,Kansas,"St. Louis, MO",2014.0,201485,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+2.0,Villanova,"Buffalo, NY",2014.0,201486,Villanova University,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference,Villanova University Radnor Township Pennsylvania,-75.3401787,40.03575
+2.0,Wisconsin,"Milwaukee, WI",2014.0,201487,University of Wisconsin–Madison,Badgers,Madison,Wisconsin,State,Big Ten Conference,University of Wisconsin–Madison Madison Wisconsin,-89.4059387,43.0705257
+3.0,Duke,"Raleigh, NC",2014.0,201488,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+3.0,Syracuse,"Buffalo, NY",2014.0,201489,Syracuse University,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference,Syracuse University Syracuse New York,-76.1333088275183,43.03830645
+3.0,Iowa State,"San Antonio, TX",2014.0,201490,Iowa State University,Cyclones,Ames,Iowa,State,Big 12 Conference,Iowa State University Ames Iowa,-93.64464414737449,42.02791015
+3.0,Creighton,"San Antonio, TX",2014.0,201491,Creighton University,Bluejays,Omaha,Nebraska,Private/Catholic,Big East Conference,Creighton University Omaha Nebraska,-95.94506420758655,41.2661106
+4.0,Louisville,"Orlando, FL",2014.0,201492,University of Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference,University of Louisville Louisville Kentucky,-85.75725134140214,38.2167565
+4.0,UCLA,"San Diego, CA",2014.0,201493,"University of California, Los Angeles",Bruins,Los Angeles,California,State,Pac-12 Conference,University of California Los Angeles California,-118.44667592924029,34.0709515
+4.0,Michigan State,"Spokane, WA",2014.0,201494,Michigan State University,Spartans,East Lansing,Michigan,State,Big Ten Conference,Michigan State University East Lansing Michigan,-84.47791570930522,42.718568000000005
+4.0,San Diego State,"Spokane, WA",2014.0,201495,San Diego State University,Aztecs,San Diego,California,State,Mountain West Conference,San Diego State University San Diego California,-117.07385052563076,32.77481589999999
+1.0,Indiana,"Dayton, OH",2013.0,201396,Indiana University,Hoosiers,Bloomington,Indiana,State,Big Ten Conference,Indiana University Bloomington Indiana,-86.51623218881414,39.177980649999995
+1.0,Louisville,"Lexington, KY",2013.0,201397,University of Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference,University of Louisville Louisville Kentucky,-85.75725134140214,38.2167565
+1.0,Gonzaga,"Salt Lake City, UT",2013.0,201398,Gonzaga University,Bulldogs,Spokane,Washington,Private/Catholic,West Coast Conference,Gonzaga University Spokane Washington,-117.40304385396806,47.666738550000005
+1.0,Kansas,"Kansas City, MO",2013.0,201399,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+2.0,Miami (FL),"Austin, TX",2013.0,2013100,University of Miami,Hurricanes,Coral Gables,Florida,Private/Non-Sectarian,Atlantic Coast Conference,University of Miami Coral Gables Florida,-80.27869157646253,25.7172788
+2.0,Duke,"Philadelphia, PA",2013.0,2013101,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+2.0,Ohio State,"Dayton, OH",2013.0,2013102,The Ohio State University,Buckeyes,Columbus,Ohio,State,Big Ten Conference,The Ohio State University Columbus Ohio,-83.02866259769122,40.00570905
+2.0,Georgetown,"Philadelphia, PA",2013.0,2013103,Georgetown University,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference,Georgetown University Washington District of Columbia,-77.07457962060826,38.90893925
+3.0,Marquette,"Lexington, KY",2013.0,2013104,Marquette University,Golden Eagles,Milwaukee,Wisconsin,Private/Catholic,Big East Conference,Marquette University Milwaukee Wisconsin,-87.93155449905072,43.03889625
+3.0,Michigan State,"Auburn Hills, MI",2013.0,2013105,Michigan State University,Spartans,East Lansing,Michigan,State,Big Ten Conference,Michigan State University East Lansing Michigan,-84.47791570930522,42.718568000000005
+3.0,New Mexico,"Salt Lake City, UT",2013.0,2013106,University of New Mexico,Lobos,Albuquerque,New Mexico,State,Mountain West Conference,University of New Mexico Albuquerque New Mexico,-106.62020940505188,35.08663275
+3.0,Florida,"Austin, TX",2013.0,2013107,University of Florida,Gators,Gainesville,Florida,State,Southeastern Conference,University of Florida Gainesville Florida,-82.34901330482433,29.6328784
+4.0,Syracuse,"San Jose, CA",2013.0,2013108,Syracuse University,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference,Syracuse University Syracuse New York,-76.1333088275183,43.03830645
+4.0,Saint Louis,"San Jose, CA",2013.0,2013109,Saint Louis University,Billikens,St. Louis,Missouri,Private/Catholic,Atlantic 10 Conference,Saint Louis University St. Louis Missouri,-90.2316773318154,38.6352837
+4.0,Kansas State,"Kansas City, MO",2013.0,2013110,Kansas State University,Wildcats,Manhattan,Kansas,State,Big 12 Conference,Kansas State University Manhattan Kansas,-96.58844409645442,39.2087029
+4.0,Michigan,"Auburn Hills, MI",2013.0,2013111,University of Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference,University of Michigan Ann Arbor Michigan,-83.71003893509601,42.2942142
+1.0,North Carolina,"Greensboro, NC",2012.0,2012112,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+1.0,Kentucky,"Louisville, KY",2012.0,2012113,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
+1.0,Michigan State,"Columbus, OH",2012.0,2012114,Michigan State University,Spartans,East Lansing,Michigan,State,Big Ten Conference,Michigan State University East Lansing Michigan,-84.47791570930522,42.718568000000005
+1.0,Syracuse,"Pittsburgh, PA",2012.0,2012115,Syracuse University,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference,Syracuse University Syracuse New York,-76.1333088275183,43.03830645
+2.0,Kansas,"Omaha, NE",2012.0,2012116,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+2.0,Duke,"Greensboro, NC",2012.0,2012117,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+2.0,Missouri,"Omaha, NE",2012.0,2012118,University of Missouri,Tigers,Columbia,Missouri,State,Southeastern Conference,University of Missouri Columbia Missouri,-92.32970301784542,38.93641465
+2.0,Ohio State,"Pittsburgh, PA",2012.0,2012119,The Ohio State University,Buckeyes,Columbus,Ohio,State,Big Ten Conference,The Ohio State University Columbus Ohio,-83.02866259769122,40.00570905
+3.0,Georgetown,"Columbus, OH",2012.0,2012120,Georgetown University,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference,Georgetown University Washington District of Columbia,-77.07457962060826,38.90893925
+3.0,Baylor,"Albuquerque, NM",2012.0,2012121,Baylor University,Bears,Waco,Texas,Private/Baptist,Big 12 Conference,Baylor University Waco Texas,-97.1102905567766,31.55043405
+3.0,Marquette,"Louisville, KY",2012.0,2012122,Marquette University,Golden Eagles,Milwaukee,Wisconsin,Private/Catholic,Big East Conference,Marquette University Milwaukee Wisconsin,-87.93155449905072,43.03889625
+3.0,Florida State,"Nashville, TN",2012.0,2012123,Florida State University,Seminoles,Tallahassee,Florida,State,Atlantic Coast Conference,Florida State University Tallahassee Florida,-84.29747867166262,30.44235995
+4.0,Michigan,"Nashville, TN",2012.0,2012124,University of Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference,University of Michigan Ann Arbor Michigan,-83.71003893509601,42.2942142
+4.0,Indiana,"Portland, OR",2012.0,2012125,Indiana University,Hoosiers,Bloomington,Indiana,State,Big Ten Conference,Indiana University Bloomington Indiana,-86.51623218881414,39.177980649999995
+4.0,Louisville,"Portland, OR",2012.0,2012126,University of Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference,University of Louisville Louisville Kentucky,-85.75725134140214,38.2167565
+4.0,Wisconsin,"Albuquerque, NM",2012.0,2012127,University of Wisconsin–Madison,Badgers,Madison,Wisconsin,State,Big Ten Conference,University of Wisconsin–Madison Madison Wisconsin,-89.4059387,43.0705257
+1.0,Ohio State,"Cleveland, OH",2011.0,2011128,The Ohio State University,Buckeyes,Columbus,Ohio,State,Big Ten Conference,The Ohio State University Columbus Ohio,-83.02866259769122,40.00570905
+1.0,Pittsburgh,"Washington, DC",2011.0,2011129,University of Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference,University of Pittsburgh Pittsburgh Pennsylvania,-79.96243992762707,40.44415295
+1.0,Kansas,"Tulsa, OK",2011.0,2011130,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+1.0,Duke,"Charlotte, NC",2011.0,2011131,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+2.0,North Carolina,"Charlotte, NC",2011.0,2011132,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+2.0,Florida,"Tampa, FL",2011.0,2011133,University of Florida,Gators,Gainesville,Florida,State,Southeastern Conference,University of Florida Gainesville Florida,-82.34901330482433,29.6328784
+2.0,Notre Dame,"Chicago, IL",2011.0,2011134,University of Notre Dame,Fighting Irish,South Bend,Indiana,Private/Catholic,Atlantic Coast Conference,University of Notre Dame South Bend Indiana,-86.23822026017265,41.704567749999995
+2.0,San Diego State,"Tucson, AZ",2011.0,2011135,San Diego State University,Aztecs,San Diego,California,State,Mountain West Conference,San Diego State University San Diego California,-117.07385052563076,32.77481589999999
+3.0,Syracuse,"Cleveland, OH",2011.0,2011136,Syracuse University,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference,Syracuse University Syracuse New York,-76.1333088275183,43.03830645
+3.0,BYU,"Denver, CO",2011.0,2011137,Brigham Young University,Cougars,Provo,Utah,Private/Latter-Day Saints,West Coast Conference,Brigham Young University Provo Utah,-111.64965648425293,40.2551075
+3.0,Purdue,"Chicago, IL",2011.0,2011138,Purdue University,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference,Purdue University West Lafayette Indiana,-86.92391089364378,40.43195815
+3.0,UConn,"Washington, DC",2011.0,2011139,University of Connecticut,Huskies,Storrs,Connecticut,State,American Athletic Conference,University of Connecticut Storrs Connecticut,-72.2540140374581,41.81127235
+4.0,Kentucky,"Tampa, FL",2011.0,2011140,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
+4.0,Wisconsin,"Tucson, AZ",2011.0,2011141,University of Wisconsin–Madison,Badgers,Madison,Wisconsin,State,Big Ten Conference,University of Wisconsin–Madison Madison Wisconsin,-89.4059387,43.0705257
+4.0,Louisville,"Denver, CO",2011.0,2011142,University of Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference,University of Louisville Louisville Kentucky,-85.75725134140214,38.2167565
+4.0,Texas,"Tulsa, OK",2011.0,2011143,University of Texas at Austin,Longhorns,Austin,Texas,State,Big 12 Conference,University of Texas at Austin Austin Texas,-97.73195598080218,30.284151
+1.0,Duke,"Jacksonville, FL",2010.0,2010144,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+1.0,Kentucky,"New Orleans, LA",2010.0,2010145,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
+1.0,Kansas,"Oklahoma City, OK",2010.0,2010146,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+1.0,Syracuse,"Buffalo, NY",2010.0,2010147,Syracuse University,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference,Syracuse University Syracuse New York,-76.1333088275183,43.03830645
+2.0,Villanova,"Providence, RI",2010.0,2010148,Villanova University,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference,Villanova University Radnor Township Pennsylvania,-75.3401787,40.03575
+2.0,West Virginia,"Buffalo, NY",2010.0,2010149,West Virginia University,Mountaineers,Morgantown,West Virginia,State,Big 12 Conference,WVU Morgantown West Virginia,-79.98142972909102,39.64931395
+2.0,Ohio State,"Milwaukee, WI",2010.0,2010150,The Ohio State University,Buckeyes,Columbus,Ohio,State,Big Ten Conference,The Ohio State University Columbus Ohio,-83.02866259769122,40.00570905
+2.0,Kansas State,"Oklahoma City, OK",2010.0,2010151,Kansas State University,Wildcats,Manhattan,Kansas,State,Big 12 Conference,Kansas State University Manhattan Kansas,-96.58844409645442,39.2087029
+3.0,Baylor,"New Orleans, LA",2010.0,2010152,Baylor University,Bears,Waco,Texas,Private/Baptist,Big 12 Conference,Baylor University Waco Texas,-97.1102905567766,31.55043405
+3.0,New Mexico,"San Jose, CA",2010.0,2010153,University of New Mexico,Lobos,Albuquerque,New Mexico,State,Mountain West Conference,University of New Mexico Albuquerque New Mexico,-106.62020940505188,35.08663275
+3.0,Georgetown,"Providence, RI",2010.0,2010154,Georgetown University,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference,Georgetown University Washington District of Columbia,-77.07457962060826,38.90893925
+3.0,Pittsburgh,"Milwaukee, WI",2010.0,2010155,University of Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference,University of Pittsburgh Pittsburgh Pennsylvania,-79.96243992762707,40.44415295
+4.0,Purdue,"Spokane, WA",2010.0,2010156,Purdue University,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference,Purdue University West Lafayette Indiana,-86.92391089364378,40.43195815
+4.0,Wisconsin,"Jacksonville, FL",2010.0,2010157,University of Wisconsin–Madison,Badgers,Madison,Wisconsin,State,Big Ten Conference,University of Wisconsin–Madison Madison Wisconsin,-89.4059387,43.0705257
+4.0,Maryland,"Spokane, WA",2010.0,2010158,"University of Maryland, College Park",Terrapins,College Park,Maryland,State,Big Ten Conference,"University of Maryland, College Park College Park Maryland",-76.94610290199051,38.99203005
+4.0,Vanderbilt,"San Jose, CA",2010.0,2010159,Vanderbilt University,Commodores,Nashville,Tennessee,Private/Non-Sectarian,Southeastern Conference,Vanderbilt University Nashville Tennessee,-86.80281889095295,36.14380105
+1.0,Syracuse,"Buffalo, NY",2009.0,2009160,Syracuse University,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference,Syracuse University Syracuse New York,-76.1333088275183,43.03830645
+1.0,Pittsburgh,"Dayton, OH",2009.0,2009161,University of Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference,University of Pittsburgh Pittsburgh Pennsylvania,-79.96243992762707,40.44415295
+1.0,North Carolina,"Greensboro, NC",2009.0,2009162,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+1.0,UConn,"Philadelphia, PA",2009.0,2009163,University of Connecticut,Huskies,Storrs,Connecticut,State,American Athletic Conference,University of Connecticut Storrs Connecticut,-72.2540140374581,41.81127235
+2.0,Kansas State,"Oklahoma City, OK",2009.0,2009164,Kansas State University,Wildcats,Manhattan,Kansas,State,Big 12 Conference,Kansas State University Manhattan Kansas,-96.58844409645442,39.2087029
+2.0,Duke,"Greensboro, NC",2009.0,2009165,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+2.0,Oklahoma,"Kansas City, MO",2009.0,2009166,University of Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference,University of Oklahoma Norman Oklahoma,-97.44570827599858,35.1959878
+2.0,Memphis,"Kansas City, MO",2009.0,2009167,University of Memphis,Tigers,Memphis,Tennessee,State,American Athletic Conference,University of Memphis Memphis Tennessee,-89.93721959965887,35.1189387
+3.0,Pittsburgh,"Milwaukee, WI",2009.0,2009168,University of Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference,University of Pittsburgh Pittsburgh Pennsylvania,-79.96243992762707,40.44415295
+3.0,Villanova,"Philadelphia, PA",2009.0,2009169,Villanova University,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference,Villanova University Radnor Township Pennsylvania,-75.3401787,40.03575
+3.0,Syracuse,"Miami, FL",2009.0,2009170,Syracuse University,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference,Syracuse University Syracuse New York,-76.1333088275183,43.03830645
+3.0,Missouri,"Boise, ID",2009.0,2009171,University of Missouri,Tigers,Columbia,Missouri,State,Southeastern Conference,University of Missouri Columbia Missouri,-92.32970301784542,38.93641465
+4.0,Vanderbilt,"San Jose, CA",2009.0,2009172,Vanderbilt University,Commodores,Nashville,Tennessee,Private/Non-Sectarian,Southeastern Conference,Vanderbilt University Nashville Tennessee,-86.80281889095295,36.14380105
+4.0,Xavier,"Boise, ID",2009.0,2009173,Xavier University,Musketeers,Cincinnati,Ohio,Private/Catholic,Big East Conference,Xavier University Cincinnati Ohio,-84.47083471474068,39.1513078
+4.0,Gonzaga,"Portland, OR",2009.0,2009174,Gonzaga University,Bulldogs,Spokane,Washington,Private/Catholic,West Coast Conference,Gonzaga University Spokane Washington,-117.40304385396806,47.666738550000005
+4.0,Washington,"Portland, OR",2009.0,2009175,University of Washington,Huskies,Seattle,Washington,State,Pac-12 Conference,University of Washington Seattle Washington,-122.30800894320257,47.6543238
+1.0,North Carolina,"Raleigh, NC",2008.0,2008176,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+1.0,Kansas,"Omaha, NE",2008.0,2008177,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+1.0,Memphis,"North Little Rock, AR",2008.0,2008178,University of Memphis,Tigers,Memphis,Tennessee,State,American Athletic Conference,University of Memphis Memphis Tennessee,-89.93721959965887,35.1189387
+1.0,UCLA,"Anaheim, CA",2008.0,2008179,"University of California, Los Angeles",Bruins,Los Angeles,California,State,Pac-12 Conference,University of California Los Angeles California,-118.44667592924029,34.0709515
+2.0,Tennessee,"Birmingham, AL",2008.0,2008180,University of Tennessee,Volunteers,Knoxville,Tennessee,State,Southeastern Conference,University of Tennessee Knoxville Tennessee,-83.93042902947624,35.9518119
+2.0,Georgetown,"Raleigh, NC",2008.0,2008181,Georgetown University,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference,Georgetown University Washington District of Columbia,-77.07457962060826,38.90893925
+2.0,Texas,"North Little Rock, AR",2008.0,2008182,University of Texas at Austin,Longhorns,Austin,Texas,State,Big 12 Conference,University of Texas at Austin Austin Texas,-97.73195598080218,30.284151
+2.0,Duke,"Washington, DC",2008.0,2008183,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+3.0,Louisville,"Birmingham, AL",2008.0,2008184,University of Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference,University of Louisville Louisville Kentucky,-85.75725134140214,38.2167565
+3.0,Wisconsin,"Omaha, NE",2008.0,2008185,University of Wisconsin–Madison,Badgers,Madison,Wisconsin,State,Big Ten Conference,University of Wisconsin–Madison Madison Wisconsin,-89.4059387,43.0705257
+3.0,Stanford,"Anaheim, CA",2008.0,2008186,Stanford University,Cardinal,Palo Alto,California,Private/Non-Sectarian,Pac-12 Conference,Stanford University Palo Alto California,-122.16936535498309,37.431313849999995
+3.0,Xavier,"Washington, DC",2008.0,2008187,Xavier University,Musketeers,Cincinnati,Ohio,Private/Catholic,Big East Conference,Xavier University Cincinnati Ohio,-84.47083471474068,39.1513078
+4.0,Washington State,"Denver, CO",2008.0,2008188,Washington State University,Cougars,Pullman,Washington,State,Pac-12 Conference,Washington State University Pullman Washington,-117.1452758931733,46.73357155
+4.0,Vanderbilt,"Tampa, FL",2008.0,2008189,Vanderbilt University,Commodores,Nashville,Tennessee,Private/Non-Sectarian,Southeastern Conference,Vanderbilt University Nashville Tennessee,-86.80281889095295,36.14380105
+4.0,Pittsburgh,"Denver, CO",2008.0,2008190,University of Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference,University of Pittsburgh Pittsburgh Pennsylvania,-79.96243992762707,40.44415295
+4.0,UConn,"Tampa, FL",2008.0,2008191,University of Connecticut,Huskies,Storrs,Connecticut,State,American Athletic Conference,University of Connecticut Storrs Connecticut,-72.2540140374581,41.81127235
+1.0,Kansas,"Chicago, IL",2007.0,2007192,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+1.0,North Carolina,"Winston-Salem, NC",2007.0,2007193,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+1.0,Florida,"New Orleans, LA",2007.0,2007194,University of Florida,Gators,Gainesville,Florida,State,Southeastern Conference,University of Florida Gainesville Florida,-82.34901330482433,29.6328784
+1.0,Florida,"New Orleans, LA",2007.0,2007195,University of Florida,Gators,Gainesville,Florida,State,Southeastern Conference,University of Florida Gainesville Florida,-82.34901330482433,29.6328784
+2.0,UCLA,"Sacramento, CA",2007.0,2007196,"University of California, Los Angeles",Bruins,Los Angeles,California,State,Pac-12 Conference,University of California Los Angeles California,-118.44667592924029,34.0709515
+2.0,Georgetown,"Winston-Salem, NC",2007.0,2007197,Georgetown University,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference,Georgetown University Washington District of Columbia,-77.07457962060826,38.90893925
+2.0,Wisconsin,"Chicago, IL",2007.0,2007198,University of Wisconsin–Madison,Badgers,Madison,Wisconsin,State,Big Ten Conference,University of Wisconsin–Madison Madison Wisconsin,-89.4059387,43.0705257
+2.0,Wisconsin,"Chicago, IL",2007.0,2007199,University of Wisconsin–Madison,Badgers,Madison,Wisconsin,State,Big Ten Conference,University of Wisconsin–Madison Madison Wisconsin,-89.4059387,43.0705257
+3.0,Pittsburgh,"Buffalo, NY",2007.0,2007200,University of Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference,University of Pittsburgh Pittsburgh Pennsylvania,-79.96243992762707,40.44415295
+3.0,Washington State,"Sacramento, CA",2007.0,2007201,Washington State University,Cougars,Pullman,Washington,State,Pac-12 Conference,Washington State University Pullman Washington,-117.1452758931733,46.73357155
+3.0,Oregon,"Spokane, WA",2007.0,2007202,University of Oregon,Ducks,Eugene,Oregon,State,Pac-12 Conference,University of Oregon Eugene Oregon,-123.07682891244703,44.04426385
+3.0,Oregon,"Spokane, WA",2007.0,2007203,University of Oregon,Ducks,Eugene,Oregon,State,Pac-12 Conference,University of Oregon Eugene Oregon,-123.07682891244703,44.04426385
+4.0,Southern Illinois,"Columbus, OH",2007.0,2007204,Southern Illinois University Carbondale,Salukis,Carbondale,Illinois,State,Missouri Valley Conference,Southern Illinois University Carbondale Carbondale Illinois,-89.21512201981972,37.7225014
+4.0,Texas,"Spokane, WA",2007.0,2007205,University of Texas at Austin,Longhorns,Austin,Texas,State,Big 12 Conference,University of Texas at Austin Austin Texas,-97.73195598080218,30.284151
+4.0,Maryland,"Buffalo, NY",2007.0,2007206,"University of Maryland, College Park",Terrapins,College Park,Maryland,State,Big Ten Conference,"University of Maryland, College Park College Park Maryland",-76.94610290199051,38.99203005
+4.0,Maryland,"Buffalo, NY",2007.0,2007207,"University of Maryland, College Park",Terrapins,College Park,Maryland,State,Big Ten Conference,"University of Maryland, College Park College Park Maryland",-76.94610290199051,38.99203005
+1.0,Villanova,"Philadelphia, PA",2006.0,2006208,Villanova University,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference,Villanova University Radnor Township Pennsylvania,-75.3401787,40.03575
+1.0,Duke,"Greensboro, NC",2006.0,2006209,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+1.0,Memphis,"Dallas, TX",2006.0,2006210,University of Memphis,Tigers,Memphis,Tennessee,State,American Athletic Conference,University of Memphis Memphis Tennessee,-89.93721959965887,35.1189387
+1.0,UConn,"Philadelphia, PA",2006.0,2006211,University of Connecticut,Huskies,Storrs,Connecticut,State,American Athletic Conference,University of Connecticut Storrs Connecticut,-72.2540140374581,41.81127235
+2.0,Ohio State,"Dayton, OH",2006.0,2006212,The Ohio State University,Buckeyes,Columbus,Ohio,State,Big Ten Conference,The Ohio State University Columbus Ohio,-83.02866259769122,40.00570905
+2.0,Texas,"Dallas, TX",2006.0,2006213,University of Texas at Austin,Longhorns,Austin,Texas,State,Big 12 Conference,University of Texas at Austin Austin Texas,-97.73195598080218,30.284151
+2.0,UCLA,"San Diego, CA",2006.0,2006214,"University of California, Los Angeles",Bruins,Los Angeles,California,State,Pac-12 Conference,University of California Los Angeles California,-118.44667592924029,34.0709515
+2.0,Tennessee,"Greensboro, NC",2006.0,2006215,University of Tennessee,Volunteers,Knoxville,Tennessee,State,Southeastern Conference,University of Tennessee Knoxville Tennessee,-83.93042902947624,35.9518119
+3.0,Florida,"Jacksonville, FL",2006.0,2006216,University of Florida,Gators,Gainesville,Florida,State,Southeastern Conference,University of Florida Gainesville Florida,-82.34901330482433,29.6328784
+3.0,Iowa,"Auburn Hills, MI",2006.0,2006217,University of Iowa,Hawkeyes,Iowa City,Iowa,State,Big Ten Conference,University of Iowa Iowa City Iowa,-91.57318762552629,41.665901000000005
+3.0,Gonzaga,"Salt Lake City, UT",2006.0,2006218,Gonzaga University,Bulldogs,Spokane,Washington,Private/Catholic,West Coast Conference,Gonzaga University Spokane Washington,-117.40304385396806,47.666738550000005
+3.0,North Carolina,"Dayton, OH",2006.0,2006219,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+4.0,Boston College,"Salt Lake City, UT",2006.0,2006220,Boston College,Eagles,Chestnut Hill,Massachusetts,Private/Catholic,Atlantic Coast Conference,Boston College Chestnut Hill Massachusetts,-71.16813864023061,42.3354481
+4.0,LSU,"Jacksonville, FL",2006.0,2006221,Louisiana State University,Tigers,Baton Rouge,Louisiana,State,Southeastern Conference,Louisiana State University Baton Rouge Louisiana,-91.18596767189877,30.40570885
+4.0,Kansas,"Auburn Hills, MI",2006.0,2006222,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+4.0,Illinois,"San Diego, CA",2006.0,2006223,University of Illinois at Urbana–Champaign,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference,University of Illinois at Urbana–Champaign Urbana–Champaign Illinois,-88.22402607254264,40.106650099999996
+1.0,North Carolina,"Charlotte, NC",2005.0,2005224,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+1.0,Washington,"Boise, ID",2005.0,2005225,University of Washington,Huskies,Seattle,Washington,State,Pac-12 Conference,University of Washington Seattle Washington,-122.30800894320257,47.6543238
+1.0,Duke,"Charlotte, NC",2005.0,2005226,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+1.0,Illinois,"Indianapolis, IN",2005.0,2005227,University of Illinois at Urbana–Champaign,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference,University of Illinois at Urbana–Champaign Urbana–Champaign Illinois,-88.22402607254264,40.106650099999996
+2.0,UConn,"Worcester, MA",2005.0,2005228,University of Connecticut,Huskies,Storrs,Connecticut,State,American Athletic Conference,University of Connecticut Storrs Connecticut,-72.2540140374581,41.81127235
+2.0,Wake Forest,"Cleveland, OH",2005.0,2005229,Wake Forest University,Demon Deacons,Winston-Salem,North Carolina,Private/Non-Sectarian,Atlantic Coast Conference,Wake Forest University Winston-Salem North Carolina,-80.2781152,36.134335
+2.0,Kentucky,"Indianapolis, IN",2005.0,2005230,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
+2.0,Oklahoma State,"Oklahoma City, OK",2005.0,2005231,Oklahoma State University–Stillwater,Cowboys,Stillwater,Oklahoma,State,Big 12 Conference,Oklahoma State University–Stillwater Stillwater Oklahoma,-97.08853714697355,36.1295801
+3.0,Kansas,"Oklahoma City, OK",2005.0,2005232,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+3.0,Gonzaga,"Tucson, AZ",2005.0,2005233,Gonzaga University,Bulldogs,Spokane,Washington,Private/Catholic,West Coast Conference,Gonzaga University Spokane Washington,-117.40304385396806,47.666738550000005
+3.0,Oklahoma,"Tucson, AZ",2005.0,2005234,University of Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference,University of Oklahoma Norman Oklahoma,-97.44570827599858,35.1959878
+3.0,Arizona,"Boise, ID",2005.0,2005235,University of Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference,University of Arizona Tucson Arizona,-110.9768841153795,32.22877495
+4.0,Florida,"Nashville, TN",2005.0,2005236,University of Florida,Gators,Gainesville,Florida,State,Southeastern Conference,University of Florida Gainesville Florida,-82.34901330482433,29.6328784
+4.0,Louisville,"Nashville, TN",2005.0,2005237,University of Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference,University of Louisville Louisville Kentucky,-85.75725134140214,38.2167565
+4.0,Syracuse,"Worcester, MA",2005.0,2005238,Syracuse University,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference,Syracuse University Syracuse New York,-76.1333088275183,43.03830645
+4.0,Boston College,"Cleveland, OH",2005.0,2005239,Boston College,Eagles,Chestnut Hill,Massachusetts,Private/Catholic,Atlantic Coast Conference,Boston College Chestnut Hill Massachusetts,-71.16813864023061,42.3354481
+1.0,Kentucky,"Columbus, OH",2004.0,2004240,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
+1.0,Duke,"Raleigh, NC",2004.0,2004241,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+1.0,Saint Joseph's,"Buffalo, NY",2004.0,2004242,Saint Joseph's University,Hawks,Philadelphia,Pennsylvania,Private/Catholic,Atlantic 10 Conference,Saint Joseph's University Philadelphia Pennsylvania,-75.24151166935775,39.99652965
+1.0,Stanford,"Seattle, WA",2004.0,2004243,Stanford University,Cardinal,Palo Alto,California,Private/Non-Sectarian,Pac-12 Conference,Stanford University Palo Alto California,-122.16936535498309,37.431313849999995
+2.0,Gonzaga,"Seattle, WA",2004.0,2004244,Gonzaga University,Bulldogs,Spokane,Washington,Private/Catholic,West Coast Conference,Gonzaga University Spokane Washington,-117.40304385396806,47.666738550000005
+2.0,Mississippi State,"Orlando, FL",2004.0,2004245,Mississippi State University,Bulldogs,Starkville,Mississippi,State,Southeastern Conference,Mississippi State University Starkville Mississippi,-88.79345874498733,33.438723499999995
+2.0,Oklahoma State,"Kansas City, MO",2004.0,2004246,Oklahoma State University–Stillwater,Cowboys,Stillwater,Oklahoma,State,Big 12 Conference,Oklahoma State University–Stillwater Stillwater Oklahoma,-97.08853714697355,36.1295801
+2.0,UConn,"Buffalo, NY",2004.0,2004247,University of Connecticut,Huskies,Storrs,Connecticut,State,American Athletic Conference,University of Connecticut Storrs Connecticut,-72.2540140374581,41.81127235
+3.0,Georgia Tech,"Milwaukee, WI",2004.0,2004248,Georgia Institute of Technology,Yellow Jackets,Atlanta,Georgia,State,Atlantic Coast Conference,Georgia Institute of Technology Atlanta Georgia,-84.39884086001581,33.776033
+3.0,Texas,"Denver, CO",2004.0,2004249,University of Texas at Austin,Longhorns,Austin,Texas,State,Big 12 Conference,University of Texas at Austin Austin Texas,-97.73195598080218,30.284151
+3.0,Pittsburgh,"Milwaukee, WI",2004.0,2004250,University of Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference,University of Pittsburgh Pittsburgh Pennsylvania,-79.96243992762707,40.44415295
+3.0,NC State,"Orlando, FL",2004.0,2004251,North Carolina State University,Wolfpack,Raleigh,North Carolina,State,Atlantic Coast Conference,North Carolina State University Raleigh North Carolina,-78.67408695452633,35.77184965
+4.0,Kansas,"Kansas City, MO",2004.0,2004252,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+4.0,Cincinnati,"Columbus, OH",2004.0,2004253,University of Cincinnati,Bearcats,Cincinnati,Ohio,State,American Athletic Conference,University of Cincinnati Cincinnati Ohio,-84.5157620959388,39.1318525
+4.0,Wake Forest,"Raleigh, NC",2004.0,2004254,Wake Forest University,Demon Deacons,Winston-Salem,North Carolina,Private/Non-Sectarian,Atlantic Coast Conference,Wake Forest University Winston-Salem North Carolina,-80.2781152,36.134335
+4.0,Maryland,"Denver, CO",2004.0,2004255,"University of Maryland, College Park",Terrapins,College Park,Maryland,State,Big Ten Conference,"University of Maryland, College Park College Park Maryland",-76.94610290199051,38.99203005
+1.0,Texas,"Birmingham, AL",2003.0,2003256,University of Texas at Austin,Longhorns,Austin,Texas,State,Big 12 Conference,University of Texas at Austin Austin Texas,-97.73195598080218,30.284151
+1.0,Oklahoma,"Oklahoma City, OK",2003.0,2003257,University of Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference,University of Oklahoma Norman Oklahoma,-97.44570827599858,35.1959878
+1.0,Kentucky,"Nashville, TN",2003.0,2003258,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
+1.0,Arizona,"Salt Lake City, UT",2003.0,2003259,University of Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference,University of Arizona Tucson Arizona,-110.9768841153795,32.22877495
+2.0,Florida,"Tampa, FL",2003.0,2003260,University of Florida,Gators,Gainesville,Florida,State,Southeastern Conference,University of Florida Gainesville Florida,-82.34901330482433,29.6328784
+2.0,Wake Forest,"Tampa, FL",2003.0,2003261,Wake Forest University,Demon Deacons,Winston-Salem,North Carolina,Private/Non-Sectarian,Atlantic Coast Conference,Wake Forest University Winston-Salem North Carolina,-80.2781152,36.134335
+2.0,Pittsburgh,"Boston, MA",2003.0,2003262,University of Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference,University of Pittsburgh Pittsburgh Pennsylvania,-79.96243992762707,40.44415295
+2.0,Kansas,"Oklahoma City, OK",2003.0,2003263,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+3.0,Xavier,"Nashville, TN",2003.0,2003264,Xavier University,Musketeers,Cincinnati,Ohio,Private/Catholic,Big East Conference,Xavier University Cincinnati Ohio,-84.47083471474068,39.1513078
+3.0,Syracuse,"Boston, MA",2003.0,2003265,Syracuse University,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference,Syracuse University Syracuse New York,-76.1333088275183,43.03830645
+3.0,Marquette,"Indianapolis, IN",2003.0,2003266,Marquette University,Golden Eagles,Milwaukee,Wisconsin,Private/Catholic,Big East Conference,Marquette University Milwaukee Wisconsin,-87.93155449905072,43.03889625
+3.0,Duke,"Salt Lake City, UT",2003.0,2003267,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+4.0,Stanford,"Spokane, WA",2003.0,2003268,Stanford University,Cardinal,Palo Alto,California,Private/Non-Sectarian,Pac-12 Conference,Stanford University Palo Alto California,-122.16936535498309,37.431313849999995
+4.0,Louisville,"Birmingham, AL",2003.0,2003269,University of Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference,University of Louisville Louisville Kentucky,-85.75725134140214,38.2167565
+4.0,Dayton,"Spokane, WA",2003.0,2003270,University of Dayton,Flyers,Dayton,Ohio,Private/Catholic,Atlantic 10 Conference,University of Dayton Dayton Ohio,-84.17919478013708,39.73845985
+4.0,Illinois,"Indianapolis, IN",2003.0,2003271,University of Illinois at Urbana–Champaign,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference,University of Illinois at Urbana–Champaign Urbana–Champaign Illinois,-88.22402607254264,40.106650099999996
+1.0,Maryland,"Washington, DC",2002.0,2002272,"University of Maryland, College Park",Terrapins,College Park,Maryland,State,Big Ten Conference,"University of Maryland, College Park College Park Maryland",-76.94610290199051,38.99203005
+1.0,Kansas,"St. Louis, MO",2002.0,2002273,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+1.0,Duke,"Greenville, SC",2002.0,2002274,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+1.0,Cincinnati,"Pittsburgh, PA",2002.0,2002275,University of Cincinnati,Bearcats,Cincinnati,Ohio,State,American Athletic Conference,University of Cincinnati Cincinnati Ohio,-84.5157620959388,39.1318525
+2.0,UConn,"Washington, DC",2002.0,2002276,University of Connecticut,Huskies,Storrs,Connecticut,State,American Athletic Conference,University of Connecticut Storrs Connecticut,-72.2540140374581,41.81127235
+2.0,Oregon,"Sacramento, CA",2002.0,2002277,University of Oregon,Ducks,Eugene,Oregon,State,Pac-12 Conference,University of Oregon Eugene Oregon,-123.07682891244703,44.04426385
+2.0,Alabama,"Greenville, SC",2002.0,2002278,University of Alabama,Crimson Tide,Tuscaloosa,Alabama,State,Southeastern Conference,University of Alabama Tuscaloosa Alabama,-87.53967401518648,33.21208215
+2.0,Oklahoma,"Dallas, TX",2002.0,2002279,University of Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference,University of Oklahoma Norman Oklahoma,-97.44570827599858,35.1959878
+3.0,Georgia,"Chicago, IL",2002.0,2002280,University of Georgia,Bulldogs,Athens,Georgia,State,Southeastern Conference,University of Georgia Athens Georgia,-83.37304904988295,33.9404278
+3.0,Mississippi State,"Dallas, TX",2002.0,2002281,Mississippi State University,Bulldogs,Starkville,Mississippi,State,Southeastern Conference,Mississippi State University Starkville Mississippi,-88.79345874498733,33.438723499999995
+3.0,Pittsburgh,"Pittsburgh, PA",2002.0,2002282,University of Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference,University of Pittsburgh Pittsburgh Pennsylvania,-79.96243992762707,40.44415295
+3.0,Arizona,"Albuquerque, NM",2002.0,2002283,University of Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference,University of Arizona Tucson Arizona,-110.9768841153795,32.22877495
+4.0,Kentucky,"St. Louis, MO",2002.0,2002284,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
+4.0,Illinois,"Chicago, IL",2002.0,2002285,University of Illinois at Urbana–Champaign,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference,University of Illinois at Urbana–Champaign Urbana–Champaign Illinois,-88.22402607254264,40.106650099999996
+4.0,USC,"Sacramento, CA",2002.0,2002286,University of Southern California,Trojans,Los Angeles,California,Private/Non-Sectarian,Pac-12 Conference,University of Southern California Los Angeles California,-118.28586726915088,34.0218833
+4.0,Ohio State,"Albuquerque, NM",2002.0,2002287,The Ohio State University,Buckeyes,Columbus,Ohio,State,Big Ten Conference,The Ohio State University Columbus Ohio,-83.02866259769122,40.00570905
+1.0,Illinois,"Dayton, OH",2001.0,2001288,University of Illinois at Urbana–Champaign,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference,University of Illinois at Urbana–Champaign Urbana–Champaign Illinois,-88.22402607254264,40.106650099999996
+1.0,Duke,"Greensboro, NC",2001.0,2001289,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+1.0,Michigan State,"Memphis, TN",2001.0,2001290,Michigan State University,Spartans,East Lansing,Michigan,State,Big Ten Conference,Michigan State University East Lansing Michigan,-84.47791570930522,42.718568000000005
+1.0,Stanford,"San Diego, CA",2001.0,2001291,Stanford University,Cardinal,Palo Alto,California,Private/Non-Sectarian,Pac-12 Conference,Stanford University Palo Alto California,-122.16936535498309,37.431313849999995
+2.0,Arizona,"Kansas City, MO",2001.0,2001292,University of Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference,University of Arizona Tucson Arizona,-110.9768841153795,32.22877495
+2.0,Kentucky,"Uniondale, NY",2001.0,2001293,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
+2.0,North Carolina,"New Orleans, LA",2001.0,2001294,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+2.0,Iowa State,"Boise, ID",2001.0,2001295,Iowa State University,Cyclones,Ames,Iowa,State,Big 12 Conference,Iowa State University Ames Iowa,-93.64464414737449,42.02791015
+3.0,Ole Miss,"Kansas City, MO",2001.0,2001296,University of Mississippi,Rebels,Oxford,Mississippi,State,Southeastern Conference,University of Mississippi Oxford Mississippi,-89.53963491020966,34.3646125
+3.0,Boston College,"Uniondale, NY",2001.0,2001297,Boston College,Eagles,Chestnut Hill,Massachusetts,Private/Catholic,Atlantic Coast Conference,Boston College Chestnut Hill Massachusetts,-71.16813864023061,42.3354481
+3.0,Florida,"New Orleans, LA",2001.0,2001298,University of Florida,Gators,Gainesville,Florida,State,Southeastern Conference,University of Florida Gainesville Florida,-82.34901330482433,29.6328784
+3.0,Maryland,"Boise, ID",2001.0,2001299,"University of Maryland, College Park",Terrapins,College Park,Maryland,State,Big Ten Conference,"University of Maryland, College Park College Park Maryland",-76.94610290199051,38.99203005
+4.0,Kansas,"Dayton, OH",2001.0,2001300,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+4.0,UCLA,"Greensboro, NC",2001.0,2001301,"University of California, Los Angeles",Bruins,Los Angeles,California,State,Pac-12 Conference,University of California Los Angeles California,-118.44667592924029,34.0709515
+4.0,Oklahoma,"Memphis, TN",2001.0,2001302,University of Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference,University of Oklahoma Norman Oklahoma,-97.44570827599858,35.1959878
+4.0,Indiana,"San Diego, CA",2001.0,2001303,Indiana University,Hoosiers,Bloomington,Indiana,State,Big Ten Conference,Indiana University Bloomington Indiana,-86.51623218881414,39.177980649999995
+1.0,Duke,"Winston-Salem, NC",2000.0,2000304,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+1.0,Michigan State,"Cleveland, OH",2000.0,2000305,Michigan State University,Spartans,East Lansing,Michigan,State,Big Ten Conference,Michigan State University East Lansing Michigan,-84.47791570930522,42.718568000000005
+1.0,Stanford,"Birmingham, AL",2000.0,2000306,Stanford University,Cardinal,Palo Alto,California,Private/Non-Sectarian,Pac-12 Conference,Stanford University Palo Alto California,-122.16936535498309,37.431313849999995
+1.0,Arizona,"Tucson, AZ",2000.0,2000307,University of Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference,University of Arizona Tucson Arizona,-110.9768841153795,32.22877495
+2.0,Temple,"Buffalo, NY",2000.0,2000308,Temple University,Owls,Philadelphia,Pennsylvania,State-related,American Athletic Conference,Temple University Philadelphia Pennsylvania,-75.15628269523319,39.981188
+2.0,Iowa State,"Minneapolis, MN",2000.0,2000309,Iowa State University,Cyclones,Ames,Iowa,State,Big 12 Conference,Iowa State University Ames Iowa,-93.64464414737449,42.02791015
+2.0,Cincinnati,"Nashville, TN",2000.0,2000310,University of Cincinnati,Bearcats,Cincinnati,Ohio,State,American Athletic Conference,University of Cincinnati Cincinnati Ohio,-84.5157620959388,39.1318525
+2.0,St. John's,"Tucson, AZ",2000.0,2000311,St. John's University,Red Storm,Jamaica,New York,Private/Catholic,Big East Conference,St. John's University Jamaica New York,-73.9900726,40.7299442
+3.0,Oklahoma State,"Buffalo, NY",2000.0,2000312,Oklahoma State University–Stillwater,Cowboys,Stillwater,Oklahoma,State,Big 12 Conference,Oklahoma State University–Stillwater Stillwater Oklahoma,-97.08853714697355,36.1295801
+3.0,Maryland,"Minneapolis, MN",2000.0,2000313,"University of Maryland, College Park",Terrapins,College Park,Maryland,State,Big Ten Conference,"University of Maryland, College Park College Park Maryland",-76.94610290199051,38.99203005
+3.0,Ohio State,"Nashville, TN",2000.0,2000314,The Ohio State University,Buckeyes,Columbus,Ohio,State,Big Ten Conference,The Ohio State University Columbus Ohio,-83.02866259769122,40.00570905
+3.0,Oklahoma,"Tucson, AZ",2000.0,2000315,University of Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference,University of Oklahoma Norman Oklahoma,-97.44570827599858,35.1959878
+4.0,Illinois,"Winston-Salem, NC",2000.0,2000316,University of Illinois at Urbana–Champaign,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference,University of Illinois at Urbana–Champaign Urbana–Champaign Illinois,-88.22402607254264,40.106650099999996
+4.0,Syracuse,"Cleveland, OH",2000.0,2000317,Syracuse University,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference,Syracuse University Syracuse New York,-76.1333088275183,43.03830645
+4.0,Tennessee,"Birmingham, AL",2000.0,2000318,University of Tennessee,Volunteers,Knoxville,Tennessee,State,Southeastern Conference,University of Tennessee Knoxville Tennessee,-83.93042902947624,35.9518119
+4.0,LSU,"Salt Lake City, UT",2000.0,2000319,Louisiana State University,Tigers,Baton Rouge,Louisiana,State,Southeastern Conference,Louisiana State University Baton Rouge Louisiana,-91.18596767189877,30.40570885
+1.0,Duke,"Charlotte, NC",1999.0,1999320,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+1.0,Michigan State,"Milwaukee, WI",1999.0,1999321,Michigan State University,Spartans,East Lansing,Michigan,State,Big Ten Conference,Michigan State University East Lansing Michigan,-84.47791570930522,42.718568000000005
+1.0,Auburn,"Indianapolis, IN",1999.0,1999322,Auburn University,Tigers,Auburn,Alabama,State,Southeastern Conference,Auburn University Auburn Alabama,-85.49598606691626,32.59196300000001
+1.0,UConn,"Denver, CO",1999.0,1999323,University of Connecticut,Huskies,Storrs,Connecticut,State,American Athletic Conference,University of Connecticut Storrs Connecticut,-72.2540140374581,41.81127235
+2.0,Miami (FL),"Boston, MA",1999.0,1999324,University of Miami,Hurricanes,Coral Gables,Florida,Private/Non-Sectarian,Atlantic Coast Conference,University of Miami Coral Gables Florida,-80.27869157646253,25.7172788
+2.0,Utah,"New Orleans, LA",1999.0,1999325,University of Utah,Utes,Salt Lake City,Utah,State,Pac-12 Conference,University of Utah Salt Lake City Utah,-111.83687191368261,40.762813699999995
+2.0,Maryland,"Orlando, FL",1999.0,1999326,"University of Maryland, College Park",Terrapins,College Park,Maryland,State,Big Ten Conference,"University of Maryland, College Park College Park Maryland",-76.94610290199051,38.99203005
+2.0,Stanford,"Seattle, WA",1999.0,1999327,Stanford University,Cardinal,Palo Alto,California,Private/Non-Sectarian,Pac-12 Conference,Stanford University Palo Alto California,-122.16936535498309,37.431313849999995
+3.0,Cincinnati,"Boston, MA",1999.0,1999328,University of Cincinnati,Bearcats,Cincinnati,Ohio,State,American Athletic Conference,University of Cincinnati Cincinnati Ohio,-84.5157620959388,39.1318525
+3.0,Kentucky,"New Orleans, LA",1999.0,1999329,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
+3.0,St. John's,"Orlando, FL",1999.0,1999330,St. John's University,Red Storm,Jamaica,New York,Private/Catholic,Big East Conference,St. John's University Jamaica New York,-73.9900726,40.7299442
+3.0,North Carolina,"Seattle, WA",1999.0,1999331,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+4.0,Tennessee,"Charlotte, NC",1999.0,1999332,University of Tennessee,Volunteers,Knoxville,Tennessee,State,Southeastern Conference,University of Tennessee Knoxville Tennessee,-83.93042902947624,35.9518119
+4.0,Arizona,"Milwaukee, WI",1999.0,1999333,University of Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference,University of Arizona Tucson Arizona,-110.9768841153795,32.22877495
+4.0,Ohio State,"Indianapolis, IN",1999.0,1999334,The Ohio State University,Buckeyes,Columbus,Ohio,State,Big Ten Conference,The Ohio State University Columbus Ohio,-83.02866259769122,40.00570905
+4.0,Arkansas,"Denver, CO",1999.0,1999335,University of Arkansas,Razorbacks,Fayetteville,Arkansas,State,Southeastern Conference,University of Arkansas Fayetteville Arkansas,-94.17609533911697,36.065152
+1.0,North Carolina,"Hartford, CT",1998.0,1998336,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+1.0,Kansas,"Oklahoma City, OK",1998.0,1998337,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+1.0,Duke,"Lexington, KY",1998.0,1998338,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+1.0,Arizona,"Sacramento, CA",1998.0,1998339,University of Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference,University of Arizona Tucson Arizona,-110.9768841153795,32.22877495
+2.0,UConn,"Washington, DC",1998.0,1998340,University of Connecticut,Huskies,Storrs,Connecticut,State,American Athletic Conference,University of Connecticut Storrs Connecticut,-72.2540140374581,41.81127235
+2.0,Purdue,"Chicago, IL",1998.0,1998341,Purdue University,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference,Purdue University West Lafayette Indiana,-86.92391089364378,40.43195815
+2.0,Kentucky,"Atlanta, GA",1998.0,1998342,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
+2.0,Cincinnati,"Boise, ID",1998.0,1998343,University of Cincinnati,Bearcats,Cincinnati,Ohio,State,American Athletic Conference,University of Cincinnati Cincinnati Ohio,-84.5157620959388,39.1318525
+3.0,South Carolina,"Washington, DC",1998.0,1998344,University of South Carolina,Gamecocks,Columbia,South Carolina,State,Southeastern Conference,University of South Carolina Columbia South Carolina,-81.02685165712111,33.992829799999996
+3.0,Stanford,"Chicago, IL",1998.0,1998345,Stanford University,Cardinal,Palo Alto,California,Private/Non-Sectarian,Pac-12 Conference,Stanford University Palo Alto California,-122.16936535498309,37.431313849999995
+3.0,Michigan,"Atlanta, GA",1998.0,1998346,University of Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference,University of Michigan Ann Arbor Michigan,-83.71003893509601,42.2942142
+3.0,Utah,"Boise, ID",1998.0,1998347,University of Utah,Utes,Salt Lake City,Utah,State,Pac-12 Conference,University of Utah Salt Lake City Utah,-111.83687191368261,40.762813699999995
+4.0,Michigan State,"Hartford, CT",1998.0,1998348,Michigan State University,Spartans,East Lansing,Michigan,State,Big Ten Conference,Michigan State University East Lansing Michigan,-84.47791570930522,42.718568000000005
+4.0,Ole Miss,"Oklahoma City, OK",1998.0,1998349,University of Mississippi,Rebels,Oxford,Mississippi,State,Southeastern Conference,University of Mississippi Oxford Mississippi,-89.53963491020966,34.3646125
+4.0,New Mexico,"Lexington, KY",1998.0,1998350,University of New Mexico,Lobos,Albuquerque,New Mexico,State,Mountain West Conference,University of New Mexico Albuquerque New Mexico,-106.62020940505188,35.08663275
+4.0,Maryland,"Sacramento, CA",1998.0,1998351,"University of Maryland, College Park",Terrapins,College Park,Maryland,State,Big Ten Conference,"University of Maryland, College Park College Park Maryland",-76.94610290199051,38.99203005
+1.0,North Carolina,"Winston-Salem, NC",1997.0,1997352,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+1.0,Minnesota,"Kansas City, MO",1997.0,1997353,University of Minnesota,Golden Gophers,Minneapolis–Saint Paul,Minnesota,State,Big Ten Conference,University of Minnesota St. Paul Minnesota,-93.17945580218503,44.9863392
+1.0,Kansas,"Memphis, TN",1997.0,1997354,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+1.0,Kentucky,"Salt Lake City, UT",1997.0,1997355,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
+2.0,South Carolina,"Pittsburgh, PA",1997.0,1997356,University of South Carolina,Gamecocks,Columbia,South Carolina,State,Southeastern Conference,University of South Carolina Columbia South Carolina,-81.02685165712111,33.992829799999996
+2.0,UCLA,"Auburn Hills, MI",1997.0,1997357,"University of California, Los Angeles",Bruins,Los Angeles,California,State,Pac-12 Conference,University of California Los Angeles California,-118.44667592924029,34.0709515
+2.0,Duke,"Charlotte, NC",1997.0,1997358,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+2.0,Utah,"Tucson, AZ",1997.0,1997359,University of Utah,Utes,Salt Lake City,Utah,State,Pac-12 Conference,University of Utah Salt Lake City Utah,-111.83687191368261,40.762813699999995
+3.0,New Mexico,"Pittsburgh, PA",1997.0,1997360,University of New Mexico,Lobos,Albuquerque,New Mexico,State,Mountain West Conference,University of New Mexico Albuquerque New Mexico,-106.62020940505188,35.08663275
+3.0,Cincinnati,"Auburn Hills, MI",1997.0,1997361,University of Cincinnati,Bearcats,Cincinnati,Ohio,State,American Athletic Conference,University of Cincinnati Cincinnati Ohio,-84.5157620959388,39.1318525
+3.0,Georgia,"Charlotte, NC",1997.0,1997362,University of Georgia,Bulldogs,Athens,Georgia,State,Southeastern Conference,University of Georgia Athens Georgia,-83.37304904988295,33.9404278
+3.0,Wake Forest,"Tucson, AZ",1997.0,1997363,Wake Forest University,Demon Deacons,Winston-Salem,North Carolina,Private/Non-Sectarian,Atlantic Coast Conference,Wake Forest University Winston-Salem North Carolina,-80.2781152,36.134335
+4.0,Villanova,"Winston-Salem, NC",1997.0,1997364,Villanova University,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference,Villanova University Radnor Township Pennsylvania,-75.3401787,40.03575
+4.0,Clemson,"Kansas City, MO",1997.0,1997365,Clemson University,Tigers,Clemson,South Carolina,State,Atlantic Coast Conference,Clemson University Clemson South Carolina,-82.83743475607795,34.66869155
+4.0,Arizona,"Memphis, TN",1997.0,1997366,University of Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference,University of Arizona Tucson Arizona,-110.9768841153795,32.22877495
+4.0,Saint Joseph's,"Salt Lake City, UT",1997.0,1997367,Saint Joseph's University,Hawks,Philadelphia,Pennsylvania,Private/Catholic,Atlantic 10 Conference,Saint Joseph's University Philadelphia Pennsylvania,-75.24151166935775,39.99652965
+1.0,UMass,"Providence, RI",1996.0,1996368,University of Massachusetts Amherst,Minutemen,Amherst,Massachusetts,State,Atlantic 10 Conference,University of Massachusetts Amherst Amherst Massachusetts,-72.52991477067445,42.3869382
+1.0,Kentucky,"Dallas, TX",1996.0,1996369,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
+1.0,UConn,"Indianapolis, IN",1996.0,1996370,University of Connecticut,Huskies,Storrs,Connecticut,State,American Athletic Conference,University of Connecticut Storrs Connecticut,-72.2540140374581,41.81127235
+1.0,Purdue,"Albuquerque, NM",1996.0,1996371,Purdue University,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference,Purdue University West Lafayette Indiana,-86.92391089364378,40.43195815
+2.0,Georgetown,"Richmond, VA",1996.0,1996372,Georgetown University,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference,Georgetown University Washington District of Columbia,-77.07457962060826,38.90893925
+2.0,Wake Forest,"Milwaukee, WI",1996.0,1996373,Wake Forest University,Demon Deacons,Winston-Salem,North Carolina,Private/Non-Sectarian,Atlantic Coast Conference,Wake Forest University Winston-Salem North Carolina,-80.2781152,36.134335
+2.0,Cincinnati,"Orlando, FL",1996.0,1996374,University of Cincinnati,Bearcats,Cincinnati,Ohio,State,American Athletic Conference,University of Cincinnati Cincinnati Ohio,-84.5157620959388,39.1318525
+2.0,Kansas,"Tempe, AZ",1996.0,1996375,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+3.0,Texas Tech,"Richmond, VA",1996.0,1996376,Texas Tech University,Red Raiders,Lubbock,Texas,State,Big 12 Conference,Texas Tech University Lubbock Texas,-101.89959552302756,33.59375255
+3.0,Villanova,"Milwaukee, WI",1996.0,1996377,Villanova University,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference,Villanova University Radnor Township Pennsylvania,-75.3401787,40.03575
+3.0,Georgia Tech,"Orlando, FL",1996.0,1996378,Georgia Institute of Technology,Yellow Jackets,Atlanta,Georgia,State,Atlantic Coast Conference,Georgia Institute of Technology Atlanta Georgia,-84.39884086001581,33.776033
+3.0,Arizona,"Tempe, AZ",1996.0,1996379,University of Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference,University of Arizona Tucson Arizona,-110.9768841153795,32.22877495
+4.0,Marquette,"Providence, RI",1996.0,1996380,Marquette University,Golden Eagles,Milwaukee,Wisconsin,Private/Catholic,Big East Conference,Marquette University Milwaukee Wisconsin,-87.93155449905072,43.03889625
+4.0,Utah,"Dallas, TX",1996.0,1996381,University of Utah,Utes,Salt Lake City,Utah,State,Pac-12 Conference,University of Utah Salt Lake City Utah,-111.83687191368261,40.762813699999995
+4.0,UCLA,"Indianapolis, IN",1996.0,1996382,"University of California, Los Angeles",Bruins,Los Angeles,California,State,Pac-12 Conference,University of California Los Angeles California,-118.44667592924029,34.0709515
+4.0,Syracuse,"Albuquerque, NM",1996.0,1996383,Syracuse University,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference,Syracuse University Syracuse New York,-76.1333088275183,43.03830645
+1.0,Wake Forest,"Baltimore, MD",1995.0,1995384,Wake Forest University,Demon Deacons,Winston-Salem,North Carolina,Private/Non-Sectarian,Atlantic Coast Conference,Wake Forest University Winston-Salem North Carolina,-80.2781152,36.134335
+1.0,Kansas,"Dayton, OH",1995.0,1995385,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+1.0,Kentucky,"Memphis, TN",1995.0,1995386,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
+1.0,UCLA,"Boise, ID",1995.0,1995387,"University of California, Los Angeles",Bruins,Los Angeles,California,State,Pac-12 Conference,University of California Los Angeles California,-118.44667592924029,34.0709515
+2.0,UMass,"Albany, NY",1995.0,1995388,University of Massachusetts Amherst,Minutemen,Amherst,Massachusetts,State,Atlantic 10 Conference,University of Massachusetts Amherst Amherst Massachusetts,-72.52991477067445,42.3869382
+2.0,Arkansas,"Austin, TX",1995.0,1995389,University of Arkansas,Razorbacks,Fayetteville,Arkansas,State,Southeastern Conference,University of Arkansas Fayetteville Arkansas,-94.17609533911697,36.065152
+2.0,North Carolina,"Tallahassee, FL",1995.0,1995390,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+2.0,UConn,"Salt Lake City, UT",1995.0,1995391,University of Connecticut,Huskies,Storrs,Connecticut,State,American Athletic Conference,University of Connecticut Storrs Connecticut,-72.2540140374581,41.81127235
+3.0,Villanova,"Albany, NY",1995.0,1995392,Villanova University,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference,Villanova University Radnor Township Pennsylvania,-75.3401787,40.03575
+3.0,Purdue,"Austin, TX",1995.0,1995393,Purdue University,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference,Purdue University West Lafayette Indiana,-86.92391089364378,40.43195815
+3.0,Michigan State,"Tallahassee, FL",1995.0,1995394,Michigan State University,Spartans,East Lansing,Michigan,State,Big Ten Conference,Michigan State University East Lansing Michigan,-84.47791570930522,42.718568000000005
+3.0,Maryland,"Salt Lake City, UT",1995.0,1995395,"University of Maryland, College Park",Terrapins,College Park,Maryland,State,Big Ten Conference,"University of Maryland, College Park College Park Maryland",-76.94610290199051,38.99203005
+4.0,Oklahoma State,"Baltimore, MD",1995.0,1995396,Oklahoma State University–Stillwater,Cowboys,Stillwater,Oklahoma,State,Big 12 Conference,Oklahoma State University–Stillwater Stillwater Oklahoma,-97.08853714697355,36.1295801
+4.0,Virginia,"Dayton, OH",1995.0,1995397,University of Virginia,Cavaliers,Charlottesville,Virginia,State,Atlantic Coast Conference,University of Virginia Charlottesville Virginia,-78.50549960183568,38.0410576
+4.0,Oklahoma,"Memphis, TN",1995.0,1995398,University of Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference,University of Oklahoma Norman Oklahoma,-97.44570827599858,35.1959878
+4.0,Utah,"Boise, ID",1995.0,1995399,University of Utah,Utes,Salt Lake City,Utah,State,Pac-12 Conference,University of Utah Salt Lake City Utah,-111.83687191368261,40.762813699999995
+1.0,North Carolina,"Landover, MD",1994.0,1994400,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+1.0,Arkansas,"Oklahoma City, OK",1994.0,1994401,University of Arkansas,Razorbacks,Fayetteville,Arkansas,State,Southeastern Conference,University of Arkansas Fayetteville Arkansas,-94.17609533911697,36.065152
+1.0,Purdue,"Lexington, KY",1994.0,1994402,Purdue University,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference,Purdue University West Lafayette Indiana,-86.92391089364378,40.43195815
+1.0,Missouri,"Ogden, UT",1994.0,1994403,University of Missouri,Tigers,Columbia,Missouri,State,Southeastern Conference,University of Missouri Columbia Missouri,-92.32970301784542,38.93641465
+2.0,UConn,"Uniondale, NY",1994.0,1994404,University of Connecticut,Huskies,Storrs,Connecticut,State,American Athletic Conference,University of Connecticut Storrs Connecticut,-72.2540140374581,41.81127235
+2.0,UMass,"Park City, KS",1994.0,1994405,University of Massachusetts Amherst,Minutemen,Amherst,Massachusetts,State,Atlantic 10 Conference,University of Massachusetts Amherst Amherst Massachusetts,-72.52991477067445,42.3869382
+2.0,Duke,"St. Petersburg, FL",1994.0,1994406,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+2.0,Arizona,"Sacramento, CA",1994.0,1994407,University of Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference,University of Arizona Tucson Arizona,-110.9768841153795,32.22877495
+3.0,Florida,"Uniondale, NY",1994.0,1994408,University of Florida,Gators,Gainesville,Florida,State,Southeastern Conference,University of Florida Gainesville Florida,-82.34901330482433,29.6328784
+3.0,Michigan,"Park City, KS",1994.0,1994409,University of Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference,University of Michigan Ann Arbor Michigan,-83.71003893509601,42.2942142
+3.0,Kentucky,"St. Petersburg, FL",1994.0,1994410,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
+3.0,Louisville,"Sacramento, CA",1994.0,1994411,University of Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference,University of Louisville Louisville Kentucky,-85.75725134140214,38.2167565
+4.0,Temple,"Landover, MD",1994.0,1994412,Temple University,Owls,Philadelphia,Pennsylvania,State-related,American Athletic Conference,Temple University Philadelphia Pennsylvania,-75.15628269523319,39.981188
+4.0,Oklahoma State,"Oklahoma City, OK",1994.0,1994413,Oklahoma State University–Stillwater,Cowboys,Stillwater,Oklahoma,State,Big 12 Conference,Oklahoma State University–Stillwater Stillwater Oklahoma,-97.08853714697355,36.1295801
+4.0,Kansas,"Lexington, KY",1994.0,1994414,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+4.0,Syracuse,"Ogden, UT",1994.0,1994415,Syracuse University,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference,Syracuse University Syracuse New York,-76.1333088275183,43.03830645
+1.0,North Carolina,"Winston-Salem, NC",1993.0,1993416,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+1.0,Indiana,"Indianapolis, IN",1993.0,1993417,Indiana University,Hoosiers,Bloomington,Indiana,State,Big Ten Conference,Indiana University Bloomington Indiana,-86.51623218881414,39.177980649999995
+1.0,Kentucky,"Nashville, TN",1993.0,1993418,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
+1.0,Michigan,"Tucson, AZ",1993.0,1993419,University of Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference,University of Michigan Ann Arbor Michigan,-83.71003893509601,42.2942142
+2.0,Cincinnati,"Syracuse, NY",1993.0,1993420,University of Cincinnati,Bearcats,Cincinnati,Ohio,State,American Athletic Conference,University of Cincinnati Cincinnati Ohio,-84.5157620959388,39.1318525
+2.0,Kansas,"Rosemont, IL",1993.0,1993421,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+2.0,Seton Hall,"Orlando, FL",1993.0,1993422,Seton Hall University,Pirates,South Orange,New Jersey,Private/Catholic,Big East Conference,Seton Hall University South Orange New Jersey,-74.24685806216726,40.74337195
+2.0,Arizona,"Salt Lake City, UT",1993.0,1993423,University of Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference,University of Arizona Tucson Arizona,-110.9768841153795,32.22877495
+3.0,UMass,"Syracuse, NY",1993.0,1993424,University of Massachusetts Amherst,Minutemen,Amherst,Massachusetts,State,Atlantic 10 Conference,University of Massachusetts Amherst Amherst Massachusetts,-72.52991477067445,42.3869382
+3.0,Duke,"Rosemont, IL",1993.0,1993425,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+3.0,Florida State,"Orlando, FL",1993.0,1993426,Florida State University,Seminoles,Tallahassee,Florida,State,Atlantic Coast Conference,Florida State University Tallahassee Florida,-84.29747867166262,30.44235995
+3.0,Vanderbilt,"Salt Lake City, UT",1993.0,1993427,Vanderbilt University,Commodores,Nashville,Tennessee,Private/Non-Sectarian,Southeastern Conference,Vanderbilt University Nashville Tennessee,-86.80281889095295,36.14380105
+4.0,Arkansas,"Winston-Salem, NC",1993.0,1993428,University of Arkansas,Razorbacks,Fayetteville,Arkansas,State,Southeastern Conference,University of Arkansas Fayetteville Arkansas,-94.17609533911697,36.065152
+4.0,Louisville,"Indianapolis, IN",1993.0,1993429,University of Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference,University of Louisville Louisville Kentucky,-85.75725134140214,38.2167565
+4.0,Iowa,"Nashville, TN",1993.0,1993430,University of Iowa,Hawkeyes,Iowa City,Iowa,State,Big Ten Conference,University of Iowa Iowa City Iowa,-91.57318762552629,41.665901000000005
+4.0,Georgia Tech,"Tucson, AZ",1993.0,1993431,Georgia Institute of Technology,Yellow Jackets,Atlanta,Georgia,State,Atlantic Coast Conference,Georgia Institute of Technology Atlanta Georgia,-84.39884086001581,33.776033
+1.0,Duke,"Greensboro, NC",1992.0,1992432,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+1.0,Kansas,"Dayton, OH",1992.0,1992433,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+1.0,Ohio State,"Cincinnati, OH",1992.0,1992434,The Ohio State University,Buckeyes,Columbus,Ohio,State,Big Ten Conference,The Ohio State University Columbus Ohio,-83.02866259769122,40.00570905
+1.0,UCLA,"Tempe, AZ",1992.0,1992435,"University of California, Los Angeles",Bruins,Los Angeles,California,State,Pac-12 Conference,University of California Los Angeles California,-118.44667592924029,34.0709515
+2.0,Kentucky,"Worcester, MA",1992.0,1992436,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
+2.0,USC,"Milwaukee, WI",1992.0,1992437,University of Southern California,Trojans,Los Angeles,California,Private/Non-Sectarian,Pac-12 Conference,University of Southern California Los Angeles California,-118.28586726915088,34.0218833
+2.0,Oklahoma State,"Atlanta, GA",1992.0,1992438,Oklahoma State University–Stillwater,Cowboys,Stillwater,Oklahoma,State,Big 12 Conference,Oklahoma State University–Stillwater Stillwater Oklahoma,-97.08853714697355,36.1295801
+2.0,Indiana,"Boise, ID",1992.0,1992439,Indiana University,Hoosiers,Bloomington,Indiana,State,Big Ten Conference,Indiana University Bloomington Indiana,-86.51623218881414,39.177980649999995
+3.0,UMass,"Worcester, MA",1992.0,1992440,University of Massachusetts Amherst,Minutemen,Amherst,Massachusetts,State,Atlantic 10 Conference,University of Massachusetts Amherst Amherst Massachusetts,-72.52991477067445,42.3869382
+3.0,Arkansas,"Milwaukee, WI",1992.0,1992441,University of Arkansas,Razorbacks,Fayetteville,Arkansas,State,Southeastern Conference,University of Arkansas Fayetteville Arkansas,-94.17609533911697,36.065152
+3.0,Arizona,"Atlanta, GA",1992.0,1992442,University of Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference,University of Arizona Tucson Arizona,-110.9768841153795,32.22877495
+3.0,Florida State,"Boise, ID",1992.0,1992443,Florida State University,Seminoles,Tallahassee,Florida,State,Atlantic Coast Conference,Florida State University Tallahassee Florida,-84.29747867166262,30.44235995
+4.0,Seton Hall,"Greensboro, NC",1992.0,1992444,Seton Hall University,Pirates,South Orange,New Jersey,Private/Catholic,Big East Conference,Seton Hall University South Orange New Jersey,-74.24685806216726,40.74337195
+4.0,Cincinnati,"Dayton, OH",1992.0,1992445,University of Cincinnati,Bearcats,Cincinnati,Ohio,State,American Athletic Conference,University of Cincinnati Cincinnati Ohio,-84.5157620959388,39.1318525
+4.0,North Carolina,"Cincinnati, OH",1992.0,1992446,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+4.0,Oklahoma,"Tempe, AZ",1992.0,1992447,University of Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference,University of Oklahoma Norman Oklahoma,-97.44570827599858,35.1959878
+1.0,North Carolina,"Syracuse, NY",1991.0,1991448,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+1.0,Ohio State,"Dayton, OH",1991.0,1991449,The Ohio State University,Buckeyes,Columbus,Ohio,State,Big Ten Conference,The Ohio State University Columbus Ohio,-83.02866259769122,40.00570905
+1.0,Arkansas,"Atlanta, GA",1991.0,1991450,University of Arkansas,Razorbacks,Fayetteville,Arkansas,State,Southeastern Conference,University of Arkansas Fayetteville Arkansas,-94.17609533911697,36.065152
+1.0,UNLV,"Tucson, AZ",1991.0,1991451,"University of Nevada, Las Vegas",Rebels,Paradise,Nevada,State,Mountain West Conference,UNLV Paradise Nevada,-115.14183186108524,36.107155399999996
+2.0,Syracuse,"College Park, MD",1991.0,1991452,Syracuse University,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference,Syracuse University Syracuse New York,-76.1333088275183,43.03830645
+2.0,Duke,"Minneapolis, MN",1991.0,1991453,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+2.0,Indiana,"Louisville, KY",1991.0,1991454,Indiana University,Hoosiers,Bloomington,Indiana,State,Big Ten Conference,Indiana University Bloomington Indiana,-86.51623218881414,39.177980649999995
+2.0,Arizona,"Salt Lake City, UT",1991.0,1991455,University of Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference,University of Arizona Tucson Arizona,-110.9768841153795,32.22877495
+3.0,Oklahoma State,"College Park, MD",1991.0,1991456,Oklahoma State University–Stillwater,Cowboys,Stillwater,Oklahoma,State,Big 12 Conference,Oklahoma State University–Stillwater Stillwater Oklahoma,-97.08853714697355,36.1295801
+3.0,Nebraska,"Minneapolis, MN",1991.0,1991457,University of Nebraska–Lincoln,Cornhuskers,Lincoln,Nebraska,State,Big Ten Conference,University of Nebraska–Lincoln Lincoln Nebraska,-96.70049096055014,40.820739
+3.0,Kansas,"Louisville, KY",1991.0,1991458,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+3.0,Seton Hall,"Salt Lake City, UT",1991.0,1991459,Seton Hall University,Pirates,South Orange,New Jersey,Private/Catholic,Big East Conference,Seton Hall University South Orange New Jersey,-74.24685806216726,40.74337195
+4.0,UCLA,"Syracuse, NY",1991.0,1991460,"University of California, Los Angeles",Bruins,Los Angeles,California,State,Pac-12 Conference,University of California Los Angeles California,-118.44667592924029,34.0709515
+4.0,St. John's,"Dayton, OH",1991.0,1991461,St. John's University,Red Storm,Jamaica,New York,Private/Catholic,Big East Conference,St. John's University Jamaica New York,-73.9900726,40.7299442
+4.0,Alabama,"Atlanta, GA",1991.0,1991462,University of Alabama,Crimson Tide,Tuscaloosa,Alabama,State,Southeastern Conference,University of Alabama Tuscaloosa Alabama,-87.53967401518648,33.21208215
+4.0,Utah,"Tucson, AZ",1991.0,1991463,University of Utah,Utes,Salt Lake City,Utah,State,Pac-12 Conference,University of Utah Salt Lake City Utah,-111.83687191368261,40.762813699999995
+1.0,UConn,"Hartford, CT",1990.0,1990464,University of Connecticut,Huskies,Storrs,Connecticut,State,American Athletic Conference,University of Connecticut Storrs Connecticut,-72.2540140374581,41.81127235
+1.0,Oklahoma,"Austin, TX",1990.0,1990465,University of Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference,University of Oklahoma Norman Oklahoma,-97.44570827599858,35.1959878
+1.0,Michigan State,"Knoxville, TN",1990.0,1990466,Michigan State University,Spartans,East Lansing,Michigan,State,Big Ten Conference,Michigan State University East Lansing Michigan,-84.47791570930522,42.718568000000005
+1.0,UNLV,"Salt Lake City, UT",1990.0,1990467,"University of Nevada, Las Vegas",Rebels,Paradise,Nevada,State,Mountain West Conference,UNLV Paradise Nevada,-115.14183186108524,36.107155399999996
+2.0,Kansas,"Atlanta, GA",1990.0,1990468,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+2.0,Purdue,"Indianapolis, IN",1990.0,1990469,Purdue University,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference,Purdue University West Lafayette Indiana,-86.92391089364378,40.43195815
+2.0,Syracuse,"Richmond, VA",1990.0,1990470,Syracuse University,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference,Syracuse University Syracuse New York,-76.1333088275183,43.03830645
+2.0,Arizona,"Long Beach, CA",1990.0,1990471,University of Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference,University of Arizona Tucson Arizona,-110.9768841153795,32.22877495
+3.0,Duke,"Atlanta, GA",1990.0,1990472,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+3.0,Georgetown,"Indianapolis, IN",1990.0,1990473,Georgetown University,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference,Georgetown University Washington District of Columbia,-77.07457962060826,38.90893925
+3.0,Missouri,"Richmond, VA",1990.0,1990474,University of Missouri,Tigers,Columbia,Missouri,State,Southeastern Conference,University of Missouri Columbia Missouri,-92.32970301784542,38.93641465
+3.0,Michigan,"Long Beach, CA",1990.0,1990475,University of Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference,University of Michigan Ann Arbor Michigan,-83.71003893509601,42.2942142
+4.0,La Salle,"Hartford, CT",1990.0,1990476,La Salle University,Explorers,Philadelphia,Pennsylvania,Private/Catholic,Atlantic 10 Conference,La Salle University Philadelphia Pennsylvania,-75.15401786487763,40.0374695
+4.0,Arkansas,"Austin, TX",1990.0,1990477,University of Arkansas,Razorbacks,Fayetteville,Arkansas,State,Southeastern Conference,University of Arkansas Fayetteville Arkansas,-94.17609533911697,36.065152
+4.0,Georgia Tech,"Knoxville, TN",1990.0,1990478,Georgia Institute of Technology,Yellow Jackets,Atlanta,Georgia,State,Atlantic Coast Conference,Georgia Institute of Technology Atlanta Georgia,-84.39884086001581,33.776033
+4.0,Louisville,"Salt Lake City, UT",1990.0,1990479,University of Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference,University of Louisville Louisville Kentucky,-85.75725134140214,38.2167565
+1.0,Georgetown,"Providence, RI",1989.0,1989480,Georgetown University,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference,Georgetown University Washington District of Columbia,-77.07457962060826,38.90893925
+1.0,Illinois,"Indianapolis, IN",1989.0,1989481,University of Illinois at Urbana–Champaign,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference,University of Illinois at Urbana–Champaign Urbana–Champaign Illinois,-88.22402607254264,40.106650099999996
+1.0,Oklahoma,"Nashville, TN",1989.0,1989482,University of Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference,University of Oklahoma Norman Oklahoma,-97.44570827599858,35.1959878
+1.0,Arizona,"Boise, ID",1989.0,1989483,University of Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference,University of Arizona Tucson Arizona,-110.9768841153795,32.22877495
+2.0,Duke,"Greensboro, NC",1989.0,1989484,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+2.0,Syracuse,"Dallas, TX",1989.0,1989485,Syracuse University,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference,Syracuse University Syracuse New York,-76.1333088275183,43.03830645
+2.0,North Carolina,"Atlanta, GA",1989.0,1989486,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+2.0,Indiana,"Tucson, AZ",1989.0,1989487,Indiana University,Hoosiers,Bloomington,Indiana,State,Big Ten Conference,Indiana University Bloomington Indiana,-86.51623218881414,39.177980649999995
+3.0,Stanford,"Greensboro, NC",1989.0,1989488,Stanford University,Cardinal,Palo Alto,California,Private/Non-Sectarian,Pac-12 Conference,Stanford University Palo Alto California,-122.16936535498309,37.431313849999995
+3.0,Missouri,"Dallas, TX",1989.0,1989489,University of Missouri,Tigers,Columbia,Missouri,State,Southeastern Conference,University of Missouri Columbia Missouri,-92.32970301784542,38.93641465
+3.0,Michigan,"Atlanta, GA",1989.0,1989490,University of Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference,University of Michigan Ann Arbor Michigan,-83.71003893509601,42.2942142
+3.0,Seton Hall,"Tucson, AZ",1989.0,1989491,Seton Hall University,Pirates,South Orange,New Jersey,Private/Catholic,Big East Conference,Seton Hall University South Orange New Jersey,-74.24685806216726,40.74337195
+4.0,Iowa,"Providence, RI",1989.0,1989492,University of Iowa,Hawkeyes,Iowa City,Iowa,State,Big Ten Conference,University of Iowa Iowa City Iowa,-91.57318762552629,41.665901000000005
+4.0,Louisville,"Indianapolis, IN",1989.0,1989493,University of Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference,University of Louisville Louisville Kentucky,-85.75725134140214,38.2167565
+4.0,Florida State,"Nashville, TN",1989.0,1989494,Florida State University,Seminoles,Tallahassee,Florida,State,Atlantic Coast Conference,Florida State University Tallahassee Florida,-84.29747867166262,30.44235995
+4.0,UNLV,"Boise, ID",1989.0,1989495,"University of Nevada, Las Vegas",Rebels,Paradise,Nevada,State,Mountain West Conference,UNLV Paradise Nevada,-115.14183186108524,36.107155399999996
+1.0,Temple,"Hartford, CT",1988.0,1988496,Temple University,Owls,Philadelphia,Pennsylvania,State-related,American Athletic Conference,Temple University Philadelphia Pennsylvania,-75.15628269523319,39.981188
+1.0,Purdue,"South Bend, IN",1988.0,1988497,Purdue University,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference,Purdue University West Lafayette Indiana,-86.92391089364378,40.43195815
+1.0,Oklahoma,"Atlanta, GA",1988.0,1988498,University of Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference,University of Oklahoma Norman Oklahoma,-97.44570827599858,35.1959878
+1.0,Arizona,"Los Angeles, CA",1988.0,1988499,University of Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference,University of Arizona Tucson Arizona,-110.9768841153795,32.22877495
+2.0,Duke,"Chapel Hill, NC",1988.0,1988500,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+2.0,Pittsburgh,"Lincoln, NE",1988.0,1988501,University of Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference,University of Pittsburgh Pittsburgh Pennsylvania,-79.96243992762707,40.44415295
+2.0,Kentucky,"Cincinnati, OH",1988.0,1988502,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
+2.0,North Carolina,"Salt Lake City, UT",1988.0,1988503,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+3.0,Syracuse,"Chapel Hill, NC",1988.0,1988504,Syracuse University,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference,Syracuse University Syracuse New York,-76.1333088275183,43.03830645
+3.0,NC State,"Lincoln, NE",1988.0,1988505,North Carolina State University,Wolfpack,Raleigh,North Carolina,State,Atlantic Coast Conference,North Carolina State University Raleigh North Carolina,-78.67408695452633,35.77184965
+3.0,Illinois,"Cincinnati, OH",1988.0,1988506,University of Illinois at Urbana–Champaign,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference,University of Illinois at Urbana–Champaign Urbana–Champaign Illinois,-88.22402607254264,40.106650099999996
+3.0,Michigan,"Salt Lake City, UT",1988.0,1988507,University of Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference,University of Michigan Ann Arbor Michigan,-83.71003893509601,42.2942142
+4.0,Indiana,"Hartford, CT",1988.0,1988508,Indiana University,Hoosiers,Bloomington,Indiana,State,Big Ten Conference,Indiana University Bloomington Indiana,-86.51623218881414,39.177980649999995
+4.0,Kansas State,"South Bend, IN",1988.0,1988509,Kansas State University,Wildcats,Manhattan,Kansas,State,Big 12 Conference,Kansas State University Manhattan Kansas,-96.58844409645442,39.2087029
+4.0,BYU,"Atlanta, GA",1988.0,1988510,Brigham Young University,Cougars,Provo,Utah,Private/Latter-Day Saints,West Coast Conference,Brigham Young University Provo Utah,-111.64965648425293,40.2551075
+4.0,UNLV,"Los Angeles, CA",1988.0,1988511,"University of Nevada, Las Vegas",Rebels,Paradise,Nevada,State,Mountain West Conference,UNLV Paradise Nevada,-115.14183186108524,36.107155399999996
+1.0,North Carolina,"Charlotte, NC",1987.0,1987512,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+1.0,Indiana,"Indianapolis, IN",1987.0,1987513,Indiana University,Hoosiers,Bloomington,Indiana,State,Big Ten Conference,Indiana University Bloomington Indiana,-86.51623218881414,39.177980649999995
+1.0,Georgetown,"Atlanta, GA",1987.0,1987514,Georgetown University,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference,Georgetown University Washington District of Columbia,-77.07457962060826,38.90893925
+1.0,UNLV,"Salt Lake City, UT",1987.0,1987515,"University of Nevada, Las Vegas",Rebels,Paradise,Nevada,State,Mountain West Conference,UNLV Paradise Nevada,-115.14183186108524,36.107155399999996
+2.0,Syracuse,"Syracuse, NY",1987.0,1987516,Syracuse University,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference,Syracuse University Syracuse New York,-76.1333088275183,43.03830645
+2.0,Temple,"Rosemont, IL",1987.0,1987517,Temple University,Owls,Philadelphia,Pennsylvania,State-related,American Athletic Conference,Temple University Philadelphia Pennsylvania,-75.15628269523319,39.981188
+2.0,Alabama,"Birmingham, AL",1987.0,1987518,University of Alabama,Crimson Tide,Tuscaloosa,Alabama,State,Southeastern Conference,University of Alabama Tuscaloosa Alabama,-87.53967401518648,33.21208215
+2.0,Iowa,"Tucson, AZ",1987.0,1987519,University of Iowa,Hawkeyes,Iowa City,Iowa,State,Big Ten Conference,University of Iowa Iowa City Iowa,-91.57318762552629,41.665901000000005
+3.0,Purdue,"Syracuse, NY",1987.0,1987520,Purdue University,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference,Purdue University West Lafayette Indiana,-86.92391089364378,40.43195815
+3.0,DePaul,"Rosemont, IL",1987.0,1987521,DePaul University,Blue Demons,Chicago,Illinois,Private/Catholic,Big East Conference,DePaul University Chicago Illinois,-87.65472633854412,41.92401995
+3.0,Illinois,"Birmingham, AL",1987.0,1987522,University of Illinois at Urbana–Champaign,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference,University of Illinois at Urbana–Champaign Urbana–Champaign Illinois,-88.22402607254264,40.106650099999996
+3.0,Pittsburgh,"Tucson, AZ",1987.0,1987523,University of Pittsburgh,Panthers,Pittsburgh,Pennsylvania,State-related,Atlantic Coast Conference,University of Pittsburgh Pittsburgh Pennsylvania,-79.96243992762707,40.44415295
+4.0,TCU,"Charlotte, NC",1987.0,1987524,Texas Christian University,Horned Frogs,Fort Worth,Texas,Private/Disciples of Christ,Big 12 Conference,Texas Christian University Fort Worth Texas,-97.36119385339882,32.7080148
+4.0,Missouri,"Indianapolis, IN",1987.0,1987525,University of Missouri,Tigers,Columbia,Missouri,State,Southeastern Conference,University of Missouri Columbia Missouri,-92.32970301784542,38.93641465
+4.0,Clemson,"Atlanta, GA",1987.0,1987526,Clemson University,Tigers,Clemson,South Carolina,State,Atlantic Coast Conference,Clemson University Clemson South Carolina,-82.83743475607795,34.66869155
+4.0,UCLA,"Salt Lake City, UT",1987.0,1987527,"University of California, Los Angeles",Bruins,Los Angeles,California,State,Pac-12 Conference,University of California Los Angeles California,-118.44667592924029,34.0709515
+1.0,Duke,"Greensboro, NC",1986.0,1986528,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+1.0,Kansas,"Dayton, OH",1986.0,1986529,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+1.0,Kentucky,"Charlotte, NC",1986.0,1986530,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
+1.0,St. John's,"Long Beach, CA",1986.0,1986531,St. John's University,Red Storm,Jamaica,New York,Private/Catholic,Big East Conference,St. John's University Jamaica New York,-73.9900726,40.7299442
+2.0,Syracuse,"Syracuse, NY",1986.0,1986532,Syracuse University,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference,Syracuse University Syracuse New York,-76.1333088275183,43.03830645
+2.0,Michigan,"Minneapolis, MN",1986.0,1986533,University of Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference,University of Michigan Ann Arbor Michigan,-83.71003893509601,42.2942142
+2.0,Georgia Tech,"Baton Rouge, LA",1986.0,1986534,Georgia Institute of Technology,Yellow Jackets,Atlanta,Georgia,State,Atlantic Coast Conference,Georgia Institute of Technology Atlanta Georgia,-84.39884086001581,33.776033
+2.0,Louisville,"Ogden, UT",1986.0,1986535,University of Louisville,Cardinals,Louisville,Kentucky,State,Atlantic Coast Conference,University of Louisville Louisville Kentucky,-85.75725134140214,38.2167565
+3.0,Indiana,"Syracuse, NY",1986.0,1986536,Indiana University,Hoosiers,Bloomington,Indiana,State,Big Ten Conference,Indiana University Bloomington Indiana,-86.51623218881414,39.177980649999995
+3.0,Notre Dame,"Minneapolis, MN",1986.0,1986537,University of Notre Dame,Fighting Irish,South Bend,Indiana,Private/Catholic,Atlantic Coast Conference,University of Notre Dame South Bend Indiana,-86.23822026017265,41.704567749999995
+3.0,Memphis,"Baton Rouge, LA",1986.0,1986538,University of Memphis,Tigers,Memphis,Tennessee,State,American Athletic Conference,University of Memphis Memphis Tennessee,-89.93721959965887,35.1189387
+3.0,North Carolina,"Ogden, UT",1986.0,1986539,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+4.0,Oklahoma,"Greensboro, NC",1986.0,1986540,University of Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference,University of Oklahoma Norman Oklahoma,-97.44570827599858,35.1959878
+4.0,Georgetown,"Dayton, OH",1986.0,1986541,Georgetown University,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference,Georgetown University Washington District of Columbia,-77.07457962060826,38.90893925
+4.0,Illinois,"Charlotte, NC",1986.0,1986542,University of Illinois at Urbana–Champaign,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference,University of Illinois at Urbana–Champaign Urbana–Champaign Illinois,-88.22402607254264,40.106650099999996
+4.0,UNLV,"Long Beach, CA",1986.0,1986543,"University of Nevada, Las Vegas",Rebels,Paradise,Nevada,State,Mountain West Conference,UNLV Paradise Nevada,-115.14183186108524,36.107155399999996
+1.0,Georgetown,"Hartford, CT",1985.0,1985544,Georgetown University,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference,Georgetown University Washington District of Columbia,-77.07457962060826,38.90893925
+1.0,Oklahoma,"Tulsa, OK",1985.0,1985545,University of Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference,University of Oklahoma Norman Oklahoma,-97.44570827599858,35.1959878
+1.0,Michigan,"Dayton, OH",1985.0,1985546,University of Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference,University of Michigan Ann Arbor Michigan,-83.71003893509601,42.2942142
+1.0,St. John's,"Salt Lake City, UT",1985.0,1985547,St. John's University,Red Storm,Jamaica,New York,Private/Catholic,Big East Conference,St. John's University Jamaica New York,-73.9900726,40.7299442
+2.0,Georgia Tech,"Atlanta, GA",1985.0,1985548,Georgia Institute of Technology,Yellow Jackets,Atlanta,Georgia,State,Atlantic Coast Conference,Georgia Institute of Technology Atlanta Georgia,-84.39884086001581,33.776033
+2.0,Memphis,"Houston, TX",1985.0,1985549,University of Memphis,Tigers,Memphis,Tennessee,State,American Athletic Conference,University of Memphis Memphis Tennessee,-89.93721959965887,35.1189387
+2.0,North Carolina,"South Bend, IN",1985.0,1985550,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
+2.0,VCU,"Albuquerque, NM",1985.0,1985551,Virginia Commonwealth University,Rams,Richmond,Virginia,State,Atlantic 10 Conference,Virginia Commonwealth University Richmond Virginia,-77.45306424444706,37.548215
+3.0,Illinois,"Atlanta, GA",1985.0,1985552,University of Illinois at Urbana–Champaign,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference,University of Illinois at Urbana–Champaign Urbana–Champaign Illinois,-88.22402607254264,40.106650099999996
+3.0,Duke,"Houston, TX",1985.0,1985553,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
+3.0,Kansas,"South Bend, IN",1985.0,1985554,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
+3.0,NC State,"Albuquerque, NM",1985.0,1985555,North Carolina State University,Wolfpack,Raleigh,North Carolina,State,Atlantic Coast Conference,North Carolina State University Raleigh North Carolina,-78.67408695452633,35.77184965
+4.0,Loyola–Chicago,"Hartford, CT",1985.0,1985556,Loyola University Chicago,Ramblers,Chicago,Illinois,Private/Catholic,Missouri Valley Conference,Loyola University Chicago Chicago Illinois,-87.66842176669064,41.9448418
+4.0,Ohio State,"Tulsa, OK",1985.0,1985557,The Ohio State University,Buckeyes,Columbus,Ohio,State,Big Ten Conference,The Ohio State University Columbus Ohio,-83.02866259769122,40.00570905
+4.0,LSU,"Dayton, OH",1985.0,1985558,Louisiana State University,Tigers,Baton Rouge,Louisiana,State,Southeastern Conference,Louisiana State University Baton Rouge Louisiana,-91.18596767189877,30.40570885
+4.0,UNLV,"Salt Lake City, UT",1985.0,1985559,"University of Nevada, Las Vegas",Rebels,Paradise,Nevada,State,Mountain West Conference,UNLV Paradise Nevada,-115.14183186108524,36.107155399999996
+,,"Columbia, SC",,20190,,,,,,,"Columbia, SC",-81.0343313,34.0007493
+,,"Salt Lake City, UT",,20191,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Columbus, OH",,20192,,,,,,,"Columbus, OH",-83.0007065,39.9622601
+,,"Columbia, SC",,20193,,,,,,,"Columbia, SC",-81.0343313,34.0007493
+,,"Des Moines, IA",,20194,,,,,,,"Des Moines, IA",-93.6037149,41.5910641
+,,"Des Moines, IA",,20195,,,,,,,"Des Moines, IA",-93.6037149,41.5910641
+,,"Jacksonville, FL",,20196,,,,,,,"Jacksonville, FL",-81.655651,30.3321838
+,,"Columbus, OH",,20197,,,,,,,"Columbus, OH",-83.0007065,39.9622601
+,,"Jacksonville, FL",,20198,,,,,,,"Jacksonville, FL",-81.655651,30.3321838
+,,"Tulsa, OK",,20199,,,,,,,"Tulsa, OK",-95.9929113,36.1556805
+,,"Tulsa, OK",,201910,,,,,,,"Tulsa, OK",-95.9929113,36.1556805
+,,"Hartford, CT",,201911,,,,,,,"Hartford, CT",-72.6908547,41.764582
+,,"San Jose, CA",,201912,,,,,,,"San Jose, CA",-121.8905833,37.3361905
+,,"Hartford, CT",,201913,,,,,,,"Hartford, CT",-72.6908547,41.764582
+,,"Salt Lake City, UT",,201914,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"San Jose, CA",,201915,,,,,,,"San Jose, CA",-121.8905833,37.3361905
+,,"Pittsburgh, PA",,201816,,,,,,,"Pittsburgh, PA",-79.9900861,40.4416941
+,,"Wichita, KS",,201817,,,,,,,"Wichita, KS",-97.3375448,37.6922361
+,,"Nashville, TN",,201818,,,,,,,"Nashville, TN",-86.7743531,36.1622296
+,,"Charlotte, NC",,201819,,,,,,,"Charlotte, NC",-80.8431268,35.2270869
+,,"Detroit, MI",,201820,,,,,,,"Detroit, MI",-83.0466403,42.3315509
+,,"Pittsburgh, PA",,201821,,,,,,,"Pittsburgh, PA",-79.9900861,40.4416941
+,,"Charlotte, NC",,201822,,,,,,,"Charlotte, NC",-80.8431268,35.2270869
+,,"Nashville, TN",,201823,,,,,,,"Nashville, TN",-86.7743531,36.1622296
+,,"Dallas, TX",,201824,,,,,,,"Dallas, TX",-96.7968559,32.7762719
+,,"Detroit, MI",,201825,,,,,,,"Detroit, MI",-83.0466403,42.3315509
+,,"Wichita, KS",,201826,,,,,,,"Wichita, KS",-97.3375448,37.6922361
+,,"Dallas, TX",,201827,,,,,,,"Dallas, TX",-96.7968559,32.7762719
+,,"San Diego, CA",,201828,,,,,,,"San Diego, CA",-117.1627714,32.7174209
+,,"San Diego, CA",,201829,,,,,,,"San Diego, CA",-117.1627714,32.7174209
+,,"Boise, ID",,201830,,,,,,,"Boise, ID",-116.200886,43.6166163
+,,"Boise, ID",,201831,,,,,,,"Boise, ID",-116.200886,43.6166163
+,,"Buffalo, NY",,201732,,,,,,,"Buffalo, NY",-78.8783922,42.8867166
+,,"Tulsa, OK",,201733,,,,,,,"Tulsa, OK",-95.9929113,36.1556805
+,,"Greenville, SC",,201734,,,,,,,"Greenville, SC",-82.3984882,34.851354
+,,"Salt Lake City, UT",,201735,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Greenville, SC",,201736,,,,,,,"Greenville, SC",-82.3984882,34.851354
+,,"Indianapolis, IN",,201737,,,,,,,"Indianapolis, IN",-86.1583502,39.7683331
+,,"Indianapolis, IN",,201738,,,,,,,"Indianapolis, IN",-86.1583502,39.7683331
+,,"Salt Lake City, UT",,201739,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Tulsa, OK",,201740,,,,,,,"Tulsa, OK",-95.9929113,36.1556805
+,,"Sacramento, CA",,201741,,,,,,,"Sacramento, CA",-121.4943996,38.5815719
+,,"Sacramento, CA",,201742,,,,,,,"Sacramento, CA",-121.4943996,38.5815719
+,,"Orlando, FL",,201743,,,,,,,"Orlando, FL",-81.3790304,28.5421109
+,,"Orlando, FL",,201744,,,,,,,"Orlando, FL",-81.3790304,28.5421109
+,,"Milwaukee, WI",,201745,,,,,,,"Milwaukee, WI",-87.922497,43.0349931
+,,"Milwaukee, WI",,201746,,,,,,,"Milwaukee, WI",-87.922497,43.0349931
+,,"Buffalo, NY",,201747,,,,,,,"Buffalo, NY",-78.8783922,42.8867166
+,,"Raleigh, NC",,201648,,,,,,,"Raleigh, NC",-78.6390989,35.7803977
+,,"Des Moines, IA",,201649,,,,,,,"Des Moines, IA",-93.6037149,41.5910641
+,,"Spokane, WA",,201650,,,,,,,"Spokane, WA",-117.4212265,47.6579425
+,,"Raleigh, NC",,201651,,,,,,,"Raleigh, NC",-78.6390989,35.7803977
+,,"St. Louis, MO",,201652,,,,,,,"St. Louis, MO",-90.24111656024635,38.6529545
+,,"Brooklyn, NY",,201653,,,,,,,"Brooklyn, NY",-73.9495823,40.6501038
+,,"Oklahoma City, OK",,201654,,,,,,,"Oklahoma City, OK",-97.5170536,35.4729886
+,,"St. Louis, MO",,201655,,,,,,,"St. Louis, MO",-90.24111656024635,38.6529545
+,,"Brooklyn, NY",,201656,,,,,,,"Brooklyn, NY",-73.9495823,40.6501038
+,,"Providence, RI",,201657,,,,,,,"Providence, RI",-71.4128343,41.8239891
+,,"Oklahoma City, OK",,201658,,,,,,,"Oklahoma City, OK",-97.5170536,35.4729886
+,,"Denver, CO",,201659,,,,,,,"Denver, CO",-104.9653271,39.7348381
+,,"Des Moines, IA",,201660,,,,,,,"Des Moines, IA",-93.6037149,41.5910641
+,,"Spokane, WA",,201661,,,,,,,"Spokane, WA",-117.4212265,47.6579425
+,,"Providence, RI",,201662,,,,,,,"Providence, RI",-71.4128343,41.8239891
+,,"Denver, CO",,201663,,,,,,,"Denver, CO",-104.9653271,39.7348381
+,,"Pittsburgh, PA",,201564,,,,,,,"Pittsburgh, PA",-79.9900861,40.4416941
+,,"Louisville, KY",,201565,,,,,,,"Louisville, KY",-85.759407,38.2542376
+,,"Charlotte, NC",,201566,,,,,,,"Charlotte, NC",-80.8431268,35.2270869
+,,"Omaha, NE",,201567,,,,,,,"Omaha, NE",-95.9383758,41.2587459
+,,"Charlotte, NC",,201568,,,,,,,"Charlotte, NC",-80.8431268,35.2270869
+,,"Omaha, NE",,201569,,,,,,,"Omaha, NE",-95.9383758,41.2587459
+,,"Seattle, WA",,201570,,,,,,,"Seattle, WA",-122.3300624,47.6038321
+,,"Portland, OR",,201571,,,,,,,"Portland, OR",-122.6741949,45.5202471
+,,"Columbus, OH",,201572,,,,,,,"Columbus, OH",-83.0007065,39.9622601
+,,"Pittsburgh, PA",,201573,,,,,,,"Pittsburgh, PA",-79.9900861,40.4416941
+,,"Louisville, KY",,201574,,,,,,,"Louisville, KY",-85.759407,38.2542376
+,,"Jacksonville, FL",,201575,,,,,,,"Jacksonville, FL",-81.655651,30.3321838
+,,"Seattle, WA",,201576,,,,,,,"Seattle, WA",-122.3300624,47.6038321
+,,"Columbus, OH",,201577,,,,,,,"Columbus, OH",-83.0007065,39.9622601
+,,"Portland, OR",,201578,,,,,,,"Portland, OR",-122.6741949,45.5202471
+,,"Jacksonville, FL",,201579,,,,,,,"Jacksonville, FL",-81.655651,30.3321838
+,,"St. Louis, MO",,201480,,,,,,,"St. Louis, MO",-90.24111656024635,38.6529545
+,,"Orlando, FL",,201481,,,,,,,"Orlando, FL",-81.3790304,28.5421109
+,,"Raleigh, NC",,201482,,,,,,,"Raleigh, NC",-78.6390989,35.7803977
+,,"San Diego, CA",,201483,,,,,,,"San Diego, CA",-117.1627714,32.7174209
+,,"Milwaukee, WI",,201484,,,,,,,"Milwaukee, WI",-87.922497,43.0349931
+,,"St. Louis, MO",,201485,,,,,,,"St. Louis, MO",-90.24111656024635,38.6529545
+,,"Buffalo, NY",,201486,,,,,,,"Buffalo, NY",-78.8783922,42.8867166
+,,"Milwaukee, WI",,201487,,,,,,,"Milwaukee, WI",-87.922497,43.0349931
+,,"Raleigh, NC",,201488,,,,,,,"Raleigh, NC",-78.6390989,35.7803977
+,,"Buffalo, NY",,201489,,,,,,,"Buffalo, NY",-78.8783922,42.8867166
+,,"San Antonio, TX",,201490,,,,,,,"San Antonio, TX",-98.4951405,29.4246002
+,,"San Antonio, TX",,201491,,,,,,,"San Antonio, TX",-98.4951405,29.4246002
+,,"Orlando, FL",,201492,,,,,,,"Orlando, FL",-81.3790304,28.5421109
+,,"San Diego, CA",,201493,,,,,,,"San Diego, CA",-117.1627714,32.7174209
+,,"Spokane, WA",,201494,,,,,,,"Spokane, WA",-117.4212265,47.6579425
+,,"Spokane, WA",,201495,,,,,,,"Spokane, WA",-117.4212265,47.6579425
+,,"Dayton, OH",,201396,,,,,,,"Dayton, OH",-84.1916069,39.7589478
+,,"Lexington, KY",,201397,,,,,,,"Lexington, KY",-84.4970393,38.0464066
+,,"Salt Lake City, UT",,201398,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Kansas City, MO",,201399,,,,,,,"Kansas City, MO",-94.5781416,39.100105
+,,"Austin, TX",,2013100,,,,,,,"Austin, TX",-97.7436995,30.2711286
+,,"Philadelphia, PA",,2013101,,,,,,,"Philadelphia, PA",-75.1635262,39.9527237
+,,"Dayton, OH",,2013102,,,,,,,"Dayton, OH",-84.1916069,39.7589478
+,,"Philadelphia, PA",,2013103,,,,,,,"Philadelphia, PA",-75.1635262,39.9527237
+,,"Lexington, KY",,2013104,,,,,,,"Lexington, KY",-84.4970393,38.0464066
+,,"Auburn Hills, MI",,2013105,,,,,,,"Auburn Hills, MI",-83.2341028,42.6875323
+,,"Salt Lake City, UT",,2013106,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Austin, TX",,2013107,,,,,,,"Austin, TX",-97.7436995,30.2711286
+,,"San Jose, CA",,2013108,,,,,,,"San Jose, CA",-121.8905833,37.3361905
+,,"San Jose, CA",,2013109,,,,,,,"San Jose, CA",-121.8905833,37.3361905
+,,"Kansas City, MO",,2013110,,,,,,,"Kansas City, MO",-94.5781416,39.100105
+,,"Auburn Hills, MI",,2013111,,,,,,,"Auburn Hills, MI",-83.2341028,42.6875323
+,,"Greensboro, NC",,2012112,,,,,,,"Greensboro, NC",-79.7919754,36.0726355
+,,"Louisville, KY",,2012113,,,,,,,"Louisville, KY",-85.759407,38.2542376
+,,"Columbus, OH",,2012114,,,,,,,"Columbus, OH",-83.0007065,39.9622601
+,,"Pittsburgh, PA",,2012115,,,,,,,"Pittsburgh, PA",-79.9900861,40.4416941
+,,"Omaha, NE",,2012116,,,,,,,"Omaha, NE",-95.9383758,41.2587459
+,,"Greensboro, NC",,2012117,,,,,,,"Greensboro, NC",-79.7919754,36.0726355
+,,"Omaha, NE",,2012118,,,,,,,"Omaha, NE",-95.9383758,41.2587459
+,,"Pittsburgh, PA",,2012119,,,,,,,"Pittsburgh, PA",-79.9900861,40.4416941
+,,"Columbus, OH",,2012120,,,,,,,"Columbus, OH",-83.0007065,39.9622601
+,,"Albuquerque, NM",,2012121,,,,,,,"Albuquerque, NM",-106.6509851,35.0841034
+,,"Louisville, KY",,2012122,,,,,,,"Louisville, KY",-85.759407,38.2542376
+,,"Nashville, TN",,2012123,,,,,,,"Nashville, TN",-86.7743531,36.1622296
+,,"Nashville, TN",,2012124,,,,,,,"Nashville, TN",-86.7743531,36.1622296
+,,"Portland, OR",,2012125,,,,,,,"Portland, OR",-122.6741949,45.5202471
+,,"Portland, OR",,2012126,,,,,,,"Portland, OR",-122.6741949,45.5202471
+,,"Albuquerque, NM",,2012127,,,,,,,"Albuquerque, NM",-106.6509851,35.0841034
+,,"Cleveland, OH",,2011128,,,,,,,"Cleveland, OH",-81.6934446,41.5051613
+,,"Washington, DC",,2011129,,,,,,,"Washington, DC",-77.0365529,38.8948932
+,,"Tulsa, OK",,2011130,,,,,,,"Tulsa, OK",-95.9929113,36.1556805
+,,"Charlotte, NC",,2011131,,,,,,,"Charlotte, NC",-80.8431268,35.2270869
+,,"Charlotte, NC",,2011132,,,,,,,"Charlotte, NC",-80.8431268,35.2270869
+,,"Tampa, FL",,2011133,,,,,,,"Tampa, FL",-82.458444,27.9477595
+,,"Chicago, IL",,2011134,,,,,,,"Chicago, IL",-87.6244212,41.8755616
+,,"Tucson, AZ",,2011135,,,,,,,"Tucson, AZ",-110.9748477,32.2228765
+,,"Cleveland, OH",,2011136,,,,,,,"Cleveland, OH",-81.6934446,41.5051613
+,,"Denver, CO",,2011137,,,,,,,"Denver, CO",-104.9653271,39.7348381
+,,"Chicago, IL",,2011138,,,,,,,"Chicago, IL",-87.6244212,41.8755616
+,,"Washington, DC",,2011139,,,,,,,"Washington, DC",-77.0365529,38.8948932
+,,"Tampa, FL",,2011140,,,,,,,"Tampa, FL",-82.458444,27.9477595
+,,"Tucson, AZ",,2011141,,,,,,,"Tucson, AZ",-110.9748477,32.2228765
+,,"Denver, CO",,2011142,,,,,,,"Denver, CO",-104.9653271,39.7348381
+,,"Tulsa, OK",,2011143,,,,,,,"Tulsa, OK",-95.9929113,36.1556805
+,,"Jacksonville, FL",,2010144,,,,,,,"Jacksonville, FL",-81.655651,30.3321838
+,,"New Orleans, LA",,2010145,,,,,,,"New Orleans, LA",-90.0701156,29.9499323
+,,"Oklahoma City, OK",,2010146,,,,,,,"Oklahoma City, OK",-97.5170536,35.4729886
+,,"Buffalo, NY",,2010147,,,,,,,"Buffalo, NY",-78.8783922,42.8867166
+,,"Providence, RI",,2010148,,,,,,,"Providence, RI",-71.4128343,41.8239891
+,,"Buffalo, NY",,2010149,,,,,,,"Buffalo, NY",-78.8783922,42.8867166
+,,"Milwaukee, WI",,2010150,,,,,,,"Milwaukee, WI",-87.922497,43.0349931
+,,"Oklahoma City, OK",,2010151,,,,,,,"Oklahoma City, OK",-97.5170536,35.4729886
+,,"New Orleans, LA",,2010152,,,,,,,"New Orleans, LA",-90.0701156,29.9499323
+,,"San Jose, CA",,2010153,,,,,,,"San Jose, CA",-121.8905833,37.3361905
+,,"Providence, RI",,2010154,,,,,,,"Providence, RI",-71.4128343,41.8239891
+,,"Milwaukee, WI",,2010155,,,,,,,"Milwaukee, WI",-87.922497,43.0349931
+,,"Spokane, WA",,2010156,,,,,,,"Spokane, WA",-117.4212265,47.6579425
+,,"Jacksonville, FL",,2010157,,,,,,,"Jacksonville, FL",-81.655651,30.3321838
+,,"Spokane, WA",,2010158,,,,,,,"Spokane, WA",-117.4212265,47.6579425
+,,"San Jose, CA",,2010159,,,,,,,"San Jose, CA",-121.8905833,37.3361905
+,,"Buffalo, NY",,2009160,,,,,,,"Buffalo, NY",-78.8783922,42.8867166
+,,"Dayton, OH",,2009161,,,,,,,"Dayton, OH",-84.1916069,39.7589478
+,,"Greensboro, NC",,2009162,,,,,,,"Greensboro, NC",-79.7919754,36.0726355
+,,"Philadelphia, PA",,2009163,,,,,,,"Philadelphia, PA",-75.1635262,39.9527237
+,,"Oklahoma City, OK",,2009164,,,,,,,"Oklahoma City, OK",-97.5170536,35.4729886
+,,"Greensboro, NC",,2009165,,,,,,,"Greensboro, NC",-79.7919754,36.0726355
+,,"Kansas City, MO",,2009166,,,,,,,"Kansas City, MO",-94.5781416,39.100105
+,,"Kansas City, MO",,2009167,,,,,,,"Kansas City, MO",-94.5781416,39.100105
+,,"Milwaukee, WI",,2009168,,,,,,,"Milwaukee, WI",-87.922497,43.0349931
+,,"Philadelphia, PA",,2009169,,,,,,,"Philadelphia, PA",-75.1635262,39.9527237
+,,"Miami, FL",,2009170,,,,,,,"Miami, FL",-80.1936589,25.7742658
+,,"Boise, ID",,2009171,,,,,,,"Boise, ID",-116.200886,43.6166163
+,,"San Jose, CA",,2009172,,,,,,,"San Jose, CA",-121.8905833,37.3361905
+,,"Boise, ID",,2009173,,,,,,,"Boise, ID",-116.200886,43.6166163
+,,"Portland, OR",,2009174,,,,,,,"Portland, OR",-122.6741949,45.5202471
+,,"Portland, OR",,2009175,,,,,,,"Portland, OR",-122.6741949,45.5202471
+,,"Raleigh, NC",,2008176,,,,,,,"Raleigh, NC",-78.6390989,35.7803977
+,,"Omaha, NE",,2008177,,,,,,,"Omaha, NE",-95.9383758,41.2587459
+,,"North Little Rock, AR",,2008178,,,,,,,"North Little Rock, AR",-92.2670941,34.769536
+,,"Anaheim, CA",,2008179,,,,,,,"Anaheim, CA",-117.911732,33.8347516
+,,"Birmingham, AL",,2008180,,,,,,,"Birmingham, AL",-86.8024326,33.5206824
+,,"Raleigh, NC",,2008181,,,,,,,"Raleigh, NC",-78.6390989,35.7803977
+,,"North Little Rock, AR",,2008182,,,,,,,"North Little Rock, AR",-92.2670941,34.769536
+,,"Washington, DC",,2008183,,,,,,,"Washington, DC",-77.0365529,38.8948932
+,,"Birmingham, AL",,2008184,,,,,,,"Birmingham, AL",-86.8024326,33.5206824
+,,"Omaha, NE",,2008185,,,,,,,"Omaha, NE",-95.9383758,41.2587459
+,,"Anaheim, CA",,2008186,,,,,,,"Anaheim, CA",-117.911732,33.8347516
+,,"Washington, DC",,2008187,,,,,,,"Washington, DC",-77.0365529,38.8948932
+,,"Denver, CO",,2008188,,,,,,,"Denver, CO",-104.9653271,39.7348381
+,,"Tampa, FL",,2008189,,,,,,,"Tampa, FL",-82.458444,27.9477595
+,,"Denver, CO",,2008190,,,,,,,"Denver, CO",-104.9653271,39.7348381
+,,"Tampa, FL",,2008191,,,,,,,"Tampa, FL",-82.458444,27.9477595
+,,"Chicago, IL",,2007192,,,,,,,"Chicago, IL",-87.6244212,41.8755616
+,,"Winston-Salem, NC",,2007193,,,,,,,"Winston-Salem, NC",-80.2440518,36.0998131
+,,"New Orleans, LA",,2007194,,,,,,,"New Orleans, LA",-90.0701156,29.9499323
+,,"New Orleans, LA",,2007195,,,,,,,"New Orleans, LA",-90.0701156,29.9499323
+,,"Sacramento, CA",,2007196,,,,,,,"Sacramento, CA",-121.4943996,38.5815719
+,,"Winston-Salem, NC",,2007197,,,,,,,"Winston-Salem, NC",-80.2440518,36.0998131
+,,"Chicago, IL",,2007198,,,,,,,"Chicago, IL",-87.6244212,41.8755616
+,,"Chicago, IL",,2007199,,,,,,,"Chicago, IL",-87.6244212,41.8755616
+,,"Buffalo, NY",,2007200,,,,,,,"Buffalo, NY",-78.8783922,42.8867166
+,,"Sacramento, CA",,2007201,,,,,,,"Sacramento, CA",-121.4943996,38.5815719
+,,"Spokane, WA",,2007202,,,,,,,"Spokane, WA",-117.4212265,47.6579425
+,,"Spokane, WA",,2007203,,,,,,,"Spokane, WA",-117.4212265,47.6579425
+,,"Columbus, OH",,2007204,,,,,,,"Columbus, OH",-83.0007065,39.9622601
+,,"Spokane, WA",,2007205,,,,,,,"Spokane, WA",-117.4212265,47.6579425
+,,"Buffalo, NY",,2007206,,,,,,,"Buffalo, NY",-78.8783922,42.8867166
+,,"Buffalo, NY",,2007207,,,,,,,"Buffalo, NY",-78.8783922,42.8867166
+,,"Philadelphia, PA",,2006208,,,,,,,"Philadelphia, PA",-75.1635262,39.9527237
+,,"Greensboro, NC",,2006209,,,,,,,"Greensboro, NC",-79.7919754,36.0726355
+,,"Dallas, TX",,2006210,,,,,,,"Dallas, TX",-96.7968559,32.7762719
+,,"Philadelphia, PA",,2006211,,,,,,,"Philadelphia, PA",-75.1635262,39.9527237
+,,"Dayton, OH",,2006212,,,,,,,"Dayton, OH",-84.1916069,39.7589478
+,,"Dallas, TX",,2006213,,,,,,,"Dallas, TX",-96.7968559,32.7762719
+,,"San Diego, CA",,2006214,,,,,,,"San Diego, CA",-117.1627714,32.7174209
+,,"Greensboro, NC",,2006215,,,,,,,"Greensboro, NC",-79.7919754,36.0726355
+,,"Jacksonville, FL",,2006216,,,,,,,"Jacksonville, FL",-81.655651,30.3321838
+,,"Auburn Hills, MI",,2006217,,,,,,,"Auburn Hills, MI",-83.2341028,42.6875323
+,,"Salt Lake City, UT",,2006218,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Dayton, OH",,2006219,,,,,,,"Dayton, OH",-84.1916069,39.7589478
+,,"Salt Lake City, UT",,2006220,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Jacksonville, FL",,2006221,,,,,,,"Jacksonville, FL",-81.655651,30.3321838
+,,"Auburn Hills, MI",,2006222,,,,,,,"Auburn Hills, MI",-83.2341028,42.6875323
+,,"San Diego, CA",,2006223,,,,,,,"San Diego, CA",-117.1627714,32.7174209
+,,"Charlotte, NC",,2005224,,,,,,,"Charlotte, NC",-80.8431268,35.2270869
+,,"Boise, ID",,2005225,,,,,,,"Boise, ID",-116.200886,43.6166163
+,,"Charlotte, NC",,2005226,,,,,,,"Charlotte, NC",-80.8431268,35.2270869
+,,"Indianapolis, IN",,2005227,,,,,,,"Indianapolis, IN",-86.1583502,39.7683331
+,,"Worcester, MA",,2005228,,,,,,,"Worcester, MA",-71.8022934,42.2625932
+,,"Cleveland, OH",,2005229,,,,,,,"Cleveland, OH",-81.6934446,41.5051613
+,,"Indianapolis, IN",,2005230,,,,,,,"Indianapolis, IN",-86.1583502,39.7683331
+,,"Oklahoma City, OK",,2005231,,,,,,,"Oklahoma City, OK",-97.5170536,35.4729886
+,,"Oklahoma City, OK",,2005232,,,,,,,"Oklahoma City, OK",-97.5170536,35.4729886
+,,"Tucson, AZ",,2005233,,,,,,,"Tucson, AZ",-110.9748477,32.2228765
+,,"Tucson, AZ",,2005234,,,,,,,"Tucson, AZ",-110.9748477,32.2228765
+,,"Boise, ID",,2005235,,,,,,,"Boise, ID",-116.200886,43.6166163
+,,"Nashville, TN",,2005236,,,,,,,"Nashville, TN",-86.7743531,36.1622296
+,,"Nashville, TN",,2005237,,,,,,,"Nashville, TN",-86.7743531,36.1622296
+,,"Worcester, MA",,2005238,,,,,,,"Worcester, MA",-71.8022934,42.2625932
+,,"Cleveland, OH",,2005239,,,,,,,"Cleveland, OH",-81.6934446,41.5051613
+,,"Columbus, OH",,2004240,,,,,,,"Columbus, OH",-83.0007065,39.9622601
+,,"Raleigh, NC",,2004241,,,,,,,"Raleigh, NC",-78.6390989,35.7803977
+,,"Buffalo, NY",,2004242,,,,,,,"Buffalo, NY",-78.8783922,42.8867166
+,,"Seattle, WA",,2004243,,,,,,,"Seattle, WA",-122.3300624,47.6038321
+,,"Seattle, WA",,2004244,,,,,,,"Seattle, WA",-122.3300624,47.6038321
+,,"Orlando, FL",,2004245,,,,,,,"Orlando, FL",-81.3790304,28.5421109
+,,"Kansas City, MO",,2004246,,,,,,,"Kansas City, MO",-94.5781416,39.100105
+,,"Buffalo, NY",,2004247,,,,,,,"Buffalo, NY",-78.8783922,42.8867166
+,,"Milwaukee, WI",,2004248,,,,,,,"Milwaukee, WI",-87.922497,43.0349931
+,,"Denver, CO",,2004249,,,,,,,"Denver, CO",-104.9653271,39.7348381
+,,"Milwaukee, WI",,2004250,,,,,,,"Milwaukee, WI",-87.922497,43.0349931
+,,"Orlando, FL",,2004251,,,,,,,"Orlando, FL",-81.3790304,28.5421109
+,,"Kansas City, MO",,2004252,,,,,,,"Kansas City, MO",-94.5781416,39.100105
+,,"Columbus, OH",,2004253,,,,,,,"Columbus, OH",-83.0007065,39.9622601
+,,"Raleigh, NC",,2004254,,,,,,,"Raleigh, NC",-78.6390989,35.7803977
+,,"Denver, CO",,2004255,,,,,,,"Denver, CO",-104.9653271,39.7348381
+,,"Birmingham, AL",,2003256,,,,,,,"Birmingham, AL",-86.8024326,33.5206824
+,,"Oklahoma City, OK",,2003257,,,,,,,"Oklahoma City, OK",-97.5170536,35.4729886
+,,"Nashville, TN",,2003258,,,,,,,"Nashville, TN",-86.7743531,36.1622296
+,,"Salt Lake City, UT",,2003259,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Tampa, FL",,2003260,,,,,,,"Tampa, FL",-82.458444,27.9477595
+,,"Tampa, FL",,2003261,,,,,,,"Tampa, FL",-82.458444,27.9477595
+,,"Boston, MA",,2003262,,,,,,,"Boston, MA",-71.0582912,42.3602534
+,,"Oklahoma City, OK",,2003263,,,,,,,"Oklahoma City, OK",-97.5170536,35.4729886
+,,"Nashville, TN",,2003264,,,,,,,"Nashville, TN",-86.7743531,36.1622296
+,,"Boston, MA",,2003265,,,,,,,"Boston, MA",-71.0582912,42.3602534
+,,"Indianapolis, IN",,2003266,,,,,,,"Indianapolis, IN",-86.1583502,39.7683331
+,,"Salt Lake City, UT",,2003267,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Spokane, WA",,2003268,,,,,,,"Spokane, WA",-117.4212265,47.6579425
+,,"Birmingham, AL",,2003269,,,,,,,"Birmingham, AL",-86.8024326,33.5206824
+,,"Spokane, WA",,2003270,,,,,,,"Spokane, WA",-117.4212265,47.6579425
+,,"Indianapolis, IN",,2003271,,,,,,,"Indianapolis, IN",-86.1583502,39.7683331
+,,"Washington, DC",,2002272,,,,,,,"Washington, DC",-77.0365529,38.8948932
+,,"St. Louis, MO",,2002273,,,,,,,"St. Louis, MO",-90.24111656024635,38.6529545
+,,"Greenville, SC",,2002274,,,,,,,"Greenville, SC",-82.3984882,34.851354
+,,"Pittsburgh, PA",,2002275,,,,,,,"Pittsburgh, PA",-79.9900861,40.4416941
+,,"Washington, DC",,2002276,,,,,,,"Washington, DC",-77.0365529,38.8948932
+,,"Sacramento, CA",,2002277,,,,,,,"Sacramento, CA",-121.4943996,38.5815719
+,,"Greenville, SC",,2002278,,,,,,,"Greenville, SC",-82.3984882,34.851354
+,,"Dallas, TX",,2002279,,,,,,,"Dallas, TX",-96.7968559,32.7762719
+,,"Chicago, IL",,2002280,,,,,,,"Chicago, IL",-87.6244212,41.8755616
+,,"Dallas, TX",,2002281,,,,,,,"Dallas, TX",-96.7968559,32.7762719
+,,"Pittsburgh, PA",,2002282,,,,,,,"Pittsburgh, PA",-79.9900861,40.4416941
+,,"Albuquerque, NM",,2002283,,,,,,,"Albuquerque, NM",-106.6509851,35.0841034
+,,"St. Louis, MO",,2002284,,,,,,,"St. Louis, MO",-90.24111656024635,38.6529545
+,,"Chicago, IL",,2002285,,,,,,,"Chicago, IL",-87.6244212,41.8755616
+,,"Sacramento, CA",,2002286,,,,,,,"Sacramento, CA",-121.4943996,38.5815719
+,,"Albuquerque, NM",,2002287,,,,,,,"Albuquerque, NM",-106.6509851,35.0841034
+,,"Dayton, OH",,2001288,,,,,,,"Dayton, OH",-84.1916069,39.7589478
+,,"Greensboro, NC",,2001289,,,,,,,"Greensboro, NC",-79.7919754,36.0726355
+,,"Memphis, TN",,2001290,,,,,,,"Memphis, TN",-90.0516285,35.1490215
+,,"San Diego, CA",,2001291,,,,,,,"San Diego, CA",-117.1627714,32.7174209
+,,"Kansas City, MO",,2001292,,,,,,,"Kansas City, MO",-94.5781416,39.100105
+,,"Uniondale, NY",,2001293,,,,,,,"Uniondale, NY",-73.5895167364443,40.7031115
+,,"New Orleans, LA",,2001294,,,,,,,"New Orleans, LA",-90.0701156,29.9499323
+,,"Boise, ID",,2001295,,,,,,,"Boise, ID",-116.200886,43.6166163
+,,"Kansas City, MO",,2001296,,,,,,,"Kansas City, MO",-94.5781416,39.100105
+,,"Uniondale, NY",,2001297,,,,,,,"Uniondale, NY",-73.5895167364443,40.7031115
+,,"New Orleans, LA",,2001298,,,,,,,"New Orleans, LA",-90.0701156,29.9499323
+,,"Boise, ID",,2001299,,,,,,,"Boise, ID",-116.200886,43.6166163
+,,"Dayton, OH",,2001300,,,,,,,"Dayton, OH",-84.1916069,39.7589478
+,,"Greensboro, NC",,2001301,,,,,,,"Greensboro, NC",-79.7919754,36.0726355
+,,"Memphis, TN",,2001302,,,,,,,"Memphis, TN",-90.0516285,35.1490215
+,,"San Diego, CA",,2001303,,,,,,,"San Diego, CA",-117.1627714,32.7174209
+,,"Winston-Salem, NC",,2000304,,,,,,,"Winston-Salem, NC",-80.2440518,36.0998131
+,,"Cleveland, OH",,2000305,,,,,,,"Cleveland, OH",-81.6934446,41.5051613
+,,"Birmingham, AL",,2000306,,,,,,,"Birmingham, AL",-86.8024326,33.5206824
+,,"Tucson, AZ",,2000307,,,,,,,"Tucson, AZ",-110.9748477,32.2228765
+,,"Buffalo, NY",,2000308,,,,,,,"Buffalo, NY",-78.8783922,42.8867166
+,,"Minneapolis, MN",,2000309,,,,,,,"Minneapolis, MN",-93.2654692,44.9772995
+,,"Nashville, TN",,2000310,,,,,,,"Nashville, TN",-86.7743531,36.1622296
+,,"Tucson, AZ",,2000311,,,,,,,"Tucson, AZ",-110.9748477,32.2228765
+,,"Buffalo, NY",,2000312,,,,,,,"Buffalo, NY",-78.8783922,42.8867166
+,,"Minneapolis, MN",,2000313,,,,,,,"Minneapolis, MN",-93.2654692,44.9772995
+,,"Nashville, TN",,2000314,,,,,,,"Nashville, TN",-86.7743531,36.1622296
+,,"Tucson, AZ",,2000315,,,,,,,"Tucson, AZ",-110.9748477,32.2228765
+,,"Winston-Salem, NC",,2000316,,,,,,,"Winston-Salem, NC",-80.2440518,36.0998131
+,,"Cleveland, OH",,2000317,,,,,,,"Cleveland, OH",-81.6934446,41.5051613
+,,"Birmingham, AL",,2000318,,,,,,,"Birmingham, AL",-86.8024326,33.5206824
+,,"Salt Lake City, UT",,2000319,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Charlotte, NC",,1999320,,,,,,,"Charlotte, NC",-80.8431268,35.2270869
+,,"Milwaukee, WI",,1999321,,,,,,,"Milwaukee, WI",-87.922497,43.0349931
+,,"Indianapolis, IN",,1999322,,,,,,,"Indianapolis, IN",-86.1583502,39.7683331
+,,"Denver, CO",,1999323,,,,,,,"Denver, CO",-104.9653271,39.7348381
+,,"Boston, MA",,1999324,,,,,,,"Boston, MA",-71.0582912,42.3602534
+,,"New Orleans, LA",,1999325,,,,,,,"New Orleans, LA",-90.0701156,29.9499323
+,,"Orlando, FL",,1999326,,,,,,,"Orlando, FL",-81.3790304,28.5421109
+,,"Seattle, WA",,1999327,,,,,,,"Seattle, WA",-122.3300624,47.6038321
+,,"Boston, MA",,1999328,,,,,,,"Boston, MA",-71.0582912,42.3602534
+,,"New Orleans, LA",,1999329,,,,,,,"New Orleans, LA",-90.0701156,29.9499323
+,,"Orlando, FL",,1999330,,,,,,,"Orlando, FL",-81.3790304,28.5421109
+,,"Seattle, WA",,1999331,,,,,,,"Seattle, WA",-122.3300624,47.6038321
+,,"Charlotte, NC",,1999332,,,,,,,"Charlotte, NC",-80.8431268,35.2270869
+,,"Milwaukee, WI",,1999333,,,,,,,"Milwaukee, WI",-87.922497,43.0349931
+,,"Indianapolis, IN",,1999334,,,,,,,"Indianapolis, IN",-86.1583502,39.7683331
+,,"Denver, CO",,1999335,,,,,,,"Denver, CO",-104.9653271,39.7348381
+,,"Hartford, CT",,1998336,,,,,,,"Hartford, CT",-72.6908547,41.764582
+,,"Oklahoma City, OK",,1998337,,,,,,,"Oklahoma City, OK",-97.5170536,35.4729886
+,,"Lexington, KY",,1998338,,,,,,,"Lexington, KY",-84.4970393,38.0464066
+,,"Sacramento, CA",,1998339,,,,,,,"Sacramento, CA",-121.4943996,38.5815719
+,,"Washington, DC",,1998340,,,,,,,"Washington, DC",-77.0365529,38.8948932
+,,"Chicago, IL",,1998341,,,,,,,"Chicago, IL",-87.6244212,41.8755616
+,,"Atlanta, GA",,1998342,,,,,,,"Atlanta, GA",-84.3901849,33.7490987
+,,"Boise, ID",,1998343,,,,,,,"Boise, ID",-116.200886,43.6166163
+,,"Washington, DC",,1998344,,,,,,,"Washington, DC",-77.0365529,38.8948932
+,,"Chicago, IL",,1998345,,,,,,,"Chicago, IL",-87.6244212,41.8755616
+,,"Atlanta, GA",,1998346,,,,,,,"Atlanta, GA",-84.3901849,33.7490987
+,,"Boise, ID",,1998347,,,,,,,"Boise, ID",-116.200886,43.6166163
+,,"Hartford, CT",,1998348,,,,,,,"Hartford, CT",-72.6908547,41.764582
+,,"Oklahoma City, OK",,1998349,,,,,,,"Oklahoma City, OK",-97.5170536,35.4729886
+,,"Lexington, KY",,1998350,,,,,,,"Lexington, KY",-84.4970393,38.0464066
+,,"Sacramento, CA",,1998351,,,,,,,"Sacramento, CA",-121.4943996,38.5815719
+,,"Winston-Salem, NC",,1997352,,,,,,,"Winston-Salem, NC",-80.2440518,36.0998131
+,,"Kansas City, MO",,1997353,,,,,,,"Kansas City, MO",-94.5781416,39.100105
+,,"Memphis, TN",,1997354,,,,,,,"Memphis, TN",-90.0516285,35.1490215
+,,"Salt Lake City, UT",,1997355,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Pittsburgh, PA",,1997356,,,,,,,"Pittsburgh, PA",-79.9900861,40.4416941
+,,"Auburn Hills, MI",,1997357,,,,,,,"Auburn Hills, MI",-83.2341028,42.6875323
+,,"Charlotte, NC",,1997358,,,,,,,"Charlotte, NC",-80.8431268,35.2270869
+,,"Tucson, AZ",,1997359,,,,,,,"Tucson, AZ",-110.9748477,32.2228765
+,,"Pittsburgh, PA",,1997360,,,,,,,"Pittsburgh, PA",-79.9900861,40.4416941
+,,"Auburn Hills, MI",,1997361,,,,,,,"Auburn Hills, MI",-83.2341028,42.6875323
+,,"Charlotte, NC",,1997362,,,,,,,"Charlotte, NC",-80.8431268,35.2270869
+,,"Tucson, AZ",,1997363,,,,,,,"Tucson, AZ",-110.9748477,32.2228765
+,,"Winston-Salem, NC",,1997364,,,,,,,"Winston-Salem, NC",-80.2440518,36.0998131
+,,"Kansas City, MO",,1997365,,,,,,,"Kansas City, MO",-94.5781416,39.100105
+,,"Memphis, TN",,1997366,,,,,,,"Memphis, TN",-90.0516285,35.1490215
+,,"Salt Lake City, UT",,1997367,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Providence, RI",,1996368,,,,,,,"Providence, RI",-71.4128343,41.8239891
+,,"Dallas, TX",,1996369,,,,,,,"Dallas, TX",-96.7968559,32.7762719
+,,"Indianapolis, IN",,1996370,,,,,,,"Indianapolis, IN",-86.1583502,39.7683331
+,,"Albuquerque, NM",,1996371,,,,,,,"Albuquerque, NM",-106.6509851,35.0841034
+,,"Richmond, VA",,1996372,,,,,,,"Richmond, VA",-77.43428,37.5385087
+,,"Milwaukee, WI",,1996373,,,,,,,"Milwaukee, WI",-87.922497,43.0349931
+,,"Orlando, FL",,1996374,,,,,,,"Orlando, FL",-81.3790304,28.5421109
+,,"Tempe, AZ",,1996375,,,,,,,"Tempe, AZ",-111.9400125,33.4255056
+,,"Richmond, VA",,1996376,,,,,,,"Richmond, VA",-77.43428,37.5385087
+,,"Milwaukee, WI",,1996377,,,,,,,"Milwaukee, WI",-87.922497,43.0349931
+,,"Orlando, FL",,1996378,,,,,,,"Orlando, FL",-81.3790304,28.5421109
+,,"Tempe, AZ",,1996379,,,,,,,"Tempe, AZ",-111.9400125,33.4255056
+,,"Providence, RI",,1996380,,,,,,,"Providence, RI",-71.4128343,41.8239891
+,,"Dallas, TX",,1996381,,,,,,,"Dallas, TX",-96.7968559,32.7762719
+,,"Indianapolis, IN",,1996382,,,,,,,"Indianapolis, IN",-86.1583502,39.7683331
+,,"Albuquerque, NM",,1996383,,,,,,,"Albuquerque, NM",-106.6509851,35.0841034
+,,"Baltimore, MD",,1995384,,,,,,,"Baltimore, MD",-76.610759,39.2908816
+,,"Dayton, OH",,1995385,,,,,,,"Dayton, OH",-84.1916069,39.7589478
+,,"Memphis, TN",,1995386,,,,,,,"Memphis, TN",-90.0516285,35.1490215
+,,"Boise, ID",,1995387,,,,,,,"Boise, ID",-116.200886,43.6166163
+,,"Albany, NY",,1995388,,,,,,,"Albany, NY",-73.754968,42.6511674
+,,"Austin, TX",,1995389,,,,,,,"Austin, TX",-97.7436995,30.2711286
+,,"Tallahassee, FL",,1995390,,,,,,,"Tallahassee, FL",-84.2809332,30.4380832
+,,"Salt Lake City, UT",,1995391,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Albany, NY",,1995392,,,,,,,"Albany, NY",-73.754968,42.6511674
+,,"Austin, TX",,1995393,,,,,,,"Austin, TX",-97.7436995,30.2711286
+,,"Tallahassee, FL",,1995394,,,,,,,"Tallahassee, FL",-84.2809332,30.4380832
+,,"Salt Lake City, UT",,1995395,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Baltimore, MD",,1995396,,,,,,,"Baltimore, MD",-76.610759,39.2908816
+,,"Dayton, OH",,1995397,,,,,,,"Dayton, OH",-84.1916069,39.7589478
+,,"Memphis, TN",,1995398,,,,,,,"Memphis, TN",-90.0516285,35.1490215
+,,"Boise, ID",,1995399,,,,,,,"Boise, ID",-116.200886,43.6166163
+,,"Landover, MD",,1994400,,,,,,,"Landover, MD",-76.8966397,38.9340002
+,,"Oklahoma City, OK",,1994401,,,,,,,"Oklahoma City, OK",-97.5170536,35.4729886
+,,"Lexington, KY",,1994402,,,,,,,"Lexington, KY",-84.4970393,38.0464066
+,,"Ogden, UT",,1994403,,,,,,,"Ogden, UT",-111.9738429,41.2230048
+,,"Uniondale, NY",,1994404,,,,,,,"Uniondale, NY",-73.5895167364443,40.7031115
+,,"Park City, KS",,1994405,,,,,,,"Park City, KS",-97.3183763,37.8000123
+,,"St. Petersburg, FL",,1994406,,,,,,,"St. Petersburg, FL",-82.6695085,27.7703796
+,,"Sacramento, CA",,1994407,,,,,,,"Sacramento, CA",-121.4943996,38.5815719
+,,"Uniondale, NY",,1994408,,,,,,,"Uniondale, NY",-73.5895167364443,40.7031115
+,,"Park City, KS",,1994409,,,,,,,"Park City, KS",-97.3183763,37.8000123
+,,"St. Petersburg, FL",,1994410,,,,,,,"St. Petersburg, FL",-82.6695085,27.7703796
+,,"Sacramento, CA",,1994411,,,,,,,"Sacramento, CA",-121.4943996,38.5815719
+,,"Landover, MD",,1994412,,,,,,,"Landover, MD",-76.8966397,38.9340002
+,,"Oklahoma City, OK",,1994413,,,,,,,"Oklahoma City, OK",-97.5170536,35.4729886
+,,"Lexington, KY",,1994414,,,,,,,"Lexington, KY",-84.4970393,38.0464066
+,,"Ogden, UT",,1994415,,,,,,,"Ogden, UT",-111.9738429,41.2230048
+,,"Winston-Salem, NC",,1993416,,,,,,,"Winston-Salem, NC",-80.2440518,36.0998131
+,,"Indianapolis, IN",,1993417,,,,,,,"Indianapolis, IN",-86.1583502,39.7683331
+,,"Nashville, TN",,1993418,,,,,,,"Nashville, TN",-86.7743531,36.1622296
+,,"Tucson, AZ",,1993419,,,,,,,"Tucson, AZ",-110.9748477,32.2228765
+,,"Syracuse, NY",,1993420,,,,,,,"Syracuse, NY",-76.1474244,43.0481221
+,,"Rosemont, IL",,1993421,,,,,,,"Rosemont, IL",-87.8756737,41.9941334
+,,"Orlando, FL",,1993422,,,,,,,"Orlando, FL",-81.3790304,28.5421109
+,,"Salt Lake City, UT",,1993423,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Syracuse, NY",,1993424,,,,,,,"Syracuse, NY",-76.1474244,43.0481221
+,,"Rosemont, IL",,1993425,,,,,,,"Rosemont, IL",-87.8756737,41.9941334
+,,"Orlando, FL",,1993426,,,,,,,"Orlando, FL",-81.3790304,28.5421109
+,,"Salt Lake City, UT",,1993427,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Winston-Salem, NC",,1993428,,,,,,,"Winston-Salem, NC",-80.2440518,36.0998131
+,,"Indianapolis, IN",,1993429,,,,,,,"Indianapolis, IN",-86.1583502,39.7683331
+,,"Nashville, TN",,1993430,,,,,,,"Nashville, TN",-86.7743531,36.1622296
+,,"Tucson, AZ",,1993431,,,,,,,"Tucson, AZ",-110.9748477,32.2228765
+,,"Greensboro, NC",,1992432,,,,,,,"Greensboro, NC",-79.7919754,36.0726355
+,,"Dayton, OH",,1992433,,,,,,,"Dayton, OH",-84.1916069,39.7589478
+,,"Cincinnati, OH",,1992434,,,,,,,"Cincinnati, OH",-84.5124602,39.1014537
+,,"Tempe, AZ",,1992435,,,,,,,"Tempe, AZ",-111.9400125,33.4255056
+,,"Worcester, MA",,1992436,,,,,,,"Worcester, MA",-71.8022934,42.2625932
+,,"Milwaukee, WI",,1992437,,,,,,,"Milwaukee, WI",-87.922497,43.0349931
+,,"Atlanta, GA",,1992438,,,,,,,"Atlanta, GA",-84.3901849,33.7490987
+,,"Boise, ID",,1992439,,,,,,,"Boise, ID",-116.200886,43.6166163
+,,"Worcester, MA",,1992440,,,,,,,"Worcester, MA",-71.8022934,42.2625932
+,,"Milwaukee, WI",,1992441,,,,,,,"Milwaukee, WI",-87.922497,43.0349931
+,,"Atlanta, GA",,1992442,,,,,,,"Atlanta, GA",-84.3901849,33.7490987
+,,"Boise, ID",,1992443,,,,,,,"Boise, ID",-116.200886,43.6166163
+,,"Greensboro, NC",,1992444,,,,,,,"Greensboro, NC",-79.7919754,36.0726355
+,,"Dayton, OH",,1992445,,,,,,,"Dayton, OH",-84.1916069,39.7589478
+,,"Cincinnati, OH",,1992446,,,,,,,"Cincinnati, OH",-84.5124602,39.1014537
+,,"Tempe, AZ",,1992447,,,,,,,"Tempe, AZ",-111.9400125,33.4255056
+,,"Syracuse, NY",,1991448,,,,,,,"Syracuse, NY",-76.1474244,43.0481221
+,,"Dayton, OH",,1991449,,,,,,,"Dayton, OH",-84.1916069,39.7589478
+,,"Atlanta, GA",,1991450,,,,,,,"Atlanta, GA",-84.3901849,33.7490987
+,,"Tucson, AZ",,1991451,,,,,,,"Tucson, AZ",-110.9748477,32.2228765
+,,"College Park, MD",,1991452,,,,,,,"College Park, MD",-76.9369189,38.980666
+,,"Minneapolis, MN",,1991453,,,,,,,"Minneapolis, MN",-93.2654692,44.9772995
+,,"Louisville, KY",,1991454,,,,,,,"Louisville, KY",-85.759407,38.2542376
+,,"Salt Lake City, UT",,1991455,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"College Park, MD",,1991456,,,,,,,"College Park, MD",-76.9369189,38.980666
+,,"Minneapolis, MN",,1991457,,,,,,,"Minneapolis, MN",-93.2654692,44.9772995
+,,"Louisville, KY",,1991458,,,,,,,"Louisville, KY",-85.759407,38.2542376
+,,"Salt Lake City, UT",,1991459,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Syracuse, NY",,1991460,,,,,,,"Syracuse, NY",-76.1474244,43.0481221
+,,"Dayton, OH",,1991461,,,,,,,"Dayton, OH",-84.1916069,39.7589478
+,,"Atlanta, GA",,1991462,,,,,,,"Atlanta, GA",-84.3901849,33.7490987
+,,"Tucson, AZ",,1991463,,,,,,,"Tucson, AZ",-110.9748477,32.2228765
+,,"Hartford, CT",,1990464,,,,,,,"Hartford, CT",-72.6908547,41.764582
+,,"Austin, TX",,1990465,,,,,,,"Austin, TX",-97.7436995,30.2711286
+,,"Knoxville, TN",,1990466,,,,,,,"Knoxville, TN",-83.9210261,35.9603948
+,,"Salt Lake City, UT",,1990467,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Atlanta, GA",,1990468,,,,,,,"Atlanta, GA",-84.3901849,33.7490987
+,,"Indianapolis, IN",,1990469,,,,,,,"Indianapolis, IN",-86.1583502,39.7683331
+,,"Richmond, VA",,1990470,,,,,,,"Richmond, VA",-77.43428,37.5385087
+,,"Long Beach, CA",,1990471,,,,,,,"Long Beach, CA",-53.8155345,47.9960267
+,,"Atlanta, GA",,1990472,,,,,,,"Atlanta, GA",-84.3901849,33.7490987
+,,"Indianapolis, IN",,1990473,,,,,,,"Indianapolis, IN",-86.1583502,39.7683331
+,,"Richmond, VA",,1990474,,,,,,,"Richmond, VA",-77.43428,37.5385087
+,,"Long Beach, CA",,1990475,,,,,,,"Long Beach, CA",-53.8155345,47.9960267
+,,"Hartford, CT",,1990476,,,,,,,"Hartford, CT",-72.6908547,41.764582
+,,"Austin, TX",,1990477,,,,,,,"Austin, TX",-97.7436995,30.2711286
+,,"Knoxville, TN",,1990478,,,,,,,"Knoxville, TN",-83.9210261,35.9603948
+,,"Salt Lake City, UT",,1990479,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Providence, RI",,1989480,,,,,,,"Providence, RI",-71.4128343,41.8239891
+,,"Indianapolis, IN",,1989481,,,,,,,"Indianapolis, IN",-86.1583502,39.7683331
+,,"Nashville, TN",,1989482,,,,,,,"Nashville, TN",-86.7743531,36.1622296
+,,"Boise, ID",,1989483,,,,,,,"Boise, ID",-116.200886,43.6166163
+,,"Greensboro, NC",,1989484,,,,,,,"Greensboro, NC",-79.7919754,36.0726355
+,,"Dallas, TX",,1989485,,,,,,,"Dallas, TX",-96.7968559,32.7762719
+,,"Atlanta, GA",,1989486,,,,,,,"Atlanta, GA",-84.3901849,33.7490987
+,,"Tucson, AZ",,1989487,,,,,,,"Tucson, AZ",-110.9748477,32.2228765
+,,"Greensboro, NC",,1989488,,,,,,,"Greensboro, NC",-79.7919754,36.0726355
+,,"Dallas, TX",,1989489,,,,,,,"Dallas, TX",-96.7968559,32.7762719
+,,"Atlanta, GA",,1989490,,,,,,,"Atlanta, GA",-84.3901849,33.7490987
+,,"Tucson, AZ",,1989491,,,,,,,"Tucson, AZ",-110.9748477,32.2228765
+,,"Providence, RI",,1989492,,,,,,,"Providence, RI",-71.4128343,41.8239891
+,,"Indianapolis, IN",,1989493,,,,,,,"Indianapolis, IN",-86.1583502,39.7683331
+,,"Nashville, TN",,1989494,,,,,,,"Nashville, TN",-86.7743531,36.1622296
+,,"Boise, ID",,1989495,,,,,,,"Boise, ID",-116.200886,43.6166163
+,,"Hartford, CT",,1988496,,,,,,,"Hartford, CT",-72.6908547,41.764582
+,,"South Bend, IN",,1988497,,,,,,,"South Bend, IN",-86.2500066,41.6833813
+,,"Atlanta, GA",,1988498,,,,,,,"Atlanta, GA",-84.3901849,33.7490987
+,,"Los Angeles, CA",,1988499,,,,,,,"Los Angeles, CA",-118.2427666,34.0536909
+,,"Chapel Hill, NC",,1988500,,,,,,,"Chapel Hill, NC",-79.05578,35.9131542
+,,"Lincoln, NE",,1988501,,,,,,,"Lincoln, NE",-96.7077751,40.8088861
+,,"Cincinnati, OH",,1988502,,,,,,,"Cincinnati, OH",-84.5124602,39.1014537
+,,"Salt Lake City, UT",,1988503,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Chapel Hill, NC",,1988504,,,,,,,"Chapel Hill, NC",-79.05578,35.9131542
+,,"Lincoln, NE",,1988505,,,,,,,"Lincoln, NE",-96.7077751,40.8088861
+,,"Cincinnati, OH",,1988506,,,,,,,"Cincinnati, OH",-84.5124602,39.1014537
+,,"Salt Lake City, UT",,1988507,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Hartford, CT",,1988508,,,,,,,"Hartford, CT",-72.6908547,41.764582
+,,"South Bend, IN",,1988509,,,,,,,"South Bend, IN",-86.2500066,41.6833813
+,,"Atlanta, GA",,1988510,,,,,,,"Atlanta, GA",-84.3901849,33.7490987
+,,"Los Angeles, CA",,1988511,,,,,,,"Los Angeles, CA",-118.2427666,34.0536909
+,,"Charlotte, NC",,1987512,,,,,,,"Charlotte, NC",-80.8431268,35.2270869
+,,"Indianapolis, IN",,1987513,,,,,,,"Indianapolis, IN",-86.1583502,39.7683331
+,,"Atlanta, GA",,1987514,,,,,,,"Atlanta, GA",-84.3901849,33.7490987
+,,"Salt Lake City, UT",,1987515,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Syracuse, NY",,1987516,,,,,,,"Syracuse, NY",-76.1474244,43.0481221
+,,"Rosemont, IL",,1987517,,,,,,,"Rosemont, IL",-87.8756737,41.9941334
+,,"Birmingham, AL",,1987518,,,,,,,"Birmingham, AL",-86.8024326,33.5206824
+,,"Tucson, AZ",,1987519,,,,,,,"Tucson, AZ",-110.9748477,32.2228765
+,,"Syracuse, NY",,1987520,,,,,,,"Syracuse, NY",-76.1474244,43.0481221
+,,"Rosemont, IL",,1987521,,,,,,,"Rosemont, IL",-87.8756737,41.9941334
+,,"Birmingham, AL",,1987522,,,,,,,"Birmingham, AL",-86.8024326,33.5206824
+,,"Tucson, AZ",,1987523,,,,,,,"Tucson, AZ",-110.9748477,32.2228765
+,,"Charlotte, NC",,1987524,,,,,,,"Charlotte, NC",-80.8431268,35.2270869
+,,"Indianapolis, IN",,1987525,,,,,,,"Indianapolis, IN",-86.1583502,39.7683331
+,,"Atlanta, GA",,1987526,,,,,,,"Atlanta, GA",-84.3901849,33.7490987
+,,"Salt Lake City, UT",,1987527,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Greensboro, NC",,1986528,,,,,,,"Greensboro, NC",-79.7919754,36.0726355
+,,"Dayton, OH",,1986529,,,,,,,"Dayton, OH",-84.1916069,39.7589478
+,,"Charlotte, NC",,1986530,,,,,,,"Charlotte, NC",-80.8431268,35.2270869
+,,"Long Beach, CA",,1986531,,,,,,,"Long Beach, CA",-53.8155345,47.9960267
+,,"Syracuse, NY",,1986532,,,,,,,"Syracuse, NY",-76.1474244,43.0481221
+,,"Minneapolis, MN",,1986533,,,,,,,"Minneapolis, MN",-93.2654692,44.9772995
+,,"Baton Rouge, LA",,1986534,,,,,,,"Baton Rouge, LA",-91.18738,30.4459596
+,,"Ogden, UT",,1986535,,,,,,,"Ogden, UT",-111.9738429,41.2230048
+,,"Syracuse, NY",,1986536,,,,,,,"Syracuse, NY",-76.1474244,43.0481221
+,,"Minneapolis, MN",,1986537,,,,,,,"Minneapolis, MN",-93.2654692,44.9772995
+,,"Baton Rouge, LA",,1986538,,,,,,,"Baton Rouge, LA",-91.18738,30.4459596
+,,"Ogden, UT",,1986539,,,,,,,"Ogden, UT",-111.9738429,41.2230048
+,,"Greensboro, NC",,1986540,,,,,,,"Greensboro, NC",-79.7919754,36.0726355
+,,"Dayton, OH",,1986541,,,,,,,"Dayton, OH",-84.1916069,39.7589478
+,,"Charlotte, NC",,1986542,,,,,,,"Charlotte, NC",-80.8431268,35.2270869
+,,"Long Beach, CA",,1986543,,,,,,,"Long Beach, CA",-53.8155345,47.9960267
+,,"Hartford, CT",,1985544,,,,,,,"Hartford, CT",-72.6908547,41.764582
+,,"Tulsa, OK",,1985545,,,,,,,"Tulsa, OK",-95.9929113,36.1556805
+,,"Dayton, OH",,1985546,,,,,,,"Dayton, OH",-84.1916069,39.7589478
+,,"Salt Lake City, UT",,1985547,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198
+,,"Atlanta, GA",,1985548,,,,,,,"Atlanta, GA",-84.3901849,33.7490987
+,,"Houston, TX",,1985549,,,,,,,"Houston, TX",-95.3676974,29.7589382
+,,"South Bend, IN",,1985550,,,,,,,"South Bend, IN",-86.2500066,41.6833813
+,,"Albuquerque, NM",,1985551,,,,,,,"Albuquerque, NM",-106.6509851,35.0841034
+,,"Atlanta, GA",,1985552,,,,,,,"Atlanta, GA",-84.3901849,33.7490987
+,,"Houston, TX",,1985553,,,,,,,"Houston, TX",-95.3676974,29.7589382
+,,"South Bend, IN",,1985554,,,,,,,"South Bend, IN",-86.2500066,41.6833813
+,,"Albuquerque, NM",,1985555,,,,,,,"Albuquerque, NM",-106.6509851,35.0841034
+,,"Hartford, CT",,1985556,,,,,,,"Hartford, CT",-72.6908547,41.764582
+,,"Tulsa, OK",,1985557,,,,,,,"Tulsa, OK",-95.9929113,36.1556805
+,,"Dayton, OH",,1985558,,,,,,,"Dayton, OH",-84.1916069,39.7589478
+,,"Salt Lake City, UT",,1985559,,,,,,,"Salt Lake City, UT",-111.8867975,40.7596198

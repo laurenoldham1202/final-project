@@ -27,6 +27,7 @@ traveled overall, etc.
 * Weighted average for distance and seed, weighted average for western schools?
 * Need to consider establishing some sort of weighted average/metric to average seed and distance
 * Also need to consider East vs. West bias
+* Potentially add final scores, W/L, region, championship site?
 
 
 ## Data
@@ -53,25 +54,45 @@ This data will be used to calculate the distance between each school and its sit
 *2020 tournament will take place in March-April 2020.
 
 
-#### School Locations/Details
+#### School Locations and Metadata
 
 The cleaned tournament file includes the shorthand school names, but no other geographic information for participating 
-programs. To get locations for each school, the list of [NCAA Division 1 Institutions](https://en.wikipedia.org/wiki/List_of_NCAA_Division_I_institutions)
+programs. To get locations and other relevant metadata (conference, team mascot, etc.) for each school, the list of 
+[NCAA Division 1 Institutions](https://en.wikipedia.org/wiki/List_of_NCAA_Division_I_institutions)
 was pulled from Wikipedia and saved as CSV (`data/raw/d1-master-list.csv`). The data was cleaned using Pandas in Python 3
-(`notebooks/school-metadata-merge.ipynb`) and merged with the original tournaments file.  
+(`notebooks/school-metadata-merge.ipynb`) and merged with the original tournaments file (`data/cleaned/tourney-metadata.csv`).
+
+In addition to the above data columns, the `tourney-metadata` CSV includes the following data columns:
+- `school_full_name` is the official school name (e.g. University of California Los Angeles instead of UCLA)
+- `team` is the school mascot 
+- `city` is the school's city
+- `state` is the school's state	
+- `type` is the type of institution, e.g. private or public
+- `conference` is the NCAA conference that the team belongs to, e.g. Southeastern Conference
 
 
-#### Geocode
+#### Geocoding
+
+Having the school and site locations is only the first step in determining the distance between the two. 
+These location addresses must be geocoded to find their latitude and longitude, which can then be used to calculate the 
+distances. First, the school addresses and site locations must be concatenated into a single string to create a generic 
+address, e.g. Gonzaga University Spokane Washington. For schools, the `school_full_name`, `city`, and `state` columns are 
+concatenated. For the site locations, the original data (the city and state) is copied over directly.
+
+Because geocoding is a time consuming process and an open source tool is being used, the inputs should be limited as 
+much as possible. To reduce the number of addresses to geocode, the dataset can be filtered for only the unique addresses 
+and merged back into the full dataset.
+
+Leveraging the Python 3 [geocoder](https://geocoder.readthedocs.io/) package, each unique location is passed 
+into the open source [OpenStreetMap](https://geocoder.readthedocs.io/providers/OpenStreetMap.html) geocoder 
+(`notebooks/geocode.ipynb`). Once geocoding failures are identified, they are manually fixed and run again, resulting in 
+a full geocoded dataset (`data/cleaned/geocoded_results.csv`). 
 
 
-TO DO:
-1. Geocode
-2. Find all unique school values
-3. Create new master data set with full school name, city, and state
-4. Merge datasets
-5. For sites, split strings into city and state columns
-6. Potentially add final scores, W/L, region, championship site?
+#### Distance calculation
 
+Having the school and site location coordinates, distances can be calculated between the two for each data point 
+(`notebooks/distance-calculation.ipynb`).  
 
 
 ### Sources
@@ -107,3 +128,8 @@ Other Scrollytelling Maps:
 * [East Coast Bias in March Madness Selection](https://honors.libraries.psu.edu/catalog/14064)
 * [Eastern Bias](https://www.usatoday.com/story/sports/ncaab/2018/03/15/ncaa-tournament-has-curious-eastern-slant-bias/429897002/)
 * [Making March Madness](https://books.google.com/books?id=zHsnDwAAQBAJ&pg=PA231&lpg=PA231&dq=march+madness+geographical+bias&source=bl&ots=sowe_VDUU4&sig=ACfU3U0rGr27TqR1NsO5Ygxv84bCcB7tug&hl=en&sa=X&ved=2ahUKEwiK9Lqlq9HnAhWHVN8KHTEYAIAQ6AEwCHoECAsQAQ)
+
+https://www.boydsbets.com/college-basketball-home-court-advantage/
+https://data.world/michaelaroy/ncaa-tournament-results/workspace/file?filename=Big_Dance_CSV.csv
+https://data.world/sports/ncaa-mens-march-madness/workspace/file?filename=NCAA+Mens+March+Madness+Historical+Results.csv
+https://data.world/sportsvizsunday/april-ncaa/workspace/file?filename=NCAA+Mens+Basketball+Results.csv
