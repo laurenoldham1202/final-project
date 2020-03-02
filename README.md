@@ -12,24 +12,6 @@ two rounds of the tournament (if possible - other factors are considered). **I w
 sites for each of the top 4 seeded teams (four teams in each seed for 16 total top teams each year) from 1985 to 2020 to 
 establish patterns, potential biases, and test the NCAA's claim of geographic preference.**
 
-
-## Roadmap/Ideas
-
-* Should probably limit data to modern March Madness seeding rules, beginning in 1985
-* Use scrollymapping to show analysis highlights?
-* Initial view: every school with a history of 1-4 seeds
-* Popup/label with metadata, e.g. closest site, farthest site, average distance traveled as each seed, average distance 
-traveled overall, etc.
-* Mouseover or click on a school shows lines to each site (perhaps an animation flying to each site in great circle arc?)
-* Dropdown or button toggle for each year, cards to show highlights and averages
-* Add logos?
-* Connect to overall seeding data
-* Weighted average for distance and seed, weighted average for western schools?
-* Need to consider establishing some sort of weighted average/metric to average seed and distance
-* Also need to consider East vs. West bias
-* Potentially add final scores, W/L, region, championship site?
-
-
 ## Data
 
 #### Raw Tournament Data
@@ -92,7 +74,26 @@ a full geocoded dataset (`data/cleaned/geocoded_results.csv`).
 #### Distance calculation
 
 Having the school and site location coordinates, distances can be calculated between the two for each data point 
-(`notebooks/distance-calculation.ipynb`).  
+(`notebooks/distance-calculation.ipynb`). The full geocoded dataset was imported and converted to a Geopandas geodataframe 
+with the Universal Transverse Mercator 14N coordinate reference system. Matching the school location with the site through 
+the matching id, distance was calculated between the points.
+
+
+## Roadmap/Ideas
+
+* Should probably limit data to modern March Madness seeding rules, beginning in 1985
+* Use scrollymapping to show analysis highlights?
+* Initial view: every school with a history of 1-4 seeds
+* Popup/label with metadata, e.g. closest site, farthest site, average distance traveled as each seed, average distance 
+traveled overall, etc.
+* Mouseover or click on a school shows lines to each site (perhaps an animation flying to each site in great circle arc?)
+* Dropdown or button toggle for each year, cards to show highlights and averages
+* Add logos?
+* Connect to overall seeding data
+* Weighted average for distance and seed, weighted average for western schools?
+* Need to consider establishing some sort of weighted average/metric to average seed and distance
+* Also need to consider East vs. West bias
+* Potentially add final scores, W/L, region, championship site?
 
 
 ### Sources
