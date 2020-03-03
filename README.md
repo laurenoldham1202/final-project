@@ -13,6 +13,13 @@ two rounds of the tournament (if possible - other factors are considered). **I w
 sites for each of the top 4 seeded teams (four teams in each seed for 16 total top teams each year) from 1985 to 2020 to 
 establish patterns, potential biases, and test the NCAA's claim of geographic preference.**
 
+Obsessed with so-called 'chaos,' college basketball fans thrive on the unpredictability of the first and second rounds of 
+the NCAA tournament. While higher ranked/seeded teams are expected to make deep runs, it is not uncommon for them to get upset 
+by lower ranked teams ([sorry UVA fans](https://www.usatoday.com/story/sports/college/columnist/dan-wolken/2018/03/17/umbc-virginia-upset-jairus-lyles-ncaa-tournament/434704002/)).
+Teams want every advantage they can entering the first weekend of the tournament. The advantage of playing at a site 
+closer to the school location is both pragmatic and psychological. The players are still attending classes, so it is 
+logistically easier to travel shorter distances. Furthermore, playing closer to the school allows the team's fan base
+and families a better opportunity to watch them play, giving them as much of a [home court advantage](https://kenpom.com/blog/mining-point-spread-data-home-court-advantage/) as possible. 
 
 
 ## Data
@@ -79,7 +86,8 @@ a full geocoded dataset (`data/cleaned/geocoded_results.csv`).
 Having the school and site location coordinates, distances can be calculated between the two for each data point 
 (`notebooks/distance-calculation.ipynb`). The full geocoded dataset was imported and converted to a Geopandas geodataframe 
 with the Universal Transverse Mercator 14N coordinate reference system. Matching the school location with the site through 
-the matching id, distance was calculated between the points.
+the matching id, distance was calculated between the points. The school and site datasets were saved as separate CSVs, 
+`data/cleaned/distance-schools.csv` and `data/cleaned/distance-sites.csv`.
 
 
 ## Map Objectives
@@ -94,7 +102,6 @@ TBD
 
 ## Roadmap/Ideas
 
-* Should probably limit data to modern March Madness seeding rules, beginning in 1985
 * Use scrollymapping to show analysis highlights?
 * Initial view: every school with a history of 1-4 seeds
 * Popup/label with metadata, e.g. closest site, farthest site, average distance traveled as each seed, average distance 
