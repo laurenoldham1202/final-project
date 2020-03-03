@@ -6,11 +6,14 @@ national championship title in a single-elimination competition colloquially cal
 process and tournament format for March Madness have changed considerably since its inception in 1939, countless fans 
 have become devoted to understanding and predicting the tournament field in the study of 'Bracketology.' The modern era 
 of the tournament began in 1985 with a final field of 64 teams and preferential seeding to determine the year's bracket.
+
 In theory, higher ranked teams are rewarded by playing the lowest ranked teams in the tournament. Furthermore, according
 to the NCAA's selection process, top seeded teams are to have geographic preference over lower seeded teams in the first
 two rounds of the tournament (if possible - other factors are considered). **I want to analyze the first/second round 
 sites for each of the top 4 seeded teams (four teams in each seed for 16 total top teams each year) from 1985 to 2020 to 
 establish patterns, potential biases, and test the NCAA's claim of geographic preference.**
+
+
 
 ## Data
 
@@ -77,6 +80,16 @@ Having the school and site location coordinates, distances can be calculated bet
 (`notebooks/distance-calculation.ipynb`). The full geocoded dataset was imported and converted to a Geopandas geodataframe 
 with the Universal Transverse Mercator 14N coordinate reference system. Matching the school location with the site through 
 the matching id, distance was calculated between the points.
+
+
+## Map Objectives
+
+TBD
+
+
+## User Stories
+
+TBD
 
 
 ## Roadmap/Ideas
