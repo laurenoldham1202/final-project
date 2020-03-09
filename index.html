@@ -49,14 +49,21 @@
         zoom: 3.8,
     });
 
+    // popup for mouseover
+    var popup = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false,
+        className: 'school-popup',
+    });
+
     map.on('load', () => {
 
         // load json with geocoded locations
         // TODO Add highest win % teams!
         // https://en.wikipedia.org/wiki/List_of_teams_with_the_highest_winning_percentage_in_NCAA_Division_I_men%27s_college_basketball
-        d3.json('data/cleaned/schools-default.json').then(geojson => {
-            console.log(geojson)
+        d3.json('data/cleaned/test-default-wtAvg.json').then(geojson => {
             createLayer(geojson);
+            applyPopup();
         });
     });
 
@@ -79,7 +86,7 @@
 
         const sortedValues = values.sort((a, b) => { return a-b });
         sortedValues.forEach(val => {
-            stops.push([{zoom: 1, value: val}, val/100]);
+            stops.push([{zoom: 1, value: val}, val/50]);
         });
 
         map.addLayer({
@@ -94,20 +101,22 @@
                     property: 'mean',
                     stops: stops,
                 },
-                'circle-color': 'orange',
-
+                'circle-color': '#E27600',
                 'circle-opacity': 0.7,
-                // 'circle-stroke-color':
-                'circle-stroke-width': 1,
+                'circle-stroke-color': '#E27600',
+                'circle-stroke-width': 1.5,
             }
         });
     }
 
-    function createRadiusStops() {
+    function applyPopup() {
+        map.on('mousemove', 'schools', (e) => {
+           popup.setLngLat(e.lngLat).setHTML(e.features[0].properties.school_common_name + e.features[0].properties.mean).addTo(map);
+        });
 
-        // create arrays for data breaks for each selected property
-        const mean = [[500, 1], [1200, 4], [1400, 8], [1600, 13], [1800, 19], [2000, 26], [2200, 34], [2500, 43]];
-        return mean;
+        map.on('mouseleave', 'schools', (e) => {
+            popup.remove();
+        });
 
     }
 
