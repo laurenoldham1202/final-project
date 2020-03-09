@@ -89,6 +89,8 @@
             stops.push([{zoom: 1, value: val}, val/50]);
         });
 
+        // 345.3047785457209
+
         map.addLayer({
             id: 'schools',
             type: 'circle',
@@ -110,8 +112,57 @@
     }
 
     function applyPopup() {
+
+        map.addLayer({
+            id: 'tmp',
+            type: 'circle',
+            source: {
+                type: 'geojson',
+                data: {
+                    type: 'FeatureCollection',
+                    features: [ ],
+                }
+            },
+            paint: {
+                'circle-radius': 345/50,
+                'circle-color': 'limegreen',
+                'circle-opacity': 0.7,
+                'circle-stroke-color': 'black',
+                'circle-stroke-width': 2,
+            }
+        });
+
         map.on('mousemove', 'schools', (e) => {
-           popup.setLngLat(e.lngLat).setHTML(e.features[0].properties.school_common_name + e.features[0].properties.mean).addTo(map);
+
+            const tmp = {
+                "type": "geojson",
+                "data": {
+                    "type": "FeatureCollection",
+                    "features": [{
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": e.features[0].geometry.coordinates,
+                        }
+                    }]
+                }
+            };
+
+            const doot = [{
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": e.features[0].geometry.coordinates,
+                }
+            }];
+
+            // centerPointGeojson.setData({type: 'FeatureCollection', features: this.centerPoints});
+
+            map.getSource('tmp').setData({type: 'FeatureCollection', features: doot});
+
+
+
+            popup.setLngLat(e.lngLat).setHTML(e.features[0].properties.school_common_name + e.features[0].properties.mean).addTo(map);
         });
 
         map.on('mouseleave', 'schools', (e) => {
