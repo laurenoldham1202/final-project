@@ -1,4 +1,4 @@
-seed,school_common_name,site,year,id,school_full_name,team,city,state,type,conference,address,lat,lng
+seed,school_common_name,site,year,id,school_full_name,team,city,state,type,conference,address,lng,lat
 1.0,Duke,"Columbia, SC",2019.0,20190,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
 1.0,Gonzaga,"Salt Lake City, UT",2019.0,20191,Gonzaga University,Bulldogs,Spokane,Washington,Private/Catholic,West Coast Conference,Gonzaga University Spokane Washington,-117.40304385396806,47.666738550000005
 1.0,North Carolina,"Columbus, OH",2019.0,20192,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
@@ -60,7 +60,7 @@ seed,school_common_name,site,year,id,school_full_name,team,city,state,type,confe
 3.0,Texas A&M,"Oklahoma City, OK",2016.0,201658,Texas A&M University,Aggies,College Station,Texas,State,Southeastern Conference,"Texas A & M, College Station Texas",-96.24359931287475,30.5518161
 3.0,Utah,"Denver, CO",2016.0,201659,University of Utah,Utes,Salt Lake City,Utah,State,Pac-12 Conference,University of Utah Salt Lake City Utah,-111.83687191368261,40.762813699999995
 4.0,Kentucky,"Des Moines, IA",2016.0,201660,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
-4.0,California,"Spokane, WA",2016.0,201661,"University of California, Berkeley",Golden Bears,Berkeley,California,State,Pac-12 Conference,"University of California, Berkeley Berkeley California",-122.23963364918777,37.8753497
+4.0,California,"Spokane, WA",2016.0,201661,"University of California, Berkeley",Golden Bears,Berkeley,California,State,Pac-12 Conference,"University of California, Berkeley Berkeley California",-122.26639872292523,37.87094645
 4.0,Duke,"Providence, RI",2016.0,201662,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
 4.0,Iowa State,"Denver, CO",2016.0,201663,Iowa State University,Cyclones,Ames,Iowa,State,Big 12 Conference,Iowa State University Ames Iowa,-93.64464414737449,42.02791015
 1.0,Villanova,"Pittsburgh, PA",2015.0,201564,Villanova University,Wildcats,Radnor Township,Pennsylvania,Private/Catholic,Big East Conference,Villanova University Radnor Township Pennsylvania,-75.3401787,40.03575
@@ -136,7 +136,7 @@ seed,school_common_name,site,year,id,school_full_name,team,city,state,type,confe
 2.0,Notre Dame,"Chicago, IL",2011.0,2011134,University of Notre Dame,Fighting Irish,South Bend,Indiana,Private/Catholic,Atlantic Coast Conference,University of Notre Dame South Bend Indiana,-86.23822026017265,41.704567749999995
 2.0,San Diego State,"Tucson, AZ",2011.0,2011135,San Diego State University,Aztecs,San Diego,California,State,Mountain West Conference,San Diego State University San Diego California,-117.07385052563076,32.77481589999999
 3.0,Syracuse,"Cleveland, OH",2011.0,2011136,Syracuse University,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference,Syracuse University Syracuse New York,-76.1333088275183,43.03830645
-3.0,BYU,"Denver, CO",2011.0,2011137,Brigham Young University,Cougars,Provo,Utah,Private/Latter-Day Saints,West Coast Conference,Brigham Young University Provo Utah,-111.64965648425293,40.2551075
+3.0,BYU,"Denver, CO",2011.0,2011137,Brigham Young University,Cougars,Provo,Utah,Private/Latter-Day Saints,West Coast Conference,Brigham Young University Provo Utah,-111.64965660160263,40.25501105
 3.0,Purdue,"Chicago, IL",2011.0,2011138,Purdue University,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference,Purdue University West Lafayette Indiana,-86.92391089364378,40.43195815
 3.0,UConn,"Washington, DC",2011.0,2011139,University of Connecticut,Huskies,Storrs,Connecticut,State,American Athletic Conference,University of Connecticut Storrs Connecticut,-72.2540140374581,41.81127235
 4.0,Kentucky,"Tampa, FL",2011.0,2011140,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
@@ -509,7 +509,7 @@ seed,school_common_name,site,year,id,school_full_name,team,city,state,type,confe
 3.0,Michigan,"Salt Lake City, UT",1988.0,1988507,University of Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference,University of Michigan Ann Arbor Michigan,-83.71003893509601,42.2942142
 4.0,Indiana,"Hartford, CT",1988.0,1988508,Indiana University,Hoosiers,Bloomington,Indiana,State,Big Ten Conference,Indiana University Bloomington Indiana,-86.51623218881414,39.177980649999995
 4.0,Kansas State,"South Bend, IN",1988.0,1988509,Kansas State University,Wildcats,Manhattan,Kansas,State,Big 12 Conference,Kansas State University Manhattan Kansas,-96.58844409645442,39.2087029
-4.0,BYU,"Atlanta, GA",1988.0,1988510,Brigham Young University,Cougars,Provo,Utah,Private/Latter-Day Saints,West Coast Conference,Brigham Young University Provo Utah,-111.64965648425293,40.2551075
+4.0,BYU,"Atlanta, GA",1988.0,1988510,Brigham Young University,Cougars,Provo,Utah,Private/Latter-Day Saints,West Coast Conference,Brigham Young University Provo Utah,-111.64965660160263,40.25501105
 4.0,UNLV,"Los Angeles, CA",1988.0,1988511,"University of Nevada, Las Vegas",Rebels,Paradise,Nevada,State,Mountain West Conference,UNLV Paradise Nevada,-115.14183186108524,36.107155399999996
 1.0,North Carolina,"Charlotte, NC",1987.0,1987512,University of North Carolina at Chapel Hill,Tar Heels,Chapel Hill,North Carolina,State,Atlantic Coast Conference,University of North Carolina at Chapel Hill Chapel Hill North Carolina,-79.04775326525107,35.90503535
 1.0,Indiana,"Indianapolis, IN",1987.0,1987513,Indiana University,Hoosiers,Bloomington,Indiana,State,Big Ten Conference,Indiana University Bloomington Indiana,-86.51623218881414,39.177980649999995

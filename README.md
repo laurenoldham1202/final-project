@@ -113,8 +113,16 @@ traveled overall, etc.
 * Weighted average for distance and seed, weighted average for western schools?
 * Need to consider establishing some sort of weighted average/metric to average seed and distance
 * Also need to consider East vs. West bias
+    * Create hexbin map with fairly large bins (covering large regions of the US, e.g. Pacific NW, West, Southwest, etc.)
+    * Count total number of schools (ALL D1 schools?) within each bin, divide by total to create weight for each region
+    * Apply region and weight to distances
 * Potentially add final scores, W/L, region, championship site?
-
+* Add heatmap-like underlay for distance to each point?
+* Two drop downs - schools, seeds, maybe distance slider? So default view is all schools w avg distance, user can filter 
+for all schools as 1, 2, 3, or 4 seed (or all), another dropdown for conference?
+* Find significant upsets and correlate/associate with distance?
+* Use orange (more than avg) and blue (less than avg) proportional circles at default view - upon clicking school, 
+school avg is shown with fill and overall average shown with dotted line  
 
 ### Sources
 Seeding and Selection Process:

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>March Madness</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Palanquin', sans-serif;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.1/mapbox-gl.js'></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+<script>
+    // access token
+    mapboxgl.accessToken = 'pk.eyJ1IjoibGF1cmVub2xkaGFtMTIwMiIsImEiOiJjaW55dm9lemUxOGc1dWttMzI5dDI5aGtvIn0.3xAukiULCDm0OId5yIgXOA';
+
+    // create a new map
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/light-v9',
+        center: [-98.5, 39.5],
+        zoomSnap: 0.1,
+        zoom: 3.8,
+    });
+
+    map.on('load', () => {
+
+        // load json with geocoded locations
+        // TODO Add highest win % teams!
+        // https://en.wikipedia.org/wiki/List_of_teams_with_the_highest_winning_percentage_in_NCAA_Division_I_men%27s_college_basketball
+        d3.json('data/cleaned/schools-default.json').then(geojson => {
+            console.log(geojson)
+            createLayer(geojson);
+        });
+    });
+
+    /**
+     * Create mapbox layer for schools, set initial view for Overall wins
+     * @param geojson
+     */
+    function createLayer(geojson) {
+
+        const values = [];
+        const stops = [];
+
+        geojson.features.forEach(feature => {
+            values.push(feature.properties.mean);
+
+            // stops.push([{zoom: 1, value: feature.properties.wins}, feature.properties.wins/250]);
+        });
+        // console.log(values);
+        // console.log(values.sort());
+
+        const sortedValues = values.sort((a, b) => { return a-b });
+        sortedValues.forEach(val => {
+            stops.push([{zoom: 1, value: val}, val/100]);
+        });
+
+        map.addLayer({
+            id: 'schools',
+            type: 'circle',
+            source: {
+                type: 'geojson',
+                data: geojson,
+            },
+            paint: {
+                'circle-radius': {
+                    property: 'mean',
+                    stops: stops,
+                },
+                'circle-color': 'orange',
+
+                'circle-opacity': 0.7,
+                // 'circle-stroke-color':
+                'circle-stroke-width': 1,
+            }
+        });
+    }
+
+    function createRadiusStops() {
+
+        // create arrays for data breaks for each selected property
+        const mean = [[500, 1], [1200, 4], [1400, 8], [1600, 13], [1800, 19], [2000, 26], [2200, 34], [2500, 43]];
+        return mean;
+
+    }
+
+
+</script>
+
+</body>
+</html>

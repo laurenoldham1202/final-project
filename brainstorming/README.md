@@ -90,7 +90,7 @@ In short, the best teams of the year play closer to their fan base, which can gi
 upset-prone rounds of the tournament. While many factors go into assigning teams to different sites, it's always a 
 contentious issue for fans - every fan base claims that they get screwed by the selection committee, whereas <opposing 
 team I hate> gets preferential treatment! 
-
+d
 ### Goal
 Find out if any particular top teams are consistently given preferential locations over other top teams. It's a question
 that I would like answered as a fan of college basketball.
