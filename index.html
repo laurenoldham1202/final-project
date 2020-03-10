@@ -173,7 +173,6 @@
             layout: {
                 visibility: 'none',
             },
-
         });
     }
 
@@ -187,8 +186,8 @@
 
         map.on('click', 'schools', (e) => {
             popup.remove();
+            map.setFilter('sites', ['==', 'school_common_name', e.features[0].properties.school_common_name]);
             map.setLayoutProperty('sites', 'visibility', 'visible');
-            console.log(e.features[0].properties.school_common_name);
         });
     }
 
