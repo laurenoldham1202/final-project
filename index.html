@@ -56,16 +56,26 @@
         className: 'school-popup',
     });
 
-    map.on('load', () => {
+    const sites = d3.json('data/cleaned/sites-all.json');
+    const schools = d3.json('data/cleaned/test-default-wtAvg.json');
 
-        // load json with geocoded locations
-        // TODO Add highest win % teams!
-        // https://en.wikipedia.org/wiki/List_of_teams_with_the_highest_winning_percentage_in_NCAA_Division_I_men%27s_college_basketball
-        d3.json('data/cleaned/test-default-wtAvg.json').then(geojson => {
-            createLayer(geojson);
-            applyPopup();
+    Promise.all([sites, schools]).then(onLoad);
+
+    function onLoad(data) {
+
+        console.log(data);
+
+
+        // TODO Fix sites - Long Beach, CA incorrectly geocoded
+        //  Geojsons have been created by reading CSVs into QGIS and converted
+        map.on('load', () => {
+
+            // d3.json('data/cleaned/test-default-wtAvg.json').then(geojson => {
+            //     createLayer(geojson);
+            //     applyPopup();
+            // });
         });
-    });
+    }
 
     /**
      * Create mapbox layer for schools, set initial view for Overall wins
@@ -86,7 +96,7 @@
 
         const sortedValues = values.sort((a, b) => { return a-b });
         sortedValues.forEach(val => {
-            stops.push([{zoom: 1, value: val}, val/50]);
+            stops.push([{zoom: 1, value: val}, val/25]);
         });
 
         // 345.3047785457209
@@ -105,10 +115,45 @@
                 },
                 'circle-color': '#E27600',
                 'circle-opacity': 0.7,
-                'circle-stroke-color': '#E27600',
+                'circle-stroke-color': 'white',
+                'circle-stroke-opacity': 0.5,
                 'circle-stroke-width': 1.5,
             }
         });
+
+        map.addSource('route', {
+            'type': 'geojson',
+            'data': {
+                'type': 'Feature',
+                'properties': {},
+                'geometry': {
+                    'type': 'LineString',
+                    'coordinates': [
+                        // 42.445459, -76.507345
+                        [-76.507345, 42.445459],
+                        [-66.507345, 32.445459],
+                        [-76.507345, 42.445459],
+                        [-86.507345, 52.445459],
+
+                    ]
+                }
+            }
+        });
+
+        map.addLayer({
+            'id': 'route',
+            'type': 'line',
+            'source': 'route',
+            'layout': {
+                'line-join': 'round',
+                'line-cap': 'round'
+            },
+            'paint': {
+                'line-color': '#888',
+                'line-width': 8
+            }
+        });
+
     }
 
     function applyPopup() {
@@ -124,9 +169,9 @@
                 }
             },
             paint: {
-                'circle-radius': 345/50,
-                'circle-color': 'limegreen',
-                'circle-opacity': 0.7,
+                'circle-radius': 345/25,
+                'circle-color': 'transparent',
+                'circle-stroke-opacity': 0.7,
                 'circle-stroke-color': 'black',
                 'circle-stroke-width': 2,
             }
