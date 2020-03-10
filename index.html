@@ -56,24 +56,25 @@
         className: 'school-popup',
     });
 
-    const sites = d3.json('data/cleaned/sites-all.json');
-    const schools = d3.json('data/cleaned/test-default-wtAvg.json');
+    const sitesJson = d3.json('data/cleaned/sites-all.json');
+    const schoolsJson = d3.json('data/cleaned/test-default-wtAvg.json');
 
-    Promise.all([sites, schools]).then(onLoad);
+    Promise.all([sitesJson, schoolsJson]).then(onLoad);
 
     function onLoad(data) {
 
-        console.log(data);
+        const sites = data[0];
+        const schools = data[1];
 
 
         // TODO Fix sites - Long Beach, CA incorrectly geocoded
         //  Geojsons have been created by reading CSVs into QGIS and converted
         map.on('load', () => {
+            createSchoolLayer(schools);
+            createSiteLayer(sites);
 
-            // d3.json('data/cleaned/test-default-wtAvg.json').then(geojson => {
-            //     createLayer(geojson);
-            //     applyPopup();
-            // });
+            applyPopup();
+            schoolMouseover();
         });
     }
 
@@ -81,7 +82,7 @@
      * Create mapbox layer for schools, set initial view for Overall wins
      * @param geojson
      */
-    function createLayer(geojson) {
+    function createSchoolLayer(geojson) {
 
         const values = [];
         const stops = [];
@@ -115,95 +116,133 @@
                 },
                 'circle-color': '#E27600',
                 'circle-opacity': 0.7,
-                'circle-stroke-color': 'white',
+                'circle-stroke-color': 'whitesmoke',
                 'circle-stroke-opacity': 0.5,
                 'circle-stroke-width': 1.5,
             }
         });
 
-        map.addSource('route', {
-            'type': 'geojson',
-            'data': {
-                'type': 'Feature',
-                'properties': {},
-                'geometry': {
-                    'type': 'LineString',
-                    'coordinates': [
-                        // 42.445459, -76.507345
-                        [-76.507345, 42.445459],
-                        [-66.507345, 32.445459],
-                        [-76.507345, 42.445459],
-                        [-86.507345, 52.445459],
+        // map.addSource('route', {
+        //     'type': 'geojson',
+        //     'data': {
+        //         'type': 'Feature',
+        //         'properties': {},
+        //         'geometry': {
+        //             'type': 'LineString',
+        //             'coordinates': [
+        //                 // 42.445459, -76.507345
+        //                 [-76.507345, 42.445459],
+        //                 [-66.507345, 32.445459],
+        //                 [-76.507345, 42.445459],
+        //                 [-86.507345, 52.445459],
+        //
+        //             ]
+        //         }
+        //     }
+        // });
+        //
+        // map.addLayer({
+        //     'id': 'route',
+        //     'type': 'line',
+        //     'source': 'route',
+        //     'layout': {
+        //         'line-join': 'round',
+        //         'line-cap': 'round'
+        //     },
+        //     'paint': {
+        //         'line-color': '#888',
+        //         'line-width': 8
+        //     }
+        // });
 
-                    ]
-                }
-            }
-        });
+    }
 
+    function createSiteLayer(geojson) {
         map.addLayer({
-            'id': 'route',
-            'type': 'line',
-            'source': 'route',
-            'layout': {
-                'line-join': 'round',
-                'line-cap': 'round'
+            id: 'sites',
+            type: 'circle',
+            source: {
+                type: 'geojson',
+                data: geojson,
             },
-            'paint': {
-                'line-color': '#888',
-                'line-width': 8
-            }
+            paint: {
+                'circle-radius': 5,
+                'circle-color': '#297CAF',
+                'circle-opacity': 1,
+            },
+            layout: {
+                visibility: 'none',
+            },
+
+        });
+    }
+
+    function schoolMouseover() {
+        map.on('mouseover', 'schools', (e) => {
+
+            // create hover style: https://docs.mapbox.com/mapbox-gl-js/example/hover-styles/
+
+            // map.setPaintProperty('schools', 'circle-color', 'blue');
         });
 
+        map.on('click', 'schools', (e) => {
+            popup.remove();
+            map.setLayoutProperty('sites', 'visibility', 'visible');
+            console.log(e.features[0].properties.school_common_name);
+        });
     }
 
     function applyPopup() {
 
-        map.addLayer({
-            id: 'tmp',
-            type: 'circle',
-            source: {
-                type: 'geojson',
-                data: {
-                    type: 'FeatureCollection',
-                    features: [ ],
-                }
-            },
-            paint: {
-                'circle-radius': 345/25,
-                'circle-color': 'transparent',
-                'circle-stroke-opacity': 0.7,
-                'circle-stroke-color': 'black',
-                'circle-stroke-width': 2,
-            }
-        });
+        // map.addLayer({
+        //     id: 'tmp',
+        //     type: 'circle',
+        //     source: {
+        //         type: 'geojson',
+        //         data: {
+        //             type: 'FeatureCollection',
+        //             features: [ ],
+        //         }
+        //     },
+        //     paint: {
+        //         'circle-radius': 345/25,
+        //         'circle-color': 'transparent',
+        //         'circle-stroke-opacity': 0.7,
+        //         'circle-stroke-color': 'black',
+        //         'circle-stroke-width': 2,
+        //     }
+        // });
+
 
         map.on('mousemove', 'schools', (e) => {
 
-            const tmp = {
-                "type": "geojson",
-                "data": {
-                    "type": "FeatureCollection",
-                    "features": [{
-                        "type": "Feature",
-                        "geometry": {
-                            "type": "Point",
-                            "coordinates": e.features[0].geometry.coordinates,
-                        }
-                    }]
-                }
-            };
+            // D97405
 
-            const doot = [{
-                "type": "Feature",
-                "geometry": {
-                    "type": "Point",
-                    "coordinates": e.features[0].geometry.coordinates,
-                }
-            }];
-
-            // centerPointGeojson.setData({type: 'FeatureCollection', features: this.centerPoints});
-
-            map.getSource('tmp').setData({type: 'FeatureCollection', features: doot});
+            // const tmp = {
+            //     "type": "geojson",
+            //     "data": {
+            //         "type": "FeatureCollection",
+            //         "features": [{
+            //             "type": "Feature",
+            //             "geometry": {
+            //                 "type": "Point",
+            //                 "coordinates": e.features[0].geometry.coordinates,
+            //             }
+            //         }]
+            //     }
+            // };
+            //
+            // const doot = [{
+            //     "type": "Feature",
+            //     "geometry": {
+            //         "type": "Point",
+            //         "coordinates": e.features[0].geometry.coordinates,
+            //     }
+            // }];
+            //
+            // // centerPointGeojson.setData({type: 'FeatureCollection', features: this.centerPoints});
+            //
+            // map.getSource('tmp').setData({type: 'FeatureCollection', features: doot});
 
 
 
