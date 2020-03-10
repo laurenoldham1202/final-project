@@ -74,7 +74,7 @@
             createSiteLayer(sites);
 
             applyPopup();
-            schoolMouseover();
+            schoolMouseover(sites);
         });
     }
 
@@ -122,38 +122,7 @@
             }
         });
 
-        // map.addSource('route', {
-        //     'type': 'geojson',
-        //     'data': {
-        //         'type': 'Feature',
-        //         'properties': {},
-        //         'geometry': {
-        //             'type': 'LineString',
-        //             'coordinates': [
-        //                 // 42.445459, -76.507345
-        //                 [-76.507345, 42.445459],
-        //                 [-66.507345, 32.445459],
-        //                 [-76.507345, 42.445459],
-        //                 [-86.507345, 52.445459],
-        //
-        //             ]
-        //         }
-        //     }
-        // });
-        //
-        // map.addLayer({
-        //     'id': 'route',
-        //     'type': 'line',
-        //     'source': 'route',
-        //     'layout': {
-        //         'line-join': 'round',
-        //         'line-cap': 'round'
-        //     },
-        //     'paint': {
-        //         'line-color': '#888',
-        //         'line-width': 8
-        //     }
-        // });
+
 
     }
 
@@ -176,80 +145,170 @@
         });
     }
 
-    function schoolMouseover() {
+    function schoolMouseover(sites) {
         map.on('mouseover', 'schools', (e) => {
 
             // create hover style: https://docs.mapbox.com/mapbox-gl-js/example/hover-styles/
-
             // map.setPaintProperty('schools', 'circle-color', 'blue');
         });
 
+        // TODO move to own function
         map.on('click', 'schools', (e) => {
+            // TODO - add different style to clicked school
+            // - Pan and zoom to bounds of sites
+            // - Style lines according to seed
+            // - Style unclicked polygons grayed out? or invisible?
             popup.remove();
             map.setFilter('sites', ['==', 'school_common_name', e.features[0].properties.school_common_name]);
             map.setLayoutProperty('sites', 'visibility', 'visible');
+
+            const schoolSites = [];
+
+            const lines = [];
+
+            // console.log(e.features[0].geometry.coordinates);
+            sites.features.forEach(feature => {
+                if (feature.properties.school_common_name === e.features[0].properties.school_common_name) {
+
+                    // console.log(feature);
+                    schoolSites.push(feature.geometry.coordinates);
+
+                    lines.push({
+                            'type': 'Feature',
+                            'properties': feature.properties,
+                            'geometry': {
+                                'type': 'LineString',
+                                'coordinates': [e.features[0].geometry.coordinates, feature.geometry.coordinates],
+                            }
+                        });
+                }
+            });
+
+            console.log(lines);
+
+            // console.log(schoolSites);
+
+            // map.addSource('route', {
+            //     'type': 'geojson',
+            //     'data': {
+            //         'type': 'Feature',
+            //         'properties': {},
+            //         'geometry': {
+            //             'type': 'LineString',
+            //             'coordinates': [
+            //                 // ...schoolSites
+            //                 [-76.507345, 42.445459],
+            //                 [-66.507345, 32.445459],
+            //                 [-76.507345, 42.445459],
+            //                 [-86.507345, 52.445459],
+            //
+            //             ]
+            //         }
+            //     }
+            // });
+
+            map.addSource('route', {
+                'type': 'geojson',
+                'data': {
+                    'type': 'FeatureCollection',
+                    'features': lines,
+                    // 'features': [
+                    //     {
+                    //         'type': 'Feature',
+                    //         'properties': {},
+                    //         'geometry': {
+                    //             'type': 'LineString',
+                    //             'coordinates': [
+                    //                 [-76.507345, 42.445459],
+                    //                 [-66.507345, 32.445459],
+                    //             ]
+                    //         }
+                    //     },
+                    //     {
+                    //         'type': 'Feature',
+                    //         'properties': {},
+                    //         'geometry': {
+                    //             'type': 'LineString',
+                    //             'coordinates': [
+                    //                 [-76.507345, 42.445459],
+                    //                 [-86.507345, 52.445459],
+                    //
+                    //             ]
+                    //         }
+                    //     }
+                    // ]
+                }
+            });
+
+            map.addLayer({
+                'id': 'route',
+                'type': 'line',
+                'source': 'route',
+                'layout': {
+                    'line-join': 'round',
+                    'line-cap': 'round'
+                },
+                'paint': {
+                    'line-color': '#888',
+                    'line-width': 2,
+                    'line-opacity': 0.5,
+                }
+            });
         });
     }
 
     function applyPopup() {
 
-        // map.addLayer({
-        //     id: 'tmp',
-        //     type: 'circle',
-        //     source: {
-        //         type: 'geojson',
-        //         data: {
-        //             type: 'FeatureCollection',
-        //             features: [ ],
-        //         }
-        //     },
-        //     paint: {
-        //         'circle-radius': 345/25,
-        //         'circle-color': 'transparent',
-        //         'circle-stroke-opacity': 0.7,
-        //         'circle-stroke-color': 'black',
-        //         'circle-stroke-width': 2,
-        //     }
-        // });
+        map.addLayer({
+            id: 'tmp',
+            type: 'circle',
+            source: {
+                type: 'geojson',
+                data: {
+                    type: 'FeatureCollection',
+                    features: [ ],
+                }
+            },
+            paint: {
+                'circle-radius': 345/25,
+                'circle-color': 'transparent',
+                'circle-stroke-opacity': 0.7,
+                'circle-stroke-color': 'black',
+                'circle-stroke-width': 2,
+            }
+        });
 
 
         map.on('mousemove', 'schools', (e) => {
 
             // D97405
 
-            // const tmp = {
-            //     "type": "geojson",
-            //     "data": {
-            //         "type": "FeatureCollection",
-            //         "features": [{
-            //             "type": "Feature",
-            //             "geometry": {
-            //                 "type": "Point",
-            //                 "coordinates": e.features[0].geometry.coordinates,
-            //             }
-            //         }]
-            //     }
-            // };
-            //
-            // const doot = [{
-            //     "type": "Feature",
-            //     "geometry": {
-            //         "type": "Point",
-            //         "coordinates": e.features[0].geometry.coordinates,
-            //     }
-            // }];
-            //
-            // // centerPointGeojson.setData({type: 'FeatureCollection', features: this.centerPoints});
-            //
-            // map.getSource('tmp').setData({type: 'FeatureCollection', features: doot});
+
+            const doot = [{
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": e.features[0].geometry.coordinates,
+                }
+            }];
+
+
+            map.getSource('tmp').setData({type: 'FeatureCollection', features: doot});
 
 
 
             popup.setLngLat(e.lngLat).setHTML(e.features[0].properties.school_common_name + e.features[0].properties.mean).addTo(map);
+
+            // change cursor to pointer to indicate clickability
+            this.map.getCanvas().style.cursor = 'pointer';
+
         });
 
         map.on('mouseleave', 'schools', (e) => {
             popup.remove();
+
+            // set cursor back to default grab for basemap dragability
+            this.map.getCanvas().style.cursor = 'grab';
         });
 
     }
