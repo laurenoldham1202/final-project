@@ -35,6 +35,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.1/mapbox-gl.js'></script>
 <script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://npmcdn.com/@turf/turf/turf.min.js"></script>
 
 <script>
     // access token
@@ -183,10 +184,22 @@
             map.setFilter('sites', ['==', 'school_common_name', e.features[0].properties.school_common_name]);
             map.setLayoutProperty('sites', 'visibility', 'visible');
 
+            // create empty bounding geometry for fitBounds argument
+            const layerGeometry = {type: 'Polygon', coordinates: []};
+            // coordinate array (formatted[[0,0],[1,1],[...]) to be pushed to layerGeometry coordinates
+            // start with school point coordinates
+            const layerCoords = [e.features[0].geometry.coordinates];
+
             // loop through all tournament sites
             sites.features.forEach(feature => {
                 // filter sites for the selected school
                 if (feature.properties.school_common_name === e.features[0].properties.school_common_name) {
+
+                    // push site coordinates to single array
+                    layerCoords.push(feature.geometry.coordinates);
+                    //
+                    layerGeometry.coordinates = [layerCoords];
+
                     // push linestring features to a feature array to be inserted into lines layer geojson source
                     lineFeatures.push({
                         'type': 'Feature',
@@ -197,25 +210,13 @@
                             'coordinates': [e.features[0].geometry.coordinates, feature.geometry.coordinates],
                         }
                     });
+
+
                 }
             });
 
-            // #fcde9c,#faa476,#f0746e,#e34f6f,#dc3977,#b9257a,#7c1d6f
-
-            // 'circle-color': [
-            //     'match',
-            //     ['get', 'ethnicity'],
-            //     'White',
-            //     '#fbb03b',
-            //     'Black',
-            //     '#223b53',
-            //     'Hispanic',
-            //     '#e55e5e',
-            //     'Asian',
-            //     '#3bb2d0',
-            //     /* other */ '#ccc'
-            // ]
-
+            // fit bounds to school and sites
+            map.fitBounds(turf.bbox(layerGeometry), { padding: 50 });
 
             // push linestring features to line layer source
             map.getSource('line').setData({ type: 'FeatureCollection', features: lineFeatures });
@@ -224,11 +225,24 @@
             map.setFilter('line', ['==', 'school_common_name', e.features[0].properties.school_common_name]);
             map.setLayoutProperty('line', 'visibility', 'visible');
             // map.setPaintProperty('line', 'line-width', ['get', 'seed']);
-            map.setPaintProperty('line', 'line-color', ['match', ['get', 'seed'], 1, '#fcde9c', 2, '#f0746e', 3, '#dc3977', 4, '#7c1d6f', '#AAA']);
+            map.setPaintProperty('line', 'line-color', ['match', ['get', 'seed'],
+                1, '#fcde9c', 2, '#f0746e', 3, '#dc3977', 4, '#7c1d6f', '#AAA']);
+
+
+
+            // var coordinates = geojson.features[0].geometry.coordinates;
+            //
+            // var bounds = coordinates.reduce(function(bounds, coord) {
+            //     return bounds.extend(coord);
+            // }, new mapboxgl.LngLatBounds(coordinates[0], coordinates[0]));
+            //
+            // map.fitBounds(bounds, {
+            //     padding: 20
+            // });
         });
 
         map.on('mouseover', 'line', (e) => {
-            console.log(e.features[0].properties.seed);
+            // console.log(e.features[0].properties.seed);
         })
     }
 
