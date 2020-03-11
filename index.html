@@ -72,6 +72,9 @@
         map.on('load', () => {
             createSchoolLayer(schools);
             createSiteLayer(sites);
+            createLineStringLayer();
+
+            onSchoolClick(sites);
 
             applyPopup();
             schoolMouseover(sites);
@@ -121,9 +124,6 @@
                 'circle-stroke-width': 1.5,
             }
         });
-
-
-
     }
 
     function createSiteLayer(geojson) {
@@ -140,63 +140,15 @@
                 'circle-opacity': 1,
             },
             layout: {
-                visibility: 'none',
+                visibility: 'none',  // invisible on default, gets toggled on on school click event
             },
         });
     }
 
-    // function createLineStrings(sites) {
-    //
-    //     const lines = [];
-    //
-    //     // console.log(e.features[0].geometry.coordinates);
-    //     sites.features.forEach(feature => {
-    //         if (feature.properties.school_common_name === e.features[0].properties.school_common_name) {
-    //
-    //             // console.log(feature);
-    //             schoolSites.push(feature.geometry.coordinates);
-    //
-    //             lines.push({
-    //                 'type': 'Feature',
-    //                 'properties': feature.properties,
-    //                 'geometry': {
-    //                     'type': 'LineString',
-    //                     // set school geometry and site geometry to create linetring between the two
-    //                     'coordinates': [e.features[0].geometry.coordinates, feature.geometry.coordinates],
-    //                 }
-    //             });
-    //         }
-    //     });
-    //
-    //     // TODO fix how this adds new layer each time - old layers need to be removed on each new click
-    //     // TODO try creating single layer for all lines and toggle visibility and filter like above
-    //     map.addSource(`${e.features[0].properties.school_common_name}-lines`, {
-    //         'type': 'geojson',
-    //         'data': {
-    //             'type': 'FeatureCollection',
-    //             'features': lines,
-    //         }
-    //     });
-    //
-    //     map.addLayer({
-    //         'id': `${e.features[0].properties.school_common_name}-lines`,
-    //         'type': 'line',
-    //         'source': `${e.features[0].properties.school_common_name}-lines`,
-    //         'layout': {
-    //             'line-join': 'round',
-    //             'line-cap': 'round'
-    //         },
-    //         'paint': {
-    //             'line-color': '#888',
-    //             'line-width': 2,
-    //             'line-opacity': 0.5,
-    //         }
-    //     });
-    // }
-
-    function schoolMouseover(sites) {
+    function createLineStringLayer() {
+        // layer without geojson source - source is added dynamically on school click event
         map.addLayer({
-            id: 'line',
+            id: 'line',  // TODO Rename more descriptive
             type: 'line',
             source: {
                 type: 'geojson',
@@ -205,10 +157,58 @@
                     features: [ ],
                 }
             },
-            layout: {
-                visibility: 'none',
+            layout: {  // TODO add style
+                visibility: 'none',  // invisible on default, gets toggled on on school click event
             },
         });
+    }
+
+    function onSchoolClick(sites) {
+        const lineFeatures = [];
+
+        map.on('click', 'schools', (e) => {
+            // TODO - add different style to clicked school
+            // - Pan and zoom to bounds of sites
+            // - Style lines according to seed
+            // - Style unclicked polygons grayed out? or invisible?
+
+            // remove any mouseover popups
+            popup.remove();
+
+            // filter site layer and toggle visibility on for sites that match the clicked school
+            map.setFilter('sites', ['==', 'school_common_name', e.features[0].properties.school_common_name]);
+            map.setLayoutProperty('sites', 'visibility', 'visible');
+
+            // loop through all tournament sites
+            sites.features.forEach(feature => {
+                // filter sites for the selected school
+                if (feature.properties.school_common_name === e.features[0].properties.school_common_name) {
+                    // push linestring features to a feature array to be inserted into lines layer geojson source
+                    lineFeatures.push({
+                        'type': 'Feature',
+                        'properties': feature.properties,  // apply all school/site metadata to linestring
+                        'geometry': {
+                            'type': 'LineString',
+                            // set school geometry and site geometry to create linetring between the two
+                            'coordinates': [e.features[0].geometry.coordinates, feature.geometry.coordinates],
+                        }
+                    });
+                }
+            });
+
+            // push linestring features to line layer source
+            map.getSource('line').setData({ type: 'FeatureCollection', features: lineFeatures });
+
+            // only display lines for the currently selected school and associated sites
+            map.setFilter('line', ['==', 'school_common_name', e.features[0].properties.school_common_name]);
+            map.setLayoutProperty('line', 'visibility', 'visible');
+        });
+    }
+
+
+
+    function schoolMouseover(sites) {
+
 
         map.on('mouseover', 'schools', (e) => {
 
@@ -219,74 +219,74 @@
         const lines = [];
 
 
-        // TODO move to own function
-        map.on('click', 'schools', (e) => {
-            // TODO - add different style to clicked school
-            // - Pan and zoom to bounds of sites
-            // - Style lines according to seed
-            // - Style unclicked polygons grayed out? or invisible?
-            popup.remove();
-            map.setFilter('sites', ['==', 'school_common_name', e.features[0].properties.school_common_name]);
-            map.setLayoutProperty('sites', 'visibility', 'visible');
-
-            const schoolSites = [];
-
-
-            // console.log(e.features[0].geometry.coordinates);
-            sites.features.forEach(feature => {
-                if (feature.properties.school_common_name === e.features[0].properties.school_common_name) {
-
-                    // console.log(feature);
-                    schoolSites.push(feature.geometry.coordinates);
-
-                    lines.push({
-                            'type': 'Feature',
-                            'properties': feature.properties,
-                            'geometry': {
-                                'type': 'LineString',
-                                // set school geometry and site geometry to create linetring between the two
-                                'coordinates': [e.features[0].geometry.coordinates, feature.geometry.coordinates],
-                            }
-                        });
-                }
-            });
-
-            console.log(lines);
-
-            map.getSource('line').setData({type: 'FeatureCollection', features: lines});
-            map.setFilter('line', ['==', 'school_common_name', e.features[0].properties.school_common_name]);
-            map.setLayoutProperty('line', 'visibility', 'visible');
-
-
-
-            // // TODO fix how this adds new layer each time - old layers need to be removed on each new click
-            // // TODO try creating single layer for all lines and toggle visibility and filter like above
-            // // map.addSource(`${e.features[0].properties.school_common_name}-lines`, {
-            // map.addSource(`lines`, {
-            //     'type': 'geojson',
-            //     'data': {
-            //         'type': 'FeatureCollection',
-            //         'features': lines,
-            //     }
-            // });
-            //
-            // map.addLayer({
-            //     // 'id': `${e.features[0].properties.school_common_name}-lines`,
-            //     'id': `lines`,
-            //     'type': 'line',
-            //     // 'source': `${e.features[0].properties.school_common_name}-lines`,
-            //     'source': `lines`,
-            //     'layout': {
-            //         'line-join': 'round',
-            //         'line-cap': 'round'
-            //     },
-            //     'paint': {
-            //         'line-color': '#888',
-            //         'line-width': 2,
-            //         'line-opacity': 0.5,
-            //     }
-            // });
-        });
+        // // TODO move to own function
+        // map.on('click', 'schools', (e) => {
+        //     // TODO - add different style to clicked school
+        //     // - Pan and zoom to bounds of sites
+        //     // - Style lines according to seed
+        //     // - Style unclicked polygons grayed out? or invisible?
+        //     popup.remove();
+        //     map.setFilter('sites', ['==', 'school_common_name', e.features[0].properties.school_common_name]);
+        //     map.setLayoutProperty('sites', 'visibility', 'visible');
+        //
+        //     const schoolSites = [];
+        //
+        //
+        //     // console.log(e.features[0].geometry.coordinates);
+        //     sites.features.forEach(feature => {
+        //         if (feature.properties.school_common_name === e.features[0].properties.school_common_name) {
+        //
+        //             // console.log(feature);
+        //             schoolSites.push(feature.geometry.coordinates);
+        //
+        //             lines.push({
+        //                     'type': 'Feature',
+        //                     'properties': feature.properties,
+        //                     'geometry': {
+        //                         'type': 'LineString',
+        //                         // set school geometry and site geometry to create linetring between the two
+        //                         'coordinates': [e.features[0].geometry.coordinates, feature.geometry.coordinates],
+        //                     }
+        //                 });
+        //         }
+        //     });
+        //
+        //     console.log(lines);
+        //
+        //     map.getSource('line').setData({type: 'FeatureCollection', features: lines});
+        //     map.setFilter('line', ['==', 'school_common_name', e.features[0].properties.school_common_name]);
+        //     map.setLayoutProperty('line', 'visibility', 'visible');
+        //
+        //
+        //
+        //     // // TODO fix how this adds new layer each time - old layers need to be removed on each new click
+        //     // // TODO try creating single layer for all lines and toggle visibility and filter like above
+        //     // // map.addSource(`${e.features[0].properties.school_common_name}-lines`, {
+        //     // map.addSource(`lines`, {
+        //     //     'type': 'geojson',
+        //     //     'data': {
+        //     //         'type': 'FeatureCollection',
+        //     //         'features': lines,
+        //     //     }
+        //     // });
+        //     //
+        //     // map.addLayer({
+        //     //     // 'id': `${e.features[0].properties.school_common_name}-lines`,
+        //     //     'id': `lines`,
+        //     //     'type': 'line',
+        //     //     // 'source': `${e.features[0].properties.school_common_name}-lines`,
+        //     //     'source': `lines`,
+        //     //     'layout': {
+        //     //         'line-join': 'round',
+        //     //         'line-cap': 'round'
+        //     //     },
+        //     //     'paint': {
+        //     //         'line-color': '#888',
+        //     //         'line-width': 2,
+        //     //         'line-opacity': 0.5,
+        //     //     }
+        //     // });
+        // });
     }
 
     function applyPopup() {
