@@ -157,6 +157,10 @@
                     features: [ ],
                 }
             },
+            paint: {
+              'line-width': 3,
+              'line-opacity': 1,
+            },
             layout: {  // TODO add style
                 visibility: 'none',  // invisible on default, gets toggled on on school click event
             },
@@ -196,13 +200,36 @@
                 }
             });
 
+            // #fcde9c,#faa476,#f0746e,#e34f6f,#dc3977,#b9257a,#7c1d6f
+
+            // 'circle-color': [
+            //     'match',
+            //     ['get', 'ethnicity'],
+            //     'White',
+            //     '#fbb03b',
+            //     'Black',
+            //     '#223b53',
+            //     'Hispanic',
+            //     '#e55e5e',
+            //     'Asian',
+            //     '#3bb2d0',
+            //     /* other */ '#ccc'
+            // ]
+
+
             // push linestring features to line layer source
             map.getSource('line').setData({ type: 'FeatureCollection', features: lineFeatures });
 
             // only display lines for the currently selected school and associated sites
             map.setFilter('line', ['==', 'school_common_name', e.features[0].properties.school_common_name]);
             map.setLayoutProperty('line', 'visibility', 'visible');
+            // map.setPaintProperty('line', 'line-width', ['get', 'seed']);
+            map.setPaintProperty('line', 'line-color', ['match', ['get', 'seed'], 1, '#fcde9c', 2, '#f0746e', 3, '#dc3977', 4, '#7c1d6f', '#AAA']);
         });
+
+        map.on('mouseover', 'line', (e) => {
+            console.log(e.features[0].properties.seed);
+        })
     }
 
 
