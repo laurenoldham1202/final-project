@@ -129,38 +129,25 @@
                     stops: stops,
                 },
                 // 'circle-color': '#E27600',
-                'circle-color': ['case', ['boolean', ['feature-state', 'hover'], false], 'red', 'gray'],
-                'circle-opacity': 0.7,
+                'circle-color': ['case', ['boolean', ['feature-state', 'hover'], false], '#E27600', '#D2D4D4'],
+                'circle-opacity': ['case', ['boolean', ['feature-state', 'hover'], false], 1, 0.7],
+                // 'circle-opacity': 0.7,
                 'circle-stroke-color': 'whitesmoke',
                 'circle-stroke-opacity': 0.5,
                 'circle-stroke-width': 1.5,
             }
         });
-
-        // map.addSource('states', {
-        //     'type': 'geojson',
-        //     'data':
-        //         'https://docs.mapbox.com/mapbox-gl-js/assets/us_states.geojson'
-        // });
-        //
-        // map.addLayer({
-        //     'id': 'state-fills',
-        //     'type': 'fill',
-        //     'source': 'states',
-        //     'layout': {},
-        //     'paint': {
-        //         'fill-color': '#627BC1',
-        //         'fill-opacity': [
-        //             'case',
-        //             ['boolean', ['feature-state', 'hover'], false],
-        //             1,
-        //             0.5
-        //         ]
-        //     }
-        // });
     }
 
     function createSiteLayer(geojson) {
+
+        // #86baff,#5491ee,#2067dd,#0146a1
+        // #80bad1,#5694c1,#2c6db1,#0146a1
+
+
+        // 'line-color', ['match', ['get', 'seed'],
+        //     //     1, '#fcde9c', 2, '#f0746e', 3, '#dc3977', 4, '#7c1d6f', '#AAA']
+
         map.addLayer({
             id: 'sites',
             type: 'circle',
@@ -169,8 +156,11 @@
                 data: geojson,
             },
             paint: {
-                'circle-radius': 5,
-                'circle-color': '#297CAF',
+                // 'circle-radius': 8,
+                'circle-radius': ['match', ['get', 'seed'], 1, 3, 2, 6, 3, 9, 4, 12, 5],
+                // 'circle-color': '#297CAF',
+                'circle-color': ['match', ['get', 'seed'],
+                            1, '#80bad1', 2, '#5694c1', 3, '#2c6db1', 4, '#0146a1', '#AAA'],
                 'circle-opacity': 1,
             },
             layout: {
@@ -192,8 +182,9 @@
                 }
             },
             paint: {
-              'line-width': 3,
-              'line-opacity': 1,
+                'line-color': '#707070',
+                'line-width': 2,
+                'line-opacity': 1,
             },
             layout: {  // TODO add style
                 visibility: 'none',  // invisible on default, gets toggled on on school click event
@@ -244,29 +235,6 @@
                         { hover: true }
                     );
                 }
-
-            // console.log(e.features[0]);
-
-                    // map.setFeatureState(
-                    //     { source: 'schools', id: hoveredStateId },
-                    //     { hover: true }
-                    // );
-
-
-                // if (e.features.length > 0) {
-                //     if (hoveredStateId) {
-                //         map.setFeatureState(
-                //             { source: 'schools', id: hoveredStateId },
-                //             { hover: false }
-                //         );
-                //     }
-                //     hoveredStateId = e.features[0].id;
-                //     map.setFeatureState(
-                //         { source: 'schools', id: hoveredStateId },
-                //         { hover: true }
-                //     );
-                // }
-
 
             // TODO - add different style to clicked school
             // - Pan and zoom to bounds of sites
@@ -321,8 +289,8 @@
             map.setFilter('line', ['==', 'school_common_name', e.features[0].properties.school_common_name]);
             map.setLayoutProperty('line', 'visibility', 'visible');
             // map.setPaintProperty('line', 'line-width', ['get', 'seed']);
-            map.setPaintProperty('line', 'line-color', ['match', ['get', 'seed'],
-                1, '#fcde9c', 2, '#f0746e', 3, '#dc3977', 4, '#7c1d6f', '#AAA']);
+            // map.setPaintProperty('line', 'line-color', ['match', ['get', 'seed'],
+            //     1, '#fcde9c', 2, '#f0746e', 3, '#dc3977', 4, '#7c1d6f', '#AAA']);
 
 
 
