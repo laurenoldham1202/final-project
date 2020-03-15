@@ -91,7 +91,10 @@
         const values = [];
         const stops = [];
 
-        geojson.features.forEach(feature => {
+        geojson.features.forEach((feature, i) => {
+            // console.log(feature);
+            // console.log(i);
+            feature['id'] = i;
             values.push(feature.properties.mean);
 
             // stops.push([{zoom: 1, value: feature.properties.wins}, feature.properties.wins/250]);
@@ -105,6 +108,13 @@
         });
 
         // 345.3047785457209
+        //
+        // 'fill-opacity': [
+        //     'case',
+        //     ['boolean', ['feature-state', 'hover'], false],
+        //     1,
+        //     0.5
+        // ]
 
         map.addLayer({
             id: 'schools',
@@ -118,13 +128,36 @@
                     property: 'mean',
                     stops: stops,
                 },
-                'circle-color': '#E27600',
+                // 'circle-color': '#E27600',
+                'circle-color': ['case', ['boolean', ['feature-state', 'hover'], false], 'red', 'gray'],
                 'circle-opacity': 0.7,
                 'circle-stroke-color': 'whitesmoke',
                 'circle-stroke-opacity': 0.5,
                 'circle-stroke-width': 1.5,
             }
         });
+
+        // map.addSource('states', {
+        //     'type': 'geojson',
+        //     'data':
+        //         'https://docs.mapbox.com/mapbox-gl-js/assets/us_states.geojson'
+        // });
+        //
+        // map.addLayer({
+        //     'id': 'state-fills',
+        //     'type': 'fill',
+        //     'source': 'states',
+        //     'layout': {},
+        //     'paint': {
+        //         'fill-color': '#627BC1',
+        //         'fill-opacity': [
+        //             'case',
+        //             ['boolean', ['feature-state', 'hover'], false],
+        //             1,
+        //             0.5
+        //         ]
+        //     }
+        // });
     }
 
     function createSiteLayer(geojson) {
@@ -169,9 +202,72 @@
     }
 
     function onSchoolClick(sites) {
+        var hoveredStateId = null;
+
+
+        //
+        // map.on('mousemove', 'state-fills', function(e) {
+        //     if (e.features.length > 0) {
+        //         if (hoveredStateId) {
+        //             map.setFeatureState(
+        //                 { source: 'states', id: hoveredStateId },
+        //                 { hover: false }
+        //             );
+        //         }
+        //         hoveredStateId = e.features[0].id;
+        //         console.log(hoveredStateId);
+        //
+        //         map.setFeatureState(
+        //             { source: 'states', id: hoveredStateId },
+        //             { hover: true }
+        //         );
+        //     }
+        // });
+
+
         const lineFeatures = [];
 
         map.on('click', 'schools', (e) => {
+
+                if (e.features.length > 0) {
+                    if (hoveredStateId) {
+                        map.setFeatureState(
+                            { source: 'schools', id: hoveredStateId },
+                            { hover: false }
+                        );
+                    }
+                    hoveredStateId = e.features[0].id;
+                    console.log(hoveredStateId);
+
+                    map.setFeatureState(
+                        { source: 'schools', id: hoveredStateId },
+                        { hover: true }
+                    );
+                }
+
+            // console.log(e.features[0]);
+
+                    // map.setFeatureState(
+                    //     { source: 'schools', id: hoveredStateId },
+                    //     { hover: true }
+                    // );
+
+
+                // if (e.features.length > 0) {
+                //     if (hoveredStateId) {
+                //         map.setFeatureState(
+                //             { source: 'schools', id: hoveredStateId },
+                //             { hover: false }
+                //         );
+                //     }
+                //     hoveredStateId = e.features[0].id;
+                //     map.setFeatureState(
+                //         { source: 'schools', id: hoveredStateId },
+                //         { hover: true }
+                //     );
+                // }
+
+
             // TODO - add different style to clicked school
             // - Pan and zoom to bounds of sites
             // - Style lines according to seed
