@@ -77,8 +77,7 @@
 
             onSchoolClick(sites);
 
-            applyPopup();
-            schoolMouseover(sites);
+            displayAvgDistance();
         });
     }
 
@@ -92,29 +91,16 @@
         const stops = [];
 
         geojson.features.forEach((feature, i) => {
-            // console.log(feature);
-            // console.log(i);
+            // add ids to school geojson for featureState functionality
             feature['id'] = i;
             values.push(feature.properties.mean);
 
-            // stops.push([{zoom: 1, value: feature.properties.wins}, feature.properties.wins/250]);
         });
-        // console.log(values);
-        // console.log(values.sort());
 
         const sortedValues = values.sort((a, b) => { return a-b });
         sortedValues.forEach(val => {
             stops.push([{zoom: 1, value: val}, val/25]);
         });
-
-        // 345.3047785457209
-        //
-        // 'fill-opacity': [
-        //     'case',
-        //     ['boolean', ['feature-state', 'hover'], false],
-        //     1,
-        //     0.5
-        // ]
 
         map.addLayer({
             id: 'schools',
@@ -128,25 +114,19 @@
                     property: 'mean',
                     stops: stops,
                 },
-                // 'circle-color': '#E27600',
-                'circle-color': ['case', ['boolean', ['feature-state', 'hover'], false], '#E27600', '#D2D4D4'],
-                'circle-opacity': ['case', ['boolean', ['feature-state', 'hover'], false], 1, 0.7],
-                // 'circle-opacity': 0.7,
+                'circle-color': '#E27600',
+                'circle-opacity': ['case', ['boolean', ['feature-state', 'clicked'], false], 1, 0.7],
                 'circle-stroke-color': 'whitesmoke',
                 'circle-stroke-opacity': 0.5,
                 'circle-stroke-width': 1.5,
             }
         });
+
+        // change cursor to pointer to indicate clickability of school features
+        onSchoolHover();
     }
 
     function createSiteLayer(geojson) {
-
-        // #86baff,#5491ee,#2067dd,#0146a1
-        // #80bad1,#5694c1,#2c6db1,#0146a1
-
-
-        // 'line-color', ['match', ['get', 'seed'],
-        //     //     1, '#fcde9c', 2, '#f0746e', 3, '#dc3977', 4, '#7c1d6f', '#AAA']
 
         map.addLayer({
             id: 'sites',
@@ -156,11 +136,8 @@
                 data: geojson,
             },
             paint: {
-                // 'circle-radius': 8,
                 'circle-radius': ['match', ['get', 'seed'], 1, 3, 2, 6, 3, 9, 4, 12, 5],
-                // 'circle-color': '#297CAF',
-                'circle-color': ['match', ['get', 'seed'],
-                            1, '#80bad1', 2, '#5694c1', 3, '#2c6db1', 4, '#0146a1', '#AAA'],
+                'circle-color': ['match', ['get', 'seed'], 1, '#80bad1', 2, '#5694c1', 3, '#2c6db1', 4, '#0146a1', '#AAA'],
                 'circle-opacity': 1,
             },
             layout: {
@@ -192,57 +169,26 @@
         }, 'schools');  // plot lines underneath schools layer
     }
 
+    // TODO add button to zoom back out to default view
+    // TODO instead of changing feature-state to set fill opacity to 1, add it to new layer so that grayed out features can be pushed below lines
     function onSchoolClick(sites) {
-        var hoveredStateId = null;
-
-
-        //
-        // map.on('mousemove', 'state-fills', function(e) {
-        //     if (e.features.length > 0) {
-        //         if (hoveredStateId) {
-        //             map.setFeatureState(
-        //                 { source: 'states', id: hoveredStateId },
-        //                 { hover: false }
-        //             );
-        //         }
-        //         hoveredStateId = e.features[0].id;
-        //         console.log(hoveredStateId);
-        //
-        //         map.setFeatureState(
-        //             { source: 'states', id: hoveredStateId },
-        //             { hover: true }
-        //         );
-        //     }
-        // });
-
-
+        let clickedStateId = null;
         const lineFeatures = [];
 
         map.on('click', 'schools', (e) => {
 
-                if (e.features.length > 0) {
-                    if (hoveredStateId) {
-                        map.setFeatureState(
-                            { source: 'schools', id: hoveredStateId },
-                            { hover: false }
-                        );
-                    }
-                    hoveredStateId = e.features[0].id;
-                    console.log(hoveredStateId);
-
-                    map.setFeatureState(
-                        { source: 'schools', id: hoveredStateId },
-                        { hover: true }
-                    );
+            if (e.features.length > 0) {
+                // if feature is already clicked, set `clicked` feature-state to false
+                if (clickedStateId) {
+                    map.setFeatureState({ source: 'schools', id: clickedStateId }, { clicked: false });
                 }
+                clickedStateId = e.features[0].id;
+                // set `clicked` feature-state to true on new school click
+                map.setFeatureState({ source: 'schools', id: clickedStateId }, { clicked: true });
+            }
 
-            // TODO - add different style to clicked school
-            // - Pan and zoom to bounds of sites
-            // - Style lines according to seed
-            // - Style unclicked polygons grayed out? or invisible?
-
-            // remove any mouseover popups
-            popup.remove();
+            // change unclicked schools to grayed out style
+            map.setPaintProperty('schools', 'circle-color', ['case', ['boolean', ['feature-state', 'clicked'], false], '#E27600', '#D2D4D4']);
 
             // filter site layer and toggle visibility on for sites that match the clicked school
             map.setFilter('sites', ['==', 'school_common_name', e.features[0].properties.school_common_name]);
@@ -274,8 +220,6 @@
                             'coordinates': [e.features[0].geometry.coordinates, feature.geometry.coordinates],
                         }
                     });
-
-
                 }
             });
 
@@ -291,113 +235,20 @@
             // map.setPaintProperty('line', 'line-width', ['get', 'seed']);
             // map.setPaintProperty('line', 'line-color', ['match', ['get', 'seed'],
             //     1, '#fcde9c', 2, '#f0746e', 3, '#dc3977', 4, '#7c1d6f', '#AAA']);
-
-
-
-            // var coordinates = geojson.features[0].geometry.coordinates;
-            //
-            // var bounds = coordinates.reduce(function(bounds, coord) {
-            //     return bounds.extend(coord);
-            // }, new mapboxgl.LngLatBounds(coordinates[0], coordinates[0]));
-            //
-            // map.fitBounds(bounds, {
-            //     padding: 20
-            // });
         });
-
-        map.on('mouseover', 'line', (e) => {
-            // console.log(e.features[0].properties.seed);
-        })
     }
 
-
-
-    function schoolMouseover(sites) {
-
-
-        map.on('mouseover', 'schools', (e) => {
-
-            // create hover style: https://docs.mapbox.com/mapbox-gl-js/example/hover-styles/
-            // map.setPaintProperty('schools', 'circle-color', 'blue');
+    function onSchoolHover() {
+        map.on('mouseenter', 'schools', () => {
+            // change cursor to pointer to indicate clickability
+            this.map.getCanvas().style.cursor = 'pointer';
         });
-
-        const lines = [];
-
-
-        // // TODO move to own function
-        // map.on('click', 'schools', (e) => {
-        //     // TODO - add different style to clicked school
-        //     // - Pan and zoom to bounds of sites
-        //     // - Style lines according to seed
-        //     // - Style unclicked polygons grayed out? or invisible?
-        //     popup.remove();
-        //     map.setFilter('sites', ['==', 'school_common_name', e.features[0].properties.school_common_name]);
-        //     map.setLayoutProperty('sites', 'visibility', 'visible');
-        //
-        //     const schoolSites = [];
-        //
-        //
-        //     // console.log(e.features[0].geometry.coordinates);
-        //     sites.features.forEach(feature => {
-        //         if (feature.properties.school_common_name === e.features[0].properties.school_common_name) {
-        //
-        //             // console.log(feature);
-        //             schoolSites.push(feature.geometry.coordinates);
-        //
-        //             lines.push({
-        //                     'type': 'Feature',
-        //                     'properties': feature.properties,
-        //                     'geometry': {
-        //                         'type': 'LineString',
-        //                         // set school geometry and site geometry to create linetring between the two
-        //                         'coordinates': [e.features[0].geometry.coordinates, feature.geometry.coordinates],
-        //                     }
-        //                 });
-        //         }
-        //     });
-        //
-        //     console.log(lines);
-        //
-        //     map.getSource('line').setData({type: 'FeatureCollection', features: lines});
-        //     map.setFilter('line', ['==', 'school_common_name', e.features[0].properties.school_common_name]);
-        //     map.setLayoutProperty('line', 'visibility', 'visible');
-        //
-        //
-        //
-        //     // // TODO fix how this adds new layer each time - old layers need to be removed on each new click
-        //     // // TODO try creating single layer for all lines and toggle visibility and filter like above
-        //     // // map.addSource(`${e.features[0].properties.school_common_name}-lines`, {
-        //     // map.addSource(`lines`, {
-        //     //     'type': 'geojson',
-        //     //     'data': {
-        //     //         'type': 'FeatureCollection',
-        //     //         'features': lines,
-        //     //     }
-        //     // });
-        //     //
-        //     // map.addLayer({
-        //     //     // 'id': `${e.features[0].properties.school_common_name}-lines`,
-        //     //     'id': `lines`,
-        //     //     'type': 'line',
-        //     //     // 'source': `${e.features[0].properties.school_common_name}-lines`,
-        //     //     'source': `lines`,
-        //     //     'layout': {
-        //     //         'line-join': 'round',
-        //     //         'line-cap': 'round'
-        //     //     },
-        //     //     'paint': {
-        //     //         'line-color': '#888',
-        //     //         'line-width': 2,
-        //     //         'line-opacity': 0.5,
-        //     //     }
-        //     // });
-        // });
     }
 
-    function applyPopup() {
+    function displayAvgDistance() {
 
         map.addLayer({
-            id: 'tmp',
+            id: 'avg-distance',
             type: 'circle',
             source: {
                 type: 'geojson',
@@ -415,13 +266,8 @@
             }
         });
 
-
-        map.on('mousemove', 'schools', (e) => {
-
-            // D97405
-
-
-            const doot = [{
+        map.on('click', 'schools', (e) => {
+            const avgDistance = [{
                 "type": "Feature",
                 "geometry": {
                     "type": "Point",
@@ -429,24 +275,21 @@
                 }
             }];
 
-
-            map.getSource('tmp').setData({type: 'FeatureCollection', features: doot});
-
+            map.getSource('avg-distance').setData({ type: 'FeatureCollection', features: avgDistance });
 
 
-            popup.setLngLat(e.lngLat).setHTML(e.features[0].properties.school_common_name + e.features[0].properties.mean).addTo(map);
+            // popup.setLngLat(e.lngLat).setHTML(e.features[0].properties.school_common_name + e.features[0].properties.mean).addTo(map);
 
-            // change cursor to pointer to indicate clickability
-            this.map.getCanvas().style.cursor = 'pointer';
+
 
         });
 
-        map.on('mouseleave', 'schools', (e) => {
-            popup.remove();
-
-            // set cursor back to default grab for basemap dragability
-            this.map.getCanvas().style.cursor = 'grab';
-        });
+        // map.on('mouseleave', 'schools', (e) => {
+        //     popup.remove();
+        //
+        //     // set cursor back to default grab for basemap dragability
+        //     this.map.getCanvas().style.cursor = 'grab';
+        // });
 
     }
 
