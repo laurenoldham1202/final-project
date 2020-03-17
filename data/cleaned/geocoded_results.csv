@@ -470,11 +470,11 @@ seed,school_common_name,site,year,id,school_full_name,team,city,state,type,confe
 2.0,Kansas,"Atlanta, GA",1990.0,1990468,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
 2.0,Purdue,"Indianapolis, IN",1990.0,1990469,Purdue University,Boilermakers,West Lafayette,Indiana,State,Big Ten Conference,Purdue University West Lafayette Indiana,-86.92391089364378,40.43195815
 2.0,Syracuse,"Richmond, VA",1990.0,1990470,Syracuse University,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference,Syracuse University Syracuse New York,-76.1333088275183,43.03830645
-2.0,Arizona,"Long Beach, CA",1990.0,1990471,University of Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference,University of Arizona Tucson Arizona,-110.9768841153795,32.22877495
+2.0,Arizona,"Long Beach, California",1990.0,1990471,University of Arizona,Wildcats,Tucson,Arizona,State,Pac-12 Conference,University of Arizona Tucson Arizona,-110.9768841153795,32.22877495
 3.0,Duke,"Atlanta, GA",1990.0,1990472,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
 3.0,Georgetown,"Indianapolis, IN",1990.0,1990473,Georgetown University,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference,Georgetown University Washington District of Columbia,-77.07457962060826,38.90893925
 3.0,Missouri,"Richmond, VA",1990.0,1990474,University of Missouri,Tigers,Columbia,Missouri,State,Southeastern Conference,University of Missouri Columbia Missouri,-92.32970301784542,38.93641465
-3.0,Michigan,"Long Beach, CA",1990.0,1990475,University of Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference,University of Michigan Ann Arbor Michigan,-83.71003893509601,42.2942142
+3.0,Michigan,"Long Beach, California",1990.0,1990475,University of Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference,University of Michigan Ann Arbor Michigan,-83.71003893509601,42.2942142
 4.0,La Salle,"Hartford, CT",1990.0,1990476,La Salle University,Explorers,Philadelphia,Pennsylvania,Private/Catholic,Atlantic 10 Conference,La Salle University Philadelphia Pennsylvania,-75.15401786487763,40.0374695
 4.0,Arkansas,"Austin, TX",1990.0,1990477,University of Arkansas,Razorbacks,Fayetteville,Arkansas,State,Southeastern Conference,University of Arkansas Fayetteville Arkansas,-94.17609533911697,36.065152
 4.0,Georgia Tech,"Knoxville, TN",1990.0,1990478,Georgia Institute of Technology,Yellow Jackets,Atlanta,Georgia,State,Atlantic Coast Conference,Georgia Institute of Technology Atlanta Georgia,-84.39884086001581,33.776033
@@ -530,7 +530,7 @@ seed,school_common_name,site,year,id,school_full_name,team,city,state,type,confe
 1.0,Duke,"Greensboro, NC",1986.0,1986528,Duke University,Blue Devils,Durham,North Carolina,Private/Non-sectarian,Atlantic Coast Conference,Duke University Durham North Carolina,-78.94422972195878,36.00015569999999
 1.0,Kansas,"Dayton, OH",1986.0,1986529,University of Kansas,Jayhawks,Lawrence,Kansas,State,Big 12 Conference,University of Kansas Lawrence Kansas,-95.2477503,38.958058
 1.0,Kentucky,"Charlotte, NC",1986.0,1986530,University of Kentucky,Wildcats,Lexington,Kentucky,State,Southeastern Conference,University of Kentucky Lexington Kentucky,-84.50481984038481,38.027035749999996
-1.0,St. John's,"Long Beach, CA",1986.0,1986531,St. John's University,Red Storm,Jamaica,New York,Private/Catholic,Big East Conference,St. John's University Jamaica New York,-73.9900726,40.7299442
+1.0,St. John's,"Long Beach, California",1986.0,1986531,St. John's University,Red Storm,Jamaica,New York,Private/Catholic,Big East Conference,St. John's University Jamaica New York,-73.9900726,40.7299442
 2.0,Syracuse,"Syracuse, NY",1986.0,1986532,Syracuse University,Orange,Syracuse,New York,Private/Methodist,Atlantic Coast Conference,Syracuse University Syracuse New York,-76.1333088275183,43.03830645
 2.0,Michigan,"Minneapolis, MN",1986.0,1986533,University of Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference,University of Michigan Ann Arbor Michigan,-83.71003893509601,42.2942142
 2.0,Georgia Tech,"Baton Rouge, LA",1986.0,1986534,Georgia Institute of Technology,Yellow Jackets,Atlanta,Georgia,State,Atlantic Coast Conference,Georgia Institute of Technology Atlanta Georgia,-84.39884086001581,33.776033
@@ -542,7 +542,7 @@ seed,school_common_name,site,year,id,school_full_name,team,city,state,type,confe
 4.0,Oklahoma,"Greensboro, NC",1986.0,1986540,University of Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference,University of Oklahoma Norman Oklahoma,-97.44570827599858,35.1959878
 4.0,Georgetown,"Dayton, OH",1986.0,1986541,Georgetown University,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference,Georgetown University Washington District of Columbia,-77.07457962060826,38.90893925
 4.0,Illinois,"Charlotte, NC",1986.0,1986542,University of Illinois at Urbana–Champaign,Fighting Illini,Urbana–Champaign,Illinois,State,Big Ten Conference,University of Illinois at Urbana–Champaign Urbana–Champaign Illinois,-88.22402607254264,40.106650099999996
-4.0,UNLV,"Long Beach, CA",1986.0,1986543,"University of Nevada, Las Vegas",Rebels,Paradise,Nevada,State,Mountain West Conference,UNLV Paradise Nevada,-115.14183186108524,36.107155399999996
+4.0,UNLV,"Long Beach, California",1986.0,1986543,"University of Nevada, Las Vegas",Rebels,Paradise,Nevada,State,Mountain West Conference,UNLV Paradise Nevada,-115.14183186108524,36.107155399999996
 1.0,Georgetown,"Hartford, CT",1985.0,1985544,Georgetown University,Hoyas,Washington,District of Columbia,Private/Catholic,Big East Conference,Georgetown University Washington District of Columbia,-77.07457962060826,38.90893925
 1.0,Oklahoma,"Tulsa, OK",1985.0,1985545,University of Oklahoma,Sooners,Norman,Oklahoma,State,Big 12 Conference,University of Oklahoma Norman Oklahoma,-97.44570827599858,35.1959878
 1.0,Michigan,"Dayton, OH",1985.0,1985546,University of Michigan,Wolverines,Ann Arbor,Michigan,State,Big Ten Conference,University of Michigan Ann Arbor Michigan,-83.71003893509601,42.2942142
@@ -618,11 +618,11 @@ seed,school_common_name,site,year,id,school_full_name,team,city,state,type,confe
 ,,"Brooklyn, NY",,201656,,,,,,,"Brooklyn, NY",-73.9495823,40.6501038
 ,,"Providence, RI",,201657,,,,,,,"Providence, RI",-71.4128343,41.8239891
 ,,"Oklahoma City, OK",,201658,,,,,,,"Oklahoma City, OK",-97.5170536,35.4729886
-,,"Denver, CO",,201659,,,,,,,"Denver, CO",-104.9653271,39.7348381
+,,"Denver, CO",,201659,,,,,,,"Denver, CO",-104.9848623,39.7392364
 ,,"Des Moines, IA",,201660,,,,,,,"Des Moines, IA",-93.6037149,41.5910641
 ,,"Spokane, WA",,201661,,,,,,,"Spokane, WA",-117.4212265,47.6579425
 ,,"Providence, RI",,201662,,,,,,,"Providence, RI",-71.4128343,41.8239891
-,,"Denver, CO",,201663,,,,,,,"Denver, CO",-104.9653271,39.7348381
+,,"Denver, CO",,201663,,,,,,,"Denver, CO",-104.9848623,39.7392364
 ,,"Pittsburgh, PA",,201564,,,,,,,"Pittsburgh, PA",-79.9900861,40.4416941
 ,,"Louisville, KY",,201565,,,,,,,"Louisville, KY",-85.759407,38.2542376
 ,,"Charlotte, NC",,201566,,,,,,,"Charlotte, NC",-80.8431268,35.2270869
@@ -696,12 +696,12 @@ seed,school_common_name,site,year,id,school_full_name,team,city,state,type,confe
 ,,"Chicago, IL",,2011134,,,,,,,"Chicago, IL",-87.6244212,41.8755616
 ,,"Tucson, AZ",,2011135,,,,,,,"Tucson, AZ",-110.9748477,32.2228765
 ,,"Cleveland, OH",,2011136,,,,,,,"Cleveland, OH",-81.6934446,41.5051613
-,,"Denver, CO",,2011137,,,,,,,"Denver, CO",-104.9653271,39.7348381
+,,"Denver, CO",,2011137,,,,,,,"Denver, CO",-104.9848623,39.7392364
 ,,"Chicago, IL",,2011138,,,,,,,"Chicago, IL",-87.6244212,41.8755616
 ,,"Washington, DC",,2011139,,,,,,,"Washington, DC",-77.0365529,38.8948932
 ,,"Tampa, FL",,2011140,,,,,,,"Tampa, FL",-82.458444,27.9477595
 ,,"Tucson, AZ",,2011141,,,,,,,"Tucson, AZ",-110.9748477,32.2228765
-,,"Denver, CO",,2011142,,,,,,,"Denver, CO",-104.9653271,39.7348381
+,,"Denver, CO",,2011142,,,,,,,"Denver, CO",-104.9848623,39.7392364
 ,,"Tulsa, OK",,2011143,,,,,,,"Tulsa, OK",-95.9929113,36.1556805
 ,,"Jacksonville, FL",,2010144,,,,,,,"Jacksonville, FL",-81.655651,30.3321838
 ,,"New Orleans, LA",,2010145,,,,,,,"New Orleans, LA",-90.0701156,29.9499323
@@ -747,9 +747,9 @@ seed,school_common_name,site,year,id,school_full_name,team,city,state,type,confe
 ,,"Omaha, NE",,2008185,,,,,,,"Omaha, NE",-95.9383758,41.2587459
 ,,"Anaheim, CA",,2008186,,,,,,,"Anaheim, CA",-117.911732,33.8347516
 ,,"Washington, DC",,2008187,,,,,,,"Washington, DC",-77.0365529,38.8948932
-,,"Denver, CO",,2008188,,,,,,,"Denver, CO",-104.9653271,39.7348381
+,,"Denver, CO",,2008188,,,,,,,"Denver, CO",-104.9848623,39.7392364
 ,,"Tampa, FL",,2008189,,,,,,,"Tampa, FL",-82.458444,27.9477595
-,,"Denver, CO",,2008190,,,,,,,"Denver, CO",-104.9653271,39.7348381
+,,"Denver, CO",,2008190,,,,,,,"Denver, CO",-104.9848623,39.7392364
 ,,"Tampa, FL",,2008191,,,,,,,"Tampa, FL",-82.458444,27.9477595
 ,,"Chicago, IL",,2007192,,,,,,,"Chicago, IL",-87.6244212,41.8755616
 ,,"Winston-Salem, NC",,2007193,,,,,,,"Winston-Salem, NC",-80.2440518,36.0998131
@@ -808,13 +808,13 @@ seed,school_common_name,site,year,id,school_full_name,team,city,state,type,confe
 ,,"Kansas City, MO",,2004246,,,,,,,"Kansas City, MO",-94.5781416,39.100105
 ,,"Buffalo, NY",,2004247,,,,,,,"Buffalo, NY",-78.8783922,42.8867166
 ,,"Milwaukee, WI",,2004248,,,,,,,"Milwaukee, WI",-87.922497,43.0349931
-,,"Denver, CO",,2004249,,,,,,,"Denver, CO",-104.9653271,39.7348381
+,,"Denver, CO",,2004249,,,,,,,"Denver, CO",-104.9848623,39.7392364
 ,,"Milwaukee, WI",,2004250,,,,,,,"Milwaukee, WI",-87.922497,43.0349931
 ,,"Orlando, FL",,2004251,,,,,,,"Orlando, FL",-81.3790304,28.5421109
 ,,"Kansas City, MO",,2004252,,,,,,,"Kansas City, MO",-94.5781416,39.100105
 ,,"Columbus, OH",,2004253,,,,,,,"Columbus, OH",-83.0007065,39.9622601
 ,,"Raleigh, NC",,2004254,,,,,,,"Raleigh, NC",-78.6390989,35.7803977
-,,"Denver, CO",,2004255,,,,,,,"Denver, CO",-104.9653271,39.7348381
+,,"Denver, CO",,2004255,,,,,,,"Denver, CO",-104.9848623,39.7392364
 ,,"Birmingham, AL",,2003256,,,,,,,"Birmingham, AL",-86.8024326,33.5206824
 ,,"Oklahoma City, OK",,2003257,,,,,,,"Oklahoma City, OK",-97.5170536,35.4729886
 ,,"Nashville, TN",,2003258,,,,,,,"Nashville, TN",-86.7743531,36.1622296
@@ -882,7 +882,7 @@ seed,school_common_name,site,year,id,school_full_name,team,city,state,type,confe
 ,,"Charlotte, NC",,1999320,,,,,,,"Charlotte, NC",-80.8431268,35.2270869
 ,,"Milwaukee, WI",,1999321,,,,,,,"Milwaukee, WI",-87.922497,43.0349931
 ,,"Indianapolis, IN",,1999322,,,,,,,"Indianapolis, IN",-86.1583502,39.7683331
-,,"Denver, CO",,1999323,,,,,,,"Denver, CO",-104.9653271,39.7348381
+,,"Denver, CO",,1999323,,,,,,,"Denver, CO",-104.9848623,39.7392364
 ,,"Boston, MA",,1999324,,,,,,,"Boston, MA",-71.0582912,42.3602534
 ,,"New Orleans, LA",,1999325,,,,,,,"New Orleans, LA",-90.0701156,29.9499323
 ,,"Orlando, FL",,1999326,,,,,,,"Orlando, FL",-81.3790304,28.5421109
@@ -894,7 +894,7 @@ seed,school_common_name,site,year,id,school_full_name,team,city,state,type,confe
 ,,"Charlotte, NC",,1999332,,,,,,,"Charlotte, NC",-80.8431268,35.2270869
 ,,"Milwaukee, WI",,1999333,,,,,,,"Milwaukee, WI",-87.922497,43.0349931
 ,,"Indianapolis, IN",,1999334,,,,,,,"Indianapolis, IN",-86.1583502,39.7683331
-,,"Denver, CO",,1999335,,,,,,,"Denver, CO",-104.9653271,39.7348381
+,,"Denver, CO",,1999335,,,,,,,"Denver, CO",-104.9848623,39.7392364
 ,,"Hartford, CT",,1998336,,,,,,,"Hartford, CT",-72.6908547,41.764582
 ,,"Oklahoma City, OK",,1998337,,,,,,,"Oklahoma City, OK",-97.5170536,35.4729886
 ,,"Lexington, KY",,1998338,,,,,,,"Lexington, KY",-84.4970393,38.0464066
@@ -1030,11 +1030,11 @@ seed,school_common_name,site,year,id,school_full_name,team,city,state,type,confe
 ,,"Atlanta, GA",,1990468,,,,,,,"Atlanta, GA",-84.3901849,33.7490987
 ,,"Indianapolis, IN",,1990469,,,,,,,"Indianapolis, IN",-86.1583502,39.7683331
 ,,"Richmond, VA",,1990470,,,,,,,"Richmond, VA",-77.43428,37.5385087
-,,"Long Beach, CA",,1990471,,,,,,,"Long Beach, CA",-53.8155345,47.9960267
+,,"Long Beach, California",,1990471,,,,,,,"Long Beach, California",-118.1916048,33.7690164
 ,,"Atlanta, GA",,1990472,,,,,,,"Atlanta, GA",-84.3901849,33.7490987
 ,,"Indianapolis, IN",,1990473,,,,,,,"Indianapolis, IN",-86.1583502,39.7683331
 ,,"Richmond, VA",,1990474,,,,,,,"Richmond, VA",-77.43428,37.5385087
-,,"Long Beach, CA",,1990475,,,,,,,"Long Beach, CA",-53.8155345,47.9960267
+,,"Long Beach, California",,1990475,,,,,,,"Long Beach, California",-118.1916048,33.7690164
 ,,"Hartford, CT",,1990476,,,,,,,"Hartford, CT",-72.6908547,41.764582
 ,,"Austin, TX",,1990477,,,,,,,"Austin, TX",-97.7436995,30.2711286
 ,,"Knoxville, TN",,1990478,,,,,,,"Knoxville, TN",-83.9210261,35.9603948
@@ -1090,7 +1090,7 @@ seed,school_common_name,site,year,id,school_full_name,team,city,state,type,confe
 ,,"Greensboro, NC",,1986528,,,,,,,"Greensboro, NC",-79.7919754,36.0726355
 ,,"Dayton, OH",,1986529,,,,,,,"Dayton, OH",-84.1916069,39.7589478
 ,,"Charlotte, NC",,1986530,,,,,,,"Charlotte, NC",-80.8431268,35.2270869
-,,"Long Beach, CA",,1986531,,,,,,,"Long Beach, CA",-53.8155345,47.9960267
+,,"Long Beach, California",,1986531,,,,,,,"Long Beach, California",-118.1916048,33.7690164
 ,,"Syracuse, NY",,1986532,,,,,,,"Syracuse, NY",-76.1474244,43.0481221
 ,,"Minneapolis, MN",,1986533,,,,,,,"Minneapolis, MN",-93.2654692,44.9772995
 ,,"Baton Rouge, LA",,1986534,,,,,,,"Baton Rouge, LA",-91.18738,30.4459596
@@ -1102,7 +1102,7 @@ seed,school_common_name,site,year,id,school_full_name,team,city,state,type,confe
 ,,"Greensboro, NC",,1986540,,,,,,,"Greensboro, NC",-79.7919754,36.0726355
 ,,"Dayton, OH",,1986541,,,,,,,"Dayton, OH",-84.1916069,39.7589478
 ,,"Charlotte, NC",,1986542,,,,,,,"Charlotte, NC",-80.8431268,35.2270869
-,,"Long Beach, CA",,1986543,,,,,,,"Long Beach, CA",-53.8155345,47.9960267
+,,"Long Beach, California",,1986543,,,,,,,"Long Beach, California",-118.1916048,33.7690164
 ,,"Hartford, CT",,1985544,,,,,,,"Hartford, CT",-72.6908547,41.764582
 ,,"Tulsa, OK",,1985545,,,,,,,"Tulsa, OK",-95.9929113,36.1556805
 ,,"Dayton, OH",,1985546,,,,,,,"Dayton, OH",-84.1916069,39.7589478

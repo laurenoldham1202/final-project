@@ -57,8 +57,10 @@
         className: 'school-popup',
     });
 
-    const sitesJson = d3.json('data/cleaned/sites-all.json');
-    const schoolsJson = d3.json('data/cleaned/test-default-wtAvg.json');
+    // TODO Delete old json, replace with new
+    // TODO Rerun test-default csv from analysis notebook with new distances
+    const sitesJson = d3.json('data/cleaned/sites-all-edit.json');
+    const schoolsJson = d3.json('data/cleaned/schools-agg.json');
 
     Promise.all([sitesJson, schoolsJson]).then(onLoad);
 
@@ -93,7 +95,7 @@
         geojson.features.forEach((feature, i) => {
             // add ids to school geojson for featureState functionality
             feature['id'] = i;
-            values.push(feature.properties.mean);
+            values.push(feature.properties.mean_wtDist);
 
         });
 
@@ -111,7 +113,7 @@
             },
             paint: {
                 'circle-radius': {
-                    property: 'mean',
+                    property: 'mean_wtDist',  // TODO change dynamically
                     stops: stops,
                 },
                 'circle-color': '#E27600',
@@ -144,6 +146,8 @@
                 visibility: 'none',  // invisible on default, gets toggled on on school click event
             },
         });
+
+        onSiteHover();
     }
 
     function createLineStringLayer() {
@@ -176,6 +180,9 @@
         const lineFeatures = [];
 
         map.on('click', 'schools', (e) => {
+
+            // close any open popups
+            popup.remove();
 
             if (e.features.length > 0) {
                 // if feature is already clicked, set `clicked` feature-state to false
@@ -243,6 +250,27 @@
             // change cursor to pointer to indicate clickability
             this.map.getCanvas().style.cursor = 'pointer';
         });
+
+        map.on('mouseleave', 'schools', () => {
+            // change cursor to pointer to indicate clickability
+            this.map.getCanvas().style.cursor = 'grab';
+        });
+    }
+
+    function onSiteHover() {
+        map.on('mouseenter', 'sites', (e) => {
+            const content = `${e.features[0].properties.school_common_name} played at ${e.features[0].properties.site}
+            in ${e.features[0].properties.year} as a ${e.features[0].properties.seed} seed.`;
+            popup.setLngLat(e.lngLat)
+                .setHTML(content)
+                .addTo(map);
+
+        });
+
+        map.on('mouseleave', 'sites', () => {
+            // close any open popups
+            popup.remove();
+        });
     }
 
     function displayAvgDistance() {
@@ -258,7 +286,8 @@
                 }
             },
             paint: {
-                'circle-radius': 345/25,
+                // TODO change avg if weighted or not
+                'circle-radius': 345.88513858848495/25,  // average weighted mean
                 'circle-color': 'transparent',
                 'circle-stroke-opacity': 0.7,
                 'circle-stroke-color': 'black',
@@ -277,20 +306,7 @@
 
             map.getSource('avg-distance').setData({ type: 'FeatureCollection', features: avgDistance });
 
-
-            // popup.setLngLat(e.lngLat).setHTML(e.features[0].properties.school_common_name + e.features[0].properties.mean).addTo(map);
-
-
-
         });
-
-        // map.on('mouseleave', 'schools', (e) => {
-        //     popup.remove();
-        //
-        //     // set cursor back to default grab for basemap dragability
-        //     this.map.getCanvas().style.cursor = 'grab';
-        // });
-
     }
 
 
