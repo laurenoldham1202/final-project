@@ -41,8 +41,8 @@
 
     <div class="toggle-container">
         <div class="custom-control custom-switch">
-            <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
-            <label class="custom-control-label" for="customSwitch1">Style circles with school colors</label>
+            <input type="checkbox" class="custom-control-input" id="weightedToggle" checked>
+            <label class="custom-control-label" for="weightedToggle">Weighted Distance</label>
         </div>
     </div>
 
@@ -112,29 +112,34 @@
 
             displayAvgDistance();
 
-            // console.log(document.getElementById('weighted'));
-            // document.getElementById('weighted').addEventListener('change', (e) => {
-            //     console.log(e);
-            //     console.log(e.target);
-            // });
 
-            // document.getElementById('weighted').onclick = (e) => {
-            //     console.log(e.target);
-            // }
 
-            // $('#weighted').on('click', (e) => {
-            //     console.log(e.target.checked);
-            //     // console.log($('#weighted').val());
-            // });
 
-            const toggle = document.getElementsByClassName('custom-control-input')[0];
-            toggle.onclick = (e) => {
-                console.log(e.target.checked);
-                // map.setPaintProperty('schools', 'circle-color', e.target.checked ? setCircleColor(geojson, true) : '#414140');
-            }
+            $('#weightedToggle').on('click', (e) => {
 
-            $('#customSwitch1').on('click', (e) => {
-                console.log('jq: ', e.target.checked);
+                const mean = e.target.checked ? 'mean_wtDist' : 'mean_dist';
+                const values = [];
+                const stops = [];
+
+                schools.features.forEach((feature, i) => {
+                    // add ids to school geojson for featureState functionality
+                    feature['id'] = i;
+                    values.push(feature.properties[mean]);
+
+                });
+
+                const sortedValues = values.sort((a, b) => { return a-b });
+                sortedValues.forEach(val => {
+                    stops.push([val, val/25]);
+                });
+
+                // if (e.target.checked) {
+                    map.setPaintProperty('schools', 'circle-radius', {property: mean, stops: stops});
+                    // 'circle-radius': {
+                    //     property: 'mean_wtDist',  // TODO change dynamically
+                    //         stops: stops,
+                    // },
+                // }
             });
 
 
@@ -159,7 +164,8 @@
 
         const sortedValues = values.sort((a, b) => { return a-b });
         sortedValues.forEach(val => {
-            stops.push([{zoom: 1, value: val}, val/25]);
+            // stops.push([{zoom: 1, value: val}, val/25]);
+            stops.push([val, val/25]);
         });
 
         map.addLayer({
