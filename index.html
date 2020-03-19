@@ -9,6 +9,11 @@
     <link href="https://fonts.googleapis.com/css?family=Palanquin&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+
+    <link href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <style>
         body {
             margin: 0;
@@ -30,7 +35,18 @@
             right: 0;
             left: 0;
             height: 5rem;
-            background-color: #2c6db1;
+            /*background-color: #2c6db1;*/
+            background-color: whitesmoke;
+            border-bottom: 1px solid #0146a1;
+            padding: 1rem;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .custom-control-input:checked~.custom-control-label::before {
+            color: #fff;
+            border-color: #0146a1;
+            background-color: #0146a1;
         }
 
     </style>
@@ -45,6 +61,37 @@
             <label class="custom-control-label" for="weightedToggle">Weighted Distance</label>
         </div>
     </div>
+
+    <select id="schoolFilter">
+        <option value="allSchools">All Schools</option>
+        <option value="fivePlus">5+ Appearances</option>
+        <option value="tenPlus">10+ Appearances</option>
+        <option value="blueBloods">Blue Bloods</option>
+        <option value="power5">Power 5 Conference</option>  <!-- TODO move to conference? -->
+    </select>
+
+    <select id="conferenceFilter">
+        <option value="allConf">All Conferences</option>
+        <option value="aac">American Athletic Conference</option>
+        <option value="a10">Atlantic 10 Conference</option>
+        <option value="acc">Atlantic Coast Conference</option>
+        <option value="b12">Big 12 Conference</option>
+        <option value="bec">Big East Conference</option>
+        <option value="b10">Big Ten Conference</option>
+        <option value="mvc">Missouri Valley Conference</option>
+        <option value="mwv">Mountain West Conference</option>
+        <option value="p12">Pac-12 Conference</option>
+        <option value="sec">Southeastern Conference</option>
+        <option value="wcc">West Coast Conference</option>
+    </select>
+
+    <select id="seedFilter">
+        <option value="allSeeds">All Seeds</option>
+        <option value="oneSeeds">1 Seeds</option>
+        <option value="twoSeeds">2 Seeds</option>
+        <option value="threeSeeds">3 Seeds</option>
+        <option value="fourSeeds">4 Seeds</option>
+    </select>
 
 <!--    <form>-->
 <!--        <div class="form-group" style="width: auto;">-->
@@ -114,11 +161,29 @@
 
             onWeightedToggle(schools);
 
+            selectSchool();
+            selectConference();
+            selectSeed();
 
 
+        });
+    }
 
+    function selectSchool() {
+        $('#schoolFilter').on('change', (e) => {
+            console.log(e.target.value);
+        });
+    }
 
+    function selectConference() {
+        $('#conferenceFilter').on('change', (e) => {
+            console.log(e.target.value);
+        });
+    }
 
+    function selectSeed() {
+        $('#seedFilter').on('change', (e) => {
+            console.log(e.target.value);
         });
     }
 
