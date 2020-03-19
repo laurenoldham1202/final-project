@@ -112,38 +112,41 @@
 
             displayAvgDistance();
 
+            onWeightedToggle(schools);
 
 
 
-            $('#weightedToggle').on('click', (e) => {
 
-                const mean = e.target.checked ? 'mean_wtDist' : 'mean_dist';
-                const values = [];
-                const stops = [];
-
-                schools.features.forEach((feature, i) => {
-                    // add ids to school geojson for featureState functionality
-                    feature['id'] = i;
-                    values.push(feature.properties[mean]);
-
-                });
-
-                const sortedValues = values.sort((a, b) => { return a-b });
-                sortedValues.forEach(val => {
-                    stops.push([val, val/25]);
-                });
-
-                // if (e.target.checked) {
-                    map.setPaintProperty('schools', 'circle-radius', {property: mean, stops: stops});
-                    // 'circle-radius': {
-                    //     property: 'mean_wtDist',  // TODO change dynamically
-                    //         stops: stops,
-                    // },
-                // }
-            });
 
 
         });
+    }
+
+    // apply weighted or unweighted mean distance depending on toggle position
+    function onWeightedToggle(geojson) {
+        $('#weightedToggle').on('click', (e) => {
+            // set weighted distance if toggle checked - if not, set regular unweighted distance
+            const mean = e.target.checked ? 'mean_wtDist' : 'mean_dist';
+            const stops = createStops(geojson, mean);
+            map.setPaintProperty('schools', 'circle-radius', {property: mean, stops: stops});
+        });
+    }
+
+    function createStops(geojson, property) {
+        const values = [];
+        const stops = [];
+
+        geojson.features.forEach((feature, i) => {
+            // add ids to school geojson for featureState functionality
+            feature['id'] = i;
+            values.push(feature.properties[property]);
+        });
+
+        const sortedValues = values.sort((a, b) => { return a-b });
+        sortedValues.forEach(val => {
+            stops.push([val, val/35]);  // TODO change dividend for unweighted?
+        });
+        return stops;
     }
 
     /**
@@ -151,22 +154,7 @@
      * @param geojson
      */
     function createSchoolLayer(geojson) {
-
-        const values = [];
-        const stops = [];
-
-        geojson.features.forEach((feature, i) => {
-            // add ids to school geojson for featureState functionality
-            feature['id'] = i;
-            values.push(feature.properties.mean_wtDist);
-
-        });
-
-        const sortedValues = values.sort((a, b) => { return a-b });
-        sortedValues.forEach(val => {
-            // stops.push([{zoom: 1, value: val}, val/25]);
-            stops.push([val, val/25]);
-        });
+        const stops = createStops(geojson, 'mean_wtDist');
 
         map.addLayer({
             id: 'schools',
