@@ -29,6 +29,10 @@
             bottom: 0;
         }
 
+        .toggle-container {
+            padding-top: 0.5rem;
+        }
+
         .toolbar {
             position: absolute;
             top: 0;
@@ -41,6 +45,10 @@
             padding: 1rem;
             display: flex;
             flex-direction: row;
+        }
+
+        .toolbar-select {
+            margin: 0rem 1rem;
         }
 
         .custom-control-input:checked~.custom-control-label::before {
@@ -57,14 +65,14 @@
 
 <div class="toolbar">
 
-    <div class="toggle-container">
+    <div class="toggle-container toolbar-select">
         <div class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" id="weightedToggle" checked>
             <label class="custom-control-label" for="weightedToggle">Weighted Distance</label>
         </div>
     </div>
 
-    <select id="schoolFilter">
+    <select id="schoolFilter" class="toolbar-select">
         <option value="allSchools">All Schools</option>
         <option value="fivePlus">5+ Appearances</option>
         <option value="tenPlus">10+ Appearances</option>
@@ -72,8 +80,16 @@
         <option value="power5">Power 5 Conference</option>  <!-- TODO move to conference?  Add all schools? Multiple options?-->
     </select>
 
+    <select id="seedFilter" class="toolbar-select">
+        <option value="allSeeds">All Seeds</option>
+        <option value="oneSeeds">1 Seeds</option>
+        <option value="twoSeeds">2 Seeds</option>
+        <option value="threeSeeds">3 Seeds</option>
+        <option value="fourSeeds">4 Seeds</option>
+    </select>
+
     <!-- TODO create programmatically through json and use full value text -->
-    <select id="conferenceFilter">
+    <select id="conferenceFilter" class="toolbar-select">
         <option value="allConf">All Conferences</option>
         <option value="aac">American Athletic Conference</option>
         <option value="a10">Atlantic 10 Conference</option>
@@ -88,13 +104,7 @@
         <option value="wcc">West Coast Conference</option>
     </select>
 
-    <select id="seedFilter">
-        <option value="allSeeds">All Seeds</option>
-        <option value="oneSeeds">1 Seeds</option>
-        <option value="twoSeeds">2 Seeds</option>
-        <option value="threeSeeds">3 Seeds</option>
-        <option value="fourSeeds">4 Seeds</option>
-    </select>
+    <button id="extent"><span class="material-icons">public</span></button>
 
 </div>
 <div id="map"></div>
@@ -126,6 +136,13 @@
         className: 'school-popup',
     });
 
+    const seedsMap = {
+      oneSeeds: 1,
+      twoSeeds: 2,
+      threeSeeds: 3,
+      fourSeeds: 4,
+    };
+
     // TODO Delete old json, replace with new
     // TODO Rerun test-default csv from analysis notebook with new distances
     const sitesJson = d3.json('data/cleaned/sites-all-edit.json');
@@ -155,8 +172,6 @@
             selectSchool();
             selectConference();
             selectSeed();
-
-
         });
     }
 
@@ -174,7 +189,11 @@
 
     function selectSeed() {
         $('#seedFilter').on('change', (e) => {
-            console.log(e.target.value);
+            // TODO Create seed aggregates
+            // console.log(e.target.value);
+            // console.log(seedsMap[e.target.value]);
+            // map.setFilter('schools', ['==', 'seed', seedsMap[e.target.value]]);
+
         });
     }
 
