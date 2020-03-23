@@ -147,13 +147,34 @@
     // TODO Rerun test-default csv from analysis notebook with new distances
     const sitesJson = d3.json('data/cleaned/sites-all-edit.json');
     const schoolsJson = d3.json('data/cleaned/schools-agg.json');
+    const seedsJson = d3.json('data/cleaned/seeds-by-school.json');
 
-    Promise.all([sitesJson, schoolsJson]).then(onLoad);
+    Promise.all([sitesJson, schoolsJson, seedsJson]).then(onLoad);
 
     function onLoad(data) {
 
         const sites = data[0];
         const schools = data[1];
+        const seeds = data[2];
+
+        // TODO Move to node script?
+        schools.features.forEach(school => {
+            seeds.features.forEach(seed => {
+                if (school.properties.school_common_name === seed.properties.school_common_name) {
+                    if (seed.properties.seed === '1.0') {
+                        school.properties['oneSeed'] = seed.properties;
+                    } else if (seed.properties.seed === '2.0') {
+                        school.properties['twoSeed'] = seed.properties;
+                    } else if (seed.properties.seed === '3.0') {
+                        school.properties['threeSeed'] = seed.properties;
+                    } else if (seed.properties.seed === '4.0') {
+                        school.properties['fourSeed'] = seed.properties;
+                    }
+                }
+            });
+        });
+
+        console.log(schools);
 
 
         // TODO Fix sites - Long Beach, CA incorrectly geocoded
