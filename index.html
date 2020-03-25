@@ -215,6 +215,20 @@
             // console.log(seedsMap[e.target.value]);
             // map.setFilter('schools', ['==', 'seed', seedsMap[e.target.value]]);
 
+            // map.setFilter('schools', ['==', 'seed', 'oneSeed']);
+//       // this.map.setFilter(IMAGE_FOOTPRINTS, ['match', ['get', 'id'], footprintIds, true, false]);
+
+
+            const tmp = [];
+            map.getSource('schools')['_data'].features.forEach(feature => {
+                console.log(feature.properties.oneSeed);
+                if (feature.properties.oneSeed) {
+                    tmp.push(feature.properties.oneSeed.school_common_name);
+                }
+            });
+            console.log(tmp);
+            map.setFilter('schools', ['match', ['get', 'school_common_name'], tmp, true, false]);
+
         });
     }
 
