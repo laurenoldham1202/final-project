@@ -81,11 +81,11 @@
     </select>
 
     <select id="seedFilter" class="toolbar-select">
-        <option value="allSeeds">All Seeds</option>
-        <option value="oneSeeds">1 Seeds</option>
-        <option value="twoSeeds">2 Seeds</option>
-        <option value="threeSeeds">3 Seeds</option>
-        <option value="fourSeeds">4 Seeds</option>
+        <option value="allSeed">All Seeds</option>
+        <option value="oneSeed">1 Seeds</option>
+        <option value="twoSeed">2 Seeds</option>
+        <option value="threeSeed">3 Seeds</option>
+        <option value="fourSeed">4 Seeds</option>
     </select>
 
     <!-- TODO create programmatically through json and use full value text -->
@@ -136,12 +136,12 @@
         className: 'school-popup',
     });
 
-    const seedsMap = {
-      oneSeeds: 1,
-      twoSeeds: 2,
-      threeSeeds: 3,
-      fourSeeds: 4,
-    };
+    // const seedsMap = {
+    //   oneSeeds: 1,
+    //   twoSeeds: 2,
+    //   threeSeeds: 3,
+    //   fourSeeds: 4,
+    // };
 
     // TODO Delete old json, replace with new
     // TODO Rerun test-default csv from analysis notebook with new distances
@@ -211,7 +211,7 @@
     function selectSeed() {
         $('#seedFilter').on('change', (e) => {
             // TODO Create seed aggregates
-            // console.log(e.target.value);
+            console.log(e.target.value);
             // console.log(seedsMap[e.target.value]);
             // map.setFilter('schools', ['==', 'seed', seedsMap[e.target.value]]);
 
@@ -219,14 +219,19 @@
 //       // this.map.setFilter(IMAGE_FOOTPRINTS, ['match', ['get', 'id'], footprintIds, true, false]);
 
 
+            // TODO make condition for all seeds
             const tmp = [];
             map.getSource('schools')['_data'].features.forEach(feature => {
-                console.log(feature.properties.oneSeed);
-                if (feature.properties.oneSeed) {
-                    tmp.push(feature.properties.oneSeed.school_common_name);
+                // console.log(feature.properties.oneSeed);
+                if (feature.properties[e.target.value] && e.target.value !== 'allSeed') {
+                    tmp.push(feature.properties[e.target.value].school_common_name);
+                } else if (e.target.value === 'allSeed') {
+                    tmp.push(feature.properties.school_common_name)
                 }
             });
             console.log(tmp);
+
+            // TODO change prop circle sizes based on each seed avg?
             map.setFilter('schools', ['match', ['get', 'school_common_name'], tmp, true, false]);
 
         });
