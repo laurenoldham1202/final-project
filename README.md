@@ -132,6 +132,29 @@ Other Scrollytelling Maps:
 
 ### B. Medium for Delivery
 
+The map will be an interactive, web browser-based application. It will have responsive design and be accessible across 
+both mobile and desktop devices.
+
+#### Technology Stack
+
+The web application will be written in vanilla Javascript and will utilize various supplemental Javascript libraries and
+frameworks. It will leverage HTML, CSS, and Javascript for forming and styling the app.
+
+**Frameworks and Toolkits**
+
+[Bootstrap](https://getbootstrap.com/) will be leveraged to create responsive design and UI components. 
+[jQuery](https://jquery.com/) will be used to handle events for elements. 
+
+**Style**
+
+[Google Fonts](https://fonts.google.com/) will be used for the application's font face. *****TBD*****
+[Material](https://material.io/resources/icons/?style=baseline) will be used for any icons.
+
+**Map**
+
+The map will be built with [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/api/). It will also leverage 
+[Turf.js](http://turfjs.org/) for additional geospatial formatting and analysis.
+
 ### C. Application Layout
 
 ### D. Thematic Representation
