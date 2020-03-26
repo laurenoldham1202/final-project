@@ -213,13 +213,41 @@
 
             onSchoolClick(sites);
 
-            displayAvgDistance();
+            displayAvgDistance();  // TODO move to different function?
 
             onWeightedToggle(schools);
 
             selectSchool();
             selectConference();
             selectSeed();
+
+            defaultMap();
+        });
+    }
+
+    function defaultMap() {
+        $('#extent').on('click', () => {
+            map.setLayoutProperty('sites', 'visibility', 'none');
+            map.setLayoutProperty('line', 'visibility', 'none');
+            map.setLayoutProperty('avg-distance', 'visibility', 'none');
+
+            map.setPaintProperty('schools', 'circle-color', '#E27600');
+            map.setPaintProperty('schools', 'circle-opacity', 0.7);
+
+            // TODO create function for here and sites
+            const layerGeometry = {type: 'Polygon', coordinates: []};
+            const layerCoords = [];
+
+            map.getSource('schools')['_data'].features.forEach(feature => {
+                layerCoords.push(feature.geometry.coordinates);
+            });
+
+            layerGeometry.coordinates = [layerCoords];
+
+            // fit bounds to school layer
+            map.fitBounds(turf.bbox(layerGeometry), { padding: 50 });
+
+            // TODO set all feature states to false?
         });
     }
 
@@ -391,6 +419,9 @@
             // change unclicked schools to grayed out style
             map.setPaintProperty('schools', 'circle-color', ['case', ['boolean', ['feature-state', 'clicked'], false], '#E27600', '#D2D4D4']);
 
+            // reset circle opacity of clicked circle to 1 if it had changed (through default map extent)
+            map.setPaintProperty('schools', 'circle-opacity', ['case', ['boolean', ['feature-state', 'clicked'], false], 1, 0.7]);
+
             // filter site layer and toggle visibility on for sites that match the clicked school
             map.setFilter('sites', ['==', 'school_common_name', e.features[0].properties.school_common_name]);
             map.setLayoutProperty('sites', 'visibility', 'visible');
@@ -408,7 +439,7 @@
 
                     // push site coordinates to single array
                     layerCoords.push(feature.geometry.coordinates);
-                    //
+                    // wrap coords
                     layerGeometry.coordinates = [layerCoords];
 
                     // push linestring features to a feature array to be inserted into lines layer geojson source
@@ -430,6 +461,7 @@
             // push linestring features to line layer source
             map.getSource('line').setData({ type: 'FeatureCollection', features: lineFeatures });
 
+            // TODO create method to do this for line AND site layer
             // only display lines for the currently selected school and associated sites
             map.setFilter('line', ['==', 'school_common_name', e.features[0].properties.school_common_name]);
             map.setLayoutProperty('line', 'visibility', 'visible');
@@ -486,6 +518,9 @@
                 'circle-stroke-opacity': 0.7,
                 'circle-stroke-color': 'black',
                 'circle-stroke-width': 2,
+            },
+            layout: {
+                visibility: 'visible',
             }
         });
 
@@ -499,6 +534,8 @@
             }];
 
             map.getSource('avg-distance').setData({ type: 'FeatureCollection', features: avgDistance });
+
+            map.setLayoutProperty('avg-distance', 'visibility', 'visible');
 
         });
     }
