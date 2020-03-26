@@ -159,6 +159,23 @@ The map will be built with [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/a
 
 ### D. Thematic Representation
 
+Because the main subject matter of the map are point locations (schools and tournament sites) and distances between them,
+the primary thematic representation will be proportional circles and linestrings.
+
+On load, each school will be represented as a proportional circle based on its average distance traveled from 1985 to 
+2019 (i.e. schools with lower average distances will be represented by smaller circles than schools with higher average 
+distances, which will be larger). The user will have the option to filter the data for several different summary 
+statistics, such as the minimum and maximum distances traveled. The proportional circle radius will correspond to the 
+selected data filter.
+
+Clicking on a school will display all of its site locations as a 1-4 seed from 1985-2019. These site locations will also 
+be represented as proportional circles, with higher seeds represented as smaller circles. The site locations will also 
+use a sequential color scheme (lighter blue = higher seed, darker blue = lower seed) to further signify the seed of 
+each school that tournament year.
+
+The distance of between the selected school and each tournament site is implicitly visualized with a simple linestring
+extending from the school to the site. Longer distances will be represented by longer linestrings.
+
 ### E. User Interaction
 
 ### F. Aesthetics and Design Considerations
