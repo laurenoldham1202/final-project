@@ -1,5 +1,6 @@
 # March Madness Top 4 Seeds and First Round Site Preference (1985-2020)
 
+## I. Introduction
 
 Every year in March, the top 68 Division 1 men's college basketball programs are selected to compete for the NCAA's 
 national championship title in a single-elimination competition colloquially called March Madness. While the selection 
@@ -21,8 +22,22 @@ closer to the school location is both pragmatic and psychological. The players a
 logistically easier to travel shorter distances. Furthermore, playing closer to the school allows the team's fan base
 and families a better opportunity to watch them play, giving them as much of a [home court advantage](https://kenpom.com/blog/mining-point-spread-data-home-court-advantage/) as possible. 
 
+## Literature Review
 
-## Data
+* [NCAA Has a Geography Problem](https://www.thebiglead.com/2019/02/10/the-ncaa-tournament-has-a-geography-problem-and-should-move-a-western-venue/)
+* [Home Team Bias in Bracket Predictions](https://www.cbssports.com/college-basketball/news/homer-bias-is-real-and-it-will-derail-your-march-madness-bracket/)
+* [East Coast Bias in March Madness Selection](https://honors.libraries.psu.edu/catalog/14064)
+* [Eastern Bias](https://www.usatoday.com/story/sports/ncaab/2018/03/15/ncaa-tournament-has-curious-eastern-slant-bias/429897002/)
+* [Making March Madness](https://books.google.com/books?id=zHsnDwAAQBAJ&pg=PA231&lpg=PA231&dq=march+madness+geographical+bias&source=bl&ots=sowe_VDUU4&sig=ACfU3U0rGr27TqR1NsO5Ygxv84bCcB7tug&hl=en&sa=X&ved=2ahUKEwiK9Lqlq9HnAhWHVN8KHTEYAIAQ6AEwCHoECAsQAQ)
+
+https://www.boydsbets.com/college-basketball-home-court-advantage/
+https://data.world/michaelaroy/ncaa-tournament-results/workspace/file?filename=Big_Dance_CSV.csv
+https://data.world/sports/ncaa-mens-march-madness/workspace/file?filename=NCAA+Mens+March+Madness+Historical+Results.csv
+https://data.world/sportsvizsunday/april-ncaa/workspace/file?filename=NCAA+Mens+Basketball+Results.csv
+
+## II. Methodology
+
+### A. Data
 
 #### Raw Tournament Data
 
@@ -89,42 +104,7 @@ with the Universal Transverse Mercator 14N coordinate reference system. Matching
 the matching id, distance was calculated between the points. The school and site datasets were saved as separate CSVs, 
 `data/cleaned/distance-schools.csv` and `data/cleaned/distance-sites.csv`.
 
-
-## Map Objectives
-
-TBD
-
-
-## User Stories
-
-TBD
-
-
-## Roadmap/Ideas
-
-* Use scrollymapping to show analysis highlights?
-* Initial view: every school with a history of 1-4 seeds
-* Popup/label with metadata, e.g. closest site, farthest site, average distance traveled as each seed, average distance 
-traveled overall, etc.
-* Mouseover or click on a school shows lines to each site (perhaps an animation flying to each site in great circle arc?)
-* Dropdown or button toggle for each year, cards to show highlights and averages
-* Add logos?
-* Connect to overall seeding data
-* Weighted average for distance and seed, weighted average for western schools?
-* Need to consider establishing some sort of weighted average/metric to average seed and distance
-* Also need to consider East vs. West bias
-    * Create hexbin map with fairly large bins (covering large regions of the US, e.g. Pacific NW, West, Southwest, etc.)
-    * Count total number of schools (ALL D1 schools?) within each bin, divide by total to create weight for each region
-    * Apply region and weight to distances
-* Potentially add final scores, W/L, region, championship site?
-* Add heatmap-like underlay for distance to each point?
-* Two drop downs - schools, seeds, maybe distance slider? So default view is all schools w avg distance, user can filter 
-for all schools as 1, 2, 3, or 4 seed (or all), another dropdown for conference?
-* Find significant upsets and correlate/associate with distance?
-* Use orange (more than avg) and blue (less than avg) proportional circles at default view - upon clicking school, 
-school avg is shown with fill and overall average shown with dotted line  
-
-### Sources
+#### Sources
 Seeding and Selection Process:
 * [Historical NCAA March Madness statistics](https://www.sports-reference.com/cbb/postseason/)
 * [Selection Committee Rules](https://www.ncaa.com/news/basketball-men/article/2018-10-19/how-field-68-teams-picked-march-madness)
@@ -150,15 +130,40 @@ Other Scrollytelling Maps:
 * [General Scrollytelling Examples](https://vallandingham.me/scroll_talk/examples/)
 
 
-## Literature Review
+### B. Medium for Delivery
 
-* [NCAA Has a Geography Problem](https://www.thebiglead.com/2019/02/10/the-ncaa-tournament-has-a-geography-problem-and-should-move-a-western-venue/)
-* [Home Team Bias in Bracket Predictions](https://www.cbssports.com/college-basketball/news/homer-bias-is-real-and-it-will-derail-your-march-madness-bracket/)
-* [East Coast Bias in March Madness Selection](https://honors.libraries.psu.edu/catalog/14064)
-* [Eastern Bias](https://www.usatoday.com/story/sports/ncaab/2018/03/15/ncaa-tournament-has-curious-eastern-slant-bias/429897002/)
-* [Making March Madness](https://books.google.com/books?id=zHsnDwAAQBAJ&pg=PA231&lpg=PA231&dq=march+madness+geographical+bias&source=bl&ots=sowe_VDUU4&sig=ACfU3U0rGr27TqR1NsO5Ygxv84bCcB7tug&hl=en&sa=X&ved=2ahUKEwiK9Lqlq9HnAhWHVN8KHTEYAIAQ6AEwCHoECAsQAQ)
+### C. Application Layout
 
-https://www.boydsbets.com/college-basketball-home-court-advantage/
-https://data.world/michaelaroy/ncaa-tournament-results/workspace/file?filename=Big_Dance_CSV.csv
-https://data.world/sports/ncaa-mens-march-madness/workspace/file?filename=NCAA+Mens+March+Madness+Historical+Results.csv
-https://data.world/sportsvizsunday/april-ncaa/workspace/file?filename=NCAA+Mens+Basketball+Results.csv
+### D. Thematic Representation
+
+### E. User Interaction
+
+### F. Aesthetics and Design Considerations
+
+### G. Conclusion
+
+---
+
+##### Roadmap/Ideas
+
+* Use scrollymapping to show analysis highlights?
+* Initial view: every school with a history of 1-4 seeds
+* Popup/label with metadata, e.g. closest site, farthest site, average distance traveled as each seed, average distance 
+traveled overall, etc.
+* Mouseover or click on a school shows lines to each site (perhaps an animation flying to each site in great circle arc?)
+* Dropdown or button toggle for each year, cards to show highlights and averages
+* Add logos?
+* Connect to overall seeding data
+* Weighted average for distance and seed, weighted average for western schools?
+* Need to consider establishing some sort of weighted average/metric to average seed and distance
+* Also need to consider East vs. West bias
+    * Create hexbin map with fairly large bins (covering large regions of the US, e.g. Pacific NW, West, Southwest, etc.)
+    * Count total number of schools (ALL D1 schools?) within each bin, divide by total to create weight for each region
+    * Apply region and weight to distances
+* Potentially add final scores, W/L, region, championship site?
+* Add heatmap-like underlay for distance to each point?
+* Two drop downs - schools, seeds, maybe distance slider? So default view is all schools w avg distance, user can filter 
+for all schools as 1, 2, 3, or 4 seed (or all), another dropdown for conference?
+* Find significant upsets and correlate/associate with distance?
+* Use orange (more than avg) and blue (less than avg) proportional circles at default view - upon clicking school, 
+school avg is shown with fill and overall average shown with dotted line  
