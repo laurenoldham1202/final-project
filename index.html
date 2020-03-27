@@ -124,15 +124,26 @@
 
 <div class="card text-center info">
     <div class="card-header">
-        Featured
+        All Schools 1985 - 2019
     </div>
-    <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
+
+<!--    <div class="card-body">-->
+<!--        <h5 class="card-title">395 miles</h5>-->
+<!--        <p class="card-text">Mean distance traveled as a top (1-4) seed</p>-->
+<!--&lt;!&ndash;        <a href="#" class="btn btn-primary">Go somewhere</a>&ndash;&gt;-->
+<!--    </div>-->
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <h5 class="card-title weighted-mean-card">335 miles</h5>
+            <p class="card-text">Weighted mean distance traveled as a top (1-4) seed</p>
+        </li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+
     <div class="card-footer text-muted">
-        2 days ago
+        Seed >
     </div>
 </div>
 
@@ -207,6 +218,8 @@
         // TODO Fix sites - Long Beach, CA incorrectly geocoded
         //  Geojsons have been created by reading CSVs into QGIS and converted
         map.on('load', () => {
+
+            // TODO consolidate into one function, include avg distance?
             createSchoolLayer(schools);
             createSiteLayer(sites);
             createLineStringLayer();
@@ -227,9 +240,13 @@
 
     function defaultMap() {
         $('#extent').on('click', () => {
-            map.setLayoutProperty('sites', 'visibility', 'none');
-            map.setLayoutProperty('line', 'visibility', 'none');
-            map.setLayoutProperty('avg-distance', 'visibility', 'none');
+            const layers = ['sites', 'line', 'avg-distance'];
+            layers.forEach(layer => {
+                map.setLayoutProperty(layer, 'visibility', 'none');
+            });
+            // map.setLayoutProperty('sites', 'visibility', 'none');
+            // map.setLayoutProperty('line', 'visibility', 'none');
+            // map.setLayoutProperty('avg-distance', 'visibility', 'none');
 
             map.setPaintProperty('schools', 'circle-color', '#E27600');
             map.setPaintProperty('schools', 'circle-opacity', 0.7);
@@ -402,6 +419,11 @@
         const lineFeatures = [];
 
         map.on('click', 'schools', (e) => {
+
+            // const cards = $('.list-group');
+            const cards = $('.weighted-mean-card');
+            console.log(cards);
+            cards.text('hello!');
 
             // close any open popups
             popup.remove();
