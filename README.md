@@ -1,4 +1,4 @@
-# March Madness Top 4 Seeds and First Round Site Preference (1985-2020)
+# March Madness Top 4 Seeds and First Round Site Preference (1985-2019)
 
 ## I. Introduction
 
@@ -22,26 +22,31 @@ closer to the school location is both pragmatic and psychological. The players a
 logistically easier to travel shorter distances. Furthermore, playing closer to the school allows the team's fan base
 and families a better opportunity to watch them play, giving them as much of a [home court advantage](https://kenpom.com/blog/mining-point-spread-data-home-court-advantage/) as possible. 
 
-## Literature Review
+### A. Literature Review
 
 * [NCAA Has a Geography Problem](https://www.thebiglead.com/2019/02/10/the-ncaa-tournament-has-a-geography-problem-and-should-move-a-western-venue/)
 * [Home Team Bias in Bracket Predictions](https://www.cbssports.com/college-basketball/news/homer-bias-is-real-and-it-will-derail-your-march-madness-bracket/)
 * [East Coast Bias in March Madness Selection](https://honors.libraries.psu.edu/catalog/14064)
 * [Eastern Bias](https://www.usatoday.com/story/sports/ncaab/2018/03/15/ncaa-tournament-has-curious-eastern-slant-bias/429897002/)
 * [Making March Madness](https://books.google.com/books?id=zHsnDwAAQBAJ&pg=PA231&lpg=PA231&dq=march+madness+geographical+bias&source=bl&ots=sowe_VDUU4&sig=ACfU3U0rGr27TqR1NsO5Ygxv84bCcB7tug&hl=en&sa=X&ved=2ahUKEwiK9Lqlq9HnAhWHVN8KHTEYAIAQ6AEwCHoECAsQAQ)
-
-https://www.boydsbets.com/college-basketball-home-court-advantage/
-https://data.world/michaelaroy/ncaa-tournament-results/workspace/file?filename=Big_Dance_CSV.csv
-https://data.world/sports/ncaa-mens-march-madness/workspace/file?filename=NCAA+Mens+March+Madness+Historical+Results.csv
-https://data.world/sportsvizsunday/april-ncaa/workspace/file?filename=NCAA+Mens+Basketball+Results.csv
+* [Home Court Advantage Analysis](https://www.boydsbets.com/college-basketball-home-court-advantage/)
 
 ## II. Methodology
+
+Data were primarily pulled from [sports-reference.com](https://www.sports-reference.com/cbb/postseason/) and subsequently
+cleaned, manipulated, and analyzed with various Python 3 packages via Jupyter Notebooks. QGIS was also utilized for 
+initial case studies for project feasibility and converting to properly formatted geojsons. The primary Python 3 packages
+used include:
+
+- [Pandas](https://pandas.pydata.org/)
+- [Geopandas](https://geopandas.org/) 
+- [Geocoder](https://geocoder.readthedocs.io/) 
 
 ### A. Data
 
 #### Raw Tournament Data
 
-Raw data for the first round of each tournament from 1985 to 2019* was copied into a CSV with the year as the column name 
+Raw data for the first round of each tournament from 1985 to 2019 was copied into a CSV with the year as the column name 
 and the first round teams, seeds, sites, and scores as the rows. The raw data was then imported in a Jupyter Notebook 
 (`notebooks/data-prep.ipynb`) and cleaned with a Python 3 script resulting in a CSV formatted as:
 - 5 columns (seed, school, site, year, id)
@@ -57,8 +62,6 @@ matching ID) to eventually analyze the distance between each school and their fi
 `data/raw/mm-85-19-cleaned.csv`.
 
 This data will be used to calculate the distance between each school and its site location.
-
-*2020 tournament will take place in March-April 2020.
 
 
 #### School Locations and Metadata
@@ -104,10 +107,20 @@ with the Universal Transverse Mercator 14N coordinate reference system. Matching
 the matching id, distance was calculated between the points. The school and site datasets were saved as separate CSVs, 
 `data/cleaned/distance-schools.csv` and `data/cleaned/distance-sites.csv`.
 
+#### Analysis
+
+More coming soon.
+
 #### Sources
+
 Seeding and Selection Process:
 * [Historical NCAA March Madness statistics](https://www.sports-reference.com/cbb/postseason/)
 * [Selection Committee Rules](https://www.ncaa.com/news/basketball-men/article/2018-10-19/how-field-68-teams-picked-march-madness)
+
+Tournament Statistics:
+* [Scores and Seeds 1985-2019](https://data.world/michaelaroy/ncaa-tournament-results/workspace/file?filename=Big_Dance_CSV.csv)
+* [Region, Seeds, and Scores 1985-2016](https://data.world/sports/ncaa-mens-march-madness/workspace/file?filename=NCAA+Mens+March+Madness+Historical+Results.csv)
+* [Region, Seeds, and Scores 1985-2018](https://data.world/sportsvizsunday/april-ncaa/workspace/file?filename=NCAA+Mens+Basketball+Results.csv)
 
 Style:
 * [Team colors 1](https://en.wikipedia.org/wiki/Module:College_color)
@@ -115,7 +128,7 @@ Style:
 * [Team colors 3](https://usteamcolors.com/ncaa-division-1/)
 
 Interactive Sports Maps:
-* [College Footbal Fanbases](https://www.nytimes.com/interactive/2014/10/03/upshot/ncaa-football-map.html#5,42.944,-91.752)
+* [College Football Fanbases](https://www.nytimes.com/interactive/2014/10/03/upshot/ncaa-football-map.html#5,42.944,-91.752)
 * [All D1 College Basketball Teams](https://www.google.com/maps/d/u/0/viewer?dg=feature&ie=UTF8&oe=UTF8&msa=0&mid=1bXEv7hQrqKE6DccLudQ-oywpdZ0&ll=35.710909718852356%2C-113.24631124999996&z=4)
 * [CBB Player Hometowns (app defunct)](http://www.thepostgame.com/every-ncaa-basketball-players-hometown-map)
 * [North American Professional Championships](http://www.slate.com/articles/sports/sports_nut/2012/05/sports_championship_map_explore_every_championship_in_the_history_of_mlb_the_nba_the_nhl_and_the_nfl_.html)
@@ -243,7 +256,19 @@ Not sure if this is valuable enough to devote the time to.
 
 ### F. Aesthetics and Design Considerations
 
+The application design will be simple, clean, and sleek. The color schemes will reference the NCAA's official March 
+Madness logos, which are variable but consistently utilize blues, oranges, and neutrals (black, white, and gray):
+
+![March Madness Logo 1](images/marchmadness1.jpeg) 
+
+![March Madness Logo 2](images/marchmadness2.png)
+
+The UI will be simple and unfussy. The map itself will have a variety of interactions and affordances, so the rest of 
+the application should be kept clean.
+
 ### G. Conclusion
+
+It's gonna be fun, y'all.
 
 ---
 
