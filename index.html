@@ -325,7 +325,7 @@
 
         geojson.features.forEach((feature, i) => {
             // add ids to school geojson for featureState functionality
-            feature['id'] = i;
+            feature['id'] = i;  // TODO use generateId: true in addSource
             values.push(feature.properties[property]);
         });
 

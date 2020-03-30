@@ -157,6 +157,22 @@ The map will be built with [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/a
 
 ### C. Application Layout
 
+Initial wireframes included below:
+
+![Default map view mockup](wireframes/map1.jpg)
+
+Figure 1 shows the initial mockup of the default view of the web application with the basic functionality of filters and
+map interaction.
+
+![Updated map view mockup](wireframes/map2.jpg)
+
+Figure 2 shows an updated view of the application filters and highlight cards.
+
+![Mobile mockup](wireframes/mobile.jpg)
+
+Figure 3 shows a simple mobile mockup. The filters will be expandable from the top of the map and the highlight cards 
+will be placed at the bottom of the map.
+
 ### D. Thematic Representation
 
 Because the main subject matter of the map are point locations (schools and tournament sites) and distances between them,
@@ -177,6 +193,53 @@ The distance of between the selected school and each tournament site is implicit
 extending from the school to the site. Longer distances will be represented by longer linestrings.
 
 ### E. User Interaction
+
+The user will be able to interact with the web application through both the map and other user interface elements. 
+
+**Map**
+
+The map will be fully interactive with various click and mouseover event handlers. The default view of the map will
+display all schools that have been a 1-4 seed between 1985 and 2019. The user can click the school locations to toggle 
+on the site locations associated with that school. This interaction will also trigger a visual affordance - the selected 
+school's proportional circle opacity will increase and the unselected schools will be grayed out.
+
+Clicking a school will also update a highlight card that will display some statistics for that school's tournament site 
+analysis. Mousing over features (schools and sites) will also toggle informational popups.
+
+The user can return to the default view of the map by clicking the map icon button.
+
+**Filters**
+
+The user will be able to customize their map selections through a variety of toggle and dropdown filters.
+
+A switch toggle will allow the user to easily select the weighted or unweighted distance analysis; the weighted analysis
+adjusts distances based on the seed.
+
+Dropdown menus for filtering options will include:
+
+- Statistics (mean, median, minimum, maximum, etc.)
+- Seed (1, 2, 3, 4, all) 
+- Conference (ACC, SEC, Big 10, etc.)
+- Schools (all schools, additional interesting groupings)
+
+Where applicable, selecting a filter will automatically update the map and vice versa, e.g. if the user selects a school
+from the dropdown menu, the map will pan and zoom to that school and its sites as though the user had clicked on the map.
+
+**Highlight Cards**
+
+Each view of the map will have an information card with various highlights. The default view of the map will show 
+highlights/statistics for all schools over the 1985-2019 period. Selecting a school will show highlights for only that 
+school over the same time period.
+
+**Scrollytelling**
+
+TBD - Currently a consideration, but a story has not been developed yet.
+
+**School/Tournament Toggle**
+
+TBD - May include a toggle to shift between the overall school analysis and a year by year map view of each tournament. 
+Not sure if this is valuable enough to devote the time to.
+
 
 ### F. Aesthetics and Design Considerations
 
