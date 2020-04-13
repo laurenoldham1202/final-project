@@ -451,7 +451,7 @@
             // const cards = $('.list-group');
             // const cards = $('.weighted-mean-card');
             const cards = $('.card-header');
-            // console.log(e.features[0].properties.school_full_name);
+            console.log(e.features[0].properties);
             cards.text(e.features[0].properties.school_full_name);
 
             $('.weighted-mean-card').text(`${e.features[0].properties.mean_wtDist.toFixed()} miles`);
@@ -487,6 +487,8 @@
             $('p.min-text').text(`${min.school_common_name} (${min.city}, ${min.state}) to ${min.site} as a ${min.seed} seed in ${min.year}`);
             $('.max-card').text(`${e.features[0].properties.max_dist.toFixed()} miles`);
             $('p.max-text').text(`${max.school_common_name} (${max.city}, ${max.state}) to ${max.site} as a ${max.seed} seed in ${max.year}`);
+            $('.appearances-card').text(`${e.features[0].properties.count_dist} appearances as 1-4 seed`);
+            // TODO create subheader for text ^^
 
 
             // close any open popups
