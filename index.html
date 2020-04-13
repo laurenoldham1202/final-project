@@ -134,6 +134,7 @@
 <!--    </div>-->
 
     <ul class="list-group list-group-flush">
+
         <li class="list-group-item">
             <h5 class="card-title weighted-mean-card">335 miles</h5>
             <p class="card-text">Weighted mean distance traveled</p>
@@ -147,17 +148,15 @@
 
         <li class="list-group-item">
             <h5 class="card-title min-card">0.39 miles</h5>
-            <p class="card-text">Minimum distance traveled
-            <br>University of Arizona to Tucson, AZ as a 1 seed in 2000
-            </p>
+            <p class="card-text">Minimum distance traveled</p>
+            <p class="min-text">(University of Arizona to Tucson, AZ as a 1 seed in 2000)</p>
         </li>
         </li>
 
         <li class="list-group-item">
             <h5 class="card-title max-card">2866 miles</h5>
-            <p class="card-text">Maximum distance traveled
-            <br>Syracuse University to San Jose, CA as a 4 seed in 2013
-            </p>
+            <p class="card-text">Maximum distance traveled</p>
+            <p class="max-text">(Syracuse University to San Jose, CA as a 4 seed in 2013)</p>
         </li>
         </li>
 
@@ -447,11 +446,48 @@
 
         map.on('click', 'schools', (e) => {
 
+            // TODO put highlight stuff in function
+            // TODO fix card style classes - margin bottom
             // const cards = $('.list-group');
             // const cards = $('.weighted-mean-card');
             const cards = $('.card-header');
             // console.log(e.features[0].properties.school_full_name);
             cards.text(e.features[0].properties.school_full_name);
+
+            $('.weighted-mean-card').text(`${e.features[0].properties.mean_wtDist.toFixed()} miles`);
+            $('.mean-card').text(`${e.features[0].properties.mean_dist.toFixed()} miles`);
+
+            // console.log(sites);
+            let min = null;
+            let max = null;
+            sites.features.forEach(site => {
+               if (site.properties.school_full_name === e.features[0].properties.school_full_name) {
+                   if (site.properties.distance.toFixed(4) <= e.features[0].properties.min_dist.toFixed(4)) {
+                       min = site.properties;
+                   // } else if (site.properties.distance >= e.features[0].properties.max_dist) {
+                   //     max = site.properties;
+                   }
+
+                   // console.log('site', site.properties.distance);
+                   // console.log('clicked', e.features[0].properties.max_dist);
+
+                   if (site.properties.distance.toFixed(4) === e.features[0].properties.max_dist.toFixed(4)) {
+                       // console.log(site.properties);
+                       max = site.properties;
+                       // console.log(max)
+                   }
+               }
+            });
+
+            // console.log(max);
+            // TODO fix sub-cards stating where these games occurred
+            // TODO look into projection/distance calc, messed up cincy and louisville
+            // TODO conditions for undefined?
+            $('.min-card').text(`${e.features[0].properties.min_dist.toFixed()} miles`);
+            $('p.min-text').text(`${min.school_common_name} (${min.city}, ${min.state}) to ${min.site} as a ${min.seed} seed in ${min.year}`);
+            $('.max-card').text(`${e.features[0].properties.max_dist.toFixed()} miles`);
+            $('p.max-text').text(`${max.school_common_name} (${max.city}, ${max.state}) to ${max.site} as a ${max.seed} seed in ${max.year}`);
+
 
             // close any open popups
             popup.remove();
