@@ -124,7 +124,7 @@
 
 <div class="card text-center info">
     <div class="card-header">
-        All Schools 1985 - 2019
+        All Top Seeded Schools 1985 - 2019
     </div>
 
 <!--    <div class="card-body">-->
@@ -136,10 +136,36 @@
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <h5 class="card-title weighted-mean-card">335 miles</h5>
-            <p class="card-text">Weighted mean distance traveled as a top (1-4) seed</p>
+            <p class="card-text">Weighted mean distance traveled</p>
         </li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Vestibulum at eros</li>
+
+        <li class="list-group-item">
+            <h5 class="card-title mean-card">638 miles</h5>
+            <p class="card-text">Mean distance (unweighted) traveled</p>
+        </li>
+        </li>
+
+        <li class="list-group-item">
+            <h5 class="card-title min-card">0.39 miles</h5>
+            <p class="card-text">Minimum distance traveled
+            <br>University of Arizona to Tucson, AZ as a 1 seed in 2000
+            </p>
+        </li>
+        </li>
+
+        <li class="list-group-item">
+            <h5 class="card-title max-card">2866 miles</h5>
+            <p class="card-text">Maximum distance traveled
+            <br>Syracuse University to San Jose, CA as a 4 seed in 2013
+            </p>
+        </li>
+        </li>
+
+        <li class="list-group-item">
+            <h5 class="card-title appearances-card">87</h5>
+            <p class="card-text">Different schools with appearances</p>
+        </li>
+
     </ul>
 
     <div class="card-footer text-muted">
@@ -422,13 +448,15 @@
         map.on('click', 'schools', (e) => {
 
             // const cards = $('.list-group');
-            const cards = $('.weighted-mean-card');
-            console.log(cards);
-            cards.text('hello!');
+            // const cards = $('.weighted-mean-card');
+            const cards = $('.card-header');
+            // console.log(e.features[0].properties.school_full_name);
+            cards.text(e.features[0].properties.school_full_name);
 
             // close any open popups
             popup.remove();
 
+            // TODO fix error where school and average are offset on zoom, double clicking school replots multiple
             if (e.features.length > 0) {
                 // if feature is already clicked, set `clicked` feature-state to false
                 if (clickedStateId) {
