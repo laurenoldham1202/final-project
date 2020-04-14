@@ -190,6 +190,7 @@
         center: [-105.5, 38.5],
         zoomSnap: 0.1,
         zoom: 4,
+        fadeTransition: 600,
     });
 
     // popup for mouseover
@@ -273,7 +274,6 @@
         map.setPaintProperty('schools', 'circle-opacity', 0.7);
 
         // TODO create function for here and sites
-        // TODO use default map options instead?
         const layerGeometry = {type: 'Polygon', coordinates: []};
         const layerCoords = [];
 
@@ -284,7 +284,7 @@
         layerGeometry.coordinates = [layerCoords];
 
         // fit bounds to school layer
-        map.fitBounds(turf.bbox(layerGeometry), { padding: 50 });
+        map.fitBounds(turf.bbox(layerGeometry), { padding: {top: 50, right: 50, bottom: 50, left: 375} });
 
         // TODO create function
         $('.card-header').text('All Top Seeded Schools 1985 - 2019');
@@ -314,44 +314,31 @@
 
     function selectSeed() {
         $('#seedFilter').on('change', (e) => {
+            // empty array to hold schools that match selected layer
+            const schoolsBySeed = [];
 
-            // console.log(this.map.getFeatureState('schools', ))
-            // console.log(map.getLayer('schools'));
-            // TODO Create seed aggregates
-            // console.log(e.target.value);
-            // console.log(seedsMap[e.target.value]);
-            // map.setFilter('schools', ['==', 'seed', seedsMap[e.target.value]]);
-
-            // map.setFilter('schools', ['==', 'seed', 'oneSeed']);
-//       // this.map.setFilter(IMAGE_FOOTPRINTS, ['match', ['get', 'id'], footprintIds, true, false]);
-
-
-            // TODO make condition for all seeds
-            // TODO make condition for when school is selected, then seed is selected where school doesn't have any data
-            const tmp = [];
+            // loop through schools layer
             map.getSource('schools')['_data'].features.forEach(feature => {
-                // console.log(feature.properties.oneSeed);
+                // if individual seed (not 'allSeed') is selected
                 if (feature.properties[e.target.value] && e.target.value !== 'allSeed') {
-                    tmp.push(feature.properties[e.target.value].school_common_name);
+                    // push only schools that have data for selected seed
+                    schoolsBySeed.push(feature.properties[e.target.value].school_common_name);
                 } else if (e.target.value === 'allSeed') {
-                    tmp.push(feature.properties.school_common_name)
+                    // if 'allSeed' option is selected, push all schools to array
+                    schoolsBySeed.push(feature.properties.school_common_name)
                 }
             });
-            // console.log(tmp);
-            // console.log(map.getSource('avg-distance')['_data'].features[0].properties.school_common_name);
 
-            if (!tmp.includes(map.getSource('avg-distance')['_data'].features[0].properties.school_common_name)) {
-                console.log('match');
+            // root source for avg-distance layer, which includes the selected school
+            const selectedSchoolSource = map.getSource('avg-distance')['_data'].features;
+            // if a school has been selected AND that school does NOT have data for the selected seed, reset default map extent
+            if (selectedSchoolSource.length > 0 && !schoolsBySeed.includes(selectedSchoolSource[0].properties.school_common_name)) {
                 resetExtent();
-                // const layers = ['sites', 'line', 'avg-distance'];
-                // layers.forEach(layer => {
-                //     map.setLayoutProperty(layer, 'visibility', 'none');
-                // });
             }
 
             // TODO change prop circle sizes based on each seed avg?
-            map.setFilter('schools', ['match', ['get', 'school_common_name'], tmp, true, false]);
-
+            // filter schools layer for schools included in the selected seed
+            map.setFilter('schools', ['match', ['get', 'school_common_name'], schoolsBySeed, true, false]);
         });
     }
 
