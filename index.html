@@ -259,43 +259,45 @@
 
     function defaultMap() {
         $('#extent').on('click', () => {
-            const layers = ['sites', 'line', 'avg-distance'];
-            layers.forEach(layer => {
-                map.setLayoutProperty(layer, 'visibility', 'none');
-            });
-            // map.setLayoutProperty('sites', 'visibility', 'none');
-            // map.setLayoutProperty('line', 'visibility', 'none');
-            // map.setLayoutProperty('avg-distance', 'visibility', 'none');
-
-            map.setPaintProperty('schools', 'circle-color', '#E27600');
-            map.setPaintProperty('schools', 'circle-opacity', 0.7);
-
-            // TODO create function for here and sites
-            const layerGeometry = {type: 'Polygon', coordinates: []};
-            const layerCoords = [];
-
-            map.getSource('schools')['_data'].features.forEach(feature => {
-                layerCoords.push(feature.geometry.coordinates);
-            });
-
-            layerGeometry.coordinates = [layerCoords];
-
-            // fit bounds to school layer
-            map.fitBounds(turf.bbox(layerGeometry), { padding: 50 });
-
-            // TODO create function
-            $('.card-header').text('All Top Seeded Schools 1985 - 2019');
-            $('.weighted-mean-card').text('335 miles');
-            $('.mean-card').text('638 miles');
-            $('.min-card').text('0.39 miles');
-            $('p.min-text').text('University of Arizona to Tucson, AZ as a 1 seed in 2000');
-            $('.max-card').text('2866 miles');
-            $('p.max-text').text('Syracuse University to San Jose, CA as a 4 seed in 2013');
-            $('.appearances-card').text(87);
-            $('.appearances-text').text('Different schools with appearances');
-
-            // TODO set all feature states to false?
+            resetExtent();
         });
+    }
+
+    function resetExtent() {
+        const layers = ['sites', 'line', 'avg-distance'];
+        layers.forEach(layer => {
+            map.setLayoutProperty(layer, 'visibility', 'none');
+        });
+
+        map.setPaintProperty('schools', 'circle-color', '#E27600');
+        map.setPaintProperty('schools', 'circle-opacity', 0.7);
+
+        // TODO create function for here and sites
+        // TODO use default map options instead?
+        const layerGeometry = {type: 'Polygon', coordinates: []};
+        const layerCoords = [];
+
+        map.getSource('schools')['_data'].features.forEach(feature => {
+            layerCoords.push(feature.geometry.coordinates);
+        });
+
+        layerGeometry.coordinates = [layerCoords];
+
+        // fit bounds to school layer
+        map.fitBounds(turf.bbox(layerGeometry), { padding: 50 });
+
+        // TODO create function
+        $('.card-header').text('All Top Seeded Schools 1985 - 2019');
+        $('.weighted-mean-card').text('335 miles');
+        $('.mean-card').text('638 miles');
+        $('.min-card').text('0.39 miles');
+        $('p.min-text').text('University of Arizona to Tucson, AZ as a 1 seed in 2000');
+        $('.max-card').text('2866 miles');
+        $('p.max-text').text('Syracuse University to San Jose, CA as a 4 seed in 2013');
+        $('.appearances-card').text(87);
+        $('.appearances-text').text('Different schools with appearances');
+
+        // TODO set all feature states to false?
     }
 
     function selectSchool() {
@@ -312,8 +314,11 @@
 
     function selectSeed() {
         $('#seedFilter').on('change', (e) => {
+
+            // console.log(this.map.getFeatureState('schools', ))
+            // console.log(map.getLayer('schools'));
             // TODO Create seed aggregates
-            console.log(e.target.value);
+            // console.log(e.target.value);
             // console.log(seedsMap[e.target.value]);
             // map.setFilter('schools', ['==', 'seed', seedsMap[e.target.value]]);
 
@@ -332,7 +337,17 @@
                     tmp.push(feature.properties.school_common_name)
                 }
             });
-            console.log(tmp);
+            // console.log(tmp);
+            // console.log(map.getSource('avg-distance')['_data'].features[0].properties.school_common_name);
+
+            if (!tmp.includes(map.getSource('avg-distance')['_data'].features[0].properties.school_common_name)) {
+                console.log('match');
+                resetExtent();
+                // const layers = ['sites', 'line', 'avg-distance'];
+                // layers.forEach(layer => {
+                //     map.setLayoutProperty(layer, 'visibility', 'none');
+                // });
+            }
 
             // TODO change prop circle sizes based on each seed avg?
             map.setFilter('schools', ['match', ['get', 'school_common_name'], tmp, true, false]);
@@ -618,11 +633,12 @@
 
         map.on('click', 'schools', (e) => {
             const avgDistance = [{
-                "type": "Feature",
-                "geometry": {
-                    "type": "Point",
-                    "coordinates": e.features[0].geometry.coordinates,
-                }
+                type: "Feature",
+                geometry: {
+                    type: "Point",
+                    coordinates: e.features[0].geometry.coordinates,
+                },
+                properties: e.features[0].properties,
             }];
 
             map.getSource('avg-distance').setData({ type: 'FeatureCollection', features: avgDistance });
