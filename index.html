@@ -187,9 +187,9 @@
     var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/light-v9',
-        center: [-98.5, 39.5],
+        center: [-105.5, 38.5],
         zoomSnap: 0.1,
-        zoom: 3.8,
+        zoom: 4,
     });
 
     // popup for mouseover
@@ -199,12 +199,6 @@
         className: 'school-popup',
     });
 
-    // const seedsMap = {
-    //   oneSeeds: 1,
-    //   twoSeeds: 2,
-    //   threeSeeds: 3,
-    //   fourSeeds: 4,
-    // };
 
     // TODO Delete old json, replace with new
     // TODO Rerun test-default csv from analysis notebook with new distances
@@ -328,6 +322,7 @@
 
 
             // TODO make condition for all seeds
+            // TODO make condition for when school is selected, then seed is selected where school doesn't have any data
             const tmp = [];
             map.getSource('schools')['_data'].features.forEach(feature => {
                 // console.log(feature.properties.oneSeed);
@@ -552,8 +547,8 @@
                 }
             });
 
-            // fit bounds to school and sites
-            map.fitBounds(turf.bbox(layerGeometry), { padding: 50 });
+            // fit bounds to school and sites, additional left buffer for highlight card offset
+            map.fitBounds(turf.bbox(layerGeometry), { padding: {top: 50, right: 50, bottom: 50, left: 375} });
 
             // push linestring features to line layer source
             map.getSource('line').setData({ type: 'FeatureCollection', features: lineFeatures });
