@@ -27,10 +27,6 @@
             color: whitesmoke;
         }
 
-        option {
-            background: red !important;
-        }
-
         select:focus {
             outline: none !important;
         }
@@ -46,7 +42,8 @@
         .info {
             background: rgba(255,255,255,0.9);
             width: 20rem;
-            height: 30rem;
+            /*height: 30rem;*/
+            height: auto;
             z-index: 1000;
             position: absolute;
             top: 6rem;
@@ -73,7 +70,7 @@
         }
 
         .toolbar-select {
-            margin: 0rem 1rem;
+            margin: 0 1rem;
         }
 
         .custom-control-input:checked~.custom-control-label::before {
@@ -214,7 +211,6 @@
         className: 'school-popup',
     });
 
-
     // TODO Delete old json, replace with new
     // TODO Rerun test-default csv from analysis notebook with new distances
     const sitesJson = d3.json('data/cleaned/sites-all-edit.json');
@@ -245,9 +241,6 @@
                 }
             });
         });
-
-        console.log(schools);
-
 
         // TODO Fix sites - Long Beach, CA incorrectly geocoded
         //  Geojsons have been created by reading CSVs into QGIS and converted
@@ -363,6 +356,10 @@
             const mean = e.target.checked ? 'mean_wtDist' : 'mean_dist';
             const stops = createStops(geojson, mean);
             map.setPaintProperty('schools', 'circle-radius', {property: mean, stops: stops});
+
+            // TODO craete constants for avg values
+            // adjust average distance circle based on weighted toggle status
+            map.setPaintProperty('avg-distance', 'circle-radius', e.target.checked ? 638/25 : 335/25);
         });
     }
 
@@ -451,7 +448,7 @@
             },
             paint: {
                 'line-color': '#707070',
-                'line-width': 2,
+                'line-width': 1,
                 'line-opacity': 1,
             },
             layout: {  // TODO add style
@@ -624,7 +621,7 @@
                 'circle-radius': 345.88513858848495/25,  // average weighted mean
                 'circle-color': 'transparent',
                 'circle-stroke-opacity': 0.7,
-                'circle-stroke-color': 'black',
+                'circle-stroke-color': '#AA5F0E',
                 'circle-stroke-width': 2,
             },
             layout: {
