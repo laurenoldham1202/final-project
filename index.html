@@ -39,6 +39,10 @@
             bottom: 0;
         }
 
+        .card-footer {
+            cursor: pointer;
+        }
+
         .info {
             background: rgba(255,255,255,0.9);
             width: 20rem;
@@ -147,32 +151,32 @@
     <ul class="list-group list-group-flush">
 
         <li class="list-group-item">
-            <h5 class="card-title weighted-mean-card">335 miles</h5>
+            <h5 class="card-title card-1">335 miles</h5>
             <p class="card-text">Weighted mean distance traveled</p>
         </li>
 
         <li class="list-group-item">
-            <h5 class="card-title mean-card">638 miles</h5>
+            <h5 class="card-title card-2">638 miles</h5>
             <p class="card-text">Mean distance (unweighted) traveled</p>
         </li>
         </li>
 
         <li class="list-group-item">
-            <h5 class="card-title min-card">0.39 miles</h5>
+            <h5 class="card-title card-3">0.39 miles</h5>
             <p class="card-text">Minimum distance traveled</p>
             <p class="min-text">University of Arizona to Tucson, AZ as a 1 seed in 2000</p>
         </li>
         </li>
 
         <li class="list-group-item">
-            <h5 class="card-title max-card">2866 miles</h5>
+            <h5 class="card-title card-4">2866 miles</h5>
             <p class="card-text">Maximum distance traveled</p>
             <p class="max-text">Syracuse University to San Jose, CA as a 4 seed in 2013</p>
         </li>
         </li>
 
         <li class="list-group-item">
-            <h5 class="card-title appearances-card">87</h5>
+            <h5 class="card-title card-5">87</h5>
             <p class="appearances-text">Different schools with appearances</p>
         </li>
 
@@ -216,14 +220,16 @@
     const sitesJson = d3.json('data/cleaned/sites-all-edit.json');
     const schoolsJson = d3.json('data/cleaned/schools-agg.json');
     const seedsJson = d3.json('data/cleaned/seeds-by-school.json');
+    const seedsAggJson = d3.json('data/cleaned/seeds-overall.json');
 
-    Promise.all([sitesJson, schoolsJson, seedsJson]).then(onLoad);
+    Promise.all([sitesJson, schoolsJson, seedsJson, seedsAggJson]).then(onLoad);
 
     function onLoad(data) {
 
         const sites = data[0];
         const schools = data[1];
         const seeds = data[2];
+        const seedsAgg = data[3];
 
         // TODO Move to node script?
         schools.features.forEach(school => {
@@ -262,6 +268,20 @@
             selectSeed();
 
             defaultMap();
+
+            $('.card-footer').on('click', (e) => {
+                console.log(seedsAgg);
+
+                // $('.card-header').text('doot!');
+                $('.card-1').text(`${seedsAgg.features[0].properties.mean_dist.toFixed()} average miles for 1 seeds`);
+                $('.card-2').text(`${seedsAgg.features[1].properties.mean_dist.toFixed()} average miles for 2 seeds`);
+                $('.card-3').text(`${seedsAgg.features[2].properties.mean_dist.toFixed()} average miles for 3 seeds`);
+                $('p.min-text').text('doot!');
+                $('.card-4').text(`${seedsAgg.features[3].properties.mean_dist.toFixed()} average miles for 4 seeds`);
+                $('p.max-text').text('doot!');
+                $('.card-5').text('doot!');
+                $('.appearances-text').text('doot!');
+            });
         });
     }
 
@@ -295,13 +315,13 @@
 
         // TODO create function
         $('.card-header').text('All Top Seeded Schools 1985 - 2019');
-        $('.weighted-mean-card').text('335 miles');
-        $('.mean-card').text('638 miles');
-        $('.min-card').text('0.39 miles');
+        $('.card-1').text('335 miles');
+        $('.card-2').text('638 miles');
+        $('.card-3').text('0.39 miles');
         $('p.min-text').text('University of Arizona to Tucson, AZ as a 1 seed in 2000');
-        $('.max-card').text('2866 miles');
+        $('.card-4').text('2866 miles');
         $('p.max-text').text('Syracuse University to San Jose, CA as a 4 seed in 2013');
-        $('.appearances-card').text(87);
+        $('.card-5').text(87);
         $('.appearances-text').text('Different schools with appearances');
 
         // TODO set all feature states to false?
@@ -422,7 +442,7 @@
                 data: geojson,
             },
             paint: {
-                'circle-radius': ['match', ['get', 'seed'], 1, 3, 2, 6, 3, 9, 4, 12, 5],
+                'circle-radius': ['match', ['get', 'seed'], 1, 5, 2, 8, 3, 11, 4, 14, 5],
                 'circle-color': ['match', ['get', 'seed'], 1, '#80bad1', 2, '#5694c1', 3, '#2c6db1', 4, '#0146a1', '#AAA'],
                 'circle-opacity': 1,
             },
@@ -468,11 +488,11 @@
             // TODO put highlight stuff in function
             // TODO fix card style classes - margin bottom
             // const cards = $('.list-group');
-            // const cards = $('.weighted-mean-card');
+            // const cards = $('.card-1');
             $('.card-header').text(e.features[0].properties.school_full_name);
 
-            $('.weighted-mean-card').text(`${e.features[0].properties.mean_wtDist.toFixed()} miles`);
-            $('.mean-card').text(`${e.features[0].properties.mean_dist.toFixed()} miles`);
+            $('.card-1').text(`${e.features[0].properties.mean_wtDist.toFixed()} miles`);
+            $('.card-2').text(`${e.features[0].properties.mean_dist.toFixed()} miles`);
 
             // console.log(sites);
             let min = null;
@@ -498,11 +518,11 @@
 
             // TODO look into projection/distance calc, messed up cincy and louisville
             // TODO conditions for undefined?
-            $('.min-card').text(`${e.features[0].properties.min_dist.toFixed()} miles`);
+            $('.card-3').text(`${e.features[0].properties.min_dist.toFixed()} miles`);
             $('p.min-text').text(`${min.city}, ${min.state} to ${min.site} as a ${min.seed} seed in ${min.year}`);
-            $('.max-card').text(`${e.features[0].properties.max_dist.toFixed()} miles`);
+            $('.card-4').text(`${e.features[0].properties.max_dist.toFixed()} miles`);
             $('p.max-text').text(`${max.city}, ${max.state} to ${max.site} as a ${max.seed} seed in ${max.year}`);
-            $('.appearances-card').text(e.features[0].properties.count_dist);
+            $('.card-5').text(e.features[0].properties.count_dist);
             $('.appearances-text').text('Appearances as 1-4 seed');
             // TODO create subheader for text ^^
 
@@ -589,7 +609,7 @@
     }
 
     function onSiteHover() {
-        map.on('mouseenter', 'sites', (e) => {
+        map.on('mousemove', 'sites', (e) => {
             const content = `${e.features[0].properties.school_common_name} played at ${e.features[0].properties.site}
             in ${e.features[0].properties.year} as a ${e.features[0].properties.seed} seed.`;
             popup.setLngLat(e.lngLat)
