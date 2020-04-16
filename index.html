@@ -509,10 +509,7 @@
             // TODO fix card style classes - margin bottom
             // const cards = $('.list-group');
             // const cards = $('.card-1');
-            $('.card-header').text(e.features[0].properties.school_full_name);
 
-            $('.card-1').text(`${e.features[0].properties.mean_wtDist.toFixed()} miles`);
-            $('.card-2').text(`${e.features[0].properties.mean_dist.toFixed()} miles`);
 
             // console.log(sites);
             let min = null;
@@ -536,12 +533,26 @@
 
             // TODO look into projection/distance calc, messed up cincy and louisville
             // TODO conditions for undefined?
-            $('.card-3').text(`${e.features[0].properties.min_dist.toFixed()} miles`);
-            $('p.min-text').text(`${min.city}, ${min.state} to ${min.site} as a ${min.seed} seed in ${min.year}`);
-            $('.card-4').text(`${e.features[0].properties.max_dist.toFixed()} miles`);
-            $('p.max-text').text(`${max.city}, ${max.state} to ${max.site} as a ${max.seed} seed in ${max.year}`);
-            $('.card-5').text(e.features[0].properties.count_dist);
-            $('.appearances-text').text('Appearances as 1-4 seed');
+            // $('.card-header').text(e.features[0].properties.school_full_name);
+            // $('.card-1').text(`${e.features[0].properties.mean_wtDist.toFixed()} miles`);
+            // $('.card-2').text(`${e.features[0].properties.mean_dist.toFixed()} miles`);
+            // $('.card-3').text(`${e.features[0].properties.min_dist.toFixed()} miles`);
+            // $('p.min-text').text(`${min.city}, ${min.state} to ${min.site} as a ${min.seed} seed in ${min.year}`);
+            // $('.card-4').text(`${e.features[0].properties.max_dist.toFixed()} miles`);
+            // $('p.max-text').text(`${max.city}, ${max.state} to ${max.site} as a ${max.seed} seed in ${max.year}`);
+            // $('.card-5').text(e.features[0].properties.count_dist);
+            // $('.appearances-text').text('Appearances as 1-4 seed');
+            updateInfoCard(
+                e.features[0].properties.school_full_name,
+                `${e.features[0].properties.mean_wtDist.toFixed()} miles`,
+                `${e.features[0].properties.mean_dist.toFixed()} miles`,
+                `${e.features[0].properties.min_dist.toFixed()} miles`,
+                `${min.city}, ${min.state} to ${min.site} as a ${min.seed} seed in ${min.year}`,
+                `${e.features[0].properties.max_dist.toFixed()} miles`,
+                `${max.city}, ${max.state} to ${max.site} as a ${max.seed} seed in ${max.year}`,
+                e.features[0].properties.count_dist,
+                'Appearances as 1-4 seed',
+            );
             // TODO create subheader for text ^^
 
 
@@ -612,6 +623,19 @@
             // map.setPaintProperty('line', 'line-color', ['match', ['get', 'seed'],
             //     1, '#fcde9c', 2, '#f0746e', 3, '#dc3977', 4, '#7c1d6f', '#AAA']);
         });
+    }
+
+    // TODO simplify? put args in object?
+    function updateInfoCard(header, card1, card2, card3, card3text, card4, card4text, card5, card5text) {
+        $('.card-header').text(header);
+        $('.card-1').text(card1);
+        $('.card-2').text(card2);
+        $('.card-3').text(card3);
+        $('p.min-text').text(card3text);
+        $('.card-4').text(card4);
+        $('p.max-text').text(card4text);
+        $('.card-5').text(card5);
+        $('.appearances-text').text(card5text);
     }
 
     function onSchoolHover() {
