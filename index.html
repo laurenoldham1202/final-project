@@ -132,6 +132,8 @@
 
     <button id="extent"><span class="material-icons">public</span></button>
 
+    <button id="seed-select">Click me</button>
+
 </div>
 <div id="map"></div>
 
@@ -268,6 +270,21 @@
             selectSeed();
 
             defaultMap();
+
+            const select = $('#seed-select');
+            select.on('click', () => {
+                console.log('clicked');
+                // only plot once - hardcode the dropdown and toggle visibility instead?
+                const dropdown = `<div class="dropdown" style="background: white; z-index: 1000; margin-top: 22px;">
+                    <ul>
+                    <li>1 seed</li>
+                    <li>2 seed</li>
+                    <li>3 seed</li>
+                    <li>4 seed</li>
+                    </ul>
+                </div>`;
+                select.append(dropdown);
+            });
 
             $('.card-footer').on('click', (e) => {
                 console.log(seedsAgg);
