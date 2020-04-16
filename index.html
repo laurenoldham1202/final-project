@@ -542,17 +542,21 @@
             // $('p.max-text').text(`${max.city}, ${max.state} to ${max.site} as a ${max.seed} seed in ${max.year}`);
             // $('.card-5').text(e.features[0].properties.count_dist);
             // $('.appearances-text').text('Appearances as 1-4 seed');
-            updateInfoCard(
-                e.features[0].properties.school_full_name,
-                `${e.features[0].properties.mean_wtDist.toFixed()} miles`,
-                `${e.features[0].properties.mean_dist.toFixed()} miles`,
-                `${e.features[0].properties.min_dist.toFixed()} miles`,
-                `${min.city}, ${min.state} to ${min.site} as a ${min.seed} seed in ${min.year}`,
-                `${e.features[0].properties.max_dist.toFixed()} miles`,
-                `${max.city}, ${max.state} to ${max.site} as a ${max.seed} seed in ${max.year}`,
-                e.features[0].properties.count_dist,
-                'Appearances as 1-4 seed',
-            );
+
+            // function updateInfoCard(header, card1, card2, card3, card3text, card4, card4text, card5, card5text) {
+
+            const inputs = {
+                header: e.features[0].properties.school_full_name,
+                card1: `${e.features[0].properties.mean_wtDist.toFixed()} miles`,
+                card2: `${e.features[0].properties.mean_dist.toFixed()} miles`,
+                card3: `${e.features[0].properties.min_dist.toFixed()} miles`,
+                card3text: `${min.city}, ${min.state} to ${min.site} as a ${min.seed} seed in ${min.year}`,
+                card4: `${e.features[0].properties.max_dist.toFixed()} miles`,
+                card4text: `${max.city}, ${max.state} to ${max.site} as a ${max.seed} seed in ${max.year}`,
+                card5: e.features[0].properties.count_dist,
+                card5text: 'Appearances as 1-4 seed',
+            }
+            updateInfoCard(inputs);
             // TODO create subheader for text ^^
 
 
@@ -625,17 +629,18 @@
         });
     }
 
-    // TODO simplify? put args in object?
-    function updateInfoCard(header, card1, card2, card3, card3text, card4, card4text, card5, card5text) {
-        $('.card-header').text(header);
-        $('.card-1').text(card1);
-        $('.card-2').text(card2);
-        $('.card-3').text(card3);
-        $('p.min-text').text(card3text);
-        $('.card-4').text(card4);
-        $('p.max-text').text(card4text);
-        $('.card-5').text(card5);
-        $('.appearances-text').text(card5text);
+    // TODO simplify? put args in object? create class or interface for contentObject
+    // function updateInfoCard(header, card1, card2, card3, card3text, card4, card4text, card5, card5text) {
+    function updateInfoCard(contentObject) {
+        $('.card-header').text(contentObject['header']);
+        $('.card-1').text(contentObject['card1']);
+        $('.card-2').text(contentObject['card2']);
+        $('.card-3').text(contentObject['card3']);
+        $('p.min-text').text(contentObject['card3text']);
+        $('.card-4').text(contentObject['card4']);
+        $('p.max-text').text(contentObject['card4text']);
+        $('.card-5').text(contentObject['card5']);
+        $('.appearances-text').text(contentObject['card5text']);
     }
 
     function onSchoolHover() {
