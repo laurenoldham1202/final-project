@@ -517,21 +517,19 @@
             // console.log(sites);
             let min = null;
             let max = null;
+
+
+            console.log('MIN: ', e.features[0].properties.min_dist.toFixed(4));
+
+            // TODO messed up for some schools - check KY, UCLA, Kansas, etc.
             sites.features.forEach(site => {
                if (site.properties.school_full_name === e.features[0].properties.school_full_name) {
-                   if (site.properties.distance.toFixed(4) <= e.features[0].properties.min_dist.toFixed(4)) {
+                   console.log(site.properties);
+                   if (site.properties.distance.toFixed(4) === e.features[0].properties.min_dist.toFixed(4)) {
                        min = site.properties;
-                   // } else if (site.properties.distance >= e.features[0].properties.max_dist) {
-                   //     max = site.properties;
                    }
-
-                   // console.log('site', site.properties.distance);
-                   // console.log('clicked', e.features[0].properties.max_dist);
-
                    if (site.properties.distance.toFixed(4) === e.features[0].properties.max_dist.toFixed(4)) {
-                       // console.log(site.properties);
                        max = site.properties;
-                       // console.log(max)
                    }
                }
             });
