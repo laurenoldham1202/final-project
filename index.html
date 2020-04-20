@@ -83,6 +83,10 @@
             background-color: #0146a1;
         }
 
+        .visible {
+            visibility: visible !important;
+        }
+
     </style>
 </head>
 <body>
@@ -186,8 +190,9 @@
 
     </ul>
 
-    <div class="card-footer text-muted">
-        Seed >
+    <div class="card-footer text-muted" style="width: 100%; display: flex; flex-direction: row;">
+        <div class="footer-left" style="width: 50%; visibility: hidden;">< School</div>
+        <div class="footer-right" style="margin-left: auto;width: 50%;">Seed ></div>
     </div>
 </div>
 
@@ -289,8 +294,9 @@
                 $('.dropdown-container').append(dropdown);
             });
 
-            $('.card-footer').on('click', (e) => {
+            $('.footer-right').on('click', (e) => {
                 console.log(seedsAgg);
+                $('.footer-left').addClass('visible');
 
                 // $('.card-header').text('doot!');
                 $('.card-1').text(`${seedsAgg.features[0].properties.mean_dist.toFixed()} average miles for 1 seeds`);
@@ -487,9 +493,9 @@
                 }
             },
             paint: {
-                'line-color': '#707070',
+                'line-color': '#999',
                 'line-width': 1,
-                'line-opacity': 1,
+                'line-opacity': 0.75,
             },
             layout: {  // TODO add style
                 visibility: 'none',  // invisible on default, gets toggled on on school click event
