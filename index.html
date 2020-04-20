@@ -359,18 +359,21 @@
         // TODO set all feature states to false?
     }
 
+    // TODO list schools instead of current extra filters - make additional dropdown for special cases?
+    // TODO separate school click event from all other inputs, place here
     function selectSchool() {
         $('#schoolFilter').on('change', (e) => {
-            console.log(e.target.value);
+            // apply selected school to filters
+            filters.conference = e.target.value;
         });
     }
 
     function selectConference() {
+        // TODO clear filter when selecteed school does not belong to selected conference
         $('#conferenceFilter').on('change', (e) => {
+            // apply selected conference to filters
             filters.conference = e.target.value;
             // TODO fit bounds? Allow multiple seed and conference selections?
-
-            // map.setFilter('schools', ['==', 'conference', e.target.value]);
             setMapFilters();
 
         });
@@ -378,23 +381,9 @@
 
     function selectSeed() {
         $('#seedFilter').on('change', (e) => {
-            filters.seed = e.target.value;
 
-            console.log(filters);
-            // empty array to hold schools that match selected layer
-            // const schoolsBySeed = [];
-            //
-            // // loop through schools layer
-            // map.getSource('schools')['_data'].features.forEach(feature => {
-            //     // if individual seed (not 'allSeed') is selected
-            //     if (feature.properties[e.target.value] && e.target.value !== 'allSeed') {
-            //         // push only schools that have data for selected seed
-            //         schoolsBySeed.push(feature.properties[e.target.value].school_common_name);
-            //     } else if (e.target.value === 'allSeed') {
-            //         // if 'allSeed' option is selected, push all schools to array
-            //         schoolsBySeed.push(feature.properties.school_common_name)
-            //     }
-            // });
+            // apply selected seed to filters
+            filters.seed = e.target.value;
 
             // root source for avg-distance layer, which includes the selected school
             const selectedSchoolSource = map.getSource('avg-distance')['_data'].features;
@@ -404,10 +393,6 @@
             }
 
             // TODO change prop circle sizes based on each seed avg?
-            // filter schools layer for schools included in the selected seed
-            // map.setFilter('schools', ['match', ['get', 'school_common_name'], schoolsBySeed, true, false]);
-            // map.setFilter('schools', ['has', e.target.value === 'allSeed' ? 'school_common_name' : e.target.value]);
-            // map.setFilter('schools', ['all', ['==', 'conference', filters.conference], ['has', filters.seed === 'allSeed' ? 'school_common_name' : filters.seed]]);
             setMapFilters();
         });
     }
@@ -548,7 +533,6 @@
             let max = null;
 
 
-            console.log('MIN: ', e.features[0].properties.min_dist.toFixed(4));
 
             // TODO messed up for some schools - check KY, UCLA, Kansas, etc.
             sites.features.forEach(site => {
