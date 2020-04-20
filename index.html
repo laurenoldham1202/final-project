@@ -120,18 +120,18 @@
 
     <!-- TODO create programmatically through json and use full value text -->
     <select id="conferenceFilter" class="toolbar-select">
-        <option value="allConf">All Conferences</option>
-        <option value="aac">American Athletic Conference</option>
-        <option value="a10">Atlantic 10 Conference</option>
-        <option value="acc">Atlantic Coast Conference</option>
-        <option value="b12">Big 12 Conference</option>
-        <option value="bec">Big East Conference</option>
-        <option value="b10">Big Ten Conference</option>
-        <option value="mvc">Missouri Valley Conference</option>
-        <option value="mwv">Mountain West Conference</option>
-        <option value="p12">Pac-12 Conference</option>
-        <option value="sec">Southeastern Conference</option>
-        <option value="wcc">West Coast Conference</option>
+        <option value="all">All Conferences</option>
+        <option value="American Athletic Conference">American Athletic Conference</option>
+        <option value="Atlantic 10 Conference">Atlantic 10 Conference</option>
+        <option value="Atlantic Coast Conference">Atlantic Coast Conference</option>
+        <option value="Big 12 Conference">Big 12 Conference</option>
+        <option value="Big East Conference">Big East Conference</option>
+        <option value="Big Ten Conference">Big Ten Conference</option>
+        <option value="Missouri Valley Conference">Missouri Valley Conference</option>
+        <option value="Mountain West Conference">Mountain West Conference</option>
+        <option value="Pac-12 Conference">Pac-12 Conference</option>
+        <option value="Southeastern Conference">Southeastern Conference</option>
+        <option value="West Coast Conference">West Coast Conference</option>
     </select>
 
     <button id="extent"><span class="material-icons">public</span></button>
@@ -224,12 +224,18 @@
         className: 'school-popup',
     });
 
+    filters = {
+        seed: 'allSeed',
+        conference: 'all',  // TODO update these all values
+    };
+
     // TODO Delete old json, replace with new
     // TODO Rerun test-default csv from analysis notebook with new distances
     const sitesJson = d3.json('data/cleaned/sites-all-edit.json');
     const schoolsJson = d3.json('data/cleaned/schools-agg.json');
     const seedsJson = d3.json('data/cleaned/seeds-by-school.json');
     const seedsAggJson = d3.json('data/cleaned/seeds-overall.json');
+    const confJson = d3.json('data/cleaned/conference-agg.json');
 
     Promise.all([sitesJson, schoolsJson, seedsJson, seedsAggJson]).then(onLoad);
 
@@ -239,6 +245,7 @@
         const schools = data[1];
         const seeds = data[2];
         const seedsAgg = data[3];
+        const conf = data[4];
 
         // TODO Move to node script?
         schools.features.forEach(school => {
@@ -280,7 +287,6 @@
 
             const select = $('#seed-select');
             select.on('click', () => {
-                console.log('clicked');
                 // only plot once - hardcode the dropdown and toggle visibility instead?
                 const dropdown = `<div class="dropdown" style="background: white; z-index: 1000; margin-top: 12px;">
                     <ul>
@@ -361,26 +367,34 @@
 
     function selectConference() {
         $('#conferenceFilter').on('change', (e) => {
-            console.log(e.target.value);
+            filters.conference = e.target.value;
+            // TODO fit bounds? Allow multiple seed and conference selections?
+
+            // map.setFilter('schools', ['==', 'conference', e.target.value]);
+            setMapFilters();
+
         });
     }
 
     function selectSeed() {
         $('#seedFilter').on('change', (e) => {
-            // empty array to hold schools that match selected layer
-            const schoolsBySeed = [];
+            filters.seed = e.target.value;
 
-            // loop through schools layer
-            map.getSource('schools')['_data'].features.forEach(feature => {
-                // if individual seed (not 'allSeed') is selected
-                if (feature.properties[e.target.value] && e.target.value !== 'allSeed') {
-                    // push only schools that have data for selected seed
-                    schoolsBySeed.push(feature.properties[e.target.value].school_common_name);
-                } else if (e.target.value === 'allSeed') {
-                    // if 'allSeed' option is selected, push all schools to array
-                    schoolsBySeed.push(feature.properties.school_common_name)
-                }
-            });
+            console.log(filters);
+            // empty array to hold schools that match selected layer
+            // const schoolsBySeed = [];
+            //
+            // // loop through schools layer
+            // map.getSource('schools')['_data'].features.forEach(feature => {
+            //     // if individual seed (not 'allSeed') is selected
+            //     if (feature.properties[e.target.value] && e.target.value !== 'allSeed') {
+            //         // push only schools that have data for selected seed
+            //         schoolsBySeed.push(feature.properties[e.target.value].school_common_name);
+            //     } else if (e.target.value === 'allSeed') {
+            //         // if 'allSeed' option is selected, push all schools to array
+            //         schoolsBySeed.push(feature.properties.school_common_name)
+            //     }
+            // });
 
             // root source for avg-distance layer, which includes the selected school
             const selectedSchoolSource = map.getSource('avg-distance')['_data'].features;
@@ -391,8 +405,20 @@
 
             // TODO change prop circle sizes based on each seed avg?
             // filter schools layer for schools included in the selected seed
-            map.setFilter('schools', ['match', ['get', 'school_common_name'], schoolsBySeed, true, false]);
+            // map.setFilter('schools', ['match', ['get', 'school_common_name'], schoolsBySeed, true, false]);
+            // map.setFilter('schools', ['has', e.target.value === 'allSeed' ? 'school_common_name' : e.target.value]);
+            // map.setFilter('schools', ['all', ['==', 'conference', filters.conference], ['has', filters.seed === 'allSeed' ? 'school_common_name' : filters.seed]]);
+            setMapFilters();
         });
+    }
+
+    function setMapFilters() {
+        // filter for selected conference OR display all for 'all conference' selection (filter for features that have school common name field)
+        const confFilter = filters.conference !== 'all' ? ['==', 'conference', filters.conference] : ['has', 'school_common_name'];
+        // filter for seeds that have seed aggregate field or display all for all seed selection
+        const seedFilter = ['has', filters.seed === 'allSeed' ? 'school_common_name' : filters.seed];
+        // apply multiple filters with 'all'
+        map.setFilter('schools', ['all', confFilter, seedFilter]);
     }
 
     // apply weighted or unweighted mean distance depending on toggle position
