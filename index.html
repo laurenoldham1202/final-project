@@ -104,10 +104,13 @@
 
     <select id="schoolFilter" class="toolbar-select">
         <option value="allSchools">All Schools</option>
-        <option value="fivePlus">5+ Appearances</option>
-        <option value="tenPlus">10+ Appearances</option>
-        <option value="blueBloods">Blue Bloods</option>
-        <option value="power5">Power 5 Conference</option>  <!-- TODO move to conference?  Add all schools? Multiple options?-->
+        <option value="Kentucky">Kentucky</option>
+        <option value="Louisville">Louisville</option>
+        <option value="Kansas">Kansas</option>
+<!--        <option value="fivePlus">5+ Appearances</option>-->
+<!--        <option value="tenPlus">10+ Appearances</option>-->
+<!--        <option value="blueBloods">Blue Bloods</option>-->
+<!--        <option value="power5">Power 5 Conference</option>  &lt;!&ndash; TODO move to conference?  Add all schools? Multiple options?&ndash;&gt;-->
     </select>
 
     <select id="seedFilter" class="toolbar-select">
@@ -225,6 +228,7 @@
     });
 
     filters = {
+        school: 'allSchools',
         seed: 'allSeed',
         conference: 'all',  // TODO update these all values
     };
@@ -264,7 +268,6 @@
             });
         });
 
-        // TODO Fix sites - Long Beach, CA incorrectly geocoded
         //  Geojsons have been created by reading CSVs into QGIS and converted
         map.on('load', () => {
 
@@ -364,12 +367,12 @@
     function selectSchool() {
         $('#schoolFilter').on('change', (e) => {
             // apply selected school to filters
-            filters.conference = e.target.value;
+            filters.school = e.target.value;
+            console.log(filters);
         });
     }
 
     function selectConference() {
-        // TODO clear filter when selecteed school does not belong to selected conference
         $('#conferenceFilter').on('change', (e) => {
             // apply selected conference to filters
             filters.conference = e.target.value;
@@ -530,6 +533,12 @@
 
         map.on('click', 'schools', (e) => {
 
+            // TODO reset filters in resetExtent()
+            // save selected school in filters
+            filters.school = e.features[0].properties.school_common_name;
+            // set school filter dropdown value as clicked school
+            $('#schoolFilter').val(filters.school);
+
             // TODO put highlight stuff in function
             // TODO fix card style classes - margin bottom
             // const cards = $('.list-group');
@@ -556,18 +565,6 @@
 
             // TODO look into projection/distance calc, messed up cincy and louisville
             // TODO conditions for undefined?
-            // $('.card-header').text(e.features[0].properties.school_full_name);
-            // $('.card-1').text(`${e.features[0].properties.mean_wtDist.toFixed()} miles`);
-            // $('.card-2').text(`${e.features[0].properties.mean_dist.toFixed()} miles`);
-            // $('.card-3').text(`${e.features[0].properties.min_dist.toFixed()} miles`);
-            // $('p.min-text').text(`${min.city}, ${min.state} to ${min.site} as a ${min.seed} seed in ${min.year}`);
-            // $('.card-4').text(`${e.features[0].properties.max_dist.toFixed()} miles`);
-            // $('p.max-text').text(`${max.city}, ${max.state} to ${max.site} as a ${max.seed} seed in ${max.year}`);
-            // $('.card-5').text(e.features[0].properties.count_dist);
-            // $('.appearances-text').text('Appearances as 1-4 seed');
-
-            // function updateInfoCard(header, card1, card2, card3, card3text, card4, card4text, card5, card5text) {
-
             const inputs = {
                 header: e.features[0].properties.school_full_name,
                 card1: `${e.features[0].properties.mean_wtDist.toFixed()} miles`,
@@ -578,7 +575,7 @@
                 card4text: `${max.city}, ${max.state} to ${max.site} as a ${max.seed} seed in ${max.year}`,
                 card5: e.features[0].properties.count_dist,
                 card5text: 'Appearances as 1-4 seed',
-            }
+            };
             updateInfoCard(inputs);
             // TODO create subheader for text ^^
 
@@ -646,9 +643,6 @@
             // only display lines for the currently selected school and associated sites
             map.setFilter('line', ['==', 'school_common_name', e.features[0].properties.school_common_name]);
             map.setLayoutProperty('line', 'visibility', 'visible');
-            // map.setPaintProperty('line', 'line-width', ['get', 'seed']);
-            // map.setPaintProperty('line', 'line-color', ['match', ['get', 'seed'],
-            //     1, '#fcde9c', 2, '#f0746e', 3, '#dc3977', 4, '#7c1d6f', '#AAA']);
         });
     }
 
