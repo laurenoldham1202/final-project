@@ -233,6 +233,9 @@
         conference: 'all',  // TODO update these all values
     };
 
+    clickedStateId = null;
+
+
     // TODO Delete old json, replace with new
     // TODO Rerun test-default csv from analysis notebook with new distances
     const sitesJson = d3.json('data/cleaned/sites-all-edit.json');
@@ -282,7 +285,7 @@
 
             onWeightedToggle(schools);
 
-            selectSchool();
+            selectSchool(sites);
             selectConference();
             selectSeed();
 
@@ -364,12 +367,95 @@
 
     // TODO list schools instead of current extra filters - make additional dropdown for special cases?
     // TODO separate school click event from all other inputs, place here
-    function selectSchool() {
+    function selectSchool(sites) {
+        // let clickedStateId = null;
+        // const lineFeatures = [];
+
         $('#schoolFilter').on('change', (e) => {
             // apply selected school to filters
             filters.school = e.target.value;
-            console.log(filters);
+            // console.log(filters);
+            testFn(sites)
         });
+    }
+
+    // TODO add displayAvgDistance() to show avg distance on dropdown select
+    function testFn(sites) {
+        // let clickedStateId = null;
+        const lineFeatures = [];
+
+
+        map.getSource('schools')['_data'].features.forEach(feature => {
+            if (feature.properties.school_common_name === filters.school) {
+                if (clickedStateId) {
+                    map.setFeatureState({ source: 'schools', id: clickedStateId }, { clicked: false });
+                }
+                clickedStateId = feature.id;
+                // set `clicked` feature-state to true on new school click
+                map.setFeatureState({ source: 'schools', id: clickedStateId }, { clicked: true });
+
+
+
+
+                // change unclicked schools to grayed out style
+                map.setPaintProperty('schools', 'circle-color', ['case', ['boolean', ['feature-state', 'clicked'], false], '#E27600', '#D2D4D4']);
+
+                // reset circle opacity of clicked circle to 1 if it had changed (through default map extent)
+                map.setPaintProperty('schools', 'circle-opacity', ['case', ['boolean', ['feature-state', 'clicked'], false], 1, 0.7]);
+
+                // filter site layer and toggle visibility on for sites that match the clicked school
+                map.setFilter('sites', ['==', 'school_common_name', feature.properties.school_common_name]);
+                map.setLayoutProperty('sites', 'visibility', 'visible');
+
+                // create empty bounding geometry for fitBounds argument
+                const layerGeometry = {type: 'Polygon', coordinates: []};
+                // coordinate array (formatted[[0,0],[1,1],[...]) to be pushed to layerGeometry coordinates
+                // start with school point coordinates
+                const layerCoords = [feature.geometry.coordinates];
+
+                // loop through all tournament sites
+                sites.features.forEach(site => {
+                    // filter sites for the selected school
+                    if (site.properties.school_common_name === feature.properties.school_common_name) {
+                        // console.log(feature);
+                        console.log(site);
+                        // push site coordinates to single array
+                        layerCoords.push(site.geometry.coordinates);
+                        // wrap coords
+                        layerGeometry.coordinates = [layerCoords];
+
+                        // push linestring features to a feature array to be inserted into lines layer geojson source
+                        lineFeatures.push({
+                            'type': 'Feature',
+                            'properties': site.properties,  // apply all school/site metadata to linestring
+                            'geometry': {
+                                'type': 'LineString',
+                                // set school geometry and site geometry to create linetring between the two
+                                'coordinates': [feature.geometry.coordinates, site.geometry.coordinates],
+                            }
+                        });
+                    }
+                });
+
+                // fit bounds to school and sites, additional left buffer for highlight card offset
+                map.fitBounds(turf.bbox(layerGeometry), { padding: {top: 50, right: 50, bottom: 50, left: 375} });
+
+                // console.log(lineFeatures);
+
+                // push linestring features to line layer source
+                map.getSource('line').setData({ type: 'FeatureCollection', features: lineFeatures });
+
+                // TODO create method to do this for line AND site layer
+                // only display lines for the currently selected school and associated sites
+                map.setFilter('line', ['==', 'school_common_name', feature.properties.school_common_name]);
+                map.setLayoutProperty('line', 'visibility', 'visible');
+
+            }
+        });
+
+
+
+
     }
 
     function selectConference() {
@@ -535,9 +621,11 @@
 
             // TODO reset filters in resetExtent()
             // save selected school in filters
-            filters.school = e.features[0].properties.school_common_name;
-            // set school filter dropdown value as clicked school
-            $('#schoolFilter').val(filters.school);
+            // filters.school = e.features[0].properties.school_common_name;
+            // // set school filter dropdown value as clicked school
+            // $('#schoolFilter').val(filters.school);
+
+            // schoolSelect(e.features, sites, clickedStateId, lineFeatures);
 
             // TODO put highlight stuff in function
             // TODO fix card style classes - margin bottom
@@ -645,6 +733,114 @@
             map.setLayoutProperty('line', 'visibility', 'visible');
         });
     }
+
+    // TODO rename
+    function schoolSelect(schoolFeature, sites, clickedStateId, lineFeatures) {
+
+        // let clickedStateId = null;
+        // const lineFeatures = [];
+
+            // console.log(sites);
+            let min = null;
+            let max = null;
+
+
+
+            // TODO messed up for some schools - check KY, UCLA, Kansas, etc.
+            sites.features.forEach(site => {
+               if (site.properties.school_full_name === schoolFeature[0].properties.school_full_name) {
+                   if (site.properties.distance.toFixed(4) === schoolFeature[0].properties.min_dist.toFixed(4)) {
+                       min = site.properties;
+                   }
+                   if (site.properties.distance.toFixed(4) === schoolFeature[0].properties.max_dist.toFixed(4)) {
+                       max = site.properties;
+                   }
+               }
+            });
+
+            // TODO look into projection/distance calc, messed up cincy and louisville
+            // TODO conditions for undefined?
+            const inputs = {
+                header: schoolFeature[0].properties.school_full_name,
+                card1: `${schoolFeature[0].properties.mean_wtDist.toFixed()} miles`,
+                card2: `${schoolFeature[0].properties.mean_dist.toFixed()} miles`,
+                card3: `${schoolFeature[0].properties.min_dist.toFixed()} miles`,
+                card3text: `${min.city}, ${min.state} to ${min.site} as a ${min.seed} seed in ${min.year}`,
+                card4: `${schoolFeature[0].properties.max_dist.toFixed()} miles`,
+                card4text: `${max.city}, ${max.state} to ${max.site} as a ${max.seed} seed in ${max.year}`,
+                card5: schoolFeature[0].properties.count_dist,
+                card5text: 'Appearances as 1-4 seed',
+            };
+            updateInfoCard(inputs);
+            // TODO create subheader for text ^^
+
+
+            // close any open popups
+            popup.remove();
+
+            // TODO fix error where school and average are offset on zoom, double clicking school replots multiple
+            if (schoolFeature.length > 0) {
+                // if feature is already clicked, set `clicked` feature-state to false
+                if (clickedStateId) {
+                    map.setFeatureState({ source: 'schools', id: clickedStateId }, { clicked: false });
+                }
+                clickedStateId = schoolFeature[0].id;
+                // set `clicked` feature-state to true on new school click
+                map.setFeatureState({ source: 'schools', id: clickedStateId }, { clicked: true });
+            }
+
+            // change unclicked schools to grayed out style
+            map.setPaintProperty('schools', 'circle-color', ['case', ['boolean', ['feature-state', 'clicked'], false], '#E27600', '#D2D4D4']);
+
+            // reset circle opacity of clicked circle to 1 if it had changed (through default map extent)
+            map.setPaintProperty('schools', 'circle-opacity', ['case', ['boolean', ['feature-state', 'clicked'], false], 1, 0.7]);
+
+            // filter site layer and toggle visibility on for sites that match the clicked school
+            map.setFilter('sites', ['==', 'school_common_name', schoolFeature[0].properties.school_common_name]);
+            map.setLayoutProperty('sites', 'visibility', 'visible');
+
+            // create empty bounding geometry for fitBounds argument
+            const layerGeometry = {type: 'Polygon', coordinates: []};
+            // coordinate array (formatted[[0,0],[1,1],[...]) to be pushed to layerGeometry coordinates
+            // start with school point coordinates
+            const layerCoords = [schoolFeature[0].geometry.coordinates];
+
+            // loop through all tournament sites
+            sites.features.forEach(feature => {
+                // filter sites for the selected school
+                if (feature.properties.school_common_name === schoolFeature[0].properties.school_common_name) {
+
+                    // push site coordinates to single array
+                    layerCoords.push(feature.geometry.coordinates);
+                    // wrap coords
+                    layerGeometry.coordinates = [layerCoords];
+
+                    // push linestring features to a feature array to be inserted into lines layer geojson source
+                    lineFeatures.push({
+                        'type': 'Feature',
+                        'properties': feature.properties,  // apply all school/site metadata to linestring
+                        'geometry': {
+                            'type': 'LineString',
+                            // set school geometry and site geometry to create linetring between the two
+                            'coordinates': [schoolFeature[0].geometry.coordinates, feature.geometry.coordinates],
+                        }
+                    });
+                }
+            });
+
+            // fit bounds to school and sites, additional left buffer for highlight card offset
+            map.fitBounds(turf.bbox(layerGeometry), { padding: {top: 50, right: 50, bottom: 50, left: 375} });
+
+            // push linestring features to line layer source
+            map.getSource('line').setData({ type: 'FeatureCollection', features: lineFeatures });
+
+            // TODO create method to do this for line AND site layer
+            // only display lines for the currently selected school and associated sites
+            map.setFilter('line', ['==', 'school_common_name', schoolFeature[0].properties.school_common_name]);
+            map.setLayoutProperty('line', 'visibility', 'visible');
+    }
+
+
 
     // TODO simplify? put args in object? create class or interface for contentObject
     // function updateInfoCard(header, card1, card2, card3, card3text, card4, card4text, card5, card5text) {
