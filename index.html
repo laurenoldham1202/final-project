@@ -471,6 +471,23 @@
                 // only display lines for the currently selected school and associated sites
                 map.setFilter('line', ['==', 'school_common_name', feature.properties.school_common_name]);
                 map.setLayoutProperty('line', 'visibility', 'visible');
+
+
+
+
+
+                const avgDistance = [{
+                    type: "Feature",
+                    geometry: {
+                        type: "Point",
+                        coordinates: feature.geometry.coordinates,
+                    },
+                    properties: feature.properties,
+                }];
+
+                map.getSource('avg-distance').setData({ type: 'FeatureCollection', features: avgDistance });
+
+                map.setLayoutProperty('avg-distance', 'visibility', 'visible');
             }
         });
     }
@@ -708,22 +725,6 @@
             layout: {
                 visibility: 'visible',
             }
-        });
-
-        map.on('click', 'schools', (e) => {
-            const avgDistance = [{
-                type: "Feature",
-                geometry: {
-                    type: "Point",
-                    coordinates: e.features[0].geometry.coordinates,
-                },
-                properties: e.features[0].properties,
-            }];
-
-            map.getSource('avg-distance').setData({ type: 'FeatureCollection', features: avgDistance });
-
-            map.setLayoutProperty('avg-distance', 'visibility', 'visible');
-
         });
     }
 
