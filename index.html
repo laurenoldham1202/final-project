@@ -373,6 +373,15 @@
         $('#conferenceFilter').on('change', (e) => {
             // apply selected conference to filters
             filters.conference = e.target.value;
+
+            // TODO write in fn here and seedFilter? Save selected school in filters instead of iterating over layer source?
+            // root source for avg-distance layer, which includes the selected school
+            const selectedSchoolSource = map.getSource('avg-distance')['_data'].features;
+            // if a school has been selected AND that school does NOT have data for the selected seed, reset default map extent
+            if (selectedSchoolSource.length > 0 && selectedSchoolSource[0].properties.conference !== e.target.value) {
+                resetExtent();
+            }
+
             // TODO fit bounds? Allow multiple seed and conference selections?
             setMapFilters();
 
@@ -536,7 +545,6 @@
             // TODO messed up for some schools - check KY, UCLA, Kansas, etc.
             sites.features.forEach(site => {
                if (site.properties.school_full_name === e.features[0].properties.school_full_name) {
-                   console.log(site.properties);
                    if (site.properties.distance.toFixed(4) === e.features[0].properties.min_dist.toFixed(4)) {
                        min = site.properties;
                    }
