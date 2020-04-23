@@ -102,17 +102,9 @@
         </div>
     </div>
 
+    <!-- TODO hardcode width so it doesn't move when values are pushed in jquery, adjust dropdown height-->
     <select id="schoolFilter" class="toolbar-select">
         <option value="allSchools">All Schools</option>
-
-        <!-- TODO push dynamically from json source -->
-        <option value="Kentucky">Kentucky</option>
-        <option value="Louisville">Louisville</option>
-        <option value="Kansas">Kansas</option>
-        <option value="Auburn">Auburn</option>
-<!--        <option value="fivePlus">5+ Appearances</option>-->
-<!--        <option value="tenPlus">10+ Appearances</option>-->
-<!--        <option value="blueBloods">Blue Bloods</option>-->
 <!--        <option value="power5">Power 5 Conference</option>  &lt;!&ndash; TODO move to conference?  Add all schools? Multiple options?&ndash;&gt;-->
     </select>
 
@@ -258,8 +250,9 @@
         const seedsAgg = data[3];
         const conf = data[4];
 
-        // apply seed property to schools geojson to match with seed dropdown values
-        applySeedProperty(schools, seeds);
+        // iterate over schools and seeds geojson layers before manipulating map
+        // push schools to schoolFilter dropdown, apply seed values to school feature properties
+        iterateGeojsonSource(schools, seeds);
 
         //  Geojsons have been created by reading CSVs into QGIS and converted
         map.on('load', () => {
@@ -313,9 +306,15 @@
         });
     }
 
-    function applySeedProperty(schools, seeds) {
-        // TODO Move to node script?
+    // iterate over schools and seeds geojson layers before manipulating map
+    function iterateGeojsonSource(schools, seeds) {
+        const allSchools = [];  // empty array to push school values
         schools.features.forEach(school => {
+            // push all schools to array to be sorted before pushing to dropdown
+            allSchools.push(school.properties.school_common_name);
+
+            // TODO Move to node script?
+            // apply seed property to schools geojson to match with seed dropdown values
             seeds.features.forEach(seed => {
                 if (school.properties.school_common_name === seed.properties.school_common_name) {
                     if (seed.properties.seed === '1.0') {
@@ -331,6 +330,11 @@
             });
         });
 
+        allSchools.sort();  // sort schools alphabetically
+        allSchools.forEach(school => {
+            // push all school names to schoolFilter dropdown
+            $('#schoolFilter').append(`<option value="${school}">${school}</option>`);
+        });
     }
 
     function defaultMap() {
