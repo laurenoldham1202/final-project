@@ -156,6 +156,8 @@
 
     <ul class="list-group list-group-flush">
 
+        <!-- TODO Add extra details for selected schools, +/- from overall average-->
+        <!-- TODO separate weighted and unweighted popups separately -->
         <li class="list-group-item">
             <h5 class="card-title card-1">335 miles</h5>
             <p class="card-text">Weighted mean distance traveled</p>
@@ -348,7 +350,7 @@
         // filters.school = 'allSchools';
         $('#schoolFilter').val('allSchools');
 
-        const layers = ['sites', 'line', 'avg-distance'];
+        const layers = ['sites', 'line', 'avg-distance', 'selected-school']; // TODO create constants
         layers.forEach(layer => {
             map.setLayoutProperty(layer, 'visibility', 'none');
         });
@@ -508,6 +510,11 @@
 
         // apply above geojson to avg-distance layer
         map.getSource('avg-distance').setData({ type: 'FeatureCollection', features: avgDistance });
+
+        // toggle visibility of layer back on if previously set to none (e.g. in resetExtent)
+        ['avg-distance', 'selected-school'].forEach(layer => {
+            map.setLayoutProperty(layer, 'visibility', 'visible');
+        });
     }
 
     function styleLayers(feature) {
@@ -580,9 +587,14 @@
             const stops = createStops(geojson, mean);
             map.setPaintProperty('schools', 'circle-radius', {property: mean, stops: stops});
 
+            // apply selected school circle radius based on data-driven radiuses
+            map.setPaintProperty('selected-school', 'circle-radius',
+                { property: 'mean_wtDist', stops: createStops(map.getSource('selected-school')['_data'], mean) }
+            );
+
             // TODO craete constants for avg values
             // adjust average distance circle based on weighted toggle status
-            map.setPaintProperty('avg-distance', 'circle-radius', e.target.checked ? 638/25 : 335/25);
+            map.setPaintProperty('avg-distance', 'circle-radius', e.target.checked ? 335/25 : 638/25);
         });
     }
 
@@ -623,6 +635,7 @@
                     stops: stops,
                 },
                 'circle-color': '#E27600',
+                // TODO remove feature state?
                 'circle-opacity': ['case', ['boolean', ['feature-state', 'clicked'], false], 1, 0.7],
                 'circle-stroke-color': 'whitesmoke',
                 'circle-stroke-opacity': 0.5,
@@ -783,7 +796,7 @@
             layout: {
                 visibility: 'visible',
             }
-        });
+        }, 'avg-distance');
     }
 
 
