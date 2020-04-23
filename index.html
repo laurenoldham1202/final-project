@@ -261,10 +261,11 @@
             createSchoolLayer(schools);
             createSiteLayer(sites);
             createLineStringLayer();
+            createAvgDistanceLayer();  // TODO move to different function?
+            createSelectedSchoolLayer();
 
             onSchoolClick(sites);
 
-            addAvgDistanceLayer();  // TODO move to different function?
 
             onWeightedToggle(schools);
 
@@ -406,15 +407,14 @@
         map.setFeatureState({ source: 'schools', id: clickedStateId }, { clicked: true });
     }
 
-    // TODO add addAvgDistanceLayer() to show avg distance on dropdown select
-    function highlightSchool(sites) {
+    // TODO add createAvgDistanceLayer() to show avg distance on dropdown select
+    function highlightSchool(sites) {  // TODO iterate over layer source instead of geojson directly
         const lineFeatures = [];
         let min = null;
         let max = null;
 
         map.getSource('schools')['_data'].features.forEach(feature => {
             if (feature.properties.school_common_name === filters.school) {
-
                 // close any open popups
                 popup.remove();
 
@@ -487,7 +487,7 @@
         });
     }
 
-    function setAvgDistanceLayer(feature) {
+    function setAvgDistanceLayer(feature) {  // TODO rename fn
         // create formatted mapbox/geojson feature to apply to avg-distance layer source
         const avgDistance = [{
             type: "Feature",
@@ -498,10 +498,16 @@
             properties: feature.properties,
         }];
 
+        // apply geojson source to selected school layer
+        // TODO update with weightedDist toggle, reset extent
+        map.getSource('selected-school').setData({ type: 'FeatureCollection', features: avgDistance });
+        // apply circle radius based on data-driven radiuses
+        map.setPaintProperty('selected-school', 'circle-radius',
+            { property: 'mean_wtDist', stops: createStops(map.getSource('selected-school')['_data'], 'mean_wtDist') }
+        );
+
         // apply above geojson to avg-distance layer
         map.getSource('avg-distance').setData({ type: 'FeatureCollection', features: avgDistance });
-        // toggle avg-distance circle layer on for each school click
-        map.setLayoutProperty('avg-distance', 'visibility', 'visible');
     }
 
     function styleLayers(feature) {
@@ -592,7 +598,7 @@
 
         const sortedValues = values.sort((a, b) => { return a-b });
         sortedValues.forEach(val => {
-            stops.push([val, val/35]);  // TODO change dividend for unweighted?
+            stops.push([val, val/35]);  // TODO change dividend for unweighted? use 25 or 35?
         });
         return stops;
     }
@@ -671,7 +677,7 @@
             layout: {  // TODO add style
                 visibility: 'none',  // invisible on default, gets toggled on on school click event
             },
-        }, 'schools');  // plot lines underneath schools layer
+        }, 'sites');  // plot lines underneath schools layer
     }
 
     // TODO instead of changing feature-state to set fill opacity to 1, add it to new layer so that grayed out features can be pushed below lines
@@ -730,7 +736,7 @@
         });
     }
 
-    function addAvgDistanceLayer() {
+    function createAvgDistanceLayer() {
         map.addLayer({
             id: 'avg-distance',
             type: 'circle',
@@ -748,6 +754,31 @@
                 'circle-stroke-opacity': 0.7,
                 'circle-stroke-color': '#AA5F0E',
                 'circle-stroke-width': 2,
+            },
+            layout: {
+                visibility: 'visible',
+            }
+        });
+    }
+
+    function createSelectedSchoolLayer() {
+        map.addLayer({
+            id: 'selected-school',
+            type: 'circle',
+            source: {
+                type: 'geojson',
+                data: {
+                    type: 'FeatureCollection',
+                    features: [ ],
+                }
+            },
+            paint: {
+                // TODO change avg if weighted or not
+                // 'circle-radius': 345.88513858848495/25,  // average weighted mean
+                'circle-color': 'yellow',
+                'circle-stroke-opacity': 1,
+                // 'circle-stroke-color': 'yellow',
+                // 'circle-stroke-width': 2,
             },
             layout: {
                 visibility: 'visible',
