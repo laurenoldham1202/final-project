@@ -33,8 +33,10 @@
 
         #map {
             position: absolute;
-            top: 5rem;
-            left: 0;
+            /*top: 5rem;*/
+            /*left: 0;*/
+            top: 0;
+            left: 20rem;
             right: 0;
             bottom: 0;
         }
@@ -44,15 +46,22 @@
         }
 
         .info {
-            background: rgba(255,255,255,0.9);
-            width: 20rem;
-            /*height: 30rem;*/
-            height: auto;
-            z-index: 1000;
+            /*background: rgba(255,255,255,0.9);*/
+            /*width: 20rem;*/
+            /*!*height: 30rem;*!*/
+            /*height: auto;*/
+            /*z-index: 1000;*/
+            /*position: absolute;*/
+            /*top: 6rem;*/
+            /*left: 1rem;*/
+            /*border-radius: 5px;*/
+
             position: absolute;
-            top: 6rem;
-            left: 1rem;
-            border-radius: 5px;
+            bottom: 0;
+            top: 20rem;
+            left: 0;
+            /*max-height: 30rem;*/
+            overflow: scroll;
         }
 
         .toggle-container {
@@ -74,7 +83,9 @@
         }
 
         .toolbar-select {
-            margin: 0 1rem;
+            /*margin: 0 1rem;*/
+            width: 15rem;
+            margin: 0.5rem;
         }
 
         .custom-control-input:checked~.custom-control-label::before {
@@ -87,113 +98,211 @@
             visibility: visible !important;
         }
 
+
+
+
+        .stat {
+            width: 25%;
+            /*border: 1px solid red;*/
+            /*height: 3rem;*/
+        }
+
+        .stat-header {
+            color: #AAA;
+            font-size: 0.75rem;
+        }
+
+        .stat-text {
+            font-size: 1.5rem;
+        }
+
     </style>
 </head>
 <body>
 
 <!-- TODO: Add extent button, add button toggle to switch between years by year and averages -->
 
-<div class="toolbar">
+<!--<div class="toolbar">-->
 
-    <div class="toggle-container toolbar-select">
-        <div class="custom-control custom-switch">
-            <input type="checkbox" class="custom-control-input" id="weightedToggle" checked>
-            <label class="custom-control-label" for="weightedToggle">Weighted Distance</label>
-        </div>
-    </div>
+<!--    <div class="toggle-container toolbar-select">-->
+<!--        <div class="custom-control custom-switch">-->
+<!--            <input type="checkbox" class="custom-control-input" id="weightedToggle" checked>-->
+<!--            <label class="custom-control-label" for="weightedToggle">Weighted Distance</label>-->
+<!--        </div>-->
+<!--    </div>-->
 
-    <!-- TODO hardcode width so it doesn't move when values are pushed in jquery, adjust dropdown height-->
-    <select id="schoolFilter" class="toolbar-select">
-        <option value="allSchools">All Schools</option>
-<!--        <option value="power5">Power 5 Conference</option>  &lt;!&ndash; TODO move to conference?  Add all schools? Multiple options?&ndash;&gt;-->
-    </select>
+<!--    &lt;!&ndash; TODO hardcode width so it doesn't move when values are pushed in jquery, adjust dropdown height&ndash;&gt;-->
+<!--    <select id="schoolFilter" class="toolbar-select">-->
+<!--        <option value="allSchools">All Schools</option>-->
+<!--&lt;!&ndash;        <option value="power5">Power 5 Conference</option>  &lt;!&ndash; TODO move to conference?  Add all schools? Multiple options?&ndash;&gt;&ndash;&gt;-->
+<!--    </select>-->
 
-    <select id="seedFilter" class="toolbar-select">
-        <option value="allSeed">All Seeds</option>
-        <option value="oneSeed">1 Seeds</option>
-        <option value="twoSeed">2 Seeds</option>
-        <option value="threeSeed">3 Seeds</option>
-        <option value="fourSeed">4 Seeds</option>
-    </select>
+<!--    <select id="seedFilter" class="toolbar-select">-->
+<!--        <option value="allSeed">All Seeds</option>-->
+<!--        <option value="oneSeed">1 Seeds</option>-->
+<!--        <option value="twoSeed">2 Seeds</option>-->
+<!--        <option value="threeSeed">3 Seeds</option>-->
+<!--        <option value="fourSeed">4 Seeds</option>-->
+<!--    </select>-->
 
-    <!-- TODO create programmatically through json and use full value text -->
-    <select id="conferenceFilter" class="toolbar-select">
-        <option value="all">All Conferences</option>
-        <option value="American Athletic Conference">American Athletic Conference</option>
-        <option value="Atlantic 10 Conference">Atlantic 10 Conference</option>
-        <option value="Atlantic Coast Conference">Atlantic Coast Conference</option>
-        <option value="Big 12 Conference">Big 12 Conference</option>
-        <option value="Big East Conference">Big East Conference</option>
-        <option value="Big Ten Conference">Big Ten Conference</option>
-        <option value="Missouri Valley Conference">Missouri Valley Conference</option>
-        <option value="Mountain West Conference">Mountain West Conference</option>
-        <option value="Pac-12 Conference">Pac-12 Conference</option>
-        <option value="Southeastern Conference">Southeastern Conference</option>
-        <option value="West Coast Conference">West Coast Conference</option>
-    </select>
+<!--    &lt;!&ndash; TODO create programmatically through json and use full value text &ndash;&gt;-->
+<!--    <select id="conferenceFilter" class="toolbar-select">-->
+<!--        <option value="all">All Conferences</option>-->
+<!--        <option value="American Athletic Conference">American Athletic Conference</option>-->
+<!--        <option value="Atlantic 10 Conference">Atlantic 10 Conference</option>-->
+<!--        <option value="Atlantic Coast Conference">Atlantic Coast Conference</option>-->
+<!--        <option value="Big 12 Conference">Big 12 Conference</option>-->
+<!--        <option value="Big East Conference">Big East Conference</option>-->
+<!--        <option value="Big Ten Conference">Big Ten Conference</option>-->
+<!--        <option value="Missouri Valley Conference">Missouri Valley Conference</option>-->
+<!--        <option value="Mountain West Conference">Mountain West Conference</option>-->
+<!--        <option value="Pac-12 Conference">Pac-12 Conference</option>-->
+<!--        <option value="Southeastern Conference">Southeastern Conference</option>-->
+<!--        <option value="West Coast Conference">West Coast Conference</option>-->
+<!--    </select>-->
 
-    <button id="extent"><span class="material-icons">public</span></button>
+<!--    <button id="extent"><span class="material-icons">public</span></button>-->
 
-    <div class="dropdown-container">
-        <button id="seed-select">Click me</button>
-    </div>
+<!--    <div class="dropdown-container">-->
+<!--        <button id="seed-select">Click me</button>-->
+<!--    </div>-->
 
-</div>
+<!--</div>-->
+
 <div id="map"></div>
 
 <div class="info"></div>
 
-<div class="card text-center info">
-    <div class="card-header">
-        All Top Seeded Schools 1985 - 2019
-    </div>
-
-<!--    <div class="card-body">-->
-<!--        <h5 class="card-title">395 miles</h5>-->
-<!--        <p class="card-text">Mean distance traveled as a top (1-4) seed</p>-->
-<!--&lt;!&ndash;        <a href="#" class="btn btn-primary">Go somewhere</a>&ndash;&gt;-->
+<!--<div class="card text-center info">-->
+<!--    <div class="card-header">-->
+<!--        All Top Seeded Schools 1985 - 2019-->
 <!--    </div>-->
 
-    <ul class="list-group list-group-flush">
+<!--&lt;!&ndash;    <div class="card-body">&ndash;&gt;-->
+<!--&lt;!&ndash;        <h5 class="card-title">395 miles</h5>&ndash;&gt;-->
+<!--&lt;!&ndash;        <p class="card-text">Mean distance traveled as a top (1-4) seed</p>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <a href="#" class="btn btn-primary">Go somewhere</a>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
 
-        <!-- TODO Add extra details for selected schools, +/- from overall average-->
-        <!-- TODO separate weighted and unweighted popups separately -->
-        <li class="list-group-item">
-            <h5 class="card-title card-1">335 miles</h5>
-            <p class="card-text">Weighted mean distance traveled</p>
-        </li>
+<!--    <ul class="list-group list-group-flush">-->
 
-        <li class="list-group-item">
-            <h5 class="card-title card-2">638 miles</h5>
-            <p class="card-text">Mean distance (unweighted) traveled</p>
-        </li>
-        </li>
+<!--        &lt;!&ndash; TODO Add extra details for selected schools, +/- from overall average&ndash;&gt;-->
+<!--        &lt;!&ndash; TODO separate weighted and unweighted popups separately &ndash;&gt;-->
+<!--        <li class="list-group-item">-->
+<!--            <h5 class="card-title card-1">335 miles</h5>-->
+<!--            <p class="card-text">Weighted mean distance traveled</p>-->
+<!--        </li>-->
 
-        <li class="list-group-item">
-            <h5 class="card-title card-3">0.39 miles</h5>
-            <p class="card-text">Minimum distance traveled</p>
-            <p class="min-text">University of Arizona to Tucson, AZ as a 1 seed in 2000</p>
-        </li>
-        </li>
+<!--        <li class="list-group-item">-->
+<!--            <h5 class="card-title card-2">638 miles</h5>-->
+<!--            <p class="card-text">Mean distance (unweighted) traveled</p>-->
+<!--        </li>-->
+<!--        </li>-->
 
-        <li class="list-group-item">
-            <h5 class="card-title card-4">2866 miles</h5>
-            <p class="card-text">Maximum distance traveled</p>
-            <p class="max-text">Syracuse University to San Jose, CA as a 4 seed in 2013</p>
-        </li>
-        </li>
+<!--        <li class="list-group-item">-->
+<!--            <h5 class="card-title card-3">0.39 miles</h5>-->
+<!--            <p class="card-text">Minimum distance traveled</p>-->
+<!--            <p class="min-text">University of Arizona to Tucson, AZ as a 1 seed in 2000</p>-->
+<!--        </li>-->
+<!--        </li>-->
 
-        <li class="list-group-item">
-            <h5 class="card-title card-5">87</h5>
-            <p class="appearances-text">Different schools with appearances</p>
-        </li>
+<!--        <li class="list-group-item">-->
+<!--            <h5 class="card-title card-4">2866 miles</h5>-->
+<!--            <p class="card-text">Maximum distance traveled</p>-->
+<!--            <p class="max-text">Syracuse University to San Jose, CA as a 4 seed in 2013</p>-->
+<!--        </li>-->
+<!--        </li>-->
 
-    </ul>
+<!--        <li class="list-group-item">-->
+<!--            <h5 class="card-title card-5">87</h5>-->
+<!--            <p class="appearances-text">Different schools with appearances</p>-->
+<!--        </li>-->
 
-    <div class="card-footer text-muted" style="width: 100%; display: flex; flex-direction: row;">
-        <div class="footer-left" style="width: 50%; visibility: hidden;">< School</div>
-        <div class="footer-right" style="margin-left: auto;width: 50%;">Seed ></div>
+<!--    </ul>-->
+
+<!--    <div class="card-footer text-muted" style="width: 100%; display: flex; flex-direction: row;">-->
+<!--        <div class="footer-left" style="width: 50%; visibility: hidden;">< School</div>-->
+<!--        <div class="footer-right" style="margin-left: auto;width: 50%;">Seed ></div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<div class="sidebar" style="position: absolute; top: 0; bottom: 0; left: 0;
+width: 20rem; background: whitesmoke; padding: 1rem;">
+
+    <h2 style="text-align: center;">March Madness</h2>
+    <hr>
+
+    <div class="filters-container" style="text-align: center;">
+
+        <div class="toggle-container toolbar-select">
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="weightedToggle" checked>
+                <label class="custom-control-label" for="weightedToggle">Weighted Distance</label>
+            </div>
+        </div>
+
+        <!-- todo use charcoal background instead of blue? -->
+            <!-- TODO hardcode width so it doesn't move when values are pushed in jquery, adjust dropdown height-->
+            <select id="schoolFilter" class="toolbar-select">
+                <option value="allSchools">All Schools</option>
+        <!--        <option value="power5">Power 5 Conference</option>  &lt;!&ndash; TODO move to conference?  Add all schools? Multiple options?&ndash;&gt;-->
+            </select>
+
+            <select id="seedFilter" class="toolbar-select">
+                <option value="allSeed">All Seeds</option>
+                <option value="oneSeed">1 Seeds</option>
+                <option value="twoSeed">2 Seeds</option>
+                <option value="threeSeed">3 Seeds</option>
+                <option value="fourSeed">4 Seeds</option>
+            </select>
+
+            <!-- TODO create programmatically through json and use full value text -->
+            <select id="conferenceFilter" class="toolbar-select">
+                <option value="all">All Conferences</option>
+                <option value="American Athletic Conference">American Athletic Conference</option>
+                <option value="Atlantic 10 Conference">Atlantic 10 Conference</option>
+                <option value="Atlantic Coast Conference">Atlantic Coast Conference</option>
+                <option value="Big 12 Conference">Big 12 Conference</option>
+                <option value="Big East Conference">Big East Conference</option>
+                <option value="Big Ten Conference">Big Ten Conference</option>
+                <option value="Missouri Valley Conference">Missouri Valley Conference</option>
+                <option value="Mountain West Conference">Mountain West Conference</option>
+                <option value="Pac-12 Conference">Pac-12 Conference</option>
+                <option value="Southeastern Conference">Southeastern Conference</option>
+                <option value="West Coast Conference">West Coast Conference</option>
+            </select>
+
+        <select id="statFilter" class="toolbar-select">
+            <option value="mean">Mean</option>
+            <option value="50%">Median</option>
+            <option value="min">Minimum</option>
+            <option value="max">Maximum</option>
+            <option value="count">Count (Appearances)</option>
+        </select>
     </div>
+
+    <div class="highlights-container" style="width: 100%;">
+        <div class="stats-row" style="display: flex; flex-direction: row;">
+            <div class="stat">
+                <div class="stat-header">mean</div>
+                <div class="stat-text">338</div>
+            </div>
+            <div class="stat">
+                <div class="stat-header">min</div>
+                <div class="stat-text">0.38</div>
+            </div>
+            <div class="stat">
+                <div class="stat-header">max</div>
+                <div class="stat-text">2665</div>
+            </div>
+            <div class="stat">
+                <div class="stat-header">count</div>
+                <div class="stat-text">87</div>
+            </div>
+        </div>
+
+    </div>
+
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
