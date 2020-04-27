@@ -14,12 +14,20 @@
     <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Palanquin', sans-serif;
-
+            /*font-family: 'Palanquin', sans-serif;*/
+            /*font-family: 'Passion One', sans-serif;*/
+            /*font-family: 'Anton', sans-serif;*/
+            /*font-family: 'Bebas Neue', cursive;*/
+            font-family: 'Roboto', sans-serif;
         }
 
         select {
@@ -117,6 +125,10 @@
             font-size: 1.5rem;
         }
 
+        .capital-font {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
 
         .highlights-container-2 {
             -webkit-box-sizing: border-box;
@@ -132,6 +144,11 @@
             margin-top: 0.25rem;
             cursor: pointer;
             /*padding-top: 1rem;*/
+            transition: 0.3s ease-in-out;
+        }
+
+        .hl-row:hover {
+            height: 7rem;
         }
 
         .hl-stat {
@@ -273,7 +290,7 @@
 <div class="sidebar" style="position: absolute; top: 0; bottom: 0; left: 0;
 width: 20rem; background: whitesmoke; padding: 1rem;">
 
-    <h2 style="text-align: center;">March Madness</h2>
+    <h1 class="capital-font" style="text-align: center;">March Madness</h1>
     <hr>
 
     <div class="filters-container" style="text-align: center;">
@@ -348,22 +365,22 @@ width: 20rem; background: whitesmoke; padding: 1rem;">
 
     <div class="highlights-container-2" style="width: 100%;">
         <div class="hl-row">
-            <div class="hl-stat">338 miles</div>
+            <div class="hl-stat capital-font">338 miles</div>
             <div class="hl">mean distance traveled</div>
         </div>
 
         <div class="hl-row">
-            <div class="hl-stat">0.38 miles</div>
+            <div class="hl-stat capital-font">0.38 miles</div>
             <div class="hl">minimum distance traveled</div>
         </div>
 
         <div class="hl-row">
-            <div class="hl-stat">2665 miles</div>
+            <div class="hl-stat capital-font">2665 miles</div>
             <div class="hl">maximum distance traveled</div>
         </div>
 
         <div class="hl-row">
-            <div class="hl-stat">87</div>
+            <div class="hl-stat capital-font">87</div>
             <div class="hl">unique schools</div>
         </div>
     </div>
@@ -583,6 +600,7 @@ width: 20rem; background: whitesmoke; padding: 1rem;">
         map.setFeatureState({ source: 'schools', id: clickedStateId }, { clicked: true });
     }
 
+    // TODO clear conference filter when school is selected but doesn't match filter
     // TODO add createAvgDistanceLayer() to show avg distance on dropdown select
     function highlightSchool(sites) {  // TODO iterate over layer source instead of geojson directly
         const lineFeatures = [];
