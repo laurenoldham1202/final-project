@@ -147,8 +147,9 @@
             transition: 0.3s ease-in-out;
         }
 
-        .hl-row:hover {
-            height: 7rem;
+        .hl-subtext {
+            visibility: hidden;
+            /*color: blue;*/
         }
 
         .hl-stat {
@@ -168,14 +169,24 @@
             border-color: #0146a1;
         }
 
+        .hl-row:hover > .hl > .hl-subtext {
+            visibility: visible;
+            /*color: red;*/
+        }
+
+        .hl-row:hover {
+            height: 7rem;
+        }
+
         .hl {
             width: 65%;
             border: 1px solid #ddd;
             border-radius: 0 4px 4px 0;
             font-size: 0.75rem;
             padding: 0.75rem 0 0 0.25rem;
-
+            transition: 0.3s ease-in-out;
         }
+
 
     </style>
 </head>
@@ -366,7 +377,10 @@ width: 20rem; background: whitesmoke; padding: 1rem;">
     <div class="highlights-container-2" style="width: 100%;">
         <div class="hl-row">
             <div class="hl-stat capital-font">338 miles</div>
-            <div class="hl">mean distance traveled</div>
+            <div class="hl">
+                mean distance traveled
+                <div class="hl-subtext">0 miles above average</div>
+            </div>
         </div>
 
         <div class="hl-row">
