@@ -130,13 +130,13 @@
         }
 
 
-        .highlights-container-2 {
+        .info-container {
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
         }
 
-        .hl-row {
+        .info-row {
             width: 100%;
             display: flex;
             flex-direction: row;
@@ -147,12 +147,12 @@
             transition: 0.3s ease-in-out;
         }
 
-        .hl-subtext {
+        .info-subtext {
             visibility: hidden;
             /*color: blue;*/
         }
 
-        .hl-stat {
+        .info-stat {
             width: 35%;
             background: #ddd;
             border-radius: 4px 0 0 4px;
@@ -160,31 +160,36 @@
             padding: 0.75rem 0 0 0.25rem;
         }
 
-        .hl-row:hover > .hl-stat {
+        .info-row:hover > .info-stat {
             background: #0146a1;
             color: whitesmoke;
         }
 
-        .hl-row:hover > .hl {
+        .info-row:hover > .info-text {
             border-color: #0146a1;
         }
 
-        .hl-row:hover > .hl > .hl-subtext {
+        .info-row:hover > .info-text > .info-subtext {
             visibility: visible;
             /*color: red;*/
         }
 
-        .hl-row:hover {
+        .info-row:hover {
             height: 7rem;
         }
 
-        .hl {
+        .info-text {
             width: 65%;
             border: 1px solid #ddd;
             border-radius: 0 4px 4px 0;
             font-size: 0.75rem;
-            padding: 0.75rem 0 0 0.25rem;
+            padding: 0.75rem 0 0 0.5rem;
             transition: 0.3s ease-in-out;
+        }
+
+        .info-subtext {
+            color: #777;
+            margin-top: 0.5rem;
         }
 
 
@@ -374,28 +379,41 @@ width: 20rem; background: whitesmoke; padding: 1rem;">
 <!--        </div>-->
 <!--    </div>-->
 
-    <div class="highlights-container-2" style="width: 100%;">
-        <div class="hl-row">
-            <div class="hl-stat capital-font">338 miles</div>
-            <div class="hl">
-                mean distance traveled
-                <div class="hl-subtext">0 miles above average</div>
+    <!-- TODO add card for weighted avg? or change on weighted toggle? add header -->
+    <div class="info-container" style="width: 100%;">
+        <div class="info-row">
+            <div class="info-stat capital-font card-1">335 miles</div>
+            <div class="info-text">
+                mean distance traveled (WEIGHTED)
+                <div class="info-subtext card-1-subtext">Average for top seeded schools 1985 - 2019</div>
             </div>
         </div>
 
-        <div class="hl-row">
-            <div class="hl-stat capital-font">0.38 miles</div>
-            <div class="hl">minimum distance traveled</div>
+        <div class="info-row">
+            <div class="info-stat capital-font card-2">638 miles</div>
+            <div class="info-text">
+                mean distance traveled
+                <div class="info-subtext card-2-subtext">Average for top seeded schools 1985 - 2019</div>
+            </div>
         </div>
 
-        <div class="hl-row">
-            <div class="hl-stat capital-font">2665 miles</div>
-            <div class="hl">maximum distance traveled</div>
+        <div class="info-row">
+            <div class="info-stat capital-font card-3">0.38 miles</div>
+            <div class="info-text">minimum distance traveled
+                <div class="info-subtext card-3-subtext">University of Arizona to Tucson, AZ as a 1 seed in 2000</div>
+            </div>
         </div>
 
-        <div class="hl-row">
-            <div class="hl-stat capital-font">87</div>
-            <div class="hl">unique schools</div>
+        <div class="info-row">
+            <div class="info-stat capital-font card-4">2665 miles</div>
+            <div class="info-text">maximum distance traveled
+                <div class="info-subtext card-4-subtext">Syracuse University to San Jose, CA as a 4 seed in 2013</div>
+            </div>
+        </div>
+
+        <div class="info-row">
+            <div class="info-stat capital-font card-5">87</div>
+            <div class="info-text card-5-subtext">unique schools</div>
         </div>
     </div>
 
@@ -580,7 +598,9 @@ width: 20rem; background: whitesmoke; padding: 1rem;">
         const infoCardInputs = {
             header: 'All Top Seeded Schools 1985 - 2019',
             card1: '335 miles',
+            card1text: 'Average for top seeded schools 1985 - 2019',  // TODO make constant
             card2: '638 miles',
+            card2text: 'Average for top seeded schools 1985 - 2019',
             card3: '0.39 miles',
             card3text: 'University of Arizona to Tucson, AZ as a 1 seed in 2000',
             card4: '2866 miles',
@@ -677,7 +697,9 @@ width: 20rem; background: whitesmoke; padding: 1rem;">
                 const inputs = {
                     header: feature.properties.school_full_name,
                     card1: `${feature.properties.mean_wtDist.toFixed()} miles`,
+                    card1text: '',
                     card2: `${feature.properties.mean_dist.toFixed()} miles`,
+                    card2text: '',
                     card3: `${feature.properties.min_dist.toFixed()} miles`,
                     card3text: `${min.city}, ${min.state} to ${min.site} as a ${min.seed} seed in ${min.year}`,
                     card4: `${feature.properties.max_dist.toFixed()} miles`,
@@ -918,13 +940,15 @@ width: 20rem; background: whitesmoke; padding: 1rem;">
     function updateInfoCard(contentObject) {
         $('.card-header').text(contentObject['header']);
         $('.card-1').text(contentObject['card1']);
+        $('.card-1-subtext').text(contentObject['card1text']);
         $('.card-2').text(contentObject['card2']);
+        $('.card-2-subtext').text(contentObject['card2text']);
         $('.card-3').text(contentObject['card3']);
-        $('p.min-text').text(contentObject['card3text']);
+        $('.card-3-subtext').text(contentObject['card3text']);
         $('.card-4').text(contentObject['card4']);
-        $('p.max-text').text(contentObject['card4text']);
+        $('.card-4-subtext').text(contentObject['card4text']);
         $('.card-5').text(contentObject['card5']);
-        $('.appearances-text').text(contentObject['card5text']);
+        $('.card-5-subtext').text(contentObject['card5text']);
     }
 
     function onSchoolHover() {
