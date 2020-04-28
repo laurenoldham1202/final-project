@@ -125,6 +125,20 @@
             font-size: 1.5rem;
         }
 
+        .sidebar {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 20rem;
+            background: whitesmoke;
+            padding: 1rem;
+        }
+
+        .filters-container {
+            text-align: center;
+        }
+
         .capital-font {
             font-family: 'Bebas Neue', sans-serif;
         }
@@ -134,6 +148,20 @@
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
+            width: 100%;
+        }
+
+        .info-header {
+            margin-top: 2rem;
+            width: 100%;
+            background: #404041;
+            color: whitesmoke;
+            text-align: center;
+            font-size: 24px;
+            border-radius: 4px;
+            padding: 0.5rem;
+            border: 1px solid #AAA;
+            cursor: default;
         }
 
         .info-row {
@@ -336,13 +364,12 @@
     <button id="extent"><span class="material-icons">public</span></button>
 </div>
 
-<div class="sidebar" style="position: absolute; top: 0; bottom: 0; left: 0;
-width: 20rem; background: whitesmoke; padding: 1rem;">
+<div class="sidebar">
 
     <h1 class="capital-font" style="text-align: center;">March Madness</h1>
     <hr>
 
-    <div class="filters-container" style="text-align: center;">
+    <div class="filters-container">
 
         <div class="toggle-container toolbar-select">
             <div class="custom-control custom-switch">
@@ -382,6 +409,7 @@ width: 20rem; background: whitesmoke; padding: 1rem;">
                 <option value="West Coast Conference">West Coast Conference</option>
             </select>
 
+        <!-- TODO implement! -->
         <select id="statFilter" class="toolbar-select">
             <option value="mean">Mean</option>
             <option value="50%">Median</option>
@@ -413,7 +441,10 @@ width: 20rem; background: whitesmoke; padding: 1rem;">
 <!--    </div>-->
 
     <!-- TODO add card for weighted avg? or change on weighted toggle? add header -->
-    <div class="info-container" style="width: 100%;">
+    <div class="info-container">
+
+        <div class="info-header capital-font">All 1-4 Seed Schools 1985 - 2019</div>
+
         <div class="info-row">
             <div class="info-stat capital-font card-1">335 miles</div>
             <div class="info-text">
@@ -971,7 +1002,7 @@ width: 20rem; background: whitesmoke; padding: 1rem;">
     // TODO simplify? create class or interface for contentObject
     // function updateInfoCard(header, card1, card2, card3, card3text, card4, card4text, card5, card5text) {
     function updateInfoCard(contentObject) {
-        $('.card-header').text(contentObject['header']);
+        $('.info-header').text(contentObject['header']);
         $('.card-1').text(contentObject['card1']);
         $('.card-1-subtext').text(contentObject['card1text']);
         $('.card-2').text(contentObject['card2']);
