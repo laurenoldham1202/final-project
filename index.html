@@ -1055,8 +1055,6 @@
     }
 
     function onSiteHover() {
-        // 'circle-color': ['match', ['get', 'seed'], 1, '#80bad1', 2, '#5694c1', 3, '#2c6db1', 4, '#0146a1', '#AAA'],
-
         map.on('mousemove', 'sites', (e) => {
             const props = e.features[0].properties;
             // apply background color to label to match seed circle colors
@@ -1076,8 +1074,7 @@
         });
 
         map.on('mouseleave', 'sites', () => {
-            // close any open popups
-            popup.remove();
+            label.removeClass('visible');  // hide label on mouseleave
         });
     }
 
@@ -1126,7 +1123,7 @@
             layout: {
                 visibility: 'visible',
             }
-        }, 'avg-distance');
+        }, 'sites');  // TODO might need to be avg-distance?
     }
 
 
