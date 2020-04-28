@@ -249,6 +249,22 @@
             outline: none;
         }
 
+        .map-info {
+            position: absolute;
+            top: 0;
+            right: 3rem;
+            background: whitesmoke;
+            border: 1px solid #AAA;
+            border-radius: 4px;
+            color: #414140;
+            padding: 1rem;
+            margin: 0.5rem;
+            width: 19rem;
+            text-align: center;
+            visibility: hidden;
+            font-family: Roboto, sans-serif;
+        }
+
 
     </style>
 </head>
@@ -364,6 +380,8 @@
     <button id="extent"><span class="material-icons">public</span></button>
 </div>
 
+<div class="map-info"></div>
+
 <div class="sidebar">
 
     <h1 class="capital-font" style="text-align: center;">March Madness</h1>
@@ -449,6 +467,7 @@
             <div class="info-stat capital-font card-1">335 miles</div>
             <div class="info-text">
                 mean distance traveled (WEIGHTED)
+                <!-- TODO add +/- from avg -->
                 <div class="info-subtext card-1-subtext">Average for top seeded schools 1985 - 2019</div>
             </div>
         </div>
@@ -1016,14 +1035,20 @@
     }
 
     function onSchoolHover() {
-        map.on('mouseenter', 'schools', () => {
+        const label = $('.map-info');
+
+        map.on('mousemove', 'schools', (e) => {
             // change cursor to pointer to indicate clickability
             this.map.getCanvas().style.cursor = 'pointer';
+
+            label.addClass('visible');  // make info label visible
+            label.text(e.features[0].properties.school_full_name);  // apply school name to popup
         });
 
         map.on('mouseleave', 'schools', () => {
             // change cursor to pointer to indicate clickability
             this.map.getCanvas().style.cursor = 'grab';
+            label.removeClass('visible');  // hide label on mouseleave
         });
     }
 
@@ -1082,10 +1107,8 @@
             paint: {
                 // TODO change avg if weighted or not
                 // 'circle-radius': 345.88513858848495/25,  // average weighted mean
-                'circle-color': 'yellow',
+                'circle-color': '#E27600',
                 'circle-stroke-opacity': 1,
-                // 'circle-stroke-color': 'yellow',
-                // 'circle-stroke-width': 2,
             },
             layout: {
                 visibility: 'visible',
