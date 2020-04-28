@@ -192,6 +192,35 @@
             margin-top: 0.5rem;
         }
 
+        .map-control {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        #extent {
+            margin: 0.5rem;
+            height: 35px;
+            width: 35px;
+            z-index: 1000;
+            background: white;
+            border: 2px solid rgba(10, 10, 10, 0.1);
+            border-radius: 4px;
+        }
+
+        #extent:hover {
+            background: #eee;
+        }
+
+        span.material-icons {
+            font-size: 18px !important;
+            margin-top: 4px;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
 
     </style>
 </head>
@@ -302,6 +331,10 @@
 <!--        <div class="footer-right" style="margin-left: auto;width: 50%;">Seed ></div>-->
 <!--    </div>-->
 <!--</div>-->
+
+<div class="map-control">
+    <button id="extent"><span class="material-icons">public</span></button>
+</div>
 
 <div class="sidebar" style="position: absolute; top: 0; bottom: 0; left: 0;
 width: 20rem; background: whitesmoke; padding: 1rem;">
