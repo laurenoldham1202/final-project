@@ -538,7 +538,7 @@
     };
 
     clickedStateId = null;
-
+    label = $('.map-info');
 
     // TODO Delete old json, replace with new
     // TODO Rerun test-default csv from analysis notebook with new distances
@@ -1035,14 +1035,16 @@
     }
 
     function onSchoolHover() {
-        const label = $('.map-info');
-
         map.on('mousemove', 'schools', (e) => {
             // change cursor to pointer to indicate clickability
             this.map.getCanvas().style.cursor = 'pointer';
-
+            // TODO add visual affordance to school layer to indicate mouseover
             label.addClass('visible');  // make info label visible
             label.text(e.features[0].properties.school_full_name);  // apply school name to popup
+
+            // reset basic school style for popup TODO: put in fn if used multiple times
+            label.css('background', 'whitesmoke');
+            label.css('color', '#414140');
         });
 
         map.on('mouseleave', 'schools', () => {
@@ -1053,13 +1055,24 @@
     }
 
     function onSiteHover() {
-        map.on('mousemove', 'sites', (e) => {
-            const content = `${e.features[0].properties.school_common_name} played at ${e.features[0].properties.site}
-            in ${e.features[0].properties.year} as a ${e.features[0].properties.seed} seed.`;
-            popup.setLngLat(e.lngLat)
-                .setHTML(content)
-                .addTo(map);
+        // 'circle-color': ['match', ['get', 'seed'], 1, '#80bad1', 2, '#5694c1', 3, '#2c6db1', 4, '#0146a1', '#AAA'],
 
+        map.on('mousemove', 'sites', (e) => {
+            const props = e.features[0].properties;
+            // apply background color to label to match seed circle colors
+            const background = props.seed === 1 ? '#80bad1' :
+                props.seed === 2 ? '#5694c1' :
+                    props.seed === 3 ? '#2c6db1' :
+                        props.seed === 4 ? '#0146a1' : '#AAA';
+            // label text TODO add +/- from seed avg
+            const content = `${e.features[0].properties.school_common_name} played ${props.distance.toFixed()}
+             miles from home in ${props.site} in ${props.year} as a ${props.seed} seed.`;
+
+            // update label text and styles
+            label.addClass('visible');  // make info label visible
+            label.text(content);
+            label.css('background', background);
+            label.css('color', 'white');
         });
 
         map.on('mouseleave', 'sites', () => {
