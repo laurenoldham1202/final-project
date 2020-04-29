@@ -538,6 +538,15 @@
         conference: 'all',  // TODO update these all values
     };
 
+    // TODO put in json straight from j notebook? Apply to defaults dynamically? reapply in resetExtent?
+    aggregates = {
+        mean_wt: 335,
+        mean: 638,
+        min: 0.38,
+        max: 2665,
+        count: 87,
+    };
+
     clickedStateId = null;
     label = $('.map-info');
 
@@ -776,14 +785,17 @@
                 // push linestring features to line layer source
                 map.getSource('line').setData({ type: 'FeatureCollection', features: lineFeatures });
 
+                const differenceWtDist = (feature.properties.mean_wtDist - aggregates.mean_wt).toFixed();
+                const differenceDist = (feature.properties.mean_dist - aggregates.mean).toFixed();
+
                 // TODO look into projection/distance calc, messed up cincy and louisville
                 // TODO conditions for undefined?
                 const inputs = {
                     header: feature.properties.school_full_name,
                     card1: `${feature.properties.mean_wtDist.toFixed()} miles`,
-                    card1text: '',
+                    card1text: `${directionSymbol(differenceWtDist) + differenceWtDist} miles from all-school average (${aggregates.mean_wt} miles)`,
                     card2: `${feature.properties.mean_dist.toFixed()} miles`,
-                    card2text: '',
+                    card2text: `${directionSymbol(differenceDist) + differenceDist} miles from all-school average (${aggregates.mean} miles)`,
                     card3: `${feature.properties.min_dist.toFixed()} miles`,
                     card3text: `${min.city}, ${min.state} to ${min.site} as a ${min.seed} seed in ${min.year}`,
                     card4: `${feature.properties.max_dist.toFixed()} miles`,
@@ -801,6 +813,11 @@
         });
     }
 
+    function directionSymbol(value) {
+        return value >= 0 ? '+' : '';
+    }
+
+    // TODO create legend for average distance prop circle size?
     function setAvgDistanceLayer(feature) {  // TODO rename fn
         // create formatted mapbox/geojson feature to apply to avg-distance layer source
         const avgDistance = [{
