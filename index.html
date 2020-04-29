@@ -133,6 +133,7 @@
             width: 20rem;
             background: whitesmoke;
             padding: 1rem;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 0 rgba(0, 0, 0, 0.1);
         }
 
         .filters-container {
@@ -946,10 +947,10 @@
                     stops: stops,
                 },
                 'circle-color': '#E27600',
-                // TODO remove feature state?
+                // TODO remove feature state for clicked feature?
                 'circle-opacity': ['case', ['boolean', ['feature-state', 'clicked'], false], 1, 0.7],
-                'circle-stroke-color': 'whitesmoke',
-                'circle-stroke-opacity': 0.5,
+                'circle-stroke-color': ['case', ['boolean', ['feature-state', 'hovered'], false], '#414140', 'whitesmoke'],
+                'circle-stroke-opacity': ['case', ['boolean', ['feature-state', 'hovered'], false], 0.7, 0.5],
                 'circle-stroke-width': 1.5,
             }
         });
@@ -1035,22 +1036,33 @@
     }
 
     function onSchoolHover() {
+        // empty hoverId, resets on each school mouseover
+        let hoverId = null;
         map.on('mousemove', 'schools', (e) => {
+
             // change cursor to pointer to indicate clickability
             this.map.getCanvas().style.cursor = 'pointer';
-            // TODO add visual affordance to school layer to indicate mouseover
             label.addClass('visible');  // make info label visible
             label.text(e.features[0].properties.school_full_name);  // apply school name to popup
 
             // reset basic school style for popup TODO: put in fn if used multiple times
-            label.css('background', 'whitesmoke');
-            label.css('color', '#414140');
+            label.css('background', '#414140');
+            label.css('color', 'whitesmoke');
+
+            // apply dark stroke on mouseover
+            if (hoverId) {
+                map.setFeatureState({ source: 'schools', id: hoverId }, { hovered: false });
+            }
+            hoverId = e.features[0].id;
+            map.setFeatureState({ source: 'schools', id: hoverId }, { hovered: true });
         });
 
         map.on('mouseleave', 'schools', () => {
             // change cursor to pointer to indicate clickability
             this.map.getCanvas().style.cursor = 'grab';
             label.removeClass('visible');  // hide label on mouseleave
+            // remove visual affordance on mouseleave
+            map.setFeatureState({ source: 'schools', id: hoverId }, { hovered: false });
         });
     }
 
