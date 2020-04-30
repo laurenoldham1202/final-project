@@ -406,7 +406,7 @@
             </select>
 
             <select id="seedFilter" class="toolbar-select">
-                <option value="allSeed">All Seeds</option>
+                <option value="all">All Seeds</option>
                 <option value="oneSeed">1 Seeds</option>
                 <option value="twoSeed">2 Seeds</option>
                 <option value="threeSeed">3 Seeds</option>
@@ -535,7 +535,7 @@
 
     filters = {
         school: 'allSchools',
-        seed: 'allSeed',
+        seed: 'all',
         conference: 'all',  // TODO update these all values
     };
 
@@ -550,6 +550,7 @@
 
     clickedStateId = null;
     label = $('.map-info');
+    s = $('#seedFilter')
 
     // TODO Delete old json, replace with new
     // TODO Rerun test-default csv from analysis notebook with new distances
@@ -659,13 +660,8 @@
 
     // TODO need to fire change event to actually clear map
     function resetFilters() {
-        const s = $('#seedFilter');
-        $('#schoolFilter').val('allSchools');  // TODO reset all filters
-        $('#conferenceFilter').val('all');
-        s.val('allSeed');
-        // $('#seedFilter').val('allSeed');
+        s.val('all');
         s.trigger('change');
-        $('#statFilter').val('mean');
     }
 
     function defaultMap() {
@@ -900,13 +896,13 @@
             // apply selected seed to filters
             filters.seed = e.target.value;
 
-            // TODO Reset school dropdown to all if these
-            // root source for avg-distance layer, which includes the selected school
-            const selectedSchoolSource = map.getSource('avg-distance')['_data'].features;
-            // if a school has been selected AND that school does NOT have data for the selected seed, reset default map extent
-            if (selectedSchoolSource.length > 0 && !Object.keys(selectedSchoolSource[0].properties).includes(e.target.value)) {
-                resetExtent();
-            }
+            // // TODO Reset school dropdown to all if these
+            // // root source for avg-distance layer, which includes the selected school
+            // const selectedSchoolSource = map.getSource('avg-distance')['_data'].features;
+            // // if a school has been selected AND that school does NOT have data for the selected seed, reset default map extent
+            // if (selectedSchoolSource.length > 0 && !Object.keys(selectedSchoolSource[0].properties).includes(e.target.value)) {
+            //     // resetExtent();
+            // }
 
             // TODO change prop circle sizes based on each seed avg?
             setMapFilters();
@@ -917,7 +913,7 @@
         // filter for selected conference OR display all for 'all conference' selection (filter for features that have school common name field)
         const confFilter = filters.conference !== 'all' ? ['==', 'conference', filters.conference] : ['has', 'school_common_name'];
         // filter for seeds that have seed aggregate field or display all for all seed selection
-        const seedFilter = ['has', filters.seed === 'allSeed' ? 'school_common_name' : filters.seed];
+        const seedFilter = ['has', filters.seed === 'all' ? 'school_common_name' : filters.seed];
         // apply multiple filters with 'all'
         map.setFilter('schools', ['all', confFilter, seedFilter]);
     }
