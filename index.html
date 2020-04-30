@@ -533,10 +533,11 @@
         className: 'school-popup',
     });
 
-    filters = {
+    filters = {  // TODO add weighted toggle?
         school: 'all',
         seed: 'all',
         conference: 'all',
+        stat: 'mean',
     };
 
     // TODO put in json straight from j notebook? Apply to defaults dynamically? reapply in resetExtent?
@@ -553,6 +554,7 @@
     schoolFilter = $('#schoolFilter');
     seedFilter = $('#seedFilter');
     conferenceFilter = $('#conferenceFilter');
+    statFilter = $('#statFilter');
 
     // TODO Delete old json, replace with new
     // TODO Rerun test-default csv from analysis notebook with new distances
@@ -594,6 +596,7 @@
             selectSchool(sites);
             selectConference();
             selectSeed();
+            selectStat(schools);
 
             defaultMap();
 
@@ -661,13 +664,14 @@
     }
 
     function resetFilter(filter) {
-        filter.val('all');
-        filter.trigger('change');
+        // reset 'mean' instead of 'all' for statFilter for dropdown value
+        filter.val(filter === statFilter ? 'mean' : 'all');
+        filter.trigger('change');  // trigger change event
     }
 
     // TODO need to fire change event to actually clear map
     function resetAllFilters() {
-        const filters = [schoolFilter, seedFilter, conferenceFilter];
+        const filters = [schoolFilter, seedFilter, conferenceFilter, statFilter];
         filters.forEach(filter => {
             resetFilter(filter);
         });
@@ -680,8 +684,8 @@
     }
 
     function resetExtent() {
-        // filters.school = 'allSchools';
-        // $('#schoolFilter').val('allSchools');
+
+        // reset all filters to original 'all' aggregates
         resetAllFilters();
 
         const layers = ['sites', 'line', 'avg-distance', 'selected-school']; // TODO create constants
@@ -732,7 +736,22 @@
         schoolFilter.on('change', (e) => {
             // apply selected school to filters
             filters.school = e.target.value;
-            highlightSchool(sites);
+            selectSchoolOnMap(sites);
+        });
+    }
+
+    // TODO replace weighted mean highlight card w median?
+    function selectStat(schools) {
+        statFilter.on('change', (e) => {
+            filters.stat = e.target.value;
+            const prop = `${e.target.value}_dist`;
+            // TODO update stops for more readability (e.g. max is huge for all schools)
+            const stops = createStops(schools, prop);
+
+            // TODO apply mouseover affordance to selected-school layer
+            map.setPaintProperty('schools', 'circle-radius', { property: prop, stops: stops });
+            // TODO update this when new school is clicked - persist selected stat!
+            map.setPaintProperty('selected-school', 'circle-radius', { property: prop, stops: stops });
         });
     }
 
@@ -747,7 +766,7 @@
 
     // TODO clear conference filter when school is selected but doesn't match filter
     // TODO add createAvgDistanceLayer() to show avg distance on dropdown select
-    function highlightSchool(sites) {  // TODO iterate over layer source instead of geojson directly
+    function selectSchoolOnMap(sites) {  // TODO iterate over layer source instead of geojson directly
         const lineFeatures = [];
         let min = null;
         let max = null;
@@ -846,13 +865,18 @@
             },
             properties: feature.properties,
         }];
+        console.log(avgDistance);
 
         // apply geojson source to selected school layer
         // TODO update with weightedDist toggle, reset extent
         map.getSource('selected-school').setData({ type: 'FeatureCollection', features: avgDistance });
+
+        // TODO acct for wt dist?
+        const property = `${filters.stat}_dist`;
         // apply circle radius based on data-driven radiuses
         map.setPaintProperty('selected-school', 'circle-radius',
-            { property: 'mean_wtDist', stops: createStops(map.getSource('selected-school')['_data'], 'mean_wtDist') }
+            // { property: 'mean_wtDist', stops: createStops(map.getSource('selected-school')['_data'], 'mean_wtDist') }
+            { property: property, stops: createStops(map.getSource('selected-school')['_data'], property) }
         );
 
         // apply above geojson to avg-distance layer
@@ -935,6 +959,7 @@
             const stops = createStops(geojson, mean);
             map.setPaintProperty('schools', 'circle-radius', {property: mean, stops: stops});
 
+            // TODO fix error this causes when toggling back and forth
             // apply selected school circle radius based on data-driven radiuses
             map.setPaintProperty('selected-school', 'circle-radius',
                 { property: 'mean_wtDist', stops: createStops(map.getSource('selected-school')['_data'], mean) }
@@ -958,7 +983,8 @@
 
         const sortedValues = values.sort((a, b) => { return a-b });
         sortedValues.forEach(val => {
-            stops.push([val, val/35]);  // TODO change dividend for unweighted? use 25 or 35?
+            // TODO account for weighted count
+            stops.push([val, property === 'count_dist' ? val : val/35]);  // TODO change dividend for unweighted? use 25 or 35?
         });
         return stops;
     }
@@ -979,7 +1005,7 @@
             },
             paint: {
                 'circle-radius': {
-                    property: 'mean_wtDist',  // TODO change dynamically
+                    property: 'mean_wtDist',
                     stops: stops,
                 },
                 'circle-color': '#E27600',
@@ -1050,7 +1076,7 @@
             filters.school = e.features[0].properties.school_common_name;
             // set school filter dropdown value as clicked school
             schoolFilter.val(filters.school);
-            highlightSchool(sites);
+            selectSchoolOnMap(sites);
 
         });
     }
@@ -1103,6 +1129,7 @@
         });
     }
 
+    // TODO Add this label on linestring mouseover too
     function onSiteHover() {
         map.on('mousemove', 'sites', (e) => {
             const props = e.features[0].properties;
@@ -1127,6 +1154,7 @@
         });
     }
 
+    // TODO update with each stat, e.g. median, min, max, count
     function createAvgDistanceLayer() {
         map.addLayer({
             id: 'avg-distance',
