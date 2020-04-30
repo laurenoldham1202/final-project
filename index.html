@@ -550,7 +550,8 @@
 
     clickedStateId = null;
     label = $('.map-info');
-    s = $('#seedFilter')
+    seedFilter = $('#seedFilter');
+    conferenceFilter = $('#conferenceFilter');
 
     // TODO Delete old json, replace with new
     // TODO Rerun test-default csv from analysis notebook with new distances
@@ -658,10 +659,17 @@
         });
     }
 
+    function resetFilter(filter) {
+        filter.val('all');
+        filter.trigger('change');
+    }
+
     // TODO need to fire change event to actually clear map
-    function resetFilters() {
-        s.val('all');
-        s.trigger('change');
+    function resetAllFilters() {
+        const filters = [seedFilter, conferenceFilter];
+        filters.forEach(filter => {
+            resetFilter(filter);
+        });
     }
 
     function defaultMap() {
@@ -673,7 +681,7 @@
     function resetExtent() {
         // filters.school = 'allSchools';
         // $('#schoolFilter').val('allSchools');
-        resetFilters();
+        resetAllFilters();
 
         const layers = ['sites', 'line', 'avg-distance', 'selected-school']; // TODO create constants
         layers.forEach(layer => {
@@ -873,17 +881,17 @@
     }
 
     function selectConference() {
-        $('#conferenceFilter').on('change', (e) => {
+        conferenceFilter.on('change', (e) => {
             // apply selected conference to filters
             filters.conference = e.target.value;
 
             // TODO write in fn here and seedFilter? Save selected school in filters instead of iterating over layer source?
-            // root source for avg-distance layer, which includes the selected school
-            const selectedSchoolSource = map.getSource('avg-distance')['_data'].features;
-            // if a school has been selected AND that school does NOT have data for the selected seed, reset default map extent
-            if (selectedSchoolSource.length > 0 && selectedSchoolSource[0].properties.conference !== e.target.value) {
-                resetExtent();
-            }
+            // // root source for avg-distance layer, which includes the selected school
+            // const selectedSchoolSource = map.getSource('avg-distance')['_data'].features;
+            // // if a school has been selected AND that school does NOT have data for the selected seed, reset default map extent
+            // if (selectedSchoolSource.length > 0 && selectedSchoolSource[0].properties.conference !== e.target.value) {
+            //     resetExtent();
+            // }
 
             // TODO fit bounds? Allow multiple seed and conference selections?
             setMapFilters();
@@ -891,7 +899,7 @@
     }
 
     function selectSeed() {
-        $('#seedFilter').on('change', (e) => {
+        seedFilter.on('change', (e) => {
             console.log('change');
             // apply selected seed to filters
             filters.seed = e.target.value;
