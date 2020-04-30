@@ -401,7 +401,7 @@
         <!-- todo use charcoal background instead of blue? -->
             <!-- TODO hardcode width so it doesn't move when values are pushed in jquery, adjust dropdown height-->
             <select id="schoolFilter" class="toolbar-select">
-                <option value="allSchools">All Schools</option>
+                <option value="all">All Schools</option>
         <!--        <option value="power5">Power 5 Conference</option>  &lt;!&ndash; TODO move to conference?  Add all schools? Multiple options?&ndash;&gt;-->
             </select>
 
@@ -534,9 +534,9 @@
     });
 
     filters = {
-        school: 'allSchools',
+        school: 'all',
         seed: 'all',
-        conference: 'all',  // TODO update these all values
+        conference: 'all',
     };
 
     // TODO put in json straight from j notebook? Apply to defaults dynamically? reapply in resetExtent?
@@ -550,6 +550,7 @@
 
     clickedStateId = null;
     label = $('.map-info');
+    schoolFilter = $('#schoolFilter');
     seedFilter = $('#seedFilter');
     conferenceFilter = $('#conferenceFilter');
 
@@ -655,7 +656,7 @@
         allSchools.sort();  // sort schools alphabetically
         allSchools.forEach(school => {
             // push all school names to schoolFilter dropdown
-            $('#schoolFilter').append(`<option value="${school}">${school}</option>`);
+            schoolFilter.append(`<option value="${school}">${school}</option>`);
         });
     }
 
@@ -666,7 +667,7 @@
 
     // TODO need to fire change event to actually clear map
     function resetAllFilters() {
-        const filters = [seedFilter, conferenceFilter];
+        const filters = [schoolFilter, seedFilter, conferenceFilter];
         filters.forEach(filter => {
             resetFilter(filter);
         });
@@ -728,7 +729,7 @@
     // TODO separate school click event from all other inputs, place here
     function selectSchool(sites) {
 
-        $('#schoolFilter').on('change', (e) => {
+        schoolFilter.on('change', (e) => {
             // apply selected school to filters
             filters.school = e.target.value;
             highlightSchool(sites);
@@ -1048,7 +1049,7 @@
             // save selected school in filters
             filters.school = e.features[0].properties.school_common_name;
             // set school filter dropdown value as clicked school
-            $('#schoolFilter').val(filters.school);
+            schoolFilter.val(filters.school);
             highlightSchool(sites);
 
         });
