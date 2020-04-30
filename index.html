@@ -45,7 +45,7 @@
             /*top: 5rem;*/
             /*left: 0;*/
             top: 0;
-            left: 20rem;
+            left: 24rem;
             right: 0;
             bottom: 0;
         }
@@ -74,7 +74,7 @@
         }
 
         .toggle-container {
-            padding-top: 0.5rem;
+            padding: 1rem;
         }
 
         .toolbar {
@@ -130,7 +130,7 @@
             top: 0;
             bottom: 0;
             left: 0;
-            width: 20rem;
+            width: 24rem;
             background: whitesmoke;
             padding: 1rem;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 0 rgba(0, 0, 0, 0.1);
@@ -182,11 +182,11 @@
         }
 
         .info-stat {
-            width: 35%;
+            width: 30%;
             background: #ddd;
             border-radius: 4px 0 0 4px;
             font-size: 1.25rem;
-            padding: 0.75rem 0 0 0.25rem;
+            padding: 0.75rem 0 0 0.5rem;
         }
 
         .info-row:hover > .info-stat {
@@ -204,14 +204,14 @@
         }
 
         .info-row:hover {
-            height: 7rem;
+            height: 9rem;
         }
 
         .info-text {
-            width: 65%;
+            width: 70%;
             border: 1px solid #ddd;
             border-radius: 0 4px 4px 0;
-            font-size: 0.75rem;
+            font-size: 0.85rem;
             padding: 0.75rem 0 0 0.5rem;
             transition: 0.3s ease-in-out;
         }
@@ -390,7 +390,8 @@
 
     <div class="filters-container">
 
-        <div class="toggle-container toolbar-select">
+        <!-- TODO add help icon with details on weighted distance calc -->
+        <div class="toggle-container">
             <div class="custom-control custom-switch">
                 <input type="checkbox" class="custom-control-input" id="weightedToggle" checked>
                 <label class="custom-control-label" for="weightedToggle">Weighted Distance</label>
@@ -656,6 +657,17 @@
         });
     }
 
+    // TODO need to fire change event to actually clear map
+    function resetFilters() {
+        const s = $('#seedFilter');
+        $('#schoolFilter').val('allSchools');  // TODO reset all filters
+        $('#conferenceFilter').val('all');
+        s.val('allSeed');
+        // $('#seedFilter').val('allSeed');
+        s.trigger('change');
+        $('#statFilter').val('mean');
+    }
+
     function defaultMap() {
         $('#extent').on('click', () => {
             resetExtent();
@@ -664,7 +676,8 @@
 
     function resetExtent() {
         // filters.school = 'allSchools';
-        $('#schoolFilter').val('allSchools');
+        // $('#schoolFilter').val('allSchools');
+        resetFilters();
 
         const layers = ['sites', 'line', 'avg-distance', 'selected-school']; // TODO create constants
         layers.forEach(layer => {
@@ -801,7 +814,7 @@
                     card4: `${feature.properties.max_dist.toFixed()} miles`,
                     card4text: `${max.city}, ${max.state} to ${max.site} as a ${max.seed} seed in ${max.year}`,
                     card5: feature.properties.count_dist,
-                    card5text: 'Appearances as 1-4 seed',
+                    card5text: 'Appearances as 1-4 seed',  // TODO put subheader w list of number of apperances as each seed
                 };
                 updateInfoCard(inputs);  // TODO create subheader for text ^^
 
@@ -883,6 +896,7 @@
 
     function selectSeed() {
         $('#seedFilter').on('change', (e) => {
+            console.log('change');
             // apply selected seed to filters
             filters.seed = e.target.value;
 
@@ -1063,6 +1077,7 @@
             label.text(e.features[0].properties.school_full_name);  // apply school name to popup
 
             // reset basic school style for popup TODO: put in fn if used multiple times
+            // TODO add subtext for mean or weighted mean dist
             label.css('background', '#414140');
             label.css('color', 'whitesmoke');
 
