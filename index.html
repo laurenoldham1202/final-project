@@ -533,7 +533,8 @@
         className: 'school-popup',
     });
 
-    filters = {  // TODO add weighted toggle?
+    filters = {
+        weighted: true,
         school: 'all',
         seed: 'all',
         conference: 'all',
@@ -551,6 +552,7 @@
 
     clickedStateId = null;
     label = $('.map-info');
+    weightedToggle = $('#weightedToggle');
     schoolFilter = $('#schoolFilter');
     seedFilter = $('#seedFilter');
     conferenceFilter = $('#conferenceFilter');
@@ -664,14 +666,14 @@
     }
 
     function resetFilter(filter) {
-        // reset 'mean' instead of 'all' for statFilter for dropdown value
-        filter.val(filter === statFilter ? 'mean' : 'all');
+        // reset 'mean' instead of 'all' for statFilter and true for weighted toggle
+        filter.val(filter === statFilter ? 'mean' : filter === weightedToggle ? true : 'all');
         filter.trigger('change');  // trigger change event
     }
 
     // TODO need to fire change event to actually clear map
     function resetAllFilters() {
-        const filters = [schoolFilter, seedFilter, conferenceFilter, statFilter];
+        const filters = [weightedToggle, schoolFilter, seedFilter, conferenceFilter, statFilter];
         filters.forEach(filter => {
             resetFilter(filter);
         });
@@ -710,13 +712,14 @@
         map.fitBounds(turf.bbox(layerGeometry), { padding: {top: 50, right: 50, bottom: 50, left: 375} });
 
         // reset info card to all school defaults
+        // TODO reset with agg obj vals
         const infoCardInputs = {
             header: 'All Top Seeded Schools 1985 - 2019',
             card1: '335 miles',
             card1text: 'Average for top seeded schools 1985 - 2019',  // TODO make constant
             card2: '638 miles',
             card2text: 'Average for top seeded schools 1985 - 2019',
-            card3: '0.39 miles',
+            card3: '0.38 miles',
             card3text: 'University of Arizona to Tucson, AZ as a 1 seed in 2000',
             card4: '2866 miles',
             card4text: 'Syracuse University to San Jose, CA as a 4 seed in 2013',
@@ -744,13 +747,17 @@
     function selectStat(schools) {
         statFilter.on('change', (e) => {
             filters.stat = e.target.value;
-            const prop = `${e.target.value}_dist`;
+            // TODO weighted count breaks, fix in weightedToggle event
+            // const prop = `${e.target.value}_dist`;  // TODO acct for weights
+            const prop = `${filters.stat}_${filters.weighted ? 'wtD' : 'd'}ist`;
+
+            console.log(filters.stat, filters.weighted);
+
             // TODO update stops for more readability (e.g. max is huge for all schools)
             const stops = createStops(schools, prop);
 
             // TODO apply mouseover affordance to selected-school layer
             map.setPaintProperty('schools', 'circle-radius', { property: prop, stops: stops });
-            // TODO update this when new school is clicked - persist selected stat!
             map.setPaintProperty('selected-school', 'circle-radius', { property: prop, stops: stops });
         });
     }
@@ -872,7 +879,10 @@
         map.getSource('selected-school').setData({ type: 'FeatureCollection', features: avgDistance });
 
         // TODO acct for wt dist?
-        const property = `${filters.stat}_dist`;
+        // TODO apply to avg-distance layer - update with full agg values? (e.g. compare school min to overall min? or avg min?)
+        // const property = `${filters.stat}_dist`;
+        const property = `${filters.stat}_${filters.weighted ? 'wtD' : 'd'}ist`;
+
         // apply circle radius based on data-driven radiuses
         map.setPaintProperty('selected-school', 'circle-radius',
             // { property: 'mean_wtDist', stops: createStops(map.getSource('selected-school')['_data'], 'mean_wtDist') }
@@ -925,19 +935,8 @@
 
     function selectSeed() {
         seedFilter.on('change', (e) => {
-            console.log('change');
             // apply selected seed to filters
             filters.seed = e.target.value;
-
-            // // TODO Reset school dropdown to all if these
-            // // root source for avg-distance layer, which includes the selected school
-            // const selectedSchoolSource = map.getSource('avg-distance')['_data'].features;
-            // // if a school has been selected AND that school does NOT have data for the selected seed, reset default map extent
-            // if (selectedSchoolSource.length > 0 && !Object.keys(selectedSchoolSource[0].properties).includes(e.target.value)) {
-            //     // resetExtent();
-            // }
-
-            // TODO change prop circle sizes based on each seed avg?
             setMapFilters();
         });
     }
@@ -953,16 +952,23 @@
 
     // apply weighted or unweighted mean distance depending on toggle position
     function onWeightedToggle(geojson) {
-        $('#weightedToggle').on('click', (e) => {
+        weightedToggle.on('click', (e) => {
+
+            // update global filters
+            filters.weighted = e.target.checked;
+
+            // TODO apply weights to ALL stats
             // set weighted distance if toggle checked - if not, set regular unweighted distance
-            const mean = e.target.checked ? 'mean_wtDist' : 'mean_dist';
-            const stops = createStops(geojson, mean);
-            map.setPaintProperty('schools', 'circle-radius', {property: mean, stops: stops});
+            // const mean = e.target.checked ? 'mean_wtDist' : 'mean_dist';
+            const property = `${filters.stat}_${filters.weighted ? 'wtD' : 'd'}ist`;
+            const stops = createStops(geojson, property);
+
+            map.setPaintProperty('schools', 'circle-radius', { property: property, stops: stops });
 
             // TODO fix error this causes when toggling back and forth
             // apply selected school circle radius based on data-driven radiuses
             map.setPaintProperty('selected-school', 'circle-radius',
-                { property: 'mean_wtDist', stops: createStops(map.getSource('selected-school')['_data'], mean) }
+                { property: property, stops: createStops(map.getSource('selected-school')['_data'], property) }
             );
 
             // TODO craete constants for avg values
@@ -984,7 +990,7 @@
         const sortedValues = values.sort((a, b) => { return a-b });
         sortedValues.forEach(val => {
             // TODO account for weighted count
-            stops.push([val, property === 'count_dist' ? val : val/35]);  // TODO change dividend for unweighted? use 25 or 35?
+            stops.push([val, property === 'count_dist' || property === 'count_wtDist' ? val : val/35]);  // TODO change dividend for unweighted? use 25 or 35?
         });
         return stops;
     }
