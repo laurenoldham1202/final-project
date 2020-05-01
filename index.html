@@ -972,8 +972,16 @@
             );
 
             // TODO craete constants for avg values
+            // TODO update with selected filter + weight val here, on filter change, on school select, elsewhere?
             // adjust average distance circle based on weighted toggle status
-            map.setPaintProperty('avg-distance', 'circle-radius', e.target.checked ? 335/25 : 638/25);
+            const key = {
+                'mean_dist': 335/35,
+                'mean_wtDist': 638/35,
+                'min_dist': 0.38,
+                'min_wtDist': 0.38 * 10,
+            };
+            map.setPaintProperty('avg-distance', 'circle-radius', key[property]);  // TODO check vals, use constant
+            // map.setPaintProperty('avg-distance', 'circle-radius', e.target.checked ? 335/35 : 638/25);  // TODO check vals, use constant
         });
     }
 
