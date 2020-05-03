@@ -550,6 +550,18 @@
         count: 87,
     };
 
+    // TODO combine with above and simplify
+    avgKey = {
+        mean_dist: 335/35,
+        mean_wtDist: 638/35,
+        min_dist: 0.38,
+        min_wtDist: 0.38,
+        max_wtDist: 2665/35,
+        max_dist: 2665/35,
+        count_dist: 87,
+        count_wtDist: 87,
+    };
+
     clickedStateId = null;
     label = $('.map-info');
     weightedToggle = $('#weightedToggle');
@@ -672,8 +684,12 @@
     }
 
     // TODO need to fire change event to actually clear map
-    function resetAllFilters() {
-        const filters = [weightedToggle, schoolFilter, seedFilter, conferenceFilter, statFilter];
+    function resetAllFilters(excludeFilter = null) {
+        let filters = [weightedToggle, schoolFilter, seedFilter, conferenceFilter, statFilter];
+        if (excludeFilter) {
+            filters = filters.slice(excludeFilter, 1);
+            excludeFilter.val('all');
+        }
         filters.forEach(filter => {
             resetFilter(filter);
         });
@@ -682,13 +698,15 @@
     function defaultMap() {
         $('#extent').on('click', () => {
             resetExtent();
+            resetAllFilters();
+
         });
     }
 
     function resetExtent() {
 
         // reset all filters to original 'all' aggregates
-        resetAllFilters();
+        // resetAllFilters();
 
         const layers = ['sites', 'line', 'avg-distance', 'selected-school']; // TODO create constants
         layers.forEach(layer => {
@@ -739,7 +757,14 @@
         schoolFilter.on('change', (e) => {
             // apply selected school to filters
             filters.school = e.target.value;
-            selectSchoolOnMap(sites);
+            // selectSchoolOnMap(sites);
+            // console.log('changed');
+
+            if (filters.school !== 'all') {
+                selectSchoolOnMap(sites);
+            } else {
+                console.log('reset');  // TODO fix bug for 1. all schools condition, 2. resetting filters when school is selected and dropdown val isnt valid for that school
+            }
         });
     }
 
@@ -751,14 +776,13 @@
             // const prop = `${e.target.value}_dist`;  // TODO acct for weights
             const prop = `${filters.stat}_${filters.weighted ? 'wtD' : 'd'}ist`;
 
-            console.log(filters.stat, filters.weighted);
-
             // TODO update stops for more readability (e.g. max is huge for all schools)
             const stops = createStops(schools, prop);
 
             // TODO apply mouseover affordance to selected-school layer
             map.setPaintProperty('schools', 'circle-radius', { property: prop, stops: stops });
             map.setPaintProperty('selected-school', 'circle-radius', { property: prop, stops: stops });
+            map.setPaintProperty('avg-distance', 'circle-radius', avgKey[prop]);
         });
     }
 
@@ -872,7 +896,7 @@
             },
             properties: feature.properties,
         }];
-        console.log(avgDistance);
+        // console.log(avgDistance);
 
         // apply geojson source to selected school layer
         // TODO update with weightedDist toggle, reset extent
@@ -882,6 +906,7 @@
         // TODO apply to avg-distance layer - update with full agg values? (e.g. compare school min to overall min? or avg min?)
         // const property = `${filters.stat}_dist`;
         const property = `${filters.stat}_${filters.weighted ? 'wtD' : 'd'}ist`;
+        // console.log(property);
 
         // apply circle radius based on data-driven radiuses
         map.setPaintProperty('selected-school', 'circle-radius',
@@ -905,6 +930,8 @@
         // reset circle opacity of clicked circle to 1 if it had changed (through default map extent)
         map.setPaintProperty('schools', 'circle-opacity', ['case', ['boolean', ['feature-state', 'clicked'], false], 1, 0.7]);
 
+        // map.setLayoutProperty('schools', 'visibility', 'none');
+
         // filter site layer and toggle visibility on for sites that match the clicked school
         map.setFilter('sites', ['==', 'school_common_name', feature.properties.school_common_name]);
         map.setLayoutProperty('sites', 'visibility', 'visible');
@@ -921,15 +948,18 @@
             filters.conference = e.target.value;
 
             // TODO write in fn here and seedFilter? Save selected school in filters instead of iterating over layer source?
-            // // root source for avg-distance layer, which includes the selected school
-            // const selectedSchoolSource = map.getSource('avg-distance')['_data'].features;
-            // // if a school has been selected AND that school does NOT have data for the selected seed, reset default map extent
-            // if (selectedSchoolSource.length > 0 && selectedSchoolSource[0].properties.conference !== e.target.value) {
-            //     resetExtent();
-            // }
+            // root source for avg-distance layer, which includes the selected school
+            const selectedSchoolSource = map.getSource('avg-distance')['_data'].features;
+            // if a school has been selected AND that school does NOT have data for the selected seed, reset default map extent
+            if (selectedSchoolSource.length > 0 && selectedSchoolSource[0].properties.conference !== e.target.value) {
+                resetExtent();
+                // TODO Display an error message for this resetting?
+                resetAllFilters(conferenceFilter);
+                resetFilter(schoolFilter);  // TODO why isn't this called above?
+            }
 
             // TODO fit bounds? Allow multiple seed and conference selections?
-            setMapFilters();
+            // setMapFilters();
         });
     }
 
@@ -937,10 +967,22 @@
         seedFilter.on('change', (e) => {
             // apply selected seed to filters
             filters.seed = e.target.value;
-            setMapFilters();
+
+            // TODO Reset school dropdown to all if these
+            // root source for avg-distance layer, which includes the selected school
+            const selectedSchoolSource = map.getSource('avg-distance')['_data'].features;
+            // if a school has been selected AND that school does NOT have data for the selected seed, reset default map extent
+            if (selectedSchoolSource.length > 0 && !Object.keys(selectedSchoolSource[0].properties).includes(e.target.value)) {
+                resetExtent();
+                resetAllFilters(seedFilter);
+                resetFilter(schoolFilter);  // TODO why isn't this called above?
+            }
+
+            // setMapFilters();
         });
     }
 
+    // TODO is this needed?
     function setMapFilters() {
         // filter for selected conference OR display all for 'all conference' selection (filter for features that have school common name field)
         const confFilter = filters.conference !== 'all' ? ['==', 'conference', filters.conference] : ['has', 'school_common_name'];
