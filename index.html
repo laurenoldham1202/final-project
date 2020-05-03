@@ -429,7 +429,6 @@
                 <option value="West Coast Conference">West Coast Conference</option>
             </select>
 
-        <!-- TODO implement! -->
         <select id="statFilter" class="toolbar-select">
             <option value="mean">Mean</option>
             <option value="50%">Median</option>
@@ -614,35 +613,35 @@
 
             defaultMap();
 
-            const select = $('#seed-select');
-            select.on('click', () => {
-                // only plot once - hardcode the dropdown and toggle visibility instead?
-                const dropdown = `<div class="dropdown" style="background: white; z-index: 1000; margin-top: 12px;">
-                    <ul>
-                    <li>1 seed</li>
-                    <li>2 seed</li>
-                    <li>3 seed</li>
-                    <li>4 seed</li>
-                    </ul>
-                </div>`;
-                // select.append(dropdown);
-                $('.dropdown-container').append(dropdown);
-            });
-
-            $('.footer-right').on('click', (e) => {
-                console.log(seedsAgg);
-                $('.footer-left').addClass('visible');
-
-                // $('.card-header').text('doot!');
-                $('.card-1').text(`${seedsAgg.features[0].properties.mean_dist.toFixed()} average miles for 1 seeds`);
-                $('.card-2').text(`${seedsAgg.features[1].properties.mean_dist.toFixed()} average miles for 2 seeds`);
-                $('.card-3').text(`${seedsAgg.features[2].properties.mean_dist.toFixed()} average miles for 3 seeds`);
-                $('p.min-text').text('doot!');
-                $('.card-4').text(`${seedsAgg.features[3].properties.mean_dist.toFixed()} average miles for 4 seeds`);
-                $('p.max-text').text('doot!');
-                $('.card-5').text('doot!');
-                $('.appearances-text').text('doot!');
-            });
+            // const select = $('#seed-select');
+            // select.on('click', () => {
+            //     // only plot once - hardcode the dropdown and toggle visibility instead?
+            //     const dropdown = `<div class="dropdown" style="background: white; z-index: 1000; margin-top: 12px;">
+            //         <ul>
+            //         <li>1 seed</li>
+            //         <li>2 seed</li>
+            //         <li>3 seed</li>
+            //         <li>4 seed</li>
+            //         </ul>
+            //     </div>`;
+            //     // select.append(dropdown);
+            //     $('.dropdown-container').append(dropdown);
+            // });
+            //
+            // $('.footer-right').on('click', (e) => {
+            //     console.log(seedsAgg);
+            //     $('.footer-left').addClass('visible');
+            //
+            //     // $('.card-header').text('doot!');
+            //     $('.card-1').text(`${seedsAgg.features[0].properties.mean_dist.toFixed()} average miles for 1 seeds`);
+            //     $('.card-2').text(`${seedsAgg.features[1].properties.mean_dist.toFixed()} average miles for 2 seeds`);
+            //     $('.card-3').text(`${seedsAgg.features[2].properties.mean_dist.toFixed()} average miles for 3 seeds`);
+            //     $('p.min-text').text('doot!');
+            //     $('.card-4').text(`${seedsAgg.features[3].properties.mean_dist.toFixed()} average miles for 4 seeds`);
+            //     $('p.max-text').text('doot!');
+            //     $('.card-5').text('doot!');
+            //     $('.appearances-text').text('doot!');
+            // });
         });
     }
 
@@ -683,11 +682,11 @@
         filter.trigger('change');  // trigger change event
     }
 
-    // TODO need to fire change event to actually clear map
     function resetAllFilters(excludeFilter = null) {
         let filters = [weightedToggle, schoolFilter, seedFilter, conferenceFilter, statFilter];
         if (excludeFilter) {
-            filters = filters.slice(excludeFilter, 1);
+            const index = filters.indexOf(excludeFilter);
+            filters.splice(index, 1);
             excludeFilter.val('all');
         }
         filters.forEach(filter => {
@@ -952,11 +951,9 @@
                         resetExtent();  // hides selected school, sites, lines, etc. and resets bounds
                         // TODO Display an error message for this resetting?
                         resetAllFilters(conferenceFilter);  // resets all filters EXCEPT conference filter
-                        resetFilter(schoolFilter);  // TODO why isn't this called above?
                         // resets filters explicitly so that setMapFilters below displays ALL schools
                         filters.conference = 'all';
                     }
-
                 }
             });
 
@@ -973,10 +970,9 @@
             map.getSource('schools')['_data'].features.forEach(school => {
                 // if a school is currently selected but does not belong to the selected conference, reset to default map view
                 if (school.properties.school_common_name === filters.school) {
-                    if (!Object.keys(school.properties).includes(filters.seeed)) {
+                    if (!Object.keys(school.properties).includes(filters.seed)) {
                         resetExtent();
                         resetAllFilters(seedFilter);
-                        resetFilter(schoolFilter);  // TODO why isn't this called above?
                         // resets seed explicitly so that setMapFilters below displays ALL schools
                         filters.seed = 'all';
                     }
