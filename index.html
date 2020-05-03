@@ -750,20 +750,17 @@
     }
 
 
-    // TODO list schools instead of current extra filters - make additional dropdown for special cases?
-    // TODO separate school click event from all other inputs, place here
+    // TODO make additional dropdown for special cases, i.e. blue bloods, etc.?
     function selectSchool(sites) {
-
         schoolFilter.on('change', (e) => {
             // apply selected school to filters
             filters.school = e.target.value;
-            // selectSchoolOnMap(sites);
-            // console.log('changed');
+            selectSchoolOnMap(sites);
 
             if (filters.school !== 'all') {
                 selectSchoolOnMap(sites);
             } else {
-                console.log('reset');  // TODO fix bug for 1. all schools condition, 2. resetting filters when school is selected and dropdown val isnt valid for that school
+                resetExtent();
             }
         });
     }
@@ -947,19 +944,23 @@
             // apply selected conference to filters
             filters.conference = e.target.value;
 
-            // TODO write in fn here and seedFilter? Save selected school in filters instead of iterating over layer source?
-            // root source for avg-distance layer, which includes the selected school
-            const selectedSchoolSource = map.getSource('avg-distance')['_data'].features;
-            // if a school has been selected AND that school does NOT have data for the selected seed, reset default map extent
-            if (selectedSchoolSource.length > 0 && selectedSchoolSource[0].properties.conference !== e.target.value) {
-                resetExtent();
-                // TODO Display an error message for this resetting?
-                resetAllFilters(conferenceFilter);
-                resetFilter(schoolFilter);  // TODO why isn't this called above?
-            }
+            // loop through schools layer
+            map.getSource('schools')['_data'].features.forEach(school => {
+                // if a school is currently selected but does not belong to the selected conference, reset to default map view
+                if (school.properties.school_common_name === filters.school) {
+                    if (school.properties.conference !== filters.conference) {  // TODO REMOVE IF YOU HIDE ALL OTHER SCHOOLS WHEN SCHOOL IS SELECTED
+                        resetExtent();  // hides selected school, sites, lines, etc. and resets bounds
+                        // TODO Display an error message for this resetting?
+                        resetAllFilters(conferenceFilter);  // resets all filters EXCEPT conference filter
+                        resetFilter(schoolFilter);  // TODO why isn't this called above?
+                        // resets filters explicitly so that setMapFilters below displays ALL schools
+                        filters.conference = 'all';
+                    }
 
-            // TODO fit bounds? Allow multiple seed and conference selections?
-            // setMapFilters();
+                }
+            });
+
+            setMapFilters();
         });
     }
 
@@ -968,26 +969,35 @@
             // apply selected seed to filters
             filters.seed = e.target.value;
 
-            // TODO Reset school dropdown to all if these
-            // root source for avg-distance layer, which includes the selected school
-            const selectedSchoolSource = map.getSource('avg-distance')['_data'].features;
-            // if a school has been selected AND that school does NOT have data for the selected seed, reset default map extent
-            if (selectedSchoolSource.length > 0 && !Object.keys(selectedSchoolSource[0].properties).includes(e.target.value)) {
-                resetExtent();
-                resetAllFilters(seedFilter);
-                resetFilter(schoolFilter);  // TODO why isn't this called above?
-            }
+            // loop through schools layer
+            map.getSource('schools')['_data'].features.forEach(school => {
+                // if a school is currently selected but does not belong to the selected conference, reset to default map view
+                if (school.properties.school_common_name === filters.school) {
+                    if (!Object.keys(school.properties).includes(filters.seeed)) {
+                        resetExtent();
+                        resetAllFilters(seedFilter);
+                        resetFilter(schoolFilter);  // TODO why isn't this called above?
+                        // resets seed explicitly so that setMapFilters below displays ALL schools
+                        filters.seed = 'all';
+                    }
+                }
+            });
 
-            // setMapFilters();
+            setMapFilters();
         });
     }
 
-    // TODO is this needed?
+    /**
+     * Sets condition for 'all' values in seed and conference filter
+     **/
+    // TODO include school
     function setMapFilters() {
         // filter for selected conference OR display all for 'all conference' selection (filter for features that have school common name field)
         const confFilter = filters.conference !== 'all' ? ['==', 'conference', filters.conference] : ['has', 'school_common_name'];
         // filter for seeds that have seed aggregate field or display all for all seed selection
         const seedFilter = ['has', filters.seed === 'all' ? 'school_common_name' : filters.seed];
+
+        // const schoolFilter = filters.school === 'all' ? ['has', 'school_common_name'] :
         // apply multiple filters with 'all'
         map.setFilter('schools', ['all', confFilter, seedFilter]);
     }
@@ -1016,13 +1026,7 @@
             // TODO craete constants for avg values
             // TODO update with selected filter + weight val here, on filter change, on school select, elsewhere?
             // adjust average distance circle based on weighted toggle status
-            const key = {
-                'mean_dist': 335/35,
-                'mean_wtDist': 638/35,
-                'min_dist': 0.38,
-                'min_wtDist': 0.38 * 10,
-            };
-            map.setPaintProperty('avg-distance', 'circle-radius', key[property]);  // TODO check vals, use constant
+            map.setPaintProperty('avg-distance', 'circle-radius', avgKey[property]);  // TODO check vals, use constant
             // map.setPaintProperty('avg-distance', 'circle-radius', e.target.checked ? 335/35 : 638/25);  // TODO check vals, use constant
         });
     }
