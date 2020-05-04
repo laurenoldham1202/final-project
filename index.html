@@ -880,27 +880,18 @@
                 // push linestring features to line layer source
                 map.getSource('line').setData({ type: 'FeatureCollection', features: lineFeatures });
 
-                // const differenceWtDist = (feature.properties.mean_wtDist - aggregates.mean_wt).toFixed();
-                // const differenceDist = (feature.properties.mean_dist - aggregates.mean).toFixed();
 
+                // difference between school averages and overall averages // TODO add min and max avg? or compare against overall min and max?
                 const diffDistMed = (feature.properties['50%_dist'] - highlights['50%_dist']).toFixed();
                 const differenceDist = (feature.properties.mean_dist - highlights.mean_dist).toFixed();
 
-
-                // TODO fix all of these for weighted vs unweighted changes
                 // TODO look into projection/distance calc, messed up cincy and louisville
                 const inputs = {
                     header: feature.properties.school_full_name,
-                    // card1: `${feature.properties.mean_wtDist.toFixed()} miles`,
-                    // card1text: `${directionSymbol(differenceWtDist) + differenceWtDist} miles from all-school average (${aggregates.mean_wt} miles)`,
-                    // card2: `${feature.properties.mean_dist.toFixed()} miles`,
-                    // card2text: `${directionSymbol(differenceDist) + differenceDist} miles from all-school average (${aggregates.mean} miles)`,
-                    //
                     card1: `${feature.properties.mean_dist.toFixed()} miles`,
-                    card1text: `${directionSymbol(differenceDist) + differenceDist} miles from all-school average (${highlights.mean_dist} miles)`,
+                    card1text: `${differenceDist} miles ${differenceText(differenceDist)} all-school average (${highlights.mean_dist} miles)`,  // TODO subtext for wt avg?
                     card2: `${feature.properties['50%_dist'].toFixed()} miles`,
-                    card2text: `${directionSymbol(diffDistMed) + diffDistMed} miles from all-school average (${highlights['50%_dist']} miles)`,
-
+                    card2text: `${diffDistMed} miles  ${differenceText(diffDistMed)} all-school average (${highlights['50%_dist']} miles)`,
                     card3: `${feature.properties.min_dist.toFixed()} miles`,
                     card3text: `${min.city}, ${min.state} to ${min.site} as a ${min.seed} seed in ${min.year}`,
                     card4: `${feature.properties.max_dist.toFixed()} miles`,
@@ -932,6 +923,11 @@
 
     function directionSymbol(value) {
         return value >= 0 ? '+' : '';
+    }
+
+    function differenceText(value) {
+        return value >= 0 ? 'ABOVE' : 'BELOW';
+
     }
 
     // TODO create legend for average distance prop circle size?
