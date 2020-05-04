@@ -568,6 +568,7 @@
     seedFilter = $('#seedFilter');
     conferenceFilter = $('#conferenceFilter');
     statFilter = $('#statFilter');
+    header = $('.info-header');
 
     // TODO Delete old json, replace with new
     // TODO Rerun test-default csv from analysis notebook with new distances
@@ -706,8 +707,9 @@
 
     function resetExtent() {
 
-        // reset all filters to original 'all' aggregates
-        // resetAllFilters();
+        // reset default gray color to info box header
+        header.css('background', '#414140');
+        header.css('border-color', '#AAA');
 
         const layers = ['sites', 'line', 'avg-distance', 'selected-school']; // TODO create constants
         layers.forEach(layer => {
@@ -870,21 +872,16 @@
                     card5: feature.properties.count_dist,
                     card5text: 'Appearances as 1-4 seed',  // TODO put subheader w list of number of apperances as each seed
                 };
-                updateInfoCard(inputs);  // TODO create subheader for text ^^
+                updateInfoCard(inputs);
 
-                console.log(colors);
+                // TODO conditions for white
+                // loop through colors json, apply colors associated with selected school to info cards
                 colors.features.forEach(color => {
                     if (color.name === feature.properties.school_common_name) {
-                        // TODO load in colors and set here
-                        $('.info-header').css('background', color.color_1);
-                        // // $('.info-row:hover > .info-stat').css('background', color.color_1 + ' !important');
-                        // $('.info-row').on('mouseover', (e) => {
-                        //     // $('.info-stat').css('background', color.color_1);
-                        //     $('.info-stat').on('mouseover', () => {
-                        //         this.css('background', color.color_1);
-                        //
-                        //     });
-                        // });
+                        header.css('background', color.color_1);
+                        header.append(`<style>.info-row:hover > .info-stat {background: ${color.color_2}</style>`)
+                        header.append(`<style>.info-row:hover > .info-stat {border-color: ${color.color_2}</style>`)
+                        header.append(`<style>.info-row:hover > .info-text {border-color: ${color.color_2}</style>`)
                     }
                 });
 
