@@ -393,7 +393,7 @@
         <!-- TODO add help icon with details on weighted distance calc -->
         <div class="toggle-container">
             <div class="custom-control custom-switch">
-                <input type="checkbox" class="custom-control-input" id="weightedToggle" checked>
+                <input type="checkbox" class="custom-control-input" id="weightedToggle">
                 <label class="custom-control-label" for="weightedToggle">Weighted Distance</label>
             </div>
         </div>
@@ -459,15 +459,9 @@
 <!--        </div>-->
 <!--    </div>-->
 
-    <!-- TODO add card for weighted avg? or change on weighted toggle? add header -->
     <div class="info-container">
 
         <div class="info-header capital-font">All 1-4 Seed Schools 1985 - 2019</div>
-
-        <!-- TOOD add tooltip -->
-        <div class="info-subheader"
-             style="width: 100%; background: #AAA; color: #FFF; border-radius: 4px; margin: 0.25rem 0; text-align: center;">
-            WEIGHTED DISTANCE </div>
 
         <div class="info-row">
             <div class="info-stat capital-font card-1"></div>
@@ -537,7 +531,7 @@
     });
 
     filters = {
-        weighted: true,
+        weighted: false,
         school: 'all',
         seed: 'all',
         conference: 'all',
@@ -669,21 +663,29 @@
     }
 
     function setDefaultInfoCard() {
+        // dynamically set default info card whether weighted toggle is true or false on load
         const defaultInfoCard = {
             header: 'All Top Seeded Schools 1985 - 2019',
-            card1: highlights.mean_wtDist + ' miles',
+            card1: highlights[setProperty('mean')] + ' miles',
             card1text: 'Average for top seeded schools 1985 - 2019',  // TODO make constant
-            card2: highlights['50%_wtDist'] + ' miles',
+            card2: highlights[setProperty('50%')] + ' miles',
             card2text: 'Average for top seeded schools 1985 - 2019',
-            card3: highlights.min_wtDist + ' miles',
+            card3: highlights[setProperty('min')] + ' miles',
             card3text: 'University of Arizona to Tucson, AZ as a 1 seed in 2000',
-            card4: highlights.max_wtDist + ' miles',
+            card4: highlights[setProperty('max')] + ' miles',
             // card4text: 'Syracuse University to San Jose, CA as a 4 seed in 2013',
             card4text: 'St. John\'s University to Long Beach, CA as a 1 seed in 1986',
             card5: 87,
             card5text: 'Different schools with appearances',
         };
         updateInfoCard(defaultInfoCard);
+    }
+
+    /**
+     * Set weighted or unweighted property value, e.g. 'mean_wtDist' or 'mean_dist'
+     **/
+    function setProperty(stat = filters.stat) {
+        return `${stat}_${filters.weighted ? 'wtD' : 'd'}ist`;
     }
 
     // iterate over schools and seeds geojson layers before manipulating map
@@ -796,7 +798,8 @@
             filters.stat = e.target.value;
             // TODO weighted count breaks, fix in weightedToggle event
             // const prop = `${e.target.value}_dist`;  // TODO acct for weights
-            const prop = `${filters.stat}_${filters.weighted ? 'wtD' : 'd'}ist`;
+            // const prop = `${filters.stat}_${filters.weighted ? 'wtD' : 'd'}ist`;
+            const prop = setProperty();
 
             // TODO update stops for more readability (e.g. max is huge for all schools)
             const stops = createStops(schools, prop);
@@ -877,21 +880,21 @@
                 // push linestring features to line layer source
                 map.getSource('line').setData({ type: 'FeatureCollection', features: lineFeatures });
 
-                // TODO fix w new weighted vs unweighted
                 const differenceWtDist = (feature.properties.mean_wtDist - aggregates.mean_wt).toFixed();
                 const differenceDist = (feature.properties.mean_dist - aggregates.mean).toFixed();
 
 
+                // TODO fix all of these for weighted vs unweighted changes
                 // TODO look into projection/distance calc, messed up cincy and louisville
                 const inputs = {
                     header: feature.properties.school_full_name,
-                    card1: `${feature.properties[applySuffixToStat('mean')].toFixed()} miles`,
+                    card1: `${feature.properties.mean_wtDist.toFixed()} miles`,
                     card1text: `${directionSymbol(differenceWtDist) + differenceWtDist} miles from all-school average (${aggregates.mean_wt} miles)`,
-                    card2: `${feature.properties[applySuffixToStat('50%')].toFixed()} miles`,
+                    card2: `${feature.properties.mean_dist.toFixed()} miles`,
                     card2text: `${directionSymbol(differenceDist) + differenceDist} miles from all-school average (${aggregates.mean} miles)`,
-                    card3: `${feature.properties[applySuffixToStat('min')].toFixed()} miles`,
+                    card3: `${feature.properties.min_dist.toFixed()} miles`,
                     card3text: `${min.city}, ${min.state} to ${min.site} as a ${min.seed} seed in ${min.year}`,
-                    card4: `${feature.properties[applySuffixToStat('max')].toFixed()} miles`,
+                    card4: `${feature.properties.max_dist.toFixed()} miles`,
                     card4text: `${max.city}, ${max.state} to ${max.site} as a ${max.seed} seed in ${max.year}`,
                     card5: feature.properties.count_dist,
                     card5text: 'Appearances as 1-4 seed',  // TODO put subheader w list of number of apperances as each seed
@@ -918,10 +921,6 @@
         });
     }
 
-    function applySuffixToStat(stat) {
-        return `${stat}_${filters.weighted ? 'wtD' : 'd'}ist`;
-    }
-
     function directionSymbol(value) {
         return value >= 0 ? '+' : '';
     }
@@ -937,17 +936,13 @@
             },
             properties: feature.properties,
         }];
-        // console.log(avgDistance);
 
         // apply geojson source to selected school layer
         // TODO update with weightedDist toggle, reset extent
         map.getSource('selected-school').setData({ type: 'FeatureCollection', features: avgDistance });
 
-        // TODO acct for wt dist?
         // TODO apply to avg-distance layer - update with full agg values? (e.g. compare school min to overall min? or avg min?)
-        // const property = `${filters.stat}_dist`;
-        const property = `${filters.stat}_${filters.weighted ? 'wtD' : 'd'}ist`;
-        // console.log(property);
+        const property = setProperty();
 
         // apply circle radius based on data-driven radiuses
         map.setPaintProperty('selected-school', 'circle-radius',
@@ -1053,7 +1048,7 @@
             // TODO apply weights to ALL stats
             // set weighted distance if toggle checked - if not, set regular unweighted distance
             // const mean = e.target.checked ? 'mean_wtDist' : 'mean_dist';
-            const property = `${filters.stat}_${filters.weighted ? 'wtD' : 'd'}ist`;
+            const property = setProperty();
             const stops = createStops(geojson, property);
 
             map.setPaintProperty('schools', 'circle-radius', { property: property, stops: stops });
@@ -1095,7 +1090,8 @@
      * @param geojson
      */
     function createSchoolLayer(geojson) {
-        const stops = createStops(geojson, 'mean_wtDist');
+        const property = setProperty();
+        const stops = createStops(geojson, property);
 
         map.addLayer({
             id: 'schools',
@@ -1106,7 +1102,7 @@
             },
             paint: {
                 'circle-radius': {
-                    property: 'mean_wtDist',
+                    property: property,
                     stops: stops,
                 },
                 'circle-color': '#E27600',
