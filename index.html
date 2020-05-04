@@ -863,6 +863,10 @@
                     // TODO fix w new weighted vs unweighted
                     // set minimum and maximum distances for info cards
                     // iterate through sites and match to the min and max distances traveled, to fixed with for exact match
+                    console.log(feature.properties.min_dist.toFixed(4));
+                    console.log(applySuffixToStat('min'));
+                    console.log(feature.properties[applySuffixToStat('min')].toFixed(4));
+
                     if (site.properties.distance.toFixed(4) === feature.properties.min_dist.toFixed(4)) {
                         min = site.properties;
                     }
