@@ -576,8 +576,9 @@
     const seedsJson = d3.json('data/cleaned/seeds-by-school.json');
     const seedsAggJson = d3.json('data/cleaned/seeds-overall.json');
     const confJson = d3.json('data/cleaned/conference-agg.json');
+    const colorsJson = d3.json('data/cleaned/school-colors.json');
 
-    Promise.all([sitesJson, schoolsJson, seedsJson, seedsAggJson]).then(onLoad);
+    Promise.all([sitesJson, schoolsJson, seedsJson, seedsAggJson, confJson, colorsJson]).then(onLoad);
 
     function onLoad(data) {
 
@@ -586,6 +587,7 @@
         const seeds = data[2];
         const seedsAgg = data[3];
         const conf = data[4];
+        const colors = data[5];
 
         // iterate over schools and seeds geojson layers before manipulating map
         // push schools to schoolFilter dropdown, apply seed values to school feature properties
@@ -601,7 +603,7 @@
             createAvgDistanceLayer();  // TODO move to different function?
             createSelectedSchoolLayer();
 
-            onSchoolClick(sites);
+            onSchoolClick(sites, colors);
 
 
             onWeightedToggle(schools);
@@ -750,14 +752,14 @@
 
 
     // TODO make additional dropdown for special cases, i.e. blue bloods, etc.?
-    function selectSchool(sites) {
+    function selectSchool(sites, colors) {
         schoolFilter.on('change', (e) => {
             // apply selected school to filters
             filters.school = e.target.value;
-            selectSchoolOnMap(sites);
+            selectSchoolOnMap(sites, colors);
 
             if (filters.school !== 'all') {
-                selectSchoolOnMap(sites);
+                selectSchoolOnMap(sites, colors);
             } else {
                 resetExtent();
             }
@@ -793,13 +795,14 @@
 
     // TODO clear conference filter when school is selected but doesn't match filter
     // TODO add createAvgDistanceLayer() to show avg distance on dropdown select
-    function selectSchoolOnMap(sites) {  // TODO iterate over layer source instead of geojson directly
+    function selectSchoolOnMap(sites, colors) {  // TODO iterate over layer source instead of geojson directly
         const lineFeatures = [];
         let min = null;
         let max = null;
 
         map.getSource('schools')['_data'].features.forEach(feature => {
             if (feature.properties.school_common_name === filters.school) {
+
                 // close any open popups
                 popup.remove();
 
@@ -868,6 +871,23 @@
                     card5text: 'Appearances as 1-4 seed',  // TODO put subheader w list of number of apperances as each seed
                 };
                 updateInfoCard(inputs);  // TODO create subheader for text ^^
+
+                console.log(colors);
+                colors.features.forEach(color => {
+                    if (color.name === feature.properties.school_common_name) {
+                        // TODO load in colors and set here
+                        $('.info-header').css('background', color.color_1);
+                        // // $('.info-row:hover > .info-stat').css('background', color.color_1 + ' !important');
+                        // $('.info-row').on('mouseover', (e) => {
+                        //     // $('.info-stat').css('background', color.color_1);
+                        //     $('.info-stat').on('mouseover', () => {
+                        //         this.css('background', color.color_1);
+                        //
+                        //     });
+                        // });
+                    }
+                });
+
 
                 // style and filter school, site, and line layers based on selected school
                 styleLayers(feature);
@@ -1124,7 +1144,7 @@
     }
 
     // TODO instead of changing feature-state to set fill opacity to 1, add it to new layer so that grayed out features can be pushed below lines
-    function onSchoolClick(sites) {
+    function onSchoolClick(sites, colors) {
         map.on('click', 'schools', (e) => {
 
             // TODO reset filters in resetExtent()
@@ -1132,7 +1152,7 @@
             filters.school = e.features[0].properties.school_common_name;
             // set school filter dropdown value as clicked school
             schoolFilter.val(filters.school);
-            selectSchoolOnMap(sites);
+            selectSchoolOnMap(sites, colors);
 
         });
     }

@@ -89,6 +89,6 @@
     {"name":"West Virginia","conference":"Big 12 Conference","color_1":"#002855","color_2":"#EAAA00","color_neutral":"#FFF"},
     {"name":"Alabama","conference":"Southeastern Conference","color_1":"#9E1B32","color_2":"#828A8F","color_neutral":"#FFF"},
     {"name":"Southern Illinois","conference":"Missouri Valley Conference","color_1":"#720000","color_2":"#000","color_neutral":"#FFF"},
-    {"name":"Stanford","conference":"Pac-12 Conference","color_1":"#8C1515","color_2":"#4D4F53","color_neutral":"#000"},
+    {"name":"Stanford","conference":"Pac-12 Conference","color_1":"#8C1515","color_2":"#4D4F53","color_neutral":"#000"}
 ]
 }
