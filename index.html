@@ -1098,6 +1098,10 @@
         const property = setProperty();
         const stops = createStops(geojson, property);
 
+        // sort geojson in descending order to plot larger circles underneath smaller ones
+        // TODO Sort for each stat selection
+        geojson.features.sort((a, b) => (a.properties.mean_dist > b.properties.mean_dist) ? 1 : -1).reverse();
+
         map.addLayer({
             id: 'schools',
             type: 'circle',
