@@ -547,18 +547,6 @@
         count: 87,
     };
 
-    // TODO combine with above and simplify
-    avgKey = {
-        mean_dist: 335/35,
-        mean_wtDist: 638/35,
-        min_dist: 0.38,
-        min_wtDist: 0.38,
-        max_wtDist: 2665/35,
-        max_dist: 2665/35,
-        count_dist: 87,
-        count_wtDist: 87,
-    };
-
     highlights = {
         'mean_dist': 639,
         '50%_dist': 413,
@@ -807,7 +795,7 @@
             // TODO apply mouseover affordance to selected-school layer
             map.setPaintProperty('schools', 'circle-radius', { property: prop, stops: stops });
             map.setPaintProperty('selected-school', 'circle-radius', { property: prop, stops: stops });
-            map.setPaintProperty('avg-distance', 'circle-radius', avgKey[prop]);
+            map.setPaintProperty('avg-distance', 'circle-radius', highlights[prop] / adjustPropCircles(prop));
         });
     }
 
@@ -1064,12 +1052,21 @@
                 { property: property, stops: createStops(map.getSource('selected-school')['_data'], property) }
             );
 
-            // TODO craete constants for avg values
-            // TODO update with selected filter + weight val here, on filter change, on school select, elsewhere?
+            // TODO update with selected filter + weight val on school select, elsewhere?
             // adjust average distance circle based on weighted toggle status
-            map.setPaintProperty('avg-distance', 'circle-radius', avgKey[property]);  // TODO check vals, use constant
-            // map.setPaintProperty('avg-distance', 'circle-radius', e.target.checked ? 335/35 : 638/25);  // TODO check vals, use constant
+            map.setPaintProperty(
+                'avg-distance',
+                'circle-radius',
+                // divide property by 35 for mean and max values
+                highlights[property] / adjustPropCircles(property),
+            );
         });
+    }
+
+    function adjustPropCircles(property) {
+        // return property === 'mean_dist' || property === 'mean_wtDist' || property === 'max_dist' || property === 'max_wtDist' ?
+        return property === 'min_dist' || property === 'min_wtDist' || property === 'count_dist' || property === 'count_wtDist' ?
+            1 : 35;
     }
 
     function createStops(geojson, property) {
@@ -1274,7 +1271,7 @@
             },
             paint: {
                 // TODO change avg if weighted or not
-                'circle-radius': 345.88513858848495/25,  // average weighted mean
+                'circle-radius': highlights[setProperty('mean')]/35,  // average weighted mean
                 'circle-color': 'transparent',
                 'circle-stroke-opacity': 0.7,
                 'circle-stroke-color': '#AA5F0E',
