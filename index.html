@@ -1097,7 +1097,8 @@
 
         // sort geojson in descending order to plot larger circles underneath smaller ones
         // TODO Sort for each stat selection
-        geojson.features.sort((a, b) => (a.properties.mean_dist > b.properties.mean_dist) ? 1 : -1).reverse();
+        // TODO sorting causes bug when select school, click weighted toggle, then click a diff school - plots multi schools
+        // geojson.features.sort((a, b) => (a.properties.mean_dist > b.properties.mean_dist) ? 1 : -1).reverse();
 
         map.addLayer({
             id: 'schools',
