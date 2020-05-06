@@ -266,6 +266,11 @@
             font-family: Roboto, sans-serif;
         }
 
+        .label-subtext {
+            font-size: 0.85rem;
+            color: #CCC;
+        }
+
 
     </style>
 </head>
@@ -524,7 +529,7 @@
         container: 'map',
         // style: 'mapbox://styles/mapbox/light-v9',
         style: 'mapbox://styles/laurenoldham1202/ck9d9t3360puw1ilehqxfc0oa',
-        center: [-105.5, 38.5],
+        center: [-97.5, 38.5],
         zoomSnap: 0.1,
         zoom: 4,
         fadeTransition: 600,
@@ -620,8 +625,6 @@
             createSelectedSchoolLayer();
 
             onSchoolClick(sites, colors);
-
-
             onWeightedToggle(schools);
 
             selectSchool(sites);
@@ -786,10 +789,15 @@
         layerGeometry.coordinates = [layerCoords];
 
         // fit bounds to school layer
-        map.fitBounds(turf.bbox(layerGeometry), { padding: {top: 50, right: 50, bottom: 50, left: 375} });
+        fitMapBounds(layerGeometry);
 
         // reset info card to all school defaults
         setDefaultInfoCard();
+    }
+
+    function fitMapBounds(layerGeometry) {
+        // map.fitBounds(turf.bbox(layerGeometry), { padding: {top: 50, right: 50, bottom: 50, left: 375} });
+        map.fitBounds(turf.bbox(layerGeometry), { padding: 50 });
     }
 
 
@@ -890,8 +898,9 @@
                     }
                 });
 
-                // fit bounds to school and sites, additional left buffer for highlight card offset
-                map.fitBounds(turf.bbox(layerGeometry), { padding: {top: 50, right: 50, bottom: 50, left: 375} });
+                // fit bounds to school and sites
+                fitMapBounds(layerGeometry);
+
 
                 // push linestring features to line layer source
                 map.getSource('line').setData({ type: 'FeatureCollection', features: lineFeatures });
@@ -1236,9 +1245,6 @@
     function onSchoolHover() {
         // empty hoverId, resets on each school mouseover
         let hoverId = null;
-        // map.on('mousemove', 'selected-school', (e) => {
-        //     labelText.text(e.features[0].properties.school_full_name);  // apply school name to label
-        // });
 
         map.on('mousemove', 'schools', (e) => {
             // change cursor to pointer to indicate clickability
@@ -1252,7 +1258,7 @@
             label.addClass('visible');  // make popup visible on school mouseover
             labelText.text(e.features[0].properties.school_full_name);  // apply school name to label
             // apply selected stat distance in label subtext
-            labelSubText.text(`${e.features[0].properties[setProperty()].toFixed()} ${statFriendlyName()} miles traveled`);
+            labelSubText.text(`${e.features[0].properties[setProperty()].toFixed()} miles (${statFriendlyName()} distance traveled)`);
 
             // apply dark stroke on mouseover
             if (hoverId) {
