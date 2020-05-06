@@ -250,7 +250,7 @@
             outline: none;
         }
 
-        .map-info {
+        .label {
             position: absolute;
             top: 0;
             right: 3rem;
@@ -381,7 +381,14 @@
     <button id="extent"><span class="material-icons">public</span></button>
 </div>
 
-<div class="map-info"></div>
+<!--<div class="map-info">-->
+<!--    <div class="sub-map-info" style="color: red;">blah</div>-->
+<!--</div>-->
+
+<div class="label">
+    <div class="label-text">hello</div>
+    <div class="label-subtext">goodbye</div>
+</div>
 
 <div class="sidebar">
 
@@ -561,13 +568,19 @@
     };
 
     clickedStateId = null;
-    label = $('.map-info');
+
+    label = $('.label');
+    labelText = $('.label-text');
+    labelSubText = $('.label-subtext');
+
     weightedToggle = $('#weightedToggle');
     schoolFilter = $('#schoolFilter');
     seedFilter = $('#seedFilter');
     conferenceFilter = $('#conferenceFilter');
     statFilter = $('#statFilter');
     header = $('.info-header');
+
+
 
     // dynamically apply info card defaults
     setDefaultInfoCard();
@@ -661,8 +674,8 @@
             card3: highlights[setProperty('min')] + ' miles',
             card3text: 'University of Arizona to Tucson, AZ as a 1 seed in 2000',
             card4: highlights[setProperty('max')] + ' miles',
-            // card4text: 'Syracuse University to San Jose, CA as a 4 seed in 2013',
-            card4text: 'St. John\'s University to Long Beach, CA as a 1 seed in 1986',
+            card4text: 'Syracuse University to San Jose, CA as a 4 seed in 2013',
+            // card4text: 'St. John\'s University to Long Beach, CA as a 1 seed in 1986',
             card5: 87,
             card5text: 'Different schools with appearances',
         };
@@ -679,9 +692,12 @@
     // iterate over schools and seeds geojson layers before manipulating map
     function iterateGeojsonSource(schools, seeds) {
         const allSchools = [];  // empty array to push school values
+        const allMin = [];  // empty array to push minimum values  // TODO do this in JN?
         schools.features.forEach(school => {
+
             // push all schools to array to be sorted before pushing to dropdown
             allSchools.push(school.properties.school_common_name);
+            allMin.push(school.properties.min_dist);
 
             // TODO Move to node script?
             // apply seed property to schools geojson to match with seed dropdown values
@@ -701,10 +717,12 @@
         });
 
         allSchools.sort();  // sort schools alphabetically
-        allSchools.forEach(school => {
+        allSchools.forEach(s => {
             // push all school names to schoolFilter dropdown
-            schoolFilter.append(`<option value="${school}">${school}</option>`);
+            schoolFilter.append(`<option value="${s}">${s}</option>`);
         });
+
+        // console.log(allMin.reduce((a, b) => a + b) / allMin.length);
     }
 
     function resetFilter(filter) {
@@ -1057,18 +1075,18 @@
             map.setPaintProperty(
                 'avg-distance',
                 'circle-radius',
-                // divide property by 35 for mean and max values
+                // divide property by set value for mean and max values only
                 highlights[property] / adjustPropCircles(property),
             );
         });
     }
 
     function adjustPropCircles(property) {
-        // return property === 'mean_dist' || property === 'mean_wtDist' || property === 'max_dist' || property === 'max_wtDist' ?
         return property === 'min_dist' || property === 'min_wtDist' || property === 'count_dist' || property === 'count_wtDist' ?
-            1 : 35;
+            1 : 45;
     }
 
+    // TODO Create hardcoded stops with class breaks for easier differentiating, maybe legend too?
     function createStops(geojson, property) {
         const values = [];
         const stops = [];
@@ -1081,8 +1099,7 @@
 
         const sortedValues = values.sort((a, b) => { return a-b });
         sortedValues.forEach(val => {
-            // TODO account for weighted count
-            stops.push([val, property === 'count_dist' || property === 'count_wtDist' ? val : val/35]);  // TODO change dividend for unweighted? use 25 or 35?
+            stops.push([val, val / adjustPropCircles(property)]);
         });
         return stops;
     }
@@ -1188,7 +1205,7 @@
     // TODO simplify? create class or interface for contentObject
     // function updateInfoCard(header, card1, card2, card3, card3text, card4, card4text, card5, card5text) {
     function updateInfoCard(contentObject) {
-        $('.info-header').text(contentObject['header']);
+        header.text(contentObject['header']);
         $('.card-1').text(contentObject['card1']);
         $('.card-1-subtext').text(contentObject['card1text']);
         $('.card-2').text(contentObject['card2']);
@@ -1208,13 +1225,23 @@
 
             // change cursor to pointer to indicate clickability
             this.map.getCanvas().style.cursor = 'pointer';
-            label.addClass('visible');  // make info label visible
-            label.text(e.features[0].properties.school_full_name);  // apply school name to popup
+            // label.addClass('visible');  // make info label visible
+            // label.text(e.features[0].properties.school_full_name);  // apply school name to popup
+            //
+            // // subLabel.text(`${e.features[0].properties[setProperty()]} miles`);
+            //
+            // console.log(e.features[0].properties[setProperty()]);
+            console.log(filters);
 
             // reset basic school style for popup TODO: put in fn if used multiple times
             // TODO add subtext for mean or weighted mean dist
             label.css('background', '#414140');
             label.css('color', 'whitesmoke');
+
+
+            label.addClass('visible');
+            labelText.text(e.features[0].properties.school_full_name);
+            labelSubText.text(e.features[0].properties[setProperty()]);
 
             // apply dark stroke on mouseover
             if (hoverId) {
@@ -1225,6 +1252,7 @@
         });
 
         map.on('mouseleave', 'schools', () => {
+            // label.empty();
             // change cursor to pointer to indicate clickability
             this.map.getCanvas().style.cursor = 'grab';
             label.removeClass('visible');  // hide label on mouseleave
@@ -1271,8 +1299,7 @@
                 }
             },
             paint: {
-                // TODO change avg if weighted or not
-                'circle-radius': highlights[setProperty('mean')]/35,  // average weighted mean
+                'circle-radius': highlights[setProperty('mean')] / adjustPropCircles(setProperty('mean')),  // average weighted mean
                 'circle-color': 'transparent',
                 'circle-stroke-opacity': 0.7,
                 'circle-stroke-color': '#AA5F0E',
@@ -1296,8 +1323,6 @@
                 }
             },
             paint: {
-                // TODO change avg if weighted or not
-                // 'circle-radius': 345.88513858848495/25,  // average weighted mean
                 'circle-color': '#E27600',
                 'circle-stroke-opacity': 1,
             },
