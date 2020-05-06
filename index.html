@@ -917,19 +917,14 @@
                 };
                 updateInfoCard(inputs);
 
-                console.log(feature.properties);
-
                 // TODO conditions for white
-                // loop through colors json, apply colors associated with selected school to info cards
-                // colors.features.forEach(color => {
-                //     if (color.name === feature.properties.school_common_name) {
-                        header.css('background', feature.properties.color_1);
-                        header.css('border-color', feature.properties.color_2);
-                        header.append(`<style>.info-row:hover > .info-stat {background: ${feature.properties.color_2}</style>`)
-                        header.append(`<style>.info-row:hover > .info-stat {border-color: ${feature.properties.color_2}</style>`)
-                        header.append(`<style>.info-row:hover > .info-text {border-color: ${feature.properties.color_2}</style>`)
-                //     }
-                // });
+                // apply colors associated with selected school to info cards
+                header.css('background', feature.properties.color_1);
+                header.css('border-color', feature.properties.color_2);
+                header.append(`<style>.info-row:hover > .info-stat {background: ${feature.properties.color_2}</style>`)
+                header.append(`<style>.info-row:hover > .info-stat {border-color: ${feature.properties.color_2}</style>`)
+                header.append(`<style>.info-row:hover > .info-text {border-color: ${feature.properties.color_2}</style>`)
+
 
                 // style and filter school, site, and line layers based on selected school
                 styleLayers(feature);
@@ -1241,10 +1236,11 @@
     function onSchoolHover() {
         // empty hoverId, resets on each school mouseover
         let hoverId = null;
+        // map.on('mousemove', 'selected-school', (e) => {
+        //     labelText.text(e.features[0].properties.school_full_name);  // apply school name to label
+        // });
+
         map.on('mousemove', 'schools', (e) => {
-
-            // TODO BUG: fix school text after mousing over site then back over school
-
             // change cursor to pointer to indicate clickability
             this.map.getCanvas().style.cursor = 'pointer';
 
@@ -1291,8 +1287,9 @@
 
             // update label text and styles
             label.addClass('visible');  // make info label visible
-            label.text(content);
-            label.css('background', background);
+            labelText.text(content);  // apply site info content
+            labelSubText.text('');  // apply site info content
+            label.css('background', background);  // apply styles based on seed
             label.css('color', 'white');
         });
 
