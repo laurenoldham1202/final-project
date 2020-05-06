@@ -607,7 +607,7 @@
 
         // iterate over schools and seeds geojson layers before manipulating map
         // push schools to schoolFilter dropdown, apply seed values to school feature properties
-        iterateGeojsonSource(schools, seeds);
+        iterateGeojsonSource(schools, seeds, colors);
 
         //  Geojsons have been created by reading CSVs into QGIS and converted
         map.on('load', () => {
@@ -690,10 +690,20 @@
     }
 
     // iterate over schools and seeds geojson layers before manipulating map
-    function iterateGeojsonSource(schools, seeds) {
+    function iterateGeojsonSource(schools, seeds, colors) {
         const allSchools = [];  // empty array to push school values
         const allMin = [];  // empty array to push minimum values  // TODO do this in JN?
+
         schools.features.forEach(school => {
+            // apply colors to school geojson
+            colors.features.forEach(color => {
+               if (school.properties.school_common_name === color.name) {
+                   console.log(school);
+                   school.properties['color_1'] = color['color_1'];
+                   school.properties['color_2'] = color['color_2'];
+                   school.properties['color_neutral'] = color['color_neutral'];
+               }
+            });
 
             // push all schools to array to be sorted before pushing to dropdown
             allSchools.push(school.properties.school_common_name);
@@ -907,17 +917,19 @@
                 };
                 updateInfoCard(inputs);
 
+                console.log(feature.properties);
+
                 // TODO conditions for white
                 // loop through colors json, apply colors associated with selected school to info cards
-                colors.features.forEach(color => {
-                    if (color.name === feature.properties.school_common_name) {
-                        header.css('background', color.color_1);
-                        header.css('border-color', color.color_2);
-                        header.append(`<style>.info-row:hover > .info-stat {background: ${color.color_2}</style>`)
-                        header.append(`<style>.info-row:hover > .info-stat {border-color: ${color.color_2}</style>`)
-                        header.append(`<style>.info-row:hover > .info-text {border-color: ${color.color_2}</style>`)
-                    }
-                });
+                // colors.features.forEach(color => {
+                //     if (color.name === feature.properties.school_common_name) {
+                        header.css('background', feature.properties.color_1);
+                        header.css('border-color', feature.properties.color_2);
+                        header.append(`<style>.info-row:hover > .info-stat {background: ${feature.properties.color_2}</style>`)
+                        header.append(`<style>.info-row:hover > .info-stat {border-color: ${feature.properties.color_2}</style>`)
+                        header.append(`<style>.info-row:hover > .info-text {border-color: ${feature.properties.color_2}</style>`)
+                //     }
+                // });
 
                 // style and filter school, site, and line layers based on selected school
                 styleLayers(feature);
@@ -1230,6 +1242,8 @@
         // empty hoverId, resets on each school mouseover
         let hoverId = null;
         map.on('mousemove', 'schools', (e) => {
+
+            // TODO BUG: fix school text after mousing over site then back over school
 
             // change cursor to pointer to indicate clickability
             this.map.getCanvas().style.cursor = 'pointer';
