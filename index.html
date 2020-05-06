@@ -1082,8 +1082,8 @@
     }
 
     function adjustPropCircles(property) {
-        return property === 'min_dist' || property === 'min_wtDist' || property === 'count_dist' || property === 'count_wtDist' ?
-            1 : 45;
+        return property === 'min_dist' || property === 'min_wtDist' ? 100 :
+            property === 'count_dist' || property === 'count_wtDist' ? 1 : 45;
     }
 
     // TODO Create hardcoded stops with class breaks for easier differentiating, maybe legend too?
@@ -1218,6 +1218,14 @@
         $('.card-5-subtext').text(contentObject['card5text']);
     }
 
+    function statFriendlyName(stat = filters.stat) {
+        return stat === 'mean' ? 'mean' :
+            stat === '50%' ? 'median' :
+                stat === 'min' ? 'minimum' :
+                    stat === 'max' ? 'maximum' :
+                        stat === 'count' ? 'count' : '';
+    }
+
     function onSchoolHover() {
         // empty hoverId, resets on each school mouseover
         let hoverId = null;
@@ -1225,23 +1233,16 @@
 
             // change cursor to pointer to indicate clickability
             this.map.getCanvas().style.cursor = 'pointer';
-            // label.addClass('visible');  // make info label visible
-            // label.text(e.features[0].properties.school_full_name);  // apply school name to popup
-            //
-            // // subLabel.text(`${e.features[0].properties[setProperty()]} miles`);
-            //
-            // console.log(e.features[0].properties[setProperty()]);
-            console.log(filters);
 
             // reset basic school style for popup TODO: put in fn if used multiple times
-            // TODO add subtext for mean or weighted mean dist
+            // TODO add subtext styles, +/- overall avg?
             label.css('background', '#414140');
             label.css('color', 'whitesmoke');
 
-
-            label.addClass('visible');
-            labelText.text(e.features[0].properties.school_full_name);
-            labelSubText.text(e.features[0].properties[setProperty()]);
+            label.addClass('visible');  // make popup visible on school mouseover
+            labelText.text(e.features[0].properties.school_full_name);  // apply school name to label
+            // apply selected stat distance in label subtext
+            labelSubText.text(`${e.features[0].properties[setProperty()].toFixed()} ${statFriendlyName()} miles traveled`);
 
             // apply dark stroke on mouseover
             if (hoverId) {
