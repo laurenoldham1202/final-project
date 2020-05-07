@@ -915,8 +915,7 @@
     }
 
     function differenceText(value) {
-        return value >= 0 ? 'ABOVE' : 'BELOW';
-
+      return value >= 0 ? 'ABOVE' : 'BELOW';
     }
 
     function createLineFeatures(lineFeatures, site, feature) {
@@ -946,7 +945,6 @@
         }];
 
         // apply geojson source to selected school layer
-        // TODO update with weightedDist toggle, reset extent
         map.getSource('selected-school').setData({ type: 'FeatureCollection', features: avgDistance });
 
         // TODO apply to avg-distance layer - update with full agg values? (e.g. compare school min to overall min? or avg min?)
@@ -954,8 +952,8 @@
 
         // apply circle radius based on data-driven radiuses
         map.setPaintProperty('selected-school', 'circle-radius',
-            // { property: 'mean_wtDist', stops: createStops(map.getSource('selected-school')['_data'], 'mean_wtDist') }
-            { property: property, stops: createStops(map.getSource('selected-school')['_data'], property) }
+          // radius dynamically determined by currently selected filters
+          { property: property, stops: createStops(map.getSource('selected-school')['_data'], property) }
         );
 
         // apply above geojson to avg-distance layer
@@ -968,22 +966,22 @@
     }
 
     function styleLayers(feature) {
-        // change unclicked schools to grayed out style
-        map.setPaintProperty('schools', 'circle-color', ['case', ['boolean', ['feature-state', 'clicked'], false], '#E27600', '#D2D4D4']);
+      // gray out non-selected schools
+      grayOutSchools();
 
-        // reset circle opacity of clicked circle to 1 if it had changed (through default map extent)
-        map.setPaintProperty('schools', 'circle-opacity', ['case', ['boolean', ['feature-state', 'clicked'], false], 1, 0.7]);
+      // filter site layer and toggle visibility on for sites and lines that match the clicked school
+      ['sites', 'line'].forEach(layer => {
+        map.setFilter(layer, ['==', 'school_common_name', feature.properties.school_common_name]);
+        map.setLayoutProperty(layer, 'visibility', 'visible');
+      });
+    }
 
-        // map.setLayoutProperty('schools', 'visibility', 'none');
-
-        // filter site layer and toggle visibility on for sites that match the clicked school
-        map.setFilter('sites', ['==', 'school_common_name', feature.properties.school_common_name]);
-        map.setLayoutProperty('sites', 'visibility', 'visible');
-
-        // TODO create method to do this for line AND site layer
-        // only display lines for the currently selected school and associated sites
-        map.setFilter('line', ['==', 'school_common_name', feature.properties.school_common_name]);
-        map.setLayoutProperty('line', 'visibility', 'visible');
+    function grayOutSchools() {
+      const styles = ['color', 'opacity'];
+      styles.forEach(style => {
+        map.setPaintProperty('schools', `circle-${style}`, ['case', ['boolean', ['feature-state', 'clicked'], false],
+          style === 'color' ? '#E27600' : 1, style === 'color' ? '#D2D4D4' : 0.7]);
+      });
     }
 
     function selectConference() {
