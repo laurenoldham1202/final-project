@@ -403,14 +403,6 @@
 
     <div class="filters-container">
 
-        <!-- TODO add help icon with details on weighted distance calc -->
-        <div class="toggle-container">
-            <div class="custom-control custom-switch">
-                <input type="checkbox" class="custom-control-input" id="weightedToggle">
-                <label class="custom-control-label" for="weightedToggle">Weighted Distance</label>
-            </div>
-        </div>
-
         <!-- todo use charcoal background instead of blue? -->
             <!-- TODO hardcode width so it doesn't move when values are pushed in jquery, adjust dropdown height-->
             <select id="schoolFilter" class="toolbar-select">
@@ -449,6 +441,15 @@
             <option value="max">Maximum</option>
             <option value="count">Count (Appearances)</option>
         </select>
+
+        <!-- TODO add help icon with details on weighted distance calc -->
+        <div class="toggle-container">
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="weightedToggle">
+                <label class="custom-control-label" for="weightedToggle">Weighted Distance</label>
+            </div>
+        </div>
+
     </div>
 
 <!--    <div class="highlights-container" style="width: 100%;">-->
@@ -573,8 +574,6 @@
         'count_wtDist': 87,
     };
 
-    clickedStateId = null;
-
     label = $('.label');
     labelText = $('.label-text');
     labelSubText = $('.label-subtext');
@@ -585,8 +584,6 @@
     conferenceFilter = $('#conferenceFilter');
     statFilter = $('#statFilter');
     header = $('.info-header');
-
-
 
     // dynamically apply info card defaults
     setDefaultInfoCard();
@@ -625,7 +622,7 @@
             createAvgDistanceLayer();  // TODO move to different function?
             createSelectedSchoolLayer();
 
-            onSchoolClick(sites, colors);
+            onSchoolClick(sites);
             onWeightedToggle(schools);
 
             selectSchool(sites);
@@ -702,7 +699,6 @@
             // apply colors to school geojson
             colors.features.forEach(color => {
                if (school.properties.school_common_name === color.name) {
-                   console.log(school);
                    school.properties['color_1'] = color['color_1'];
                    school.properties['color_2'] = color['color_2'];
                    school.properties['color_neutral'] = color['color_neutral'];
@@ -758,11 +754,10 @@
     }
 
     function defaultMap() {
-        $('#extent').on('click', () => {
-            resetExtent();
-            resetAllFilters();
-
-        });
+      $('#extent').on('click', () => {
+        resetExtent();
+        resetAllFilters();
+      });
     }
 
     function resetExtent() {
@@ -801,52 +796,41 @@
         map.fitBounds(turf.bbox(layerGeometry), { padding: 50 });
     }
 
-    // TODO make additional dropdown for special cases, i.e. blue bloods, etc.?
-    function selectSchool(sites, colors) {
+    // TODO make additional dropdown for special cases, i.e. blue bloods, etc.? Add slider for numbers of appearances?
+    function selectSchool(sites) {
         schoolFilter.on('change', (e) => {
             // apply selected school to filters
             filters.school = e.target.value;
-            selectSchoolOnMap(sites, colors);
+            selectSchoolOnMap(sites);
 
             if (filters.school !== 'all') {
-                selectSchoolOnMap(sites, colors);
+                selectSchoolOnMap(sites);
             } else {
                 resetExtent();
             }
         });
     }
 
-    // TODO replace weighted mean highlight card w median?
     function selectStat(schools) {
-        statFilter.on('change', (e) => {
-            filters.stat = e.target.value;
-            // TODO weighted count breaks, fix in weightedToggle event
-            // const prop = `${e.target.value}_dist`;  // TODO acct for weights
-            // const prop = `${filters.stat}_${filters.weighted ? 'wtD' : 'd'}ist`;
-            const prop = setProperty();
+      statFilter.on('change', (e) => {
+        // set filter constant with changed stat
+        filters.stat = e.target.value;
 
-            // TODO update stops for more readability (e.g. max is huge for all schools)
-            const stops = createStops(schools, prop);
+        // property of filter, e.g. mean_dist, mean_wtDist, etc.
+        const prop = setProperty();
 
-            // TODO apply mouseover affordance to selected-school layer
-            map.setPaintProperty('schools', 'circle-radius', { property: prop, stops: stops });
-            map.setPaintProperty('selected-school', 'circle-radius', { property: prop, stops: stops });
-            map.setPaintProperty('avg-distance', 'circle-radius', highlights[prop] / adjustPropCircles(prop));
-        });
-    }
+        // TODO update stops for more readability (e.g. max is huge for all schools)
+        const stops = createStops(schools, prop);
 
-    function applySchoolFeatureState(feature) {
-        if (clickedStateId) {
-            map.setFeatureState({ source: 'schools', id: clickedStateId }, { clicked: false });
-        }
-        clickedStateId = feature.id;
-        // set `clicked` feature-state to true on new school click
-        map.setFeatureState({ source: 'schools', id: clickedStateId }, { clicked: true });
+        map.setPaintProperty('schools', 'circle-radius', { property: prop, stops: stops });
+        map.setPaintProperty('selected-school', 'circle-radius', { property: prop, stops: stops });
+        map.setPaintProperty('avg-distance', 'circle-radius', highlights[prop] / adjustPropCircles(prop));
+      });
     }
 
     // TODO clear conference filter when school is selected but doesn't match filter
     // TODO add createAvgDistanceLayer() to show avg distance on dropdown select
-    function selectSchoolOnMap(sites, colors) {  // TODO iterate over layer source instead of geojson directly
+    function selectSchoolOnMap(sites) {  // TODO iterate over layer source instead of geojson directly
         const lineFeatures = [];
         let min = null;
         let max = null;
@@ -856,9 +840,6 @@
 
                 // close any open popups
                 popup.remove();
-
-                // style school layer based on clicked feature
-                applySchoolFeatureState(feature);
 
                 // create empty bounding geometry for fitBounds argument
                 const layerGeometry = {type: 'Polygon', coordinates: []};
