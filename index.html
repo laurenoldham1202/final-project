@@ -828,107 +828,109 @@
       });
     }
 
-    // TODO clear conference filter when school is selected but doesn't match filter
-    // TODO add createAvgDistanceLayer() to show avg distance on dropdown select
     function selectSchoolOnMap(sites) {  // TODO iterate over layer source instead of geojson directly
-        const lineFeatures = [];
-        let min = null;
-        let max = null;
+      const lineFeatures = [];
+      let min = null;
+      let max = null;
 
-        map.getSource('schools')['_data'].features.forEach(feature => {
-            if (feature.properties.school_common_name === filters.school) {
+      map.getSource('schools')['_data'].features.forEach(feature => {
+        // selected school
+        if (feature.properties.school_common_name === filters.school) {
 
-                // close any open popups
-                popup.remove();
+          // close any open popups
+          popup.remove();
 
-                // create empty bounding geometry for fitBounds argument
-                const layerGeometry = {type: 'Polygon', coordinates: []};
-                // coordinate array (formatted[[0,0],[1,1],[...]) to be pushed to layerGeometry coordinates
-                // start with school point coordinates
-                const layerCoords = [feature.geometry.coordinates];
+          // create empty bounding geometry for fitBounds argument
+          const layerGeometry = {type: 'Polygon', coordinates: []};
+          // coordinate array (formatted[[0,0],[1,1],[...]) to be pushed to layerGeometry coordinates
+          // start with school point coordinates
+          const layerCoords = [feature.geometry.coordinates];
 
-                // loop through all tournament sites
-                sites.features.forEach(site => {
-                    // filter sites for the selected school
-                    if (site.properties.school_common_name === feature.properties.school_common_name) {
-                        // push site coordinates to single array
-                        layerCoords.push(site.geometry.coordinates);
-                        // wrap coords
-                        layerGeometry.coordinates = [layerCoords];
+          // loop through all tournament sites
+          sites.features.forEach(site => {
+            // filter sites for the selected school
+            if (site.properties.school_common_name === feature.properties.school_common_name) {
+              // push site coordinates to single array
+              layerCoords.push(site.geometry.coordinates);
+              // wrap coords
+              layerGeometry.coordinates = [layerCoords];
 
-                        // push linestring features to a feature array to be inserted into lines layer geojson source
-                        lineFeatures.push({
-                            'type': 'Feature',
-                            'properties': site.properties,  // apply all school/site metadata to linestring
-                            'geometry': {
-                                'type': 'LineString',
-                                // set school geometry and site geometry to create linetring between the two
-                                'coordinates': [feature.geometry.coordinates, site.geometry.coordinates],
-                            }
-                        });
-                    }
-
-                    // TODO fix w new weighted vs unweighted
-                    // set minimum and maximum distances for info cards
-                    // iterate through sites and match to the min and max distances traveled, to fixed with for exact match
-                    if (site.properties.distance.toFixed(4) === feature.properties.min_dist.toFixed(4)) {
-                        min = site.properties;
-                    }
-                    if (site.properties.distance.toFixed(4) === feature.properties.max_dist.toFixed(4)) {
-                        max = site.properties;
-                    }
-                });
-
-                // fit bounds to school and sites
-                fitMapBounds(layerGeometry);
-
-                // push linestring features to line layer source
-                map.getSource('line').setData({ type: 'FeatureCollection', features: lineFeatures });
-
-                // difference between school averages and overall averages // TODO add min and max avg? or compare against overall min and max?
-                const diffDistMed = (feature.properties['50%_dist'] - highlights['50%_dist']).toFixed();
-                const differenceDist = (feature.properties.mean_dist - highlights.mean_dist).toFixed();
-
-                // TODO look into projection/distance calc, messed up cincy and louisville
-                const inputs = {
-                    header: feature.properties.school_full_name,
-                    card1: `${feature.properties.mean_dist.toFixed()} miles`,
-                    card1text: `${feature.properties.mean_wtDist.toFixed()} miles WEIGHTED mean \n \n ${differenceDist} miles ${differenceText(differenceDist)} all-school average (${highlights.mean_dist} miles)`,
-                    card2: `${feature.properties['50%_dist'].toFixed()} miles`,
-                    card2text: `${feature.properties['50%_wtDist'].toFixed()} miles WEIGHTED median \n \n ${diffDistMed} miles  ${differenceText(diffDistMed)} all-school average (${highlights['50%_dist']} miles)`,
-                    card3: `${feature.properties.min_dist.toFixed()} miles`,
-                    card3text: `${min.city}, ${min.state} to ${min.site} as a ${min.seed} seed in ${min.year}`,
-                    card4: `${feature.properties.max_dist.toFixed()} miles`,
-                    card4text: `${max.city}, ${max.state} to ${max.site} as a ${max.seed} seed in ${max.year}`,
-                    card5: feature.properties.count_dist,
-                    card5text: 'Appearances as 1-4 seed',  // TODO put subheader w list of number of apperances as each seed
-                };
-                updateInfoCard(inputs);
-
-                // TODO conditions for white
-                // apply colors associated with selected school to info cards
-                header.css('background', feature.properties.color_1);
-                header.css('border-color', feature.properties.color_2);
-                header.append(`<style>.info-row:hover > .info-stat {background: ${feature.properties.color_2}</style>`)
-                header.append(`<style>.info-row:hover > .info-stat {border-color: ${feature.properties.color_2}</style>`)
-                header.append(`<style>.info-row:hover > .info-text {border-color: ${feature.properties.color_2}</style>`)
-
-
-                // style and filter school, site, and line layers based on selected school
-                styleLayers(feature);
-                // set average distance circle at same location as selected school, apply source to layer
-                setAvgDistanceLayer(feature);
+              // push linestring features to a feature array to be inserted into lines layer geojson source
+              createLineFeatures(lineFeatures, site, feature);
             }
-        });
+
+            // TODO fix w new weighted vs unweighted
+            // set minimum and maximum distances for info cards
+            // iterate through sites and match to the min and max distances traveled, to fixed with for exact match
+            if (site.properties.distance.toFixed(4) === feature.properties.min_dist.toFixed(4)) {
+                min = site.properties;
+            }
+            if (site.properties.distance.toFixed(4) === feature.properties.max_dist.toFixed(4)) {
+                max = site.properties;
+            }
+          });
+
+          // fit bounds to school and sites
+          fitMapBounds(layerGeometry);
+
+          // push linestring features to line layer source
+          map.getSource('line').setData({ type: 'FeatureCollection', features: lineFeatures });
+
+          // difference between school averages and overall averages // TODO add min and max avg? or compare against overall min and max?
+          const diffDistMed = (feature.properties['50%_dist'] - highlights['50%_dist']).toFixed();
+          const differenceDist = (feature.properties.mean_dist - highlights.mean_dist).toFixed();
+
+          // TODO look into projection/distance calc, messed up cincy and louisville
+          const inputs = {
+              header: feature.properties.school_full_name,
+              card1: `${feature.properties.mean_dist.toFixed()} miles`,
+              card1text: `${feature.properties.mean_wtDist.toFixed()} miles WEIGHTED mean \n \n ${differenceDist} miles ${differenceText(differenceDist)} all-school average (${highlights.mean_dist} miles)`,
+              card2: `${feature.properties['50%_dist'].toFixed()} miles`,
+              card2text: `${feature.properties['50%_wtDist'].toFixed()} miles WEIGHTED median \n \n ${diffDistMed} miles  ${differenceText(diffDistMed)} all-school average (${highlights['50%_dist']} miles)`,
+              card3: `${feature.properties.min_dist.toFixed()} miles`,
+              card3text: `${min.city}, ${min.state} to ${min.site} as a ${min.seed} seed in ${min.year}`,
+              card4: `${feature.properties.max_dist.toFixed()} miles`,
+              card4text: `${max.city}, ${max.state} to ${max.site} as a ${max.seed} seed in ${max.year}`,
+              card5: feature.properties.count_dist,
+              card5text: 'Appearances as 1-4 seed',  // TODO put subheader w list of number of apperances as each seed
+          };
+          updateInfoCard(inputs);  // update highlights/info card with school info
+          applySchoolLabelStyles(feature);  // style mouseover label with school colors
+          styleLayers(feature);  // style and filter school, site, and line layers based on selected school
+          setAvgDistanceLayer(feature);  // set average distance circle at same location as selected school, apply source to layer
+        }
+      });
     }
 
-    function directionSymbol(value) {
-        return value >= 0 ? '+' : '';
+    function applySchoolLabelStyles(feature) {
+      // TODO conditions for white
+      // apply colors associated with selected school to info cards
+      header.css('background', feature.properties.color_1);
+      header.css('border-color', feature.properties.color_2);
+
+      // add style tags because jQuery does not apply to CSS pseudo classes
+      header.append(`<style>.info-row:hover > .info-stat {background: ${feature.properties.color_2}</style>`)
+      header.append(`<style>.info-row:hover > .info-stat {border-color: ${feature.properties.color_2}</style>`)
+      header.append(`<style>.info-row:hover > .info-text {border-color: ${feature.properties.color_2}</style>`)
     }
 
     function differenceText(value) {
         return value >= 0 ? 'ABOVE' : 'BELOW';
 
+    }
+
+    function createLineFeatures(lineFeatures, site, feature) {
+      // push linestring features to a feature array to be inserted into lines layer geojson source
+      lineFeatures.push({
+        'type': 'Feature',
+        'properties': site.properties,  // apply all school/site metadata to linestring
+        'geometry': {
+          'type': 'LineString',
+          // set school geometry and site geometry to create linetring between the two
+          'coordinates': [feature.geometry.coordinates, site.geometry.coordinates],
+        }
+      });
+      // return lineFeatures;
     }
 
     // TODO create legend for average distance prop circle size?
