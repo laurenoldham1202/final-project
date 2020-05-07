@@ -219,6 +219,7 @@
         .info-subtext {
             color: #777;
             margin-top: 0.5rem;
+            white-space: pre-line;
         }
 
         .map-control {
@@ -671,9 +672,9 @@
         const defaultInfoCard = {
             header: 'All Top Seeded Schools 1985 - 2019',
             card1: highlights[setProperty('mean')] + ' miles',
-            card1text: 'Average for top seeded schools 1985 - 2019',  // TODO make constant
+            card1text: `${highlights['mean_wtDist']} miles WEIGHTED mean \n \n Average for top seeded schools 1985 - 2019`,  // TODO make constant
             card2: highlights[setProperty('50%')] + ' miles',
-            card2text: 'Average for top seeded schools 1985 - 2019',
+            card2text: `${highlights['50%_wtDist']} miles WEIGHTED median \n \n Average for top seeded schools 1985 - 2019`,
             card3: highlights[setProperty('min')] + ' miles',
             card3text: 'University of Arizona to Tucson, AZ as a 1 seed in 2000',
             card4: highlights[setProperty('max')] + ' miles',
@@ -800,7 +801,6 @@
         map.fitBounds(turf.bbox(layerGeometry), { padding: 50 });
     }
 
-
     // TODO make additional dropdown for special cases, i.e. blue bloods, etc.?
     function selectSchool(sites, colors) {
         schoolFilter.on('change', (e) => {
@@ -901,10 +901,8 @@
                 // fit bounds to school and sites
                 fitMapBounds(layerGeometry);
 
-
                 // push linestring features to line layer source
                 map.getSource('line').setData({ type: 'FeatureCollection', features: lineFeatures });
-
 
                 // difference between school averages and overall averages // TODO add min and max avg? or compare against overall min and max?
                 const diffDistMed = (feature.properties['50%_dist'] - highlights['50%_dist']).toFixed();
@@ -914,9 +912,9 @@
                 const inputs = {
                     header: feature.properties.school_full_name,
                     card1: `${feature.properties.mean_dist.toFixed()} miles`,
-                    card1text: `${differenceDist} miles ${differenceText(differenceDist)} all-school average (${highlights.mean_dist} miles)`,  // TODO subtext for wt avg?
+                    card1text: `${feature.properties.mean_wtDist.toFixed()} miles WEIGHTED mean \n \n ${differenceDist} miles ${differenceText(differenceDist)} all-school average (${highlights.mean_dist} miles)`,
                     card2: `${feature.properties['50%_dist'].toFixed()} miles`,
-                    card2text: `${diffDistMed} miles  ${differenceText(diffDistMed)} all-school average (${highlights['50%_dist']} miles)`,
+                    card2text: `${feature.properties['50%_wtDist'].toFixed()} miles WEIGHTED median \n \n ${diffDistMed} miles  ${differenceText(diffDistMed)} all-school average (${highlights['50%_dist']} miles)`,
                     card3: `${feature.properties.min_dist.toFixed()} miles`,
                     card3text: `${min.city}, ${min.state} to ${min.site} as a ${min.seed} seed in ${min.year}`,
                     card4: `${feature.properties.max_dist.toFixed()} miles`,
