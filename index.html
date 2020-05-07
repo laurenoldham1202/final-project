@@ -984,49 +984,39 @@
       });
     }
 
-    function selectConference() {
-        conferenceFilter.on('change', (e) => {
-            // apply selected conference to filters
-            filters.conference = e.target.value;
+    function selectSeedOrConf(filterUI, filter) {
+      filterUI.on('change', (e) => {
+        // apply selected conference to filters
+        filters[filter] = e.target.value;
 
-            // loop through schools layer
-            map.getSource('schools')['_data'].features.forEach(school => {
-                // if a school is currently selected but does not belong to the selected conference, reset to default map view
-                if (school.properties.school_common_name === filters.school) {
-                    if (school.properties.conference !== filters.conference) {  // TODO REMOVE IF YOU HIDE ALL OTHER SCHOOLS WHEN SCHOOL IS SELECTED
-                        resetExtent();  // hides selected school, sites, lines, etc. and resets bounds
-                        // TODO Display an error message for this resetting?
-                        resetAllFilters(conferenceFilter);  // resets all filters EXCEPT conference filter
-                        // resets filters explicitly so that setMapFilters below displays ALL schools
-                        filters.conference = 'all';
-                    }
-                }
-            });
-
-            setMapFilters();
+        // loop through schools layer
+        map.getSource('schools')['_data'].features.forEach(school => {
+          // if a school is currently selected but does not belong to the selected conference, reset to default map view
+          if (school.properties.school_common_name === filters.school) {
+            const schoolMissingFilter = filter === 'conference' ? school.properties[filter] !== filters[filter] :
+              !Object.keys(school.properties).includes(filters[filter]);
+            if (schoolMissingFilter) { // TODO REMOVE IF YOU HIDE ALL OTHER SCHOOLS WHEN SCHOOL IS SELECTED
+              // TODO remove selected school and set selected filter?
+              resetExtent();  // hides selected school, sites, lines, etc. and resets bounds
+              // TODO Display an error message for this resetting?
+              resetAllFilters(filterUI);  // resets all filters EXCEPT conference filter
+              // resets filters explicitly so that setMapFilters below displays ALL schools
+              filters[filter] = 'all';
+            }
+          }
         });
+
+        setMapFilters();
+      });
+    }
+
+    // TODO allow multiple conference selections?
+    function selectConference() {
+      selectSeedOrConf(conferenceFilter, 'conference');
     }
 
     function selectSeed() {
-        seedFilter.on('change', (e) => {
-            // apply selected seed to filters
-            filters.seed = e.target.value;
-
-            // loop through schools layer
-            map.getSource('schools')['_data'].features.forEach(school => {
-                // if a school is currently selected but does not belong to the selected conference, reset to default map view
-                if (school.properties.school_common_name === filters.school) {
-                    if (!Object.keys(school.properties).includes(filters.seed)) {
-                        resetExtent();
-                        resetAllFilters(seedFilter);
-                        // resets seed explicitly so that setMapFilters below displays ALL schools
-                        filters.seed = 'all';
-                    }
-                }
-            });
-
-            setMapFilters();
-        });
+      selectSeedOrConf(seedFilter, 'seed');
     }
 
     /**
